@@ -1,0 +1,7 @@
+run=keda_burst_run2
+mode=keda
+workload=burst
+start_utc=2026-10-25 13:31:59
+minutes=15
+target_cpu=50
+max_replicas=5

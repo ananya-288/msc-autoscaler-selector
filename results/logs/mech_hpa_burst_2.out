@@ -1,0 +1,10 @@
+nohup: ignoring input
+=== hpa_burst_run2: workload burst, 2026-10-25 12:57:01 UTC  reset
+=== waiting 90s
+=== 2026-10-25 12:59:28 UTC  started Locust (burst) + collector; ends in about 16 min
+=== 13:14:29 UTC  Locust finished
+=== 13:15:33 UTC  collector finished
+=== DONE hpa_burst_run2
+    metrics rows: 704   collector errors: 0
+         Aggregated                                                                     47565     0(0.00%) |    157      20    3516     69 |   52.82        0.00
+         Aggregated                                                                             69    170    220    250    340    440    720   1100   2400   3400   3500  47565

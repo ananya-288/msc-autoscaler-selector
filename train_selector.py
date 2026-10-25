@@ -33,13 +33,16 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--root", default=".")
 ap.add_argument("--floor", type=int, default=50)
 ap.add_argument("--thresholds", nargs="+", type=float, default=[0.5, 0.6, 0.7, 0.8])
+ap.add_argument("--runs", nargs="+", type=int, default=[1])
+ap.add_argument("--avg", action="store_true", help="one label per service-minute from the AVERAGE score over --runs")
 ap.add_argument("--shapes", nargs="+", default=["burst", "rise", "gentle", "decline"])
 a = ap.parse_args()
 MECH = ["hpa", "keda", "vertical"]
 R = a.root
 
-def window_traffic(shape):
-    d = pd.concat([pd.read_csv(os.path.join(R, "results", "mech", f"{m}_{shape}_run1_metrics.csv")) for m in MECH])
+def window_traffic(shape, run):
+    runs = run if isinstance(run, (list, tuple)) else [run]
+    d = pd.concat([pd.read_csv(os.path.join(R, "results", "mech", f"{m}_{shape}_run{r}_metrics.csv")) for m in MECH for r in runs])
     d = d[d.service != "redis-cart"].copy()
     d["win"] = (d.t_sec // 60).astype(int)
     g = d.groupby(["service", "win"]).rps
@@ -51,24 +54,47 @@ def window_traffic(shape):
     fe = w[w.service == "frontend"][["win", "rps", "slope"]].rename(columns={"rps": "fe_rps", "slope": "fe_slope"})
     w = w.merge(fe, on="win", how="left")
     w["forecast"] = (w.rps + w.slope).clip(lower=0)
-    w["shape"] = shape
+    w["shape"] = shape; w["run"] = "avg" if isinstance(run, (list, tuple)) else run
     return w
 
 rows = []
-for s in a.shapes:
-    tr = window_traffic(s)
+def avg_labels(shape):
     tag = f"_floor{a.floor}" if a.floor else ""
-    lab_path = os.path.join(R, "results", "labels", f"{s}_run1_w60{tag}_labels.csv")
-    lab = pd.read_csv(lab_path)
-    feat = tr.copy(); feat["win"] = feat.win + 1          # features of w-1 describe decision for w
-    m = lab.merge(feat, on=["service", "win"], how="inner")
-    rows.append(m)
+    det = pd.concat([pd.read_csv(os.path.join(R, "results", "labels", f"{shape}_run{r}_w60{tag}_window_details.csv"))
+                     for r in a.runs])
+    sc = det.groupby(["mechanism", "service", "win"]).score.mean().reset_index()
+    wide = sc.pivot_table(index=["service", "win"], columns="mechanism", values="score").dropna().reset_index()
+    wide["label"] = wide[MECH].idxmin(axis=1)
+    return wide
+
+for s in a.shapes:
+    if a.avg:
+        tr = window_traffic(s, a.runs)
+        lab = avg_labels(s)
+        feat = tr.copy(); feat["win"] = feat.win + 1
+        rows.append(lab.merge(feat, on=["service", "win"], how="inner"))
+        continue
+    for run in a.runs:
+        tr = window_traffic(s, run)
+        tag = f"_floor{a.floor}" if a.floor else ""
+        lab_path = os.path.join(R, "results", "labels", f"{s}_run{run}_w60{tag}_labels.csv")
+        lab = pd.read_csv(lab_path)
+        feat = tr.copy(); feat["win"] = feat.win + 1          # features of w-1 describe decision for w
+        m = lab.merge(feat, on=["service", "win"], how="inner")
+        rows.append(m)
 D = pd.concat(rows, ignore_index=True)
 FEATS = ["rps", "slope", "burst", "peak_ratio", "fe_rps", "fe_slope", "forecast"]
+os.makedirs(os.path.join(R, "results", "selector"), exist_ok=True)
+runs_tag = ("_avg" if a.avg else "_runs") + "".join(map(str, a.runs))
+ds_path = os.path.join(R, "results", "selector", f"training_dataset_floor{a.floor}{runs_tag}.csv")
+D[["shape", "run", "service", "win"] + FEATS + MECH + ["label"]].rename(
+    columns={"win": "minute", "hpa": "score_hpa", "keda": "score_keda", "vertical": "score_vertical"}
+).to_csv(ds_path, index=False)
+print(f"Saved the exact model input (features + label) to {ds_path}")
 X_num = D[FEATS].astype(float)
 X = pd.concat([X_num, pd.get_dummies(D.service, prefix="svc").astype(float)], axis=1)
 y = D.label.values
-print(f"Dataset: {len(D)} service-windows from {len(a.shapes)} shapes; label share:",
+print(f"Dataset: {len(D)} service-windows from {len(a.shapes)} shapes x runs {a.runs}; label share:",
       (pd.Series(y).value_counts(normalize=True) * 100).round(1).to_dict(), "\n")
 
 MODELS = {
@@ -117,7 +143,7 @@ for name, model in list(MODELS.items()) + [(f"always_{m}", None) for m in MECH]:
                 **{f"picks_{m}_%": 100 * np.mean(P == m) for m in MECH}})
 R_ = pd.DataFrame(res).sort_values("mean_regret")
 os.makedirs(os.path.join(R, "results", "selector"), exist_ok=True)
-out = os.path.join(R, "results", "selector", f"rq2_leave_one_shape_out_floor{a.floor}.csv")
+out = os.path.join(R, "results", "selector", f"rq2_leave_one_shape_out_floor{a.floor}{runs_tag}.csv")
 R_.to_csv(out, index=False)
 print("Leave-one-shape-out results (lower regret = better; compare with always_vertical):")
 print(R_.round(3).to_string(index=False))

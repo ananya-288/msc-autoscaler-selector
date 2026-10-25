@@ -1,0 +1,7 @@
+run=keda_decline_run2
+mode=keda
+workload=decline
+start_utc=2026-10-25 17:07:33
+minutes=15
+target_cpu=50
+max_replicas=5

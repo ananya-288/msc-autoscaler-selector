@@ -1,0 +1,7 @@
+run=hpa_rise_run2
+mode=hpa
+workload=rise
+start_utc=2026-10-25 14:14:19
+minutes=15
+target_cpu=50
+max_replicas=5

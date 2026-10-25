@@ -1,0 +1,7 @@
+run=vertical_burst_run2
+mode=vertical
+workload=burst
+start_utc=2026-10-25 13:51:39
+minutes=15
+target_cpu=50
+max_replicas=5

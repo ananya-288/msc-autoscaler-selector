@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/setCurrency,HTTPError('500 Server Error: Internal Server Error for url: /setCurrency'),1,2026-10-25T13:45:23Z,2026-10-25T13:45:23Z
+GET,/,HTTPError('500 Server Error: Internal Server Error for url: /'),1,2026-10-25T13:45:23Z,2026-10-25T13:45:23Z

@@ -1,0 +1,11 @@
+nohup: ignoring input
+=== vertical_burst_run2: workload burst, 2026-10-25 13:49:04 UTC  reset
+=== waiting 90s
+=== 2026-10-25 13:51:39 UTC  started Locust (burst) + collector; ends in about 16 min
+=== 14:06:40 UTC  Locust finished
+=== 14:07:45 UTC  collector finished
+=== DONE vertical_burst_run2
+    metrics rows: 704   collector errors: 0
+    resize actions: 88
+         Aggregated                                                                     47757     0(0.00%) |    152      24    5597     56 |   53.05        0.00
+         Aggregated                                                                             56     80    110    140    300    650   1100   1500   4300   4700   5600  47757

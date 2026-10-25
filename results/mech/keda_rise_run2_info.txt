@@ -1,0 +1,7 @@
+run=keda_rise_run2
+mode=keda
+workload=rise
+start_utc=2026-10-25 14:34:32
+minutes=15
+target_cpu=50
+max_replicas=5
