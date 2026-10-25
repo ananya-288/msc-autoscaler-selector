@@ -1,0 +1,11 @@
+NAME                                                        REFERENCE                          TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/adservice               Deployment/adservice               cpu: 15%/50%   1         5         2          4m23s
+horizontalpodautoscaler.autoscaling/cartservice             Deployment/cartservice             cpu: 3%/50%    1         5         3          4m22s
+horizontalpodautoscaler.autoscaling/checkoutservice         Deployment/checkoutservice         cpu: 4%/50%    1         5         2          4m20s
+horizontalpodautoscaler.autoscaling/currencyservice         Deployment/currencyservice         cpu: 8%/50%    1         5         5          4m19s
+horizontalpodautoscaler.autoscaling/emailservice            Deployment/emailservice            cpu: 2%/50%    1         5         1          4m17s
+horizontalpodautoscaler.autoscaling/frontend                Deployment/frontend                cpu: 14%/50%   1         5         5          4m16s
+horizontalpodautoscaler.autoscaling/paymentservice          Deployment/paymentservice          cpu: 16%/50%   1         5         1          4m14s
+horizontalpodautoscaler.autoscaling/productcatalogservice   Deployment/productcatalogservice   cpu: 36%/50%   1         5         5          4m13s
+horizontalpodautoscaler.autoscaling/recommendationservice   Deployment/recommendationservice   cpu: 35%/50%   1         5         4          4m11s
+horizontalpodautoscaler.autoscaling/shippingservice         Deployment/shippingservice         cpu: 8%/50%    1         5         1          4m10s

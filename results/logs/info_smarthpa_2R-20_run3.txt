@@ -1,0 +1,6 @@
+run=smarthpa_2R-20_run3
+scenario=2 Replicas + 20%
+start_utc=2026-10-15 18:09:54
+minutes=15
+users=300
+host=http://a39b9e5ca67d844b6b3172975c11258c-1907779540.us-east-1.elb.amazonaws.com

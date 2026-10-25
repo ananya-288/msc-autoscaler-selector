@@ -1,0 +1,33 @@
+NAME                                     READY   STATUS    RESTARTS      AGE     IP              NODE                            NOMINATED NODE   READINESS GATES
+adservice-68549648fb-gh6b7               2/2     Running   0             15m     172.31.12.228   ip-172-31-1-125.ec2.internal    <none>           <none>
+cartservice-75d74b6487-lf697             2/2     Running   0             15m     172.31.14.74    ip-172-31-1-125.ec2.internal    <none>           <none>
+cartservice-75d74b6487-q6vlg             2/2     Running   0             18m     172.31.17.238   ip-172-31-31-12.ec2.internal    <none>           <none>
+cartservice-75d74b6487-xh8f6             2/2     Running   0             14m     172.31.91.9     ip-172-31-89-104.ec2.internal   <none>           <none>
+checkoutservice-b4bbd6d4b-28zjj          2/2     Running   0             14m     172.31.32.244   ip-172-31-46-211.ec2.internal   <none>           <none>
+checkoutservice-b4bbd6d4b-qhppn          2/2     Running   0             18m     172.31.10.155   ip-172-31-1-125.ec2.internal    <none>           <none>
+checkoutservice-b4bbd6d4b-rmhqn          2/2     Running   0             15m     172.31.29.164   ip-172-31-31-12.ec2.internal    <none>           <none>
+currencyservice-68799b697b-4shsv         2/2     Running   0             15m     172.31.33.158   ip-172-31-46-211.ec2.internal   <none>           <none>
+currencyservice-68799b697b-66ml8         2/2     Running   0             15m     172.31.10.11    ip-172-31-1-125.ec2.internal    <none>           <none>
+currencyservice-68799b697b-7w9lx         2/2     Running   0             18m     172.31.88.155   ip-172-31-89-104.ec2.internal   <none>           <none>
+currencyservice-68799b697b-gg67x         2/2     Running   0             14m     172.31.74.180   ip-172-31-76-181.ec2.internal   <none>           <none>
+currencyservice-68799b697b-glxcr         2/2     Running   0             15m     172.31.30.166   ip-172-31-31-12.ec2.internal    <none>           <none>
+emailservice-6c84bcbd9b-88wnw            2/2     Running   2 (17m ago)   18m     172.31.81.73    ip-172-31-89-104.ec2.internal   <none>           <none>
+frontend-d56c464dc-2slr9                 2/2     Running   0             15m     172.31.26.235   ip-172-31-31-12.ec2.internal    <none>           <none>
+frontend-d56c464dc-cp5t5                 2/2     Running   0             15m     172.31.65.36    ip-172-31-76-181.ec2.internal   <none>           <none>
+frontend-d56c464dc-gt2pb                 2/2     Running   0             18m     172.31.9.26     ip-172-31-1-125.ec2.internal    <none>           <none>
+frontend-d56c464dc-kflst                 2/2     Running   0             15m     172.31.85.6     ip-172-31-89-104.ec2.internal   <none>           <none>
+frontend-d56c464dc-tbzrh                 2/2     Running   0             15m     172.31.33.249   ip-172-31-46-211.ec2.internal   <none>           <none>
+paymentservice-5897b5f48c-nzl2j          2/2     Running   0             18m     172.31.95.183   ip-172-31-89-104.ec2.internal   <none>           <none>
+productcatalogservice-6564d74cf-lzrb4    2/2     Running   0             14m     172.31.84.104   ip-172-31-89-104.ec2.internal   <none>           <none>
+productcatalogservice-6564d74cf-mzwtn    2/2     Running   0             15m     172.31.12.178   ip-172-31-1-125.ec2.internal    <none>           <none>
+productcatalogservice-6564d74cf-nbr8v    2/2     Running   0             14m     172.31.46.76    ip-172-31-46-211.ec2.internal   <none>           <none>
+productcatalogservice-6564d74cf-q7zpd    2/2     Running   0             14m     172.31.6.27     ip-172-31-1-125.ec2.internal    <none>           <none>
+productcatalogservice-6564d74cf-zd6j4    2/2     Running   0             18m     172.31.26.38    ip-172-31-31-12.ec2.internal    <none>           <none>
+recommendationservice-6b6fb9bd87-65rcn   2/2     Running   0             14m     172.31.21.242   ip-172-31-31-12.ec2.internal    <none>           <none>
+recommendationservice-6b6fb9bd87-m4mpk   2/2     Running   1 (15m ago)   15m     172.31.21.101   ip-172-31-31-12.ec2.internal    <none>           <none>
+recommendationservice-6b6fb9bd87-png92   2/2     Running   1 (14m ago)   15m     172.31.83.49    ip-172-31-89-104.ec2.internal   <none>           <none>
+recommendationservice-6b6fb9bd87-r6qcx   2/2     Running   1 (14m ago)   14m     172.31.34.7     ip-172-31-46-211.ec2.internal   <none>           <none>
+recommendationservice-6b6fb9bd87-z4z9x   2/2     Running   1 (18m ago)   18m     172.31.0.130    ip-172-31-1-125.ec2.internal    <none>           <none>
+redis-cart-577c586b95-tcdd2              2/2     Running   0             18m     172.31.92.19    ip-172-31-89-104.ec2.internal   <none>           <none>
+shippingservice-7d7f5f6959-8vg62         2/2     Running   0             9m55s   172.31.4.201    ip-172-31-1-125.ec2.internal    <none>           <none>
+shippingservice-7d7f5f6959-lllcc         2/2     Running   0             18m     172.31.26.205   ip-172-31-31-12.ec2.internal    <none>           <none>

@@ -1,0 +1,7 @@
+run=vertical_decline_run1
+mode=vertical
+workload=decline
+start_utc=2026-10-21 14:10:01
+minutes=15
+target_cpu=50
+max_replicas=5

@@ -1,0 +1,20 @@
+nohup: ignoring input
+=== keda_rise_run1: workload rise, 2026-10-20 20:46:57 UTC  reset
+=== waiting 90s
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+Warning: PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+=== 2026-10-20 20:49:32 UTC  started Locust (rise) + collector; ends in about 16 min
+=== 21:04:34 UTC  Locust finished
+=== 21:05:38 UTC  collector finished
+=== DONE keda_rise_run1
+    metrics rows: 704   collector errors: 0
+         Aggregated                                                                     62487     0(0.00%) |     96      19    2307     59 |   69.41        0.00
+         Aggregated                                                                             59     80     99    110    170    220    560    870   1700   2200   2300  62487

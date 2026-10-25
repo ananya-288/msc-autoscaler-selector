@@ -1,0 +1,27 @@
+nohup: ignoring input
+=== prosmart_2R-20_run2: scenario 2 Replicas + 20%, 15 min, 300 users, host http://a39b9e5ca67d844b6b3172975c11258c-1907779540.us-east-1.elb.amazonaws.com
+=== 2026-10-19 19:56:36 UTC  reset: delete HPAs, scale everything to 1
+No resources found
+deployment.apps/adservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/frontend scaled
+deployment.apps/paymentservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/shippingservice scaled
+=== waiting 180s for the app to settle
+Ready: /home/ubuntu/shpa/prosmart_run
+Scenario 2R-20%, 900 s, prediction window 25 s, models from models_2R20
+Repairs P1-P11 applied (see header of this script).
+=== 2026-10-19 19:59:39 UTC  started controller (pid 59180) and Locust (pid 59182)
+=== 20:14:47 UTC  Locust finished (exit 0)
+=== 20:15:12 UTC  controller finished (exit 0)
+=== saving cluster state
+=== scale commands: 209   errors: 0
+=== DONE prosmart_2R-20_run2. Summary:
+         Aggregated                                                                     48104     0(0.00%) |   2796      16    7932   2700 |   53.14        0.00
+         Aggregated                                                                           2700   3200   3700   4100   5000   5500   6000   6300   7200   7800   7900  48104

@@ -1,0 +1,10 @@
+nohup: ignoring input
+=== hpa_decline_run1: workload decline, 2026-10-21 13:12:00 UTC  reset
+=== waiting 90s
+=== 2026-10-21 13:14:32 UTC  started Locust (decline) + collector; ends in about 16 min
+=== 13:29:33 UTC  Locust finished
+=== 13:30:38 UTC  collector finished
+=== DONE hpa_decline_run1
+    metrics rows: 704   collector errors: 0
+         Aggregated                                                                     59250     0(0.00%) |    375      23    3922    150 |   65.81        0.00
+         Aggregated                                                                            150    560    670    730    900   1000   1200   1500   3100   3800   3900  59250

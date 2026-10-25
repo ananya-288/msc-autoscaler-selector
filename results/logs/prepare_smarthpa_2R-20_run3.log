@@ -1,0 +1,7 @@
+imports OK: 12 modules
+
+Ready: /home/ubuntu/shpa/smart_hpa_run
+Controller will run for 900 s (15.0 min).
+Robustness patches R1-R4: applied
+Next: point kubectl at your cluster, deploy Online Boutique, then
+  cd smart_hpa_run && python run_smart_hpa.py

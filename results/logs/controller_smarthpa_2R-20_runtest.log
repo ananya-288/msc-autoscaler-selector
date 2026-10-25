@@ -1,0 +1,9 @@
+ARM_decision []
+deployment.apps/currencyservice scaled
+deployment.apps/frontend scaled
+ARM_decision [['frontend', 'scale up', 3, 3, 100], ['currencyservice', 'scale up', 3, 3, 100], ['redis-cart', 'no scale', 1, 2, 70], ['checkoutservice', 'no scale', 1, 2, 100], ['emailservice', 'no scale', 1, 2, 100], ['paymentservice', 'no scale', 1, 2, 100], ['shippingservice', 'no scale', 1, 2, 100], ['productcatalogservice', 'no scale', 1, 2, 100], ['recommendationservice', 'no scale', 1, 2, 100], ['adservice', 'no scale', 1, 2, 200], ['cartservice', 'no scale', 1, 1, 200]]
+deployment.apps/currencyservice scaled
+deployment.apps/productcatalogservice scaled
+ARM_decision [['frontend', 'no scale', 3, 3, 100], ['cartservice', 'no scale', 1, 1, 200], ['productcatalogservice', 'scale up', 2, 2, 100], ['redis-cart', 'no scale', 1, 2, 70], ['currencyservice', 'scale up', 2, 3, 100], ['checkoutservice', 'no scale', 1, 2, 100], ['emailservice', 'no scale', 1, 2, 100], ['paymentservice', 'no scale', 1, 2, 100], ['shippingservice', 'no scale', 1, 2, 100], ['recommendationservice', 'no scale', 1, 2, 100], ['adservice', 'no scale', 1, 2, 200]]
+deployment.apps/productcatalogservice scaled
+ARM_decision [['frontend', 'no scale', 3, 3, 100], ['cartservice', 'no scale', 1, 1, 200], ['redis-cart', 'no scale', 1, 2, 70], ['currencyservice', 'no scale', 2, 3, 100], ['checkoutservice', 'no scale', 1, 2, 100], ['emailservice', 'no scale', 1, 2, 100], ['paymentservice', 'no scale', 1, 2, 100], ['shippingservice', 'no scale', 1, 2, 100], ['productcatalogservice', 'scale down', 1, 2, 100], ['recommendationservice', 'no scale', 1, 2, 100], ['adservice', 'no scale', 1, 2, 200]]

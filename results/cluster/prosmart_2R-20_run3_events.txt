@@ -1,0 +1,289 @@
+TIME                   TYPE      REASON              OBJECT                                   MSG
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-5kkgt                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-vwcrk
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-vb2xz
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-8vz9j
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-vb2xz                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-psb6j
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-gkkrw
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-vwcrk         Stopping container server
+2026-10-19T21:02:13Z   Normal    ScalingReplicaSet   productcatalogservice                    Scaled down replica set productcatalogservice-67944c9df7 from 5 to 1
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-rk8kf                Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             recommendationservice-5887f9f797-5cfm6   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             recommendationservice-5887f9f797-9fjhq   Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-6btm4
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-rjkcl                Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-qs2mh                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-cczc6
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-5rknf
+2026-10-19T21:02:13Z   Normal    ScalingReplicaSet   frontend                                 Scaled down replica set frontend-58b4dc4d4d from 14 to 1
+2026-10-19T21:02:13Z   Normal    Killing             productcatalogservice-67944c9df7-8qqhv   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             productcatalogservice-67944c9df7-nf8m6   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             adservice-64956dfcbf-mj6nc               Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-nz2q4                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-6vg5f
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-psb6j         Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-6d7bh
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-mjx46                Stopping container server
+2026-10-19T21:02:13Z   Normal    ScalingReplicaSet   currencyservice                          Scaled down replica set currencyservice-5c8cbd54c5 from 8 to 1
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-frbjq                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    adservice-64956dfcbf                     Deleted pod: adservice-64956dfcbf-mj6nc
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-cczc6                Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             productcatalogservice-67944c9df7-ngt59   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             productcatalogservice-67944c9df7-twr4j   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-gkkrw         Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-6vg5f         Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-6d7bh         Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-6btm4         Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             currencyservice-5c8cbd54c5-5rknf         Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-2n8d6                Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             cartservice-5f597b774-hb52s              Stopping container server
+2026-10-19T21:02:13Z   Normal    ScalingReplicaSet   recommendationservice                    Scaled down replica set recommendationservice-5887f9f797 from 6 to 1
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-8vz9j                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-rwxg5
+2026-10-19T21:02:13Z   Normal    Killing             recommendationservice-5887f9f797-ptx67   Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-5cfm6
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    productcatalogservice-67944c9df7         Deleted pod: productcatalogservice-67944c9df7-twr4j
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    productcatalogservice-67944c9df7         Deleted pod: productcatalogservice-67944c9df7-8qqhv
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    checkoutservice-78b6bcbcc7               Deleted pod: checkoutservice-78b6bcbcc7-9nk4f
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-nz2q4
+2026-10-19T21:02:13Z   Normal    Killing             recommendationservice-5887f9f797-rwxg5   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             recommendationservice-5887f9f797-tlfd4   Stopping container server
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-77zq5                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    cartservice-5f597b774                    Deleted pod: cartservice-5f597b774-hb52s
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-rk8kf
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-tlfd4
+2026-10-19T21:02:13Z   Normal    Killing             frontend-58b4dc4d4d-8sxpj                Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-ptx67
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    productcatalogservice-67944c9df7         Deleted pod: productcatalogservice-67944c9df7-ngt59
+2026-10-19T21:02:13Z   Normal    Killing             checkoutservice-78b6bcbcc7-9nk4f         Stopping container server
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-9fjhq
+2026-10-19T21:02:13Z   Normal    SuccessfulDelete    productcatalogservice-67944c9df7         Deleted pod: productcatalogservice-67944c9df7-nf8m6
+2026-10-19T21:02:14Z   Warning   Unhealthy           frontend-58b4dc4d4d-77zq5                Readiness probe failed: Get "http://172.31.77.40:8080/_healthz": dial tcp 172.31.77.40:8080: connect: connection refused
+2026-10-19T21:02:14Z   Warning   Unhealthy           productcatalogservice-67944c9df7-twr4j   Readiness probe failed: timeout: failed to connect service "172.31.41.75:3550" within 1s: context deadline exceeded
+2026-10-19T21:02:14Z   Warning   Unhealthy           frontend-58b4dc4d4d-mjx46                Readiness probe failed: Get "http://172.31.66.172:8080/_healthz": dial tcp 172.31.66.172:8080: connect: connection refused
+2026-10-19T21:06:39Z   Normal    SuccessfulCreate    checkoutservice-78b6bcbcc7               Created pod: checkoutservice-78b6bcbcc7-npsm7
+2026-10-19T21:06:39Z   Normal    Scheduled           checkoutservice-78b6bcbcc7-npsm7         Successfully assigned default/checkoutservice-78b6bcbcc7-npsm7 to ip-172-31-44-97.ec2.internal
+2026-10-19T21:06:39Z   Normal    SuccessfulCreate    shippingservice-7ff767d68f               Created pod: shippingservice-7ff767d68f-6dkgw
+2026-10-19T21:06:39Z   Normal    Scheduled           shippingservice-7ff767d68f-6dkgw         Successfully assigned default/shippingservice-7ff767d68f-6dkgw to ip-172-31-26-114.ec2.internal
+2026-10-19T21:06:40Z   Normal    Pulled              checkoutservice-78b6bcbcc7-npsm7         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:40Z   Normal    Started             shippingservice-7ff767d68f-6dkgw         Container started
+2026-10-19T21:06:40Z   Normal    Pulled              shippingservice-7ff767d68f-6dkgw         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:40Z   Normal    Created             shippingservice-7ff767d68f-6dkgw         Container created
+2026-10-19T21:06:40Z   Normal    Created             checkoutservice-78b6bcbcc7-npsm7         Container created
+2026-10-19T21:06:40Z   Normal    Started             checkoutservice-78b6bcbcc7-npsm7         Container started
+2026-10-19T21:06:41Z   Warning   Unhealthy           shippingservice-7ff767d68f-6dkgw         Readiness probe failed: timeout: failed to connect service "172.31.16.111:50051" within 1s: context deadline exceeded
+2026-10-19T21:06:41Z   Warning   Unhealthy           checkoutservice-78b6bcbcc7-npsm7         Readiness probe failed: timeout: failed to connect service "172.31.33.118:5050" within 1s: context deadline exceeded
+2026-10-19T21:06:42Z   Normal    Scheduled           cartservice-5f597b774-vp7v4              Successfully assigned default/cartservice-5f597b774-vp7v4 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:06:42Z   Normal    Created             currencyservice-5c8cbd54c5-kznn8         Container created
+2026-10-19T21:06:42Z   Normal    Scheduled           productcatalogservice-67944c9df7-x5bxl   Successfully assigned default/productcatalogservice-67944c9df7-x5bxl to ip-172-31-26-114.ec2.internal
+2026-10-19T21:06:42Z   Normal    Started             currencyservice-5c8cbd54c5-kznn8         Container started
+2026-10-19T21:06:42Z   Normal    Scheduled           currencyservice-5c8cbd54c5-kznn8         Successfully assigned default/currencyservice-5c8cbd54c5-kznn8 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:06:42Z   Normal    Pulled              currencyservice-5c8cbd54c5-kznn8         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    Scheduled           frontend-58b4dc4d4d-9zlsk                Successfully assigned default/frontend-58b4dc4d4d-9zlsk to ip-172-31-2-196.ec2.internal
+2026-10-19T21:06:42Z   Normal    SuccessfulCreate    recommendationservice-5887f9f797         Created pod: recommendationservice-5887f9f797-lstrh
+2026-10-19T21:06:42Z   Normal    Pulled              recommendationservice-5887f9f797-lstrh   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    SuccessfulCreate    productcatalogservice-67944c9df7         Created pod: productcatalogservice-67944c9df7-x5bxl
+2026-10-19T21:06:42Z   Normal    Scheduled           currencyservice-5c8cbd54c5-l65wk         Successfully assigned default/currencyservice-5c8cbd54c5-l65wk to ip-172-31-26-114.ec2.internal
+2026-10-19T21:06:42Z   Normal    Pulled              currencyservice-5c8cbd54c5-l65wk         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    Created             currencyservice-5c8cbd54c5-l65wk         Container created
+2026-10-19T21:06:42Z   Normal    Started             currencyservice-5c8cbd54c5-l65wk         Container started
+2026-10-19T21:06:42Z   Normal    SuccessfulCreate    currencyservice-5c8cbd54c5               Created pod: currencyservice-5c8cbd54c5-kznn8
+2026-10-19T21:06:42Z   Normal    Pulled              productcatalogservice-67944c9df7-x5bxl   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    Scheduled           frontend-58b4dc4d4d-mxzlk                Successfully assigned default/frontend-58b4dc4d4d-mxzlk to ip-172-31-2-196.ec2.internal
+2026-10-19T21:06:42Z   Normal    Scheduled           frontend-58b4dc4d4d-nh6p6                Successfully assigned default/frontend-58b4dc4d4d-nh6p6 to ip-172-31-75-103.ec2.internal
+2026-10-19T21:06:42Z   Normal    SuccessfulCreate    frontend-58b4dc4d4d                      Created pod: frontend-58b4dc4d4d-rshm6
+2026-10-19T21:06:42Z   Normal    Pulled              cartservice-5f597b774-vp7v4              Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    Started             recommendationservice-5887f9f797-lstrh   Container started
+2026-10-19T21:06:42Z   Normal    Created             recommendationservice-5887f9f797-lstrh   Container created
+2026-10-19T21:06:42Z   Normal    Scheduled           frontend-58b4dc4d4d-h2csv                Successfully assigned default/frontend-58b4dc4d4d-h2csv to ip-172-31-26-114.ec2.internal
+2026-10-19T21:06:42Z   Normal    Scheduled           recommendationservice-5887f9f797-lstrh   Successfully assigned default/recommendationservice-5887f9f797-lstrh to ip-172-31-44-97.ec2.internal
+2026-10-19T21:06:42Z   Normal    Created             cartservice-5f597b774-vp7v4              Container created
+2026-10-19T21:06:42Z   Normal    Created             productcatalogservice-67944c9df7-x5bxl   Container created
+2026-10-19T21:06:42Z   Normal    SuccessfulCreate    cartservice-5f597b774                    Created pod: cartservice-5f597b774-vp7v4
+2026-10-19T21:06:42Z   Normal    Scheduled           frontend-58b4dc4d4d-rshm6                Successfully assigned default/frontend-58b4dc4d4d-rshm6 to ip-172-31-44-97.ec2.internal
+2026-10-19T21:06:42Z   Normal    Pulled              frontend-58b4dc4d4d-rshm6                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:42Z   Normal    Created             frontend-58b4dc4d4d-rshm6                Container created
+2026-10-19T21:06:43Z   Normal    Started             cartservice-5f597b774-vp7v4              Container started
+2026-10-19T21:06:43Z   Normal    Started             frontend-58b4dc4d4d-h2csv                Container started
+2026-10-19T21:06:43Z   Normal    Started             productcatalogservice-67944c9df7-x5bxl   Container started
+2026-10-19T21:06:43Z   Normal    Started             frontend-58b4dc4d4d-rshm6                Container started
+2026-10-19T21:06:43Z   Normal    Started             frontend-58b4dc4d4d-nh6p6                Container started
+2026-10-19T21:06:43Z   Normal    Pulled              frontend-58b4dc4d4d-9zlsk                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:43Z   Normal    Created             frontend-58b4dc4d4d-nh6p6                Container created
+2026-10-19T21:06:43Z   Normal    Pulled              frontend-58b4dc4d4d-nh6p6                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:43Z   Normal    Started             frontend-58b4dc4d4d-mxzlk                Container started
+2026-10-19T21:06:43Z   Normal    Created             frontend-58b4dc4d4d-mxzlk                Container created
+2026-10-19T21:06:43Z   Normal    Pulled              frontend-58b4dc4d4d-mxzlk                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:43Z   Normal    Created             frontend-58b4dc4d4d-9zlsk                Container created
+2026-10-19T21:06:43Z   Normal    Started             frontend-58b4dc4d4d-9zlsk                Container started
+2026-10-19T21:06:43Z   Normal    Created             frontend-58b4dc4d4d-h2csv                Container created
+2026-10-19T21:06:43Z   Normal    Pulled              frontend-58b4dc4d4d-h2csv                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:06:44Z   Warning   Unhealthy           currencyservice-5c8cbd54c5-kznn8         Readiness probe failed: timeout: failed to connect service "172.31.3.111:7000" within 1s: context deadline exceeded
+2026-10-19T21:06:44Z   Warning   Unhealthy           productcatalogservice-67944c9df7-x5bxl   Readiness probe failed: timeout: failed to connect service "172.31.20.186:3550" within 1s: context deadline exceeded
+2026-10-19T21:06:44Z   Warning   Unhealthy           currencyservice-5c8cbd54c5-l65wk         Readiness probe failed: timeout: failed to connect service "172.31.20.156:7000" within 1s: context deadline exceeded
+2026-10-19T21:06:48Z   Warning   Unhealthy           recommendationservice-5887f9f797-lstrh   Liveness probe failed: timeout: failed to connect service "172.31.41.75:8080" within 1s: context deadline exceeded
+2026-10-19T21:06:49Z   Warning   Unhealthy           recommendationservice-5887f9f797-lstrh   Readiness probe failed: timeout: failed to connect service "172.31.41.75:8080" within 1s: context deadline exceeded
+2026-10-19T21:07:03Z   Warning   Unhealthy           cartservice-5f597b774-vp7v4              Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-19T21:07:04Z   Warning   Unhealthy           cartservice-5f597b774-vp7v4              Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-19T21:14:12Z   Normal    Scheduled           adservice-64956dfcbf-hmtjj               Successfully assigned default/adservice-64956dfcbf-hmtjj to ip-172-31-44-97.ec2.internal
+2026-10-19T21:14:12Z   Normal    SuccessfulCreate    adservice-64956dfcbf                     Created pod: adservice-64956dfcbf-hmtjj
+2026-10-19T21:14:12Z   Normal    Pulling             adservice-64956dfcbf-hmtjj               Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7"
+2026-10-19T21:14:16Z   Normal    Pulled              adservice-64956dfcbf-hmtjj               Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" in 3.781s (3.781s including waiting). Image size: 109886572 bytes.
+2026-10-19T21:14:16Z   Normal    Created             adservice-64956dfcbf-hmtjj               Container created
+2026-10-19T21:14:16Z   Normal    Started             adservice-64956dfcbf-hmtjj               Container started
+2026-10-19T21:14:43Z   Warning   Unhealthy           adservice-64956dfcbf-hmtjj               Liveness probe failed: timeout: failed to connect service "172.31.33.97:9555" within 1s: context deadline exceeded
+2026-10-19T21:15:09Z   Normal    SuccessfulDelete    adservice-64956dfcbf                     Deleted pod: adservice-64956dfcbf-hmtjj
+2026-10-19T21:15:09Z   Normal    Killing             adservice-64956dfcbf-hmtjj               Stopping container server
+2026-10-19T21:15:55Z   Normal    Scheduled           adservice-64956dfcbf-49zqt               Successfully assigned default/adservice-64956dfcbf-49zqt to ip-172-31-44-97.ec2.internal
+2026-10-19T21:15:55Z   Normal    SuccessfulCreate    adservice-64956dfcbf                     Created pod: adservice-64956dfcbf-49zqt
+2026-10-19T21:15:56Z   Normal    Started             adservice-64956dfcbf-49zqt               Container started
+2026-10-19T21:15:56Z   Normal    Created             adservice-64956dfcbf-49zqt               Container created
+2026-10-19T21:15:56Z   Normal    Pulled              adservice-64956dfcbf-49zqt               Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:16:26Z   Warning   Unhealthy           adservice-64956dfcbf-49zqt               Liveness probe failed: timeout: failed to connect service "172.31.33.97:9555" within 1s: context deadline exceeded
+2026-10-19T21:16:27Z   Warning   Unhealthy           adservice-64956dfcbf-49zqt               Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-19T21:16:47Z   Normal    Created             frontend-58b4dc4d4d-kv8nm                Container created
+2026-10-19T21:16:47Z   Normal    Pulled              frontend-58b4dc4d4d-kv8nm                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:16:47Z   Normal    Started             frontend-58b4dc4d4d-kv8nm                Container started
+2026-10-19T21:16:47Z   Normal    Scheduled           frontend-58b4dc4d4d-kv8nm                Successfully assigned default/frontend-58b4dc4d4d-kv8nm to ip-172-31-26-114.ec2.internal
+2026-10-19T21:16:47Z   Normal    SuccessfulCreate    frontend-58b4dc4d4d                      Created pod: frontend-58b4dc4d4d-kv8nm
+2026-10-19T21:16:52Z   Normal    SuccessfulDelete    adservice-64956dfcbf                     Deleted pod: adservice-64956dfcbf-49zqt
+2026-10-19T21:16:52Z   Normal    Killing             adservice-64956dfcbf-49zqt               Stopping container server
+2026-10-19T21:17:39Z   Normal    Killing             shippingservice-7ff767d68f-6dkgw         Stopping container server
+2026-10-19T21:17:39Z   Normal    SuccessfulCreate    adservice-64956dfcbf                     Created pod: adservice-64956dfcbf-vjrql
+2026-10-19T21:17:39Z   Normal    Pulled              adservice-64956dfcbf-vjrql               Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:17:39Z   Normal    SuccessfulDelete    shippingservice-7ff767d68f               Deleted pod: shippingservice-7ff767d68f-6dkgw
+2026-10-19T21:17:39Z   Normal    Started             adservice-64956dfcbf-vjrql               Container started
+2026-10-19T21:17:39Z   Normal    Created             adservice-64956dfcbf-vjrql               Container created
+2026-10-19T21:17:39Z   Normal    Scheduled           adservice-64956dfcbf-vjrql               Successfully assigned default/adservice-64956dfcbf-vjrql to ip-172-31-44-97.ec2.internal
+2026-10-19T21:18:10Z   Warning   Unhealthy           adservice-64956dfcbf-vjrql               Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-19T21:18:10Z   Warning   Unhealthy           adservice-64956dfcbf-vjrql               Liveness probe failed: timeout: failed to connect service "172.31.33.97:9555" within 1s: context deadline exceeded
+2026-10-19T21:22:50Z   Normal    Killing             currencyservice-5c8cbd54c5-kznn8         Stopping container server
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-mxzlk                Stopping container server
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   productcatalogservice                    Scaled down replica set productcatalogservice-67944c9df7 from 2 to 1
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-l65wk
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    currencyservice-5c8cbd54c5               Deleted pod: currencyservice-5c8cbd54c5-kznn8
+2026-10-19T21:22:50Z   Normal    Killing             currencyservice-5c8cbd54c5-l65wk         Stopping container server
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-nh6p6                Stopping container server
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    productcatalogservice-67944c9df7         Deleted pod: productcatalogservice-67944c9df7-x5bxl
+2026-10-19T21:22:50Z   Normal    Killing             productcatalogservice-67944c9df7-x5bxl   Stopping container server
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-kv8nm                Stopping container server
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-h2csv                Stopping container server
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   frontend                                 Scaled down replica set frontend-58b4dc4d4d from 7 to 1
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-kv8nm
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-nh6p6
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   currencyservice                          Scaled down replica set currencyservice-5c8cbd54c5 from 3 to 1
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   checkoutservice                          Scaled down replica set checkoutservice-78b6bcbcc7 from 2 to 1
+2026-10-19T21:22:50Z   Normal    Killing             adservice-64956dfcbf-vjrql               Stopping container server
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    adservice-64956dfcbf                     Deleted pod: adservice-64956dfcbf-vjrql
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-9zlsk                Stopping container server
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    checkoutservice-78b6bcbcc7               Deleted pod: checkoutservice-78b6bcbcc7-npsm7
+2026-10-19T21:22:50Z   Normal    Killing             checkoutservice-78b6bcbcc7-npsm7         Stopping container server
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   cartservice                              Scaled down replica set cartservice-5f597b774 from 2 to 1
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   adservice                                Scaled down replica set adservice-64956dfcbf from 2 to 1
+2026-10-19T21:22:50Z   Normal    Killing             recommendationservice-5887f9f797-lstrh   Stopping container server
+2026-10-19T21:22:50Z   Normal    Killing             frontend-58b4dc4d4d-rshm6                Stopping container server
+2026-10-19T21:22:50Z   Normal    ScalingReplicaSet   recommendationservice                    Scaled down replica set recommendationservice-5887f9f797 from 2 to 1
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    recommendationservice-5887f9f797         Deleted pod: recommendationservice-5887f9f797-lstrh
+2026-10-19T21:22:50Z   Normal    SuccessfulDelete    cartservice-5f597b774                    Deleted pod: cartservice-5f597b774-vp7v4
+2026-10-19T21:22:50Z   Normal    Killing             cartservice-5f597b774-vp7v4              Stopping container server
+2026-10-19T21:27:18Z   Normal    SuccessfulCreate    checkoutservice-78b6bcbcc7               Created pod: checkoutservice-78b6bcbcc7-qfqkq
+2026-10-19T21:27:18Z   Normal    ScalingReplicaSet   checkoutservice                          Scaled up replica set checkoutservice-78b6bcbcc7 from 1 to 2
+2026-10-19T21:27:18Z   Normal    ScalingReplicaSet   shippingservice                          Scaled up replica set shippingservice-7ff767d68f from 1 to 2
+2026-10-19T21:27:18Z   Normal    SuccessfulCreate    shippingservice-7ff767d68f               Created pod: shippingservice-7ff767d68f-hq727
+2026-10-19T21:27:18Z   Normal    Scheduled           shippingservice-7ff767d68f-hq727         Successfully assigned default/shippingservice-7ff767d68f-hq727 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:27:18Z   Normal    Scheduled           checkoutservice-78b6bcbcc7-qfqkq         Successfully assigned default/checkoutservice-78b6bcbcc7-qfqkq to ip-172-31-26-114.ec2.internal
+2026-10-19T21:27:19Z   Normal    Started             shippingservice-7ff767d68f-hq727         Container started
+2026-10-19T21:27:19Z   Normal    Created             shippingservice-7ff767d68f-hq727         Container created
+2026-10-19T21:27:19Z   Normal    Pulled              shippingservice-7ff767d68f-hq727         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:19Z   Normal    Pulled              checkoutservice-78b6bcbcc7-qfqkq         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:19Z   Normal    Created             checkoutservice-78b6bcbcc7-qfqkq         Container created
+2026-10-19T21:27:19Z   Normal    Started             checkoutservice-78b6bcbcc7-qfqkq         Container started
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    currencyservice-5c8cbd54c5               Created pod: currencyservice-5c8cbd54c5-tscxz
+2026-10-19T21:27:20Z   Normal    Scheduled           frontend-58b4dc4d4d-c6s88                Successfully assigned default/frontend-58b4dc4d4d-c6s88 to ip-172-31-26-114.ec2.internal
+2026-10-19T21:27:20Z   Normal    Scheduled           recommendationservice-5887f9f797-9jtqs   Successfully assigned default/recommendationservice-5887f9f797-9jtqs to ip-172-31-2-196.ec2.internal
+2026-10-19T21:27:20Z   Normal    Scheduled           cartservice-5f597b774-hm4gq              Successfully assigned default/cartservice-5f597b774-hm4gq to ip-172-31-44-97.ec2.internal
+2026-10-19T21:27:20Z   Normal    Scheduled           frontend-58b4dc4d4d-qlzv9                Successfully assigned default/frontend-58b4dc4d4d-qlzv9 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:27:20Z   Normal    ScalingReplicaSet   recommendationservice                    Scaled up replica set recommendationservice-5887f9f797 from 1 to 2
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    frontend-58b4dc4d4d                      Created pod: frontend-58b4dc4d4d-qlzv9
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    recommendationservice-5887f9f797         Created pod: recommendationservice-5887f9f797-9jtqs
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    cartservice-5f597b774                    Created pod: cartservice-5f597b774-hm4gq
+2026-10-19T21:27:20Z   Normal    ScalingReplicaSet   cartservice                              Scaled up replica set cartservice-5f597b774 from 1 to 2
+2026-10-19T21:27:20Z   Normal    Scheduled           currencyservice-5c8cbd54c5-snc2t         Successfully assigned default/currencyservice-5c8cbd54c5-snc2t to ip-172-31-44-97.ec2.internal
+2026-10-19T21:27:20Z   Normal    ScalingReplicaSet   frontend                                 Scaled up replica set frontend-58b4dc4d4d from 1 to 6
+2026-10-19T21:27:20Z   Normal    Scheduled           currencyservice-5c8cbd54c5-tscxz         Successfully assigned default/currencyservice-5c8cbd54c5-tscxz to ip-172-31-26-114.ec2.internal
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    currencyservice-5c8cbd54c5               Created pod: currencyservice-5c8cbd54c5-snc2t
+2026-10-19T21:27:20Z   Normal    ScalingReplicaSet   productcatalogservice                    Scaled up replica set productcatalogservice-67944c9df7 from 1 to 2
+2026-10-19T21:27:20Z   Normal    SuccessfulCreate    productcatalogservice-67944c9df7         Created pod: productcatalogservice-67944c9df7-m2h7b
+2026-10-19T21:27:20Z   Normal    Scheduled           frontend-58b4dc4d4d-wvjw5                Successfully assigned default/frontend-58b4dc4d4d-wvjw5 to ip-172-31-26-114.ec2.internal
+2026-10-19T21:27:20Z   Normal    Scheduled           productcatalogservice-67944c9df7-m2h7b   Successfully assigned default/productcatalogservice-67944c9df7-m2h7b to ip-172-31-44-97.ec2.internal
+2026-10-19T21:27:20Z   Normal    ScalingReplicaSet   currencyservice                          Scaled up replica set currencyservice-5c8cbd54c5 from 1 to 3
+2026-10-19T21:27:20Z   Normal    Scheduled           frontend-58b4dc4d4d-4g58p                Successfully assigned default/frontend-58b4dc4d4d-4g58p to ip-172-31-75-103.ec2.internal
+2026-10-19T21:27:20Z   Normal    Scheduled           frontend-58b4dc4d4d-7pjpl                Successfully assigned default/frontend-58b4dc4d4d-7pjpl to ip-172-31-44-97.ec2.internal
+2026-10-19T21:27:21Z   Normal    Started             cartservice-5f597b774-hm4gq              Container started
+2026-10-19T21:27:21Z   Normal    Pulled              frontend-58b4dc4d4d-qlzv9                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Pulled              frontend-58b4dc4d4d-wvjw5                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Started             currencyservice-5c8cbd54c5-tscxz         Container started
+2026-10-19T21:27:21Z   Normal    Created             frontend-58b4dc4d4d-c6s88                Container created
+2026-10-19T21:27:21Z   Normal    Pulled              frontend-58b4dc4d4d-c6s88                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Created             frontend-58b4dc4d4d-wvjw5                Container created
+2026-10-19T21:27:21Z   Normal    Started             frontend-58b4dc4d4d-7pjpl                Container started
+2026-10-19T21:27:21Z   Normal    Created             frontend-58b4dc4d4d-7pjpl                Container created
+2026-10-19T21:27:21Z   Normal    Pulled              frontend-58b4dc4d4d-7pjpl                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Started             productcatalogservice-67944c9df7-m2h7b   Container started
+2026-10-19T21:27:21Z   Normal    Started             frontend-58b4dc4d4d-4g58p                Container started
+2026-10-19T21:27:21Z   Normal    Created             frontend-58b4dc4d4d-4g58p                Container created
+2026-10-19T21:27:21Z   Normal    Pulled              frontend-58b4dc4d4d-4g58p                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Created             productcatalogservice-67944c9df7-m2h7b   Container created
+2026-10-19T21:27:21Z   Normal    Pulled              productcatalogservice-67944c9df7-m2h7b   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Created             frontend-58b4dc4d4d-qlzv9                Container created
+2026-10-19T21:27:21Z   Normal    Pulled              cartservice-5f597b774-hm4gq              Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Created             cartservice-5f597b774-hm4gq              Container created
+2026-10-19T21:27:21Z   Normal    Started             frontend-58b4dc4d4d-qlzv9                Container started
+2026-10-19T21:27:21Z   Normal    Created             currencyservice-5c8cbd54c5-tscxz         Container created
+2026-10-19T21:27:21Z   Normal    Started             frontend-58b4dc4d4d-c6s88                Container started
+2026-10-19T21:27:21Z   Normal    Pulled              currencyservice-5c8cbd54c5-snc2t         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Started             frontend-58b4dc4d4d-wvjw5                Container started
+2026-10-19T21:27:21Z   Normal    Pulled              recommendationservice-5887f9f797-9jtqs   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:21Z   Normal    Created             recommendationservice-5887f9f797-9jtqs   Container created
+2026-10-19T21:27:21Z   Normal    Started             recommendationservice-5887f9f797-9jtqs   Container started
+2026-10-19T21:27:21Z   Normal    Created             currencyservice-5c8cbd54c5-snc2t         Container created
+2026-10-19T21:27:21Z   Normal    Started             currencyservice-5c8cbd54c5-snc2t         Container started
+2026-10-19T21:27:21Z   Normal    Pulled              currencyservice-5c8cbd54c5-tscxz         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:27:22Z   Warning   Unhealthy           productcatalogservice-67944c9df7-m2h7b   Readiness probe failed: timeout: failed to connect service "172.31.47.85:3550" within 1s: context deadline exceeded
+2026-10-19T21:27:23Z   Warning   Unhealthy           currencyservice-5c8cbd54c5-tscxz         Readiness probe failed: timeout: failed to connect service "172.31.16.111:7000" within 1s: context deadline exceeded
+2026-10-19T21:27:23Z   Warning   Unhealthy           currencyservice-5c8cbd54c5-snc2t         Readiness probe failed: timeout: failed to connect service "172.31.41.75:7000" within 1s: context deadline exceeded
+2026-10-19T21:27:27Z   Warning   Unhealthy           recommendationservice-5887f9f797-9jtqs   Liveness probe failed: timeout: failed to connect service "172.31.3.111:8080" within 1s: context deadline exceeded
+2026-10-19T21:27:28Z   Warning   Unhealthy           recommendationservice-5887f9f797-9jtqs   Readiness probe failed: timeout: failed to connect service "172.31.3.111:8080" within 1s: context deadline exceeded
+2026-10-19T21:27:42Z   Warning   Unhealthy           cartservice-5f597b774-hm4gq              Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-19T21:28:10Z   Normal    Killing             frontend-58b4dc4d4d-c6s88                Stopping container server
+2026-10-19T21:28:10Z   Normal    ScalingReplicaSet   frontend                                 Scaled down replica set frontend-58b4dc4d4d from 6 to 5
+2026-10-19T21:30:45Z   Normal    ScalingReplicaSet   frontend                                 Scaled up replica set frontend-58b4dc4d4d from 5 to 6
+2026-10-19T21:30:45Z   Normal    SuccessfulCreate    frontend-58b4dc4d4d                      Created pod: frontend-58b4dc4d4d-vrj99
+2026-10-19T21:30:45Z   Normal    Scheduled           frontend-58b4dc4d4d-vrj99                Successfully assigned default/frontend-58b4dc4d4d-vrj99 to ip-172-31-26-114.ec2.internal
+2026-10-19T21:30:46Z   Normal    Started             frontend-58b4dc4d4d-vrj99                Container started
+2026-10-19T21:30:46Z   Normal    Created             frontend-58b4dc4d4d-vrj99                Container created
+2026-10-19T21:30:46Z   Normal    Pulled              frontend-58b4dc4d4d-vrj99                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:34:04Z   Normal    Pulled              frontend-58b4dc4d4d-nzl28                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:34:04Z   Normal    Created             frontend-58b4dc4d4d-nzl28                Container created
+2026-10-19T21:34:04Z   Normal    Started             frontend-58b4dc4d4d-nzl28                Container started
+2026-10-19T21:34:04Z   Normal    Scheduled           frontend-58b4dc4d4d-nzl28                Successfully assigned default/frontend-58b4dc4d4d-nzl28 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:34:50Z   Normal    Scheduled           adservice-64956dfcbf-gx7s9               Successfully assigned default/adservice-64956dfcbf-gx7s9 to ip-172-31-26-114.ec2.internal
+2026-10-19T21:34:50Z   Normal    ScalingReplicaSet   adservice                                Scaled up replica set adservice-64956dfcbf from 1 to 2
+2026-10-19T21:34:50Z   Normal    SuccessfulCreate    adservice-64956dfcbf                     Created pod: adservice-64956dfcbf-gx7s9
+2026-10-19T21:34:51Z   Normal    Pulling             adservice-64956dfcbf-gx7s9               Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7"
+2026-10-19T21:34:52Z   Normal    ScalingReplicaSet   frontend                                 Scaled down replica set frontend-58b4dc4d4d from 7 to 6
+2026-10-19T21:34:52Z   Normal    SuccessfulDelete    frontend-58b4dc4d4d                      Deleted pod: frontend-58b4dc4d4d-nzl28
+2026-10-19T21:34:52Z   Normal    Killing             frontend-58b4dc4d4d-nzl28                Stopping container server
+2026-10-19T21:34:54Z   Normal    Started             adservice-64956dfcbf-gx7s9               Container started
+2026-10-19T21:34:54Z   Normal    Created             adservice-64956dfcbf-gx7s9               Container created
+2026-10-19T21:34:54Z   Normal    Pulled              adservice-64956dfcbf-gx7s9               Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" in 3.616s (3.616s including waiting). Image size: 109886572 bytes.
+2026-10-19T21:35:21Z   Warning   Unhealthy           adservice-64956dfcbf-gx7s9               Liveness probe failed: timeout: failed to connect service "172.31.19.121:9555" within 1s: context deadline exceeded
+2026-10-19T21:37:18Z   Normal    Scheduled           frontend-58b4dc4d4d-xmtq2                Successfully assigned default/frontend-58b4dc4d4d-xmtq2 to ip-172-31-2-196.ec2.internal
+2026-10-19T21:37:18Z   Normal    ScalingReplicaSet   frontend                                 Scaled up replica set frontend-58b4dc4d4d from 6 to 7
+2026-10-19T21:37:18Z   Normal    Pulled              frontend-58b4dc4d4d-xmtq2                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-19T21:37:18Z   Normal    Created             frontend-58b4dc4d4d-xmtq2                Container created
+2026-10-19T21:37:19Z   Normal    Started             frontend-58b4dc4d4d-xmtq2                Container started
+2026-10-19T21:38:04Z   Normal    ScalingReplicaSet   shippingservice                          Scaled down replica set shippingservice-7ff767d68f from 2 to 1
+2026-10-19T21:38:05Z   Normal    Killing             shippingservice-7ff767d68f-hq727         Stopping container server
+2026-10-19T21:38:05Z   Normal    SuccessfulDelete    shippingservice-7ff767d68f               Deleted pod: shippingservice-7ff767d68f-hq727

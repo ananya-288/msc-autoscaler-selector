@@ -1,0 +1,7 @@
+run=hpa_burst_runtest
+mode=hpa
+workload=burst
+start_utc=2026-10-20 19:16:11
+minutes=3
+target_cpu=50
+max_replicas=5

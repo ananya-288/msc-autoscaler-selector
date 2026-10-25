@@ -1,0 +1,12 @@
+NAME                    REFERENCE                          TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+adservice               Deployment/adservice               cpu: 21%/20%    1         2         1          15m
+cartservice             Deployment/cartservice             cpu: 35%/20%    1         2         2          15m
+checkoutservice         Deployment/checkoutservice         cpu: 36%/20%    1         2         2          15m
+currencyservice         Deployment/currencyservice         cpu: 149%/20%   1         2         2          15m
+emailservice            Deployment/emailservice            cpu: 16%/20%    1         2         2          15m
+frontend                Deployment/frontend                cpu: 195%/20%   1         2         2          15m
+paymentservice          Deployment/paymentservice          cpu: 17%/20%    1         2         1          15m
+productcatalogservice   Deployment/productcatalogservice   cpu: 62%/20%    1         2         2          15m
+recommendationservice   Deployment/recommendationservice   cpu: 94%/20%    1         2         2          15m
+redis-cart              Deployment/redis-cart              cpu: 12%/20%    1         2         2          15m
+shippingservice         Deployment/shippingservice         cpu: 19%/20%    1         2         2          15m

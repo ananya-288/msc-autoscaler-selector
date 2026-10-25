@@ -1,0 +1,656 @@
+TIME                   REASON                         OBJECT                                   MSG
+<nil>                  ScaledObjectReady              frontend-rps                             ScaledObject is ready for scaling
+<nil>                  KEDAScalerFailed               frontend-rps                             prometheus query api returned error. status: 403
+<nil>                  ScaledObjectReady              frontend-rps                             ScaledObject is ready for scaling
+<nil>                  KEDAScalersStopped             frontend-rps                             Stopped scalers watch
+<nil>                  ScaledObjectDeleted            frontend-rps                             ScaledObject was deleted
+<nil>                  KEDAScalerFailed               frontend-rps                             prometheus query api returned error. status: 403
+<nil>                  KEDAScalersStarted             frontend-rps                             Started scalers watch
+<nil>                  KEDAScalersStarted             frontend-rps                             Scaler prometheus is built
+<nil>                  KEDAScalersStarted             frontend-rps                             Scaler prometheus is built
+<nil>                  KEDAScalerFailed               frontend-rps                             prometheus query api returned error. status: 403
+<nil>                  KEDAScalersStarted             frontend-rps                             Scaler prometheus is built
+<nil>                  KEDAScalersStarted             frontend-rps                             Scaler prometheus is built
+<nil>                  KEDAScalerInfo                 frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo                 frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo                 frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerFailed               frontend-rps                             prometheus query api returned error. status: 403
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-h8zms
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-bxhbb                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-h8zms                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-8pjtr                Stopping container server
+2026-10-20T18:39:11Z   ScalingReplicaSet              frontend                                 Scaled down replica set frontend-689d88c7fd from 7 to 1
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-h8zms                Stopping container server
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-bxhbb                Stopping container server
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-rvh7z                Stopping container server
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-rlljz                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-rlljz                Stopping container server
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-rvh7z                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-bdd7h
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-bxhbb
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-rlljz
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-bdd7h                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-8pjtr
+2026-10-20T18:39:11Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-rvh7z
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-8pjtr                Stopping container linkerd-proxy
+2026-10-20T18:39:11Z   Killing                        frontend-689d88c7fd-bdd7h                Stopping container server
+2026-10-20T18:41:10Z   Scheduled                      promq                                    Successfully assigned default/promq to ip-172-31-15-60.ec2.internal
+2026-10-20T18:41:11Z   Started                        promq                                    Container started
+2026-10-20T18:41:11Z   Created                        promq                                    Container created
+2026-10-20T18:41:11Z   Started                        promq                                    Container started
+2026-10-20T18:41:11Z   Created                        promq                                    Container created
+2026-10-20T18:41:11Z   Pulled                         promq                                    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:41:11Z   Pulled                         promq                                    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:41:12Z   Pulling                        promq                                    Pulling image "curlimages/curl"
+2026-10-20T18:41:12Z   IssuedLeafCertificate          default                                  issued certificate for default.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 18:41:32 +0000 UTC: dc4112102dc1b5fad16a3fc5e61fcfa99d04236e58e2442ca26ac0abfab53e44
+2026-10-20T18:41:13Z   Pulled                         promq                                    Successfully pulled image "curlimages/curl" in 804ms (804ms including waiting). Image size: 10859107 bytes.
+2026-10-20T18:41:13Z   Started                        promq                                    Container started
+2026-10-20T18:41:13Z   Created                        promq                                    Container created
+2026-10-20T18:41:14Z   Killing                        promq                                    Stopping container linkerd-proxy
+2026-10-20T18:44:15Z   ResizeCompleted                currencyservice-78cd78d76b-6j64v         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"400m","memory":"128Mi"},"requests":{"cpu":"200m","memory":"64Mi"}}}],"generation":2}
+2026-10-20T18:44:15Z   ResizeStarted                  currencyservice-78cd78d76b-6j64v         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"400m","memory":"128Mi"},"requests":{"cpu":"200m","memory":"64Mi"}}}],"generation":2}
+2026-10-20T18:47:41Z   FailedComputeMetricsReplicas   keda-hpa-frontend-rps                    invalid metrics (1 invalid out of 1), first error is: failed to get s0-prometheus external metric value: failed to get s0-prometheus external metric: unable to get external metric default/s0-prometheus/&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}: unable to fetch metrics from external metrics API: rpc error: code = Unknown desc = error when getting metric values metric:s0-prometheus encountered error
+2026-10-20T18:49:56Z   FailedGetExternalMetric        keda-hpa-frontend-rps                    unable to get external metric default/s0-prometheus/&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}: unable to fetch metrics from external metrics API: rpc error: code = Unknown desc = error when getting metric values metric:s0-prometheus encountered error
+2026-10-20T18:53:56Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-689d88c7fd from 1 to 3
+2026-10-20T18:53:56Z   Scheduled                      frontend-689d88c7fd-n9lj6                Successfully assigned default/frontend-689d88c7fd-n9lj6 to ip-172-31-15-60.ec2.internal
+2026-10-20T18:53:56Z   SuccessfulRescale              keda-hpa-frontend-rps                    New size: 3; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-20T18:53:56Z   SuccessfulCreate               frontend-689d88c7fd                      Created pod: frontend-689d88c7fd-n9lj6
+2026-10-20T18:53:57Z   Started                        frontend-689d88c7fd-n9lj6                Container started
+2026-10-20T18:53:57Z   Created                        frontend-689d88c7fd-n9lj6                Container created
+2026-10-20T18:53:57Z   Pulled                         frontend-689d88c7fd-n9lj6                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:53:57Z   Started                        frontend-689d88c7fd-hx6th                Container started
+2026-10-20T18:53:57Z   SuccessfulCreate               frontend-689d88c7fd                      Created pod: frontend-689d88c7fd-hx6th
+2026-10-20T18:53:57Z   Created                        frontend-689d88c7fd-hx6th                Container created
+2026-10-20T18:53:57Z   Pulled                         frontend-689d88c7fd-hx6th                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:53:57Z   Scheduled                      frontend-689d88c7fd-hx6th                Successfully assigned default/frontend-689d88c7fd-hx6th to ip-172-31-95-130.ec2.internal
+2026-10-20T18:53:58Z   Created                        frontend-689d88c7fd-hx6th                Container created
+2026-10-20T18:53:58Z   Unhealthy                      frontend-689d88c7fd-n9lj6                Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T18:53:58Z   Created                        frontend-689d88c7fd-n9lj6                Container created
+2026-10-20T18:53:58Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 18:54:18 +0000 UTC: d8614be712b6e01a356aaf699d9a8e561048b465e86a337739fea529e4268ef8
+2026-10-20T18:53:58Z   Pulled                         frontend-689d88c7fd-hx6th                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:53:58Z   Started                        frontend-689d88c7fd-hx6th                Container started
+2026-10-20T18:53:58Z   Started                        frontend-689d88c7fd-n9lj6                Container started
+2026-10-20T18:53:58Z   Pulled                         frontend-689d88c7fd-n9lj6                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:53:59Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 18:54:19 +0000 UTC: 13b1d5ab03fc0baaea9fb61b560f1367001ff739d8c8e2ccf376c43f5fdce77b
+2026-10-20T18:53:59Z   Created                        frontend-689d88c7fd-hx6th                Container created
+2026-10-20T18:53:59Z   Pulled                         frontend-689d88c7fd-hx6th                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T18:53:59Z   Started                        frontend-689d88c7fd-hx6th                Container started
+2026-10-20T18:54:00Z   Pulled                         frontend-689d88c7fd-n9lj6                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T18:54:00Z   Started                        frontend-689d88c7fd-n9lj6                Container started
+2026-10-20T18:54:00Z   Created                        frontend-689d88c7fd-n9lj6                Container created
+2026-10-20T18:54:26Z   Scheduled                      frontend-689d88c7fd-trzm7                Successfully assigned default/frontend-689d88c7fd-trzm7 to ip-172-31-19-222.ec2.internal
+2026-10-20T18:54:26Z   SuccessfulRescale              keda-hpa-frontend-rps                    New size: 4; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-20T18:54:26Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-689d88c7fd from 3 to 4
+2026-10-20T18:54:26Z   SuccessfulCreate               frontend-689d88c7fd                      Created pod: frontend-689d88c7fd-trzm7
+2026-10-20T18:54:27Z   Started                        frontend-689d88c7fd-trzm7                Container started
+2026-10-20T18:54:27Z   Pulled                         frontend-689d88c7fd-trzm7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:54:27Z   Created                        frontend-689d88c7fd-trzm7                Container created
+2026-10-20T18:54:28Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 18:54:48 +0000 UTC: 3cf9541ed645df290297d78853e30f6921c795bbbfc4f43a02024bcf9bd9d258
+2026-10-20T18:54:28Z   Pulled                         frontend-689d88c7fd-trzm7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:54:28Z   Created                        frontend-689d88c7fd-trzm7                Container created
+2026-10-20T18:54:28Z   Started                        frontend-689d88c7fd-trzm7                Container started
+2026-10-20T18:54:29Z   Started                        frontend-689d88c7fd-trzm7                Container started
+2026-10-20T18:54:29Z   Created                        frontend-689d88c7fd-trzm7                Container created
+2026-10-20T18:54:29Z   Pulled                         frontend-689d88c7fd-trzm7                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T18:55:56Z   SuccessfulRescale              keda-hpa-frontend-rps                    New size: 5; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-20T18:55:57Z   Scheduled                      frontend-689d88c7fd-2rzc7                Successfully assigned default/frontend-689d88c7fd-2rzc7 to ip-172-31-47-36.ec2.internal
+2026-10-20T18:55:57Z   Created                        frontend-689d88c7fd-2rzc7                Container created
+2026-10-20T18:55:57Z   SuccessfulCreate               frontend-689d88c7fd                      Created pod: frontend-689d88c7fd-2rzc7
+2026-10-20T18:55:57Z   Started                        frontend-689d88c7fd-2rzc7                Container started
+2026-10-20T18:55:57Z   Pulled                         frontend-689d88c7fd-2rzc7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:55:57Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-689d88c7fd from 4 to 5
+2026-10-20T18:55:58Z   Unhealthy                      frontend-689d88c7fd-2rzc7                Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T18:55:58Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 18:56:18 +0000 UTC: 3a3467a2ede43572541881a48855a7abc6e96d0397f39f561ca7fb72a681966e
+2026-10-20T18:55:58Z   Started                        frontend-689d88c7fd-2rzc7                Container started
+2026-10-20T18:55:58Z   Created                        frontend-689d88c7fd-2rzc7                Container created
+2026-10-20T18:55:58Z   Pulled                         frontend-689d88c7fd-2rzc7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T18:56:00Z   Started                        frontend-689d88c7fd-2rzc7                Container started
+2026-10-20T18:56:00Z   Created                        frontend-689d88c7fd-2rzc7                Container created
+2026-10-20T18:56:00Z   Pulled                         frontend-689d88c7fd-2rzc7                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:01:22Z   ResizeCompleted                currencyservice-78cd78d76b-6j64v         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"600m","memory":"128Mi"},"requests":{"cpu":"300m","memory":"64Mi"}}}],"generation":3}
+2026-10-20T19:01:22Z   ResizeStarted                  currencyservice-78cd78d76b-6j64v         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"600m","memory":"128Mi"},"requests":{"cpu":"300m","memory":"64Mi"}}}],"generation":3}
+2026-10-20T19:14:48Z   ScalingReplicaSet              productcatalogservice                    Scaled down replica set productcatalogservice-54df6d8bb8 from 2 to 1
+2026-10-20T19:14:48Z   SuccessfulDelete               adservice-7b7d879d46                     Deleted pod: adservice-7b7d879d46-n8cgd
+2026-10-20T19:14:48Z   SuccessfulDelete               cartservice-6dd47c959c                   Deleted pod: cartservice-6dd47c959c-zkt8h
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-hx6th                Stopping container server
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-n9lj6                Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-n9lj6                Stopping container server
+2026-10-20T19:14:48Z   Killing                        checkoutservice-97d65689b-fkqm8          Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        checkoutservice-97d65689b-fkqm8          Stopping container server
+2026-10-20T19:14:48Z   ScalingReplicaSet              adservice                                Scaled down replica set adservice-7b7d879d46 from 2 to 1
+2026-10-20T19:14:48Z   ScalingReplicaSet              frontend                                 Scaled down replica set frontend-689d88c7fd from 5 to 1
+2026-10-20T19:14:48Z   SuccessfulDelete               checkoutservice-97d65689b                Deleted pod: checkoutservice-97d65689b-fkqm8
+2026-10-20T19:14:48Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-trzm7
+2026-10-20T19:14:48Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-n9lj6
+2026-10-20T19:14:48Z   ScalingReplicaSet              checkoutservice                          Scaled down replica set checkoutservice-97d65689b from 2 to 1
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-trzm7                Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-2rzc7
+2026-10-20T19:14:48Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-hx6th
+2026-10-20T19:14:48Z   ScalingReplicaSet              currencyservice                          Scaled down replica set currencyservice-78cd78d76b from 3 to 1
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-trzm7                Stopping container server
+2026-10-20T19:14:48Z   Killing                        productcatalogservice-54df6d8bb8-gptzm   Stopping container server
+2026-10-20T19:14:48Z   Killing                        adservice-7b7d879d46-n8cgd               Stopping container server
+2026-10-20T19:14:48Z   Killing                        adservice-7b7d879d46-n8cgd               Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        cartservice-6dd47c959c-zkt8h             Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        cartservice-6dd47c959c-zkt8h             Stopping container server
+2026-10-20T19:14:48Z   Killing                        currencyservice-78cd78d76b-6j64v         Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        currencyservice-78cd78d76b-6j64v         Stopping container server
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-2rzc7                Stopping container server
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-2rzc7                Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        currencyservice-78cd78d76b-z9rm6         Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        currencyservice-78cd78d76b-z9rm6         Stopping container server
+2026-10-20T19:14:48Z   SuccessfulDelete               currencyservice-78cd78d76b               Deleted pod: currencyservice-78cd78d76b-6j64v
+2026-10-20T19:14:48Z   SuccessfulDelete               currencyservice-78cd78d76b               Deleted pod: currencyservice-78cd78d76b-z9rm6
+2026-10-20T19:14:48Z   ScalingReplicaSet              cartservice                              Scaled down replica set cartservice-6dd47c959c from 2 to 1
+2026-10-20T19:14:48Z   ScalingReplicaSet              recommendationservice                    Scaled down replica set recommendationservice-59dbd645d8 from 2 to 1
+2026-10-20T19:14:48Z   Killing                        frontend-689d88c7fd-hx6th                Stopping container linkerd-proxy
+2026-10-20T19:14:48Z   Killing                        productcatalogservice-54df6d8bb8-gptzm   Stopping container linkerd-proxy
+2026-10-20T19:14:49Z   Killing                        recommendationservice-59dbd645d8-m86jm   Stopping container linkerd-proxy
+2026-10-20T19:14:49Z   SuccessfulDelete               productcatalogservice-54df6d8bb8         Deleted pod: productcatalogservice-54df6d8bb8-gptzm
+2026-10-20T19:14:49Z   Killing                        recommendationservice-59dbd645d8-m86jm   Stopping container server
+2026-10-20T19:14:49Z   SuccessfulDelete               recommendationservice-59dbd645d8         Deleted pod: recommendationservice-59dbd645d8-m86jm
+2026-10-20T19:14:50Z   Scheduled                      checkoutservice-5966d766bf-djxms         Successfully assigned default/checkoutservice-5966d766bf-djxms to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:50Z   ScalingReplicaSet              recommendationservice                    Scaled up replica set recommendationservice-7b5bb88d49 from 0 to 1
+2026-10-20T19:14:50Z   SuccessfulCreate               checkoutservice-5966d766bf               Created pod: checkoutservice-5966d766bf-djxms
+2026-10-20T19:14:50Z   SuccessfulCreate               frontend-67c75cf4df                      Created pod: frontend-67c75cf4df-8sscg
+2026-10-20T19:14:50Z   Scheduled                      productcatalogservice-6689d96f85-fwzx9   Successfully assigned default/productcatalogservice-6689d96f85-fwzx9 to ip-172-31-19-222.ec2.internal
+2026-10-20T19:14:50Z   SuccessfulCreate               productcatalogservice-6689d96f85         Created pod: productcatalogservice-6689d96f85-fwzx9
+2026-10-20T19:14:50Z   ScalingReplicaSet              productcatalogservice                    Scaled up replica set productcatalogservice-6689d96f85 from 0 to 1
+2026-10-20T19:14:50Z   SuccessfulCreate               currencyservice-99669446c                Created pod: currencyservice-99669446c-s6cgb
+2026-10-20T19:14:50Z   ScalingReplicaSet              currencyservice                          Scaled up replica set currencyservice-99669446c from 0 to 1
+2026-10-20T19:14:50Z   Scheduled                      adservice-bddbdf697-j97r7                Successfully assigned default/adservice-bddbdf697-j97r7 to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:50Z   Scheduled                      emailservice-67b4d765d5-d8bwv            Successfully assigned default/emailservice-67b4d765d5-d8bwv to ip-172-31-47-36.ec2.internal
+2026-10-20T19:14:50Z   SuccessfulCreate               emailservice-67b4d765d5                  Created pod: emailservice-67b4d765d5-d8bwv
+2026-10-20T19:14:50Z   Scheduled                      currencyservice-99669446c-s6cgb          Successfully assigned default/currencyservice-99669446c-s6cgb to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:50Z   Injected                       emailservice                             Linkerd sidecar proxy injected
+2026-10-20T19:14:50Z   ScalingReplicaSet              redis-cart                               Scaled up replica set redis-cart-6bfcd8b9d5 from 0 to 1
+2026-10-20T19:14:50Z   Injected                       redis-cart                               Linkerd sidecar proxy injected
+2026-10-20T19:14:50Z   ScalingReplicaSet              cartservice                              Scaled up replica set cartservice-6b5dd49d54 from 0 to 1
+2026-10-20T19:14:50Z   SuccessfulCreate               cartservice-6b5dd49d54                   Created pod: cartservice-6b5dd49d54-f22zn
+2026-10-20T19:14:50Z   ScalingReplicaSet              emailservice                             Scaled up replica set emailservice-67b4d765d5 from 0 to 1
+2026-10-20T19:14:50Z   Scheduled                      paymentservice-7f879c86d9-htl6q          Successfully assigned default/paymentservice-7f879c86d9-htl6q to ip-172-31-47-36.ec2.internal
+2026-10-20T19:14:50Z   Scheduled                      frontend-67c75cf4df-8sscg                Successfully assigned default/frontend-67c75cf4df-8sscg to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:50Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-67c75cf4df from 0 to 1
+2026-10-20T19:14:50Z   SuccessfulCreate               adservice-bddbdf697                      Created pod: adservice-bddbdf697-j97r7
+2026-10-20T19:14:50Z   ScalingReplicaSet              adservice                                Scaled up replica set adservice-bddbdf697 from 0 to 1
+2026-10-20T19:14:50Z   SuccessfulCreate               recommendationservice-7b5bb88d49         Created pod: recommendationservice-7b5bb88d49-vd5qj
+2026-10-20T19:14:50Z   Scheduled                      cartservice-6b5dd49d54-f22zn             Successfully assigned default/cartservice-6b5dd49d54-f22zn to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:50Z   ScalingReplicaSet              paymentservice                           Scaled up replica set paymentservice-7f879c86d9 from 0 to 1
+2026-10-20T19:14:50Z   Injected                       paymentservice                           Linkerd sidecar proxy injected
+2026-10-20T19:14:50Z   SuccessfulCreate               paymentservice-7f879c86d9                Created pod: paymentservice-7f879c86d9-htl6q
+2026-10-20T19:14:50Z   ScalingReplicaSet              checkoutservice                          Scaled up replica set checkoutservice-5966d766bf from 0 to 1
+2026-10-20T19:14:51Z   Pulled                         cartservice-6b5dd49d54-f22zn             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Created                        cartservice-6b5dd49d54-f22zn             Container created
+2026-10-20T19:14:51Z   Started                        cartservice-6b5dd49d54-f22zn             Container started
+2026-10-20T19:14:51Z   Started                        adservice-bddbdf697-j97r7                Container started
+2026-10-20T19:14:51Z   Created                        adservice-bddbdf697-j97r7                Container created
+2026-10-20T19:14:51Z   ScalingReplicaSet              shippingservice                          Scaled up replica set shippingservice-575b459bfc from 0 to 1
+2026-10-20T19:14:51Z   Pulled                         frontend-67c75cf4df-8sscg                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Injected                       shippingservice                          Linkerd sidecar proxy injected
+2026-10-20T19:14:51Z   Started                        paymentservice-7f879c86d9-htl6q          Container started
+2026-10-20T19:14:51Z   Created                        paymentservice-7f879c86d9-htl6q          Container created
+2026-10-20T19:14:51Z   Pulled                         paymentservice-7f879c86d9-htl6q          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   SuccessfulCreate               shippingservice-575b459bfc               Created pod: shippingservice-575b459bfc-j4wsh
+2026-10-20T19:14:51Z   Scheduled                      redis-cart-6bfcd8b9d5-qtjqg              Successfully assigned default/redis-cart-6bfcd8b9d5-qtjqg to ip-172-31-95-130.ec2.internal
+2026-10-20T19:14:51Z   Scheduled                      shippingservice-575b459bfc-j4wsh         Successfully assigned default/shippingservice-575b459bfc-j4wsh to ip-172-31-15-60.ec2.internal
+2026-10-20T19:14:51Z   Pulled                         checkoutservice-5966d766bf-djxms         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Pulled                         currencyservice-99669446c-s6cgb          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Created                        currencyservice-99669446c-s6cgb          Container created
+2026-10-20T19:14:51Z   Pulled                         productcatalogservice-6689d96f85-fwzx9   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Started                        emailservice-67b4d765d5-d8bwv            Container started
+2026-10-20T19:14:51Z   Created                        emailservice-67b4d765d5-d8bwv            Container created
+2026-10-20T19:14:51Z   Pulled                         emailservice-67b4d765d5-d8bwv            Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Created                        productcatalogservice-6689d96f85-fwzx9   Container created
+2026-10-20T19:14:51Z   Pulled                         adservice-bddbdf697-j97r7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Started                        productcatalogservice-6689d96f85-fwzx9   Container started
+2026-10-20T19:14:51Z   Created                        checkoutservice-5966d766bf-djxms         Container created
+2026-10-20T19:14:51Z   Started                        recommendationservice-7b5bb88d49-vd5qj   Container started
+2026-10-20T19:14:51Z   Created                        recommendationservice-7b5bb88d49-vd5qj   Container created
+2026-10-20T19:14:51Z   SuccessfulCreate               redis-cart-6bfcd8b9d5                    Created pod: redis-cart-6bfcd8b9d5-qtjqg
+2026-10-20T19:14:51Z   Pulled                         recommendationservice-7b5bb88d49-vd5qj   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:51Z   Scheduled                      recommendationservice-7b5bb88d49-vd5qj   Successfully assigned default/recommendationservice-7b5bb88d49-vd5qj to ip-172-31-19-222.ec2.internal
+2026-10-20T19:14:52Z   IssuedLeafCertificate          productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:12 +0000 UTC: ec3130aa607d8f09ed05a98de4c730d6028fde28ab52302cf5bc6d67a138c446
+2026-10-20T19:14:52Z   Started                        currencyservice-99669446c-s6cgb          Container started
+2026-10-20T19:14:52Z   Created                        redis-cart-6bfcd8b9d5-qtjqg              Container created
+2026-10-20T19:14:52Z   Started                        redis-cart-6bfcd8b9d5-qtjqg              Container started
+2026-10-20T19:14:52Z   Started                        productcatalogservice-6689d96f85-fwzx9   Container started
+2026-10-20T19:14:52Z   Created                        productcatalogservice-6689d96f85-fwzx9   Container created
+2026-10-20T19:14:52Z   Started                        checkoutservice-5966d766bf-djxms         Container started
+2026-10-20T19:14:52Z   Pulled                         redis-cart-6bfcd8b9d5-qtjqg              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   Pulled                         recommendationservice-7b5bb88d49-vd5qj   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   Created                        recommendationservice-7b5bb88d49-vd5qj   Container created
+2026-10-20T19:14:52Z   Started                        recommendationservice-7b5bb88d49-vd5qj   Container started
+2026-10-20T19:14:52Z   Pulled                         productcatalogservice-6689d96f85-fwzx9   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   Started                        shippingservice-575b459bfc-j4wsh         Container started
+2026-10-20T19:14:52Z   Created                        shippingservice-575b459bfc-j4wsh         Container created
+2026-10-20T19:14:52Z   IssuedLeafCertificate          recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:12 +0000 UTC: e5424c4e4d347042e32db3a0fe7b30b1d0c7fb5e0bee653342ba104767900674
+2026-10-20T19:14:52Z   Pulled                         shippingservice-575b459bfc-j4wsh         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   IssuedLeafCertificate          paymentservice                           issued certificate for paymentservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:12 +0000 UTC: 78e0974d0c356c400a22e0058d353ed95e8d640b121ad2015104f1222cc01bd1
+2026-10-20T19:14:52Z   Started                        paymentservice-7f879c86d9-htl6q          Container started
+2026-10-20T19:14:52Z   Started                        frontend-67c75cf4df-8sscg                Container started
+2026-10-20T19:14:52Z   Created                        frontend-67c75cf4df-8sscg                Container created
+2026-10-20T19:14:52Z   Created                        paymentservice-7f879c86d9-htl6q          Container created
+2026-10-20T19:14:52Z   Pulled                         emailservice-67b4d765d5-d8bwv            Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   Created                        emailservice-67b4d765d5-d8bwv            Container created
+2026-10-20T19:14:52Z   Started                        emailservice-67b4d765d5-d8bwv            Container started
+2026-10-20T19:14:52Z   Pulled                         paymentservice-7f879c86d9-htl6q          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:52Z   IssuedLeafCertificate          emailservice                             issued certificate for emailservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:12 +0000 UTC: 8a348cc5058036fb039ec5728854b329141ba0acb7079d2ce765cc437e532087
+2026-10-20T19:14:53Z   Pulled                         adservice-bddbdf697-j97r7                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   Created                        redis-cart-6bfcd8b9d5-qtjqg              Container created
+2026-10-20T19:14:53Z   Started                        checkoutservice-5966d766bf-djxms         Container started
+2026-10-20T19:14:53Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: da4135ac48cb3f2cbd122ed9266abd7d4ebaccca1fb28586ae426283a7661e47
+2026-10-20T19:14:53Z   Started                        shippingservice-575b459bfc-j4wsh         Container started
+2026-10-20T19:14:53Z   IssuedLeafCertificate          cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: 507b2028856fa1f99bab118e4828255967a7f1e5b6364f0fc91bf73f11b46920
+2026-10-20T19:14:53Z   Created                        checkoutservice-5966d766bf-djxms         Container created
+2026-10-20T19:14:53Z   Created                        adservice-bddbdf697-j97r7                Container created
+2026-10-20T19:14:53Z   Started                        adservice-bddbdf697-j97r7                Container started
+2026-10-20T19:14:53Z   IssuedLeafCertificate          default                                  issued certificate for default.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: 400e30d56ad4dca453c68998031490f7442110856d1723dfec8429e0ebc62839
+2026-10-20T19:14:53Z   Created                        shippingservice-575b459bfc-j4wsh         Container created
+2026-10-20T19:14:53Z   IssuedLeafCertificate          checkoutservice                          issued certificate for checkoutservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: 8a5dccfb60bb4a9bfa0e2c492efcb6f77b2411d7bd6684059e773b26c2c9f6b6
+2026-10-20T19:14:53Z   Pulled                         shippingservice-575b459bfc-j4wsh         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   Pulling                        emailservice-67b4d765d5-d8bwv            Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7"
+2026-10-20T19:14:53Z   Pulled                         currencyservice-99669446c-s6cgb          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   Created                        currencyservice-99669446c-s6cgb          Container created
+2026-10-20T19:14:53Z   Started                        currencyservice-99669446c-s6cgb          Container started
+2026-10-20T19:14:53Z   Pulled                         frontend-67c75cf4df-8sscg                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   Created                        frontend-67c75cf4df-8sscg                Container created
+2026-10-20T19:14:53Z   Started                        frontend-67c75cf4df-8sscg                Container started
+2026-10-20T19:14:53Z   Pulled                         redis-cart-6bfcd8b9d5-qtjqg              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   IssuedLeafCertificate          shippingservice                          issued certificate for shippingservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: aaead210562ad788646836ffae84fea8fdde499a915bafa1b3cb46e45667bd29
+2026-10-20T19:14:53Z   Started                        redis-cart-6bfcd8b9d5-qtjqg              Container started
+2026-10-20T19:14:53Z   Unhealthy                      redis-cart-6bfcd8b9d5-qtjqg              Startup probe failed: Get "http://172.31.86.105:4191/ready": dial tcp 172.31.86.105:4191: connect: connection refused
+2026-10-20T19:14:53Z   IssuedLeafCertificate          adservice                                issued certificate for adservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: 291e96676fca75817f9f9620483fecc8bacb20a0d701d7b15def47dab0ccb3df
+2026-10-20T19:14:53Z   Pulled                         cartservice-6b5dd49d54-f22zn             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   Created                        cartservice-6b5dd49d54-f22zn             Container created
+2026-10-20T19:14:53Z   Started                        cartservice-6b5dd49d54-f22zn             Container started
+2026-10-20T19:14:53Z   Pulled                         checkoutservice-5966d766bf-djxms         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:14:53Z   IssuedLeafCertificate          currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:15:13 +0000 UTC: c39a377050d0e061ca119e18484e493fa4981bd660d62e5716740c2043c1e950
+2026-10-20T19:14:53Z   Unhealthy                      currencyservice-99669446c-s6cgb          Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:14:53Z   Pulling                        paymentservice-7f879c86d9-htl6q          Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7"
+2026-10-20T19:14:53Z   Pulling                        productcatalogservice-6689d96f85-fwzx9   Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7"
+2026-10-20T19:14:54Z   Created                        cartservice-6b5dd49d54-f22zn             Container created
+2026-10-20T19:14:54Z   Pulled                         cartservice-6b5dd49d54-f22zn             Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:14:54Z   Started                        adservice-bddbdf697-j97r7                Container started
+2026-10-20T19:14:54Z   Created                        adservice-bddbdf697-j97r7                Container created
+2026-10-20T19:14:54Z   Pulled                         adservice-bddbdf697-j97r7                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:14:54Z   Started                        cartservice-6b5dd49d54-f22zn             Container started
+2026-10-20T19:14:54Z   Started                        checkoutservice-5966d766bf-djxms         Container started
+2026-10-20T19:14:54Z   Created                        checkoutservice-5966d766bf-djxms         Container created
+2026-10-20T19:14:54Z   Pulling                        shippingservice-575b459bfc-j4wsh         Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7"
+2026-10-20T19:14:54Z   Pulled                         checkoutservice-5966d766bf-djxms         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:14:55Z   Started                        currencyservice-99669446c-s6cgb          Container started
+2026-10-20T19:14:55Z   Pulled                         productcatalogservice-6689d96f85-fwzx9   Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" in 1.897s (1.897s including waiting). Image size: 10028947 bytes.
+2026-10-20T19:14:55Z   ScalingReplicaSet              redis-cart                               Scaled down replica set redis-cart-7f8cdbcd9b from 1 to 0
+2026-10-20T19:14:55Z   Killing                        checkoutservice-97d65689b-kfp79          Stopping container linkerd-proxy
+2026-10-20T19:14:55Z   Killing                        checkoutservice-97d65689b-kfp79          Stopping container server
+2026-10-20T19:14:55Z   SuccessfulDelete               checkoutservice-97d65689b                Deleted pod: checkoutservice-97d65689b-kfp79
+2026-10-20T19:14:55Z   Started                        shippingservice-575b459bfc-j4wsh         Container started
+2026-10-20T19:14:55Z   Created                        shippingservice-575b459bfc-j4wsh         Container created
+2026-10-20T19:14:55Z   Pulled                         currencyservice-99669446c-s6cgb          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:14:55Z   Killing                        redis-cart-7f8cdbcd9b-6gzmn              Stopping container redis
+2026-10-20T19:14:55Z   SuccessfulDelete               redis-cart-7f8cdbcd9b                    Deleted pod: redis-cart-7f8cdbcd9b-6gzmn
+2026-10-20T19:14:55Z   Pulled                         shippingservice-575b459bfc-j4wsh         Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7" in 1.261s (1.261s including waiting). Image size: 7631042 bytes.
+2026-10-20T19:14:55Z   ScalingReplicaSet              checkoutservice                          Scaled down replica set checkoutservice-97d65689b from 1 to 0
+2026-10-20T19:14:55Z   Pulled                         frontend-67c75cf4df-8sscg                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:14:55Z   Created                        frontend-67c75cf4df-8sscg                Container created
+2026-10-20T19:14:55Z   Started                        frontend-67c75cf4df-8sscg                Container started
+2026-10-20T19:14:55Z   Pulled                         redis-cart-6bfcd8b9d5-qtjqg              Container image "redis:alpine" already present on machine and can be accessed by the pod
+2026-10-20T19:14:55Z   Created                        redis-cart-6bfcd8b9d5-qtjqg              Container created
+2026-10-20T19:14:55Z   Started                        redis-cart-6bfcd8b9d5-qtjqg              Container started
+2026-10-20T19:14:55Z   Killing                        redis-cart-7f8cdbcd9b-6gzmn              Stopping container linkerd-proxy
+2026-10-20T19:14:55Z   Started                        productcatalogservice-6689d96f85-fwzx9   Container started
+2026-10-20T19:14:55Z   Created                        productcatalogservice-6689d96f85-fwzx9   Container created
+2026-10-20T19:14:55Z   Created                        currencyservice-99669446c-s6cgb          Container created
+2026-10-20T19:14:56Z   Killing                        productcatalogservice-54df6d8bb8-qfpnq   Stopping container server
+2026-10-20T19:14:56Z   ScalingReplicaSet              shippingservice                          Scaled down replica set shippingservice-f8bc47fbd from 1 to 0
+2026-10-20T19:14:56Z   Killing                        shippingservice-f8bc47fbd-lnq7q          Stopping container linkerd-proxy
+2026-10-20T19:14:56Z   Killing                        shippingservice-f8bc47fbd-lnq7q          Stopping container server
+2026-10-20T19:14:56Z   SuccessfulDelete               productcatalogservice-54df6d8bb8         Deleted pod: productcatalogservice-54df6d8bb8-qfpnq
+2026-10-20T19:14:56Z   Unhealthy                      currencyservice-99669446c-s6cgb          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:14:56Z   SuccessfulDelete               shippingservice-f8bc47fbd                Deleted pod: shippingservice-f8bc47fbd-lnq7q
+2026-10-20T19:14:56Z   ScalingReplicaSet              productcatalogservice                    Scaled down replica set productcatalogservice-54df6d8bb8 from 1 to 0
+2026-10-20T19:14:56Z   Killing                        productcatalogservice-54df6d8bb8-qfpnq   Stopping container linkerd-proxy
+2026-10-20T19:14:57Z   Unhealthy                      currencyservice-99669446c-s6cgb          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:14:58Z   Created                        emailservice-67b4d765d5-d8bwv            Container created
+2026-10-20T19:14:58Z   Started                        emailservice-67b4d765d5-d8bwv            Container started
+2026-10-20T19:14:58Z   Pulled                         emailservice-67b4d765d5-d8bwv            Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7" in 4.653s (4.653s including waiting). Image size: 40748054 bytes.
+2026-10-20T19:14:59Z   Unhealthy                      emailservice-67b4d765d5-d8bwv            Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:15:01Z   Started                        paymentservice-7f879c86d9-htl6q          Container started
+2026-10-20T19:15:01Z   Pulled                         paymentservice-7f879c86d9-htl6q          Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7" in 7.851s (7.851s including waiting). Image size: 49012100 bytes.
+2026-10-20T19:15:01Z   Created                        paymentservice-7f879c86d9-htl6q          Container created
+2026-10-20T19:15:02Z   Unhealthy                      paymentservice-7f879c86d9-htl6q          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:15:03Z   Unhealthy                      paymentservice-7f879c86d9-htl6q          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:15:06Z   Killing                        recommendationservice-7b5bb88d49-vd5qj   Container server failed liveness probe, will be restarted
+2026-10-20T19:15:06Z   Unhealthy                      emailservice-67b4d765d5-d8bwv            Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:15:07Z   ScalingReplicaSet              frontend                                 Scaled down replica set frontend-689d88c7fd from 1 to 0
+2026-10-20T19:15:07Z   Killing                        frontend-689d88c7fd-phwzd                Stopping container server
+2026-10-20T19:15:07Z   Killing                        frontend-689d88c7fd-phwzd                Stopping container linkerd-proxy
+2026-10-20T19:15:07Z   Killing                        currencyservice-78cd78d76b-nhrj7         Stopping container linkerd-proxy
+2026-10-20T19:15:07Z   Killing                        currencyservice-78cd78d76b-nhrj7         Stopping container server
+2026-10-20T19:15:07Z   SuccessfulDelete               currencyservice-78cd78d76b               Deleted pod: currencyservice-78cd78d76b-nhrj7
+2026-10-20T19:15:07Z   SuccessfulDelete               frontend-689d88c7fd                      Deleted pod: frontend-689d88c7fd-phwzd
+2026-10-20T19:15:07Z   ScalingReplicaSet              currencyservice                          Scaled down replica set currencyservice-78cd78d76b from 1 to 0
+2026-10-20T19:15:09Z   Unhealthy                      emailservice-67b4d765d5-d8bwv            Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:15:11Z   Killing                        recommendationservice-59dbd645d8-zn9m4   Stopping container linkerd-proxy
+2026-10-20T19:15:11Z   Killing                        recommendationservice-59dbd645d8-zn9m4   Stopping container server
+2026-10-20T19:15:11Z   Pulled                         recommendationservice-7b5bb88d49-vd5qj   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:15:11Z   Created                        recommendationservice-7b5bb88d49-vd5qj   Container created
+2026-10-20T19:15:11Z   Started                        recommendationservice-7b5bb88d49-vd5qj   Container started
+2026-10-20T19:15:11Z   Unhealthy                      cartservice-6b5dd49d54-f22zn             Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:15:11Z   ScalingReplicaSet              recommendationservice                    Scaled down replica set recommendationservice-59dbd645d8 from 1 to 0
+2026-10-20T19:15:11Z   SuccessfulDelete               recommendationservice-59dbd645d8         Deleted pod: recommendationservice-59dbd645d8-zn9m4
+2026-10-20T19:15:12Z   Unhealthy                      recommendationservice-7b5bb88d49-vd5qj   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:15:13Z   ScalingReplicaSet              paymentservice                           Scaled down replica set paymentservice-67f8978b98 from 1 to 0
+2026-10-20T19:15:13Z   Killing                        paymentservice-67f8978b98-79w8q          Stopping container linkerd-proxy
+2026-10-20T19:15:13Z   SuccessfulDelete               paymentservice-67f8978b98                Deleted pod: paymentservice-67f8978b98-79w8q
+2026-10-20T19:15:13Z   Killing                        paymentservice-67f8978b98-79w8q          Stopping container server
+2026-10-20T19:15:14Z   SuccessfulDelete               emailservice-7465f5655d                  Deleted pod: emailservice-7465f5655d-kzppd
+2026-10-20T19:15:14Z   Killing                        emailservice-7465f5655d-kzppd            Stopping container linkerd-proxy
+2026-10-20T19:15:14Z   Killing                        emailservice-7465f5655d-kzppd            Stopping container server
+2026-10-20T19:15:14Z   ScalingReplicaSet              emailservice                             Scaled down replica set emailservice-7465f5655d from 1 to 0
+2026-10-20T19:15:16Z   Killing                        cartservice-6dd47c959c-6c26r             Stopping container linkerd-proxy
+2026-10-20T19:15:16Z   ScalingReplicaSet              cartservice                              Scaled down replica set cartservice-6dd47c959c from 1 to 0
+2026-10-20T19:15:16Z   Killing                        cartservice-6dd47c959c-6c26r             Stopping container server
+2026-10-20T19:15:16Z   SuccessfulDelete               cartservice-6dd47c959c                   Deleted pod: cartservice-6dd47c959c-6c26r
+2026-10-20T19:15:18Z   Unhealthy                      recommendationservice-7b5bb88d49-vd5qj   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:15:21Z   Unhealthy                      recommendationservice-7b5bb88d49-vd5qj   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:15:21Z   Unhealthy                      adservice-bddbdf697-j97r7                Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:15:27Z   Killing                        adservice-7b7d879d46-jwgqx               Stopping container linkerd-proxy
+2026-10-20T19:15:27Z   Killing                        adservice-7b7d879d46-jwgqx               Stopping container server
+2026-10-20T19:15:27Z   ScalingReplicaSet              adservice                                Scaled down replica set adservice-7b7d879d46 from 1 to 0
+2026-10-20T19:15:27Z   SuccessfulDelete               adservice-7b7d879d46                     Deleted pod: adservice-7b7d879d46-jwgqx
+2026-10-20T19:15:28Z   Unhealthy                      adservice-7b7d879d46-jwgqx               Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:16:35Z   SuccessfulCreate               frontend-67c75cf4df                      Created pod: frontend-67c75cf4df-q2dzp
+2026-10-20T19:16:35Z   SuccessfulRescale              frontend                                 New size: 4; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:35Z   Scheduled                      frontend-67c75cf4df-q2dzp                Successfully assigned default/frontend-67c75cf4df-q2dzp to ip-172-31-19-222.ec2.internal
+2026-10-20T19:16:35Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-67c75cf4df from 1 to 4
+2026-10-20T19:16:36Z   Created                        frontend-67c75cf4df-9kf6z                Container created
+2026-10-20T19:16:36Z   SuccessfulCreate               frontend-67c75cf4df                      Created pod: frontend-67c75cf4df-llqrr
+2026-10-20T19:16:36Z   Started                        frontend-67c75cf4df-llqrr                Container started
+2026-10-20T19:16:36Z   SuccessfulCreate               frontend-67c75cf4df                      Created pod: frontend-67c75cf4df-9kf6z
+2026-10-20T19:16:36Z   Pulled                         frontend-67c75cf4df-9kf6z                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:36Z   Scheduled                      frontend-67c75cf4df-9kf6z                Successfully assigned default/frontend-67c75cf4df-9kf6z to ip-172-31-15-60.ec2.internal
+2026-10-20T19:16:36Z   Scheduled                      frontend-67c75cf4df-llqrr                Successfully assigned default/frontend-67c75cf4df-llqrr to ip-172-31-47-36.ec2.internal
+2026-10-20T19:16:36Z   Started                        frontend-67c75cf4df-9kf6z                Container started
+2026-10-20T19:16:36Z   Pulled                         frontend-67c75cf4df-q2dzp                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:36Z   Pulled                         frontend-67c75cf4df-llqrr                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:36Z   Pulled                         frontend-67c75cf4df-q2dzp                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:36Z   Created                        frontend-67c75cf4df-q2dzp                Container created
+2026-10-20T19:16:36Z   Created                        frontend-67c75cf4df-llqrr                Container created
+2026-10-20T19:16:36Z   Created                        frontend-67c75cf4df-q2dzp                Container created
+2026-10-20T19:16:36Z   Started                        frontend-67c75cf4df-q2dzp                Container started
+2026-10-20T19:16:37Z   Pulled                         frontend-67c75cf4df-9kf6z                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:37Z   Started                        frontend-67c75cf4df-q2dzp                Container started
+2026-10-20T19:16:37Z   Created                        frontend-67c75cf4df-q2dzp                Container created
+2026-10-20T19:16:37Z   Started                        frontend-67c75cf4df-q2dzp                Container started
+2026-10-20T19:16:37Z   Created                        frontend-67c75cf4df-llqrr                Container created
+2026-10-20T19:16:37Z   Pulled                         frontend-67c75cf4df-llqrr                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:37Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:16:57 +0000 UTC: e49790dc6d44c8c27a6b4019f76946bc7e02aff911a346a488ae928aac82759f
+2026-10-20T19:16:37Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:16:57 +0000 UTC: 3d556154dc5057e509bd0b87c0f1d81cb9da59a2782cf49c9fe2eb76d1d31b07
+2026-10-20T19:16:37Z   Created                        frontend-67c75cf4df-9kf6z                Container created
+2026-10-20T19:16:37Z   Started                        frontend-67c75cf4df-9kf6z                Container started
+2026-10-20T19:16:37Z   Pulled                         frontend-67c75cf4df-q2dzp                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:38Z   ScalingReplicaSet              productcatalogservice                    Scaled up replica set productcatalogservice-6689d96f85 from 1 to 2
+2026-10-20T19:16:38Z   SuccessfulCreate               productcatalogservice-6689d96f85         Created pod: productcatalogservice-6689d96f85-9znsg
+2026-10-20T19:16:38Z   Scheduled                      productcatalogservice-6689d96f85-9znsg   Successfully assigned default/productcatalogservice-6689d96f85-9znsg to ip-172-31-95-130.ec2.internal
+2026-10-20T19:16:38Z   Created                        frontend-67c75cf4df-llqrr                Container created
+2026-10-20T19:16:38Z   Started                        frontend-67c75cf4df-llqrr                Container started
+2026-10-20T19:16:38Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:16:58 +0000 UTC: f221d0d9a6870722b53ff306e7ff76df03813e2700aa60785693d045edfa09ec
+2026-10-20T19:16:38Z   Pulled                         frontend-67c75cf4df-llqrr                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:38Z   SuccessfulRescale              productcatalogservice                    New size: 2; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:39Z   Started                        frontend-67c75cf4df-9kf6z                Container started
+2026-10-20T19:16:39Z   Created                        frontend-67c75cf4df-9kf6z                Container created
+2026-10-20T19:16:39Z   Pulled                         productcatalogservice-6689d96f85-9znsg   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:39Z   Created                        productcatalogservice-6689d96f85-9znsg   Container created
+2026-10-20T19:16:39Z   Started                        productcatalogservice-6689d96f85-9znsg   Container started
+2026-10-20T19:16:39Z   Started                        frontend-67c75cf4df-llqrr                Container started
+2026-10-20T19:16:39Z   Pulled                         frontend-67c75cf4df-9kf6z                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:40Z   IssuedLeafCertificate          productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:00 +0000 UTC: 75a0a426f6b8a9fb03f5298be5d5ed068eeeaec89d9d7f9fd21c0e443636af53
+2026-10-20T19:16:40Z   Pulled                         productcatalogservice-6689d96f85-9znsg   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:40Z   SuccessfulCreate               recommendationservice-7b5bb88d49         Created pod: recommendationservice-7b5bb88d49-ncprs
+2026-10-20T19:16:40Z   Started                        productcatalogservice-6689d96f85-9znsg   Container started
+2026-10-20T19:16:40Z   Created                        productcatalogservice-6689d96f85-9znsg   Container created
+2026-10-20T19:16:40Z   SuccessfulRescale              recommendationservice                    New size: 2; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:40Z   ScalingReplicaSet              recommendationservice                    Scaled up replica set recommendationservice-7b5bb88d49 from 1 to 2
+2026-10-20T19:16:40Z   Scheduled                      recommendationservice-7b5bb88d49-ncprs   Successfully assigned default/recommendationservice-7b5bb88d49-ncprs to ip-172-31-73-36.ec2.internal
+2026-10-20T19:16:41Z   Created                        productcatalogservice-6689d96f85-9znsg   Container created
+2026-10-20T19:16:41Z   Created                        recommendationservice-7b5bb88d49-ncprs   Container created
+2026-10-20T19:16:41Z   Started                        recommendationservice-7b5bb88d49-ncprs   Container started
+2026-10-20T19:16:41Z   Pulled                         recommendationservice-7b5bb88d49-ncprs   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:41Z   Started                        productcatalogservice-6689d96f85-9znsg   Container started
+2026-10-20T19:16:41Z   Pulled                         productcatalogservice-6689d96f85-9znsg   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:42Z   Pulled                         recommendationservice-7b5bb88d49-ncprs   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:42Z   IssuedLeafCertificate          recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:02 +0000 UTC: dc6d4cf90ab76527f4fc83faf20707e10eec68eb87e67f70194f874a0ff05c10
+2026-10-20T19:16:42Z   Created                        recommendationservice-7b5bb88d49-ncprs   Container created
+2026-10-20T19:16:42Z   Started                        recommendationservice-7b5bb88d49-ncprs   Container started
+2026-10-20T19:16:43Z   SuccessfulRescale              adservice                                New size: 2; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:43Z   ScalingReplicaSet              adservice                                Scaled up replica set adservice-bddbdf697 from 1 to 2
+2026-10-20T19:16:43Z   Pulling                        recommendationservice-7b5bb88d49-ncprs   Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7"
+2026-10-20T19:16:43Z   Injected                       adservice                                Linkerd sidecar proxy injected
+2026-10-20T19:16:43Z   Scheduled                      adservice-bddbdf697-f7hg4                Successfully assigned default/adservice-bddbdf697-f7hg4 to ip-172-31-19-222.ec2.internal
+2026-10-20T19:16:43Z   SuccessfulCreate               adservice-bddbdf697                      Created pod: adservice-bddbdf697-f7hg4
+2026-10-20T19:16:44Z   SuccessfulRescale              cartservice                              New size: 2; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:44Z   Created                        adservice-bddbdf697-f7hg4                Container created
+2026-10-20T19:16:44Z   Pulled                         adservice-bddbdf697-f7hg4                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:44Z   Created                        adservice-bddbdf697-f7hg4                Container created
+2026-10-20T19:16:44Z   Started                        adservice-bddbdf697-f7hg4                Container started
+2026-10-20T19:16:44Z   Pulled                         adservice-bddbdf697-f7hg4                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:45Z   Started                        cartservice-6b5dd49d54-v44pb             Container started
+2026-10-20T19:16:45Z   Pulling                        adservice-bddbdf697-f7hg4                Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7"
+2026-10-20T19:16:45Z   IssuedLeafCertificate          adservice                                issued certificate for adservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:05 +0000 UTC: 8c0a1d68f9ec1209c561aad0f1a46098e066411cc08dc94062f39006ef2389db
+2026-10-20T19:16:45Z   SuccessfulCreate               cartservice-6b5dd49d54                   Created pod: cartservice-6b5dd49d54-v44pb
+2026-10-20T19:16:45Z   Created                        cartservice-6b5dd49d54-v44pb             Container created
+2026-10-20T19:16:45Z   ScalingReplicaSet              cartservice                              Scaled up replica set cartservice-6b5dd49d54 from 1 to 2
+2026-10-20T19:16:45Z   Pulled                         cartservice-6b5dd49d54-v44pb             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:45Z   Scheduled                      cartservice-6b5dd49d54-v44pb             Successfully assigned default/cartservice-6b5dd49d54-v44pb to ip-172-31-47-36.ec2.internal
+2026-10-20T19:16:45Z   Started                        adservice-bddbdf697-f7hg4                Container started
+2026-10-20T19:16:46Z   Pulled                         recommendationservice-7b5bb88d49-ncprs   Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" in 3.267s (3.267s including waiting). Image size: 40089154 bytes.
+2026-10-20T19:16:46Z   Created                        cartservice-6b5dd49d54-v44pb             Container created
+2026-10-20T19:16:46Z   Started                        recommendationservice-7b5bb88d49-ncprs   Container started
+2026-10-20T19:16:46Z   Pulled                         cartservice-6b5dd49d54-v44pb             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:46Z   Created                        recommendationservice-7b5bb88d49-ncprs   Container created
+2026-10-20T19:16:47Z   IssuedLeafCertificate          cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:07 +0000 UTC: 16fe58710f4bd92551a5cc61ecd7779098eb48e7b91d774c2fb1beb01a2853f9
+2026-10-20T19:16:47Z   SuccessfulCreate               currencyservice-99669446c                Created pod: currencyservice-99669446c-fbxlb
+2026-10-20T19:16:47Z   ScalingReplicaSet              currencyservice                          Scaled up replica set currencyservice-99669446c from 1 to 4
+2026-10-20T19:16:47Z   Unhealthy                      recommendationservice-7b5bb88d49-ncprs   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:16:47Z   SuccessfulRescale              currencyservice                          New size: 4; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:47Z   Pulling                        cartservice-6b5dd49d54-v44pb             Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7"
+2026-10-20T19:16:47Z   Started                        cartservice-6b5dd49d54-v44pb             Container started
+2026-10-20T19:16:47Z   Scheduled                      currencyservice-99669446c-nq7jt          Successfully assigned default/currencyservice-99669446c-nq7jt to ip-172-31-15-60.ec2.internal
+2026-10-20T19:16:47Z   SuccessfulCreate               currencyservice-99669446c                Created pod: currencyservice-99669446c-nq7jt
+2026-10-20T19:16:48Z   Pulled                         currencyservice-99669446c-nq7jt          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:48Z   Scheduled                      currencyservice-99669446c-fbxlb          Successfully assigned default/currencyservice-99669446c-fbxlb to ip-172-31-19-222.ec2.internal
+2026-10-20T19:16:48Z   Started                        currencyservice-99669446c-fbxlb          Container started
+2026-10-20T19:16:48Z   SuccessfulCreate               currencyservice-99669446c                Created pod: currencyservice-99669446c-ld92b
+2026-10-20T19:16:48Z   Created                        currencyservice-99669446c-fbxlb          Container created
+2026-10-20T19:16:48Z   Pulled                         currencyservice-99669446c-fbxlb          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:48Z   Started                        currencyservice-99669446c-ld92b          Container started
+2026-10-20T19:16:48Z   Started                        currencyservice-99669446c-nq7jt          Container started
+2026-10-20T19:16:48Z   Created                        currencyservice-99669446c-nq7jt          Container created
+2026-10-20T19:16:48Z   Created                        currencyservice-99669446c-ld92b          Container created
+2026-10-20T19:16:48Z   Pulled                         currencyservice-99669446c-ld92b          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:48Z   Scheduled                      currencyservice-99669446c-ld92b          Successfully assigned default/currencyservice-99669446c-ld92b to ip-172-31-73-36.ec2.internal
+2026-10-20T19:16:49Z   Created                        cartservice-6b5dd49d54-v44pb             Container created
+2026-10-20T19:16:49Z   Pulled                         cartservice-6b5dd49d54-v44pb             Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" in 1.671s (1.672s including waiting). Image size: 17877810 bytes.
+2026-10-20T19:16:49Z   Started                        cartservice-6b5dd49d54-v44pb             Container started
+2026-10-20T19:16:49Z   Pulled                         currencyservice-99669446c-nq7jt          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:49Z   Created                        currencyservice-99669446c-fbxlb          Container created
+2026-10-20T19:16:49Z   Created                        currencyservice-99669446c-nq7jt          Container created
+2026-10-20T19:16:49Z   Started                        currencyservice-99669446c-nq7jt          Container started
+2026-10-20T19:16:49Z   IssuedLeafCertificate          currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:09 +0000 UTC: 54e8c546ff75beb4fd1c40f8fa297fd9b4312d6ae91deeff71fa47b4d63b7164
+2026-10-20T19:16:49Z   Pulled                         currencyservice-99669446c-fbxlb          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:50Z   Started                        currencyservice-99669446c-ld92b          Container started
+2026-10-20T19:16:50Z   Pulled                         adservice-bddbdf697-f7hg4                Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" in 4.691s (4.691s including waiting). Image size: 109886572 bytes.
+2026-10-20T19:16:50Z   Unhealthy                      currencyservice-99669446c-fbxlb          Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:16:50Z   Started                        currencyservice-99669446c-fbxlb          Container started
+2026-10-20T19:16:50Z   Pulled                         currencyservice-99669446c-nq7jt          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:50Z   Created                        currencyservice-99669446c-nq7jt          Container created
+2026-10-20T19:16:50Z   Started                        currencyservice-99669446c-nq7jt          Container started
+2026-10-20T19:16:50Z   Started                        adservice-bddbdf697-f7hg4                Container started
+2026-10-20T19:16:50Z   Created                        adservice-bddbdf697-f7hg4                Container created
+2026-10-20T19:16:50Z   Created                        currencyservice-99669446c-ld92b          Container created
+2026-10-20T19:16:50Z   Unhealthy                      currencyservice-99669446c-ld92b          Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:16:50Z   ScalingReplicaSet              frontend                                 Scaled up replica set frontend-67c75cf4df from 4 to 5
+2026-10-20T19:16:50Z   Injected                       frontend                                 Linkerd sidecar proxy injected
+2026-10-20T19:16:50Z   SuccessfulRescale              frontend                                 New size: 5; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:16:50Z   IssuedLeafCertificate          currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:10 +0000 UTC: e6d1ddc0efbc3dca2830bb661f1a7c935c4cfe94c6754cbeeddde37f12148974
+2026-10-20T19:16:50Z   IssuedLeafCertificate          currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:10 +0000 UTC: bf399ea83031d3ecfc12a2e10eea405ed459c2e343a45f0f0a3f54745befde04
+2026-10-20T19:16:50Z   Pulled                         currencyservice-99669446c-ld92b          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:51Z   Pulled                         currencyservice-99669446c-fbxlb          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:51Z   Pulled                         frontend-67c75cf4df-g24qr                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:51Z   Started                        frontend-67c75cf4df-g24qr                Container started
+2026-10-20T19:16:51Z   Scheduled                      frontend-67c75cf4df-g24qr                Successfully assigned default/frontend-67c75cf4df-g24qr to ip-172-31-73-36.ec2.internal
+2026-10-20T19:16:51Z   Created                        frontend-67c75cf4df-g24qr                Container created
+2026-10-20T19:16:51Z   SuccessfulCreate               frontend-67c75cf4df                      Created pod: frontend-67c75cf4df-g24qr
+2026-10-20T19:16:51Z   Created                        currencyservice-99669446c-fbxlb          Container created
+2026-10-20T19:16:51Z   Unhealthy                      currencyservice-99669446c-nq7jt          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:16:52Z   Pulled                         frontend-67c75cf4df-g24qr                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:16:52Z   Pulling                        currencyservice-99669446c-ld92b          Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7"
+2026-10-20T19:16:52Z   IssuedLeafCertificate          frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:12 +0000 UTC: eb822639e9123a8d9d22a3efcbffe21c9a310e000a06e9c92e296d27e16bb412
+2026-10-20T19:16:52Z   Unhealthy                      currencyservice-99669446c-nq7jt          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:16:52Z   Unhealthy                      frontend-67c75cf4df-g24qr                Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:16:52Z   Started                        currencyservice-99669446c-fbxlb          Container started
+2026-10-20T19:16:52Z   Started                        frontend-67c75cf4df-g24qr                Container started
+2026-10-20T19:16:52Z   Created                        frontend-67c75cf4df-g24qr                Container created
+2026-10-20T19:16:53Z   Unhealthy                      currencyservice-99669446c-fbxlb          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:16:53Z   Unhealthy                      currencyservice-99669446c-fbxlb          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:16:54Z   Pulled                         frontend-67c75cf4df-g24qr                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:16:54Z   Created                        frontend-67c75cf4df-g24qr                Container created
+2026-10-20T19:16:54Z   Started                        frontend-67c75cf4df-g24qr                Container started
+2026-10-20T19:16:55Z   Unhealthy                      recommendationservice-7b5bb88d49-ncprs   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:16:58Z   Started                        currencyservice-99669446c-ld92b          Container started
+2026-10-20T19:16:58Z   Unhealthy                      recommendationservice-7b5bb88d49-ncprs   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:16:58Z   Pulled                         currencyservice-99669446c-ld92b          Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" in 6.472s (6.472s including waiting). Image size: 50756989 bytes.
+2026-10-20T19:16:58Z   Created                        currencyservice-99669446c-ld92b          Container created
+2026-10-20T19:16:59Z   Unhealthy                      currencyservice-99669446c-ld92b          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:17:00Z   Unhealthy                      currencyservice-99669446c-ld92b          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:17:01Z   SuccessfulCreate               checkoutservice-5966d766bf               Created pod: checkoutservice-5966d766bf-cm4sh
+2026-10-20T19:17:01Z   Injected                       checkoutservice                          Linkerd sidecar proxy injected
+2026-10-20T19:17:01Z   SuccessfulRescale              checkoutservice                          New size: 2; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:17:01Z   ScalingReplicaSet              checkoutservice                          Scaled up replica set checkoutservice-5966d766bf from 1 to 2
+2026-10-20T19:17:01Z   Scheduled                      checkoutservice-5966d766bf-cm4sh         Successfully assigned default/checkoutservice-5966d766bf-cm4sh to ip-172-31-15-60.ec2.internal
+2026-10-20T19:17:02Z   Started                        checkoutservice-5966d766bf-cm4sh         Container started
+2026-10-20T19:17:02Z   Created                        checkoutservice-5966d766bf-cm4sh         Container created
+2026-10-20T19:17:02Z   Pulled                         checkoutservice-5966d766bf-cm4sh         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:03Z   Pulled                         checkoutservice-5966d766bf-cm4sh         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:03Z   IssuedLeafCertificate          checkoutservice                          issued certificate for checkoutservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:23 +0000 UTC: 3440eceacb7e8a0af8725072f3e0d204cbdb3dcaa9695300588538021dbff0ed
+2026-10-20T19:17:03Z   Created                        checkoutservice-5966d766bf-cm4sh         Container created
+2026-10-20T19:17:03Z   Started                        checkoutservice-5966d766bf-cm4sh         Container started
+2026-10-20T19:17:04Z   Started                        checkoutservice-5966d766bf-cm4sh         Container started
+2026-10-20T19:17:04Z   Pulled                         checkoutservice-5966d766bf-cm4sh         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:17:04Z   Created                        checkoutservice-5966d766bf-cm4sh         Container created
+2026-10-20T19:17:06Z   Unhealthy                      cartservice-6b5dd49d54-v44pb             Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:17:15Z   Unhealthy                      adservice-bddbdf697-f7hg4                Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:17:23Z   SuccessfulCreate               productcatalogservice-6689d96f85         Created pod: productcatalogservice-6689d96f85-s46c5
+2026-10-20T19:17:23Z   SuccessfulRescale              productcatalogservice                    New size: 4; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:17:23Z   ScalingReplicaSet              productcatalogservice                    Scaled up replica set productcatalogservice-6689d96f85 from 2 to 4
+2026-10-20T19:17:24Z   SuccessfulCreate               productcatalogservice-6689d96f85         Created pod: productcatalogservice-6689d96f85-4v52x
+2026-10-20T19:17:24Z   Scheduled                      productcatalogservice-6689d96f85-4v52x   Successfully assigned default/productcatalogservice-6689d96f85-4v52x to ip-172-31-15-60.ec2.internal
+2026-10-20T19:17:24Z   Started                        productcatalogservice-6689d96f85-s46c5   Container started
+2026-10-20T19:17:24Z   Created                        productcatalogservice-6689d96f85-s46c5   Container created
+2026-10-20T19:17:24Z   Pulled                         productcatalogservice-6689d96f85-s46c5   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:24Z   Started                        productcatalogservice-6689d96f85-4v52x   Container started
+2026-10-20T19:17:24Z   Created                        productcatalogservice-6689d96f85-4v52x   Container created
+2026-10-20T19:17:24Z   Pulled                         productcatalogservice-6689d96f85-4v52x   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:24Z   Scheduled                      productcatalogservice-6689d96f85-s46c5   Successfully assigned default/productcatalogservice-6689d96f85-s46c5 to ip-172-31-47-36.ec2.internal
+2026-10-20T19:17:25Z   Started                        productcatalogservice-6689d96f85-4v52x   Container started
+2026-10-20T19:17:25Z   IssuedLeafCertificate          productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:45 +0000 UTC: 2fb11b103f9a9f60cb0c7d67259c713251acf07e419e11a86e58854f19ef834e
+2026-10-20T19:17:25Z   Pulled                         productcatalogservice-6689d96f85-4v52x   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:25Z   Created                        productcatalogservice-6689d96f85-4v52x   Container created
+2026-10-20T19:17:25Z   Created                        productcatalogservice-6689d96f85-s46c5   Container created
+2026-10-20T19:17:25Z   Unhealthy                      productcatalogservice-6689d96f85-s46c5   Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:17:25Z   Started                        productcatalogservice-6689d96f85-s46c5   Container started
+2026-10-20T19:17:25Z   IssuedLeafCertificate          productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:45 +0000 UTC: ecfceb44178f46de720a9f3532a02d2bd3b232d7dffd57d8140bb6082f33c1a0
+2026-10-20T19:17:25Z   Pulled                         productcatalogservice-6689d96f85-s46c5   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:26Z   Started                        productcatalogservice-6689d96f85-4v52x   Container started
+2026-10-20T19:17:26Z   Pulled                         productcatalogservice-6689d96f85-4v52x   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:17:26Z   Created                        productcatalogservice-6689d96f85-4v52x   Container created
+2026-10-20T19:17:27Z   Pulled                         productcatalogservice-6689d96f85-s46c5   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:17:27Z   Created                        productcatalogservice-6689d96f85-s46c5   Container created
+2026-10-20T19:17:27Z   Started                        productcatalogservice-6689d96f85-s46c5   Container started
+2026-10-20T19:17:32Z   SuccessfulRescale              currencyservice                          New size: 5; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:17:32Z   ScalingReplicaSet              currencyservice                          Scaled up replica set currencyservice-99669446c from 4 to 5
+2026-10-20T19:17:32Z   Injected                       currencyservice                          Linkerd sidecar proxy injected
+2026-10-20T19:17:32Z   SuccessfulCreate               currencyservice-99669446c                Created pod: currencyservice-99669446c-fs2hg
+2026-10-20T19:17:32Z   Scheduled                      currencyservice-99669446c-fs2hg          Successfully assigned default/currencyservice-99669446c-fs2hg to ip-172-31-47-36.ec2.internal
+2026-10-20T19:17:33Z   Created                        currencyservice-99669446c-fs2hg          Container created
+2026-10-20T19:17:33Z   Pulled                         currencyservice-99669446c-fs2hg          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:33Z   Started                        currencyservice-99669446c-fs2hg          Container started
+2026-10-20T19:17:34Z   Unhealthy                      currencyservice-99669446c-fs2hg          Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-20T19:17:34Z   Created                        currencyservice-99669446c-fs2hg          Container created
+2026-10-20T19:17:34Z   Pulled                         currencyservice-99669446c-fs2hg          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:34Z   IssuedLeafCertificate          currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:17:54 +0000 UTC: c57bfefc6f15ccc77517d03deb73ff6163547928738ead300271c397442de412
+2026-10-20T19:17:34Z   Started                        currencyservice-99669446c-fs2hg          Container started
+2026-10-20T19:17:36Z   Pulled                         currencyservice-99669446c-fs2hg          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:17:36Z   Started                        currencyservice-99669446c-fs2hg          Container started
+2026-10-20T19:17:36Z   Created                        currencyservice-99669446c-fs2hg          Container created
+2026-10-20T19:17:37Z   Unhealthy                      currencyservice-99669446c-fs2hg          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:17:40Z   SuccessfulCreate               recommendationservice-7b5bb88d49         Created pod: recommendationservice-7b5bb88d49-5n9sm
+2026-10-20T19:17:40Z   SuccessfulRescale              recommendationservice                    New size: 3; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:17:40Z   Scheduled                      recommendationservice-7b5bb88d49-5n9sm   Successfully assigned default/recommendationservice-7b5bb88d49-5n9sm to ip-172-31-95-130.ec2.internal
+2026-10-20T19:17:40Z   ScalingReplicaSet              recommendationservice                    Scaled up replica set recommendationservice-7b5bb88d49 from 2 to 3
+2026-10-20T19:17:41Z   Pulled                         recommendationservice-7b5bb88d49-5n9sm   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:41Z   Started                        recommendationservice-7b5bb88d49-5n9sm   Container started
+2026-10-20T19:17:41Z   Created                        recommendationservice-7b5bb88d49-5n9sm   Container created
+2026-10-20T19:17:41Z   Created                        recommendationservice-7b5bb88d49-5n9sm   Container created
+2026-10-20T19:17:41Z   Pulled                         recommendationservice-7b5bb88d49-5n9sm   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:41Z   Started                        recommendationservice-7b5bb88d49-5n9sm   Container started
+2026-10-20T19:17:42Z   IssuedLeafCertificate          recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:18:02 +0000 UTC: 36646c259559a8bfb8f6b1fd65d2f029e91566a46c55f50073fc8a358316d476
+2026-10-20T19:17:45Z   ScalingReplicaSet              cartservice                              Scaled up replica set cartservice-6b5dd49d54 from 2 to 3
+2026-10-20T19:17:45Z   SuccessfulRescale              cartservice                              New size: 3; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:17:45Z   Injected                       cartservice                              Linkerd sidecar proxy injected
+2026-10-20T19:17:45Z   SuccessfulCreate               cartservice-6b5dd49d54                   Created pod: cartservice-6b5dd49d54-tz42j
+2026-10-20T19:17:45Z   Created                        cartservice-6b5dd49d54-tz42j             Container created
+2026-10-20T19:17:45Z   Pulled                         cartservice-6b5dd49d54-tz42j             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:45Z   Scheduled                      cartservice-6b5dd49d54-tz42j             Successfully assigned default/cartservice-6b5dd49d54-tz42j to ip-172-31-19-222.ec2.internal
+2026-10-20T19:17:46Z   Started                        cartservice-6b5dd49d54-tz42j             Container started
+2026-10-20T19:17:47Z   IssuedLeafCertificate          cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:18:07 +0000 UTC: c7894e104327fb07ca3d6a4bc109c46f5c3ccb43181c1df956e82866608bd331
+2026-10-20T19:17:47Z   Started                        cartservice-6b5dd49d54-tz42j             Container started
+2026-10-20T19:17:47Z   Created                        cartservice-6b5dd49d54-tz42j             Container created
+2026-10-20T19:17:47Z   Pulled                         cartservice-6b5dd49d54-tz42j             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:17:48Z   Started                        cartservice-6b5dd49d54-tz42j             Container started
+2026-10-20T19:17:48Z   Created                        cartservice-6b5dd49d54-tz42j             Container created
+2026-10-20T19:17:48Z   Pulled                         cartservice-6b5dd49d54-tz42j             Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:17:55Z   Killing                        recommendationservice-7b5bb88d49-5n9sm   Container server failed liveness probe, will be restarted
+2026-10-20T19:18:01Z   Created                        recommendationservice-7b5bb88d49-5n9sm   Container created
+2026-10-20T19:18:01Z   Pulled                         recommendationservice-7b5bb88d49-5n9sm   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-20T19:18:01Z   Started                        recommendationservice-7b5bb88d49-5n9sm   Container started
+2026-10-20T19:18:02Z   Unhealthy                      recommendationservice-7b5bb88d49-5n9sm   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:18:06Z   Unhealthy                      cartservice-6b5dd49d54-tz42j             Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:18:07Z   Unhealthy                      recommendationservice-7b5bb88d49-5n9sm   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:18:10Z   Unhealthy                      recommendationservice-7b5bb88d49-5n9sm   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:19:09Z   Injected                       productcatalogservice                    Linkerd sidecar proxy injected
+2026-10-20T19:19:09Z   SuccessfulCreate               productcatalogservice-6689d96f85         Created pod: productcatalogservice-6689d96f85-nbvkb
+2026-10-20T19:19:09Z   Scheduled                      productcatalogservice-6689d96f85-nbvkb   Successfully assigned default/productcatalogservice-6689d96f85-nbvkb to ip-172-31-73-36.ec2.internal
+2026-10-20T19:19:09Z   ScalingReplicaSet              productcatalogservice                    Scaled up replica set productcatalogservice-6689d96f85 from 4 to 5
+2026-10-20T19:19:09Z   SuccessfulRescale              productcatalogservice                    New size: 5; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:19:09Z   Started                        productcatalogservice-6689d96f85-nbvkb   Container started
+2026-10-20T19:19:09Z   Created                        productcatalogservice-6689d96f85-nbvkb   Container created
+2026-10-20T19:19:09Z   Pulled                         productcatalogservice-6689d96f85-nbvkb   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:19:10Z   Created                        productcatalogservice-6689d96f85-nbvkb   Container created
+2026-10-20T19:19:10Z   Pulled                         productcatalogservice-6689d96f85-nbvkb   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:19:11Z   Started                        productcatalogservice-6689d96f85-nbvkb   Container started
+2026-10-20T19:19:11Z   IssuedLeafCertificate          productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:19:31 +0000 UTC: 46c49e052e0553c86af3b3077fecde9c835a5c50500b7738f77654d5b8d2d75e
+2026-10-20T19:19:11Z   Pulling                        productcatalogservice-6689d96f85-nbvkb   Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7"
+2026-10-20T19:19:15Z   Pulled                         productcatalogservice-6689d96f85-nbvkb   Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" in 3.242s (3.242s including waiting). Image size: 10028947 bytes.
+2026-10-20T19:19:15Z   Created                        productcatalogservice-6689d96f85-nbvkb   Container created
+2026-10-20T19:19:15Z   Started                        productcatalogservice-6689d96f85-nbvkb   Container started
+2026-10-20T19:19:25Z   Scheduled                      recommendationservice-7b5bb88d49-89ws7   Successfully assigned default/recommendationservice-7b5bb88d49-89ws7 to ip-172-31-47-36.ec2.internal
+2026-10-20T19:19:25Z   Injected                       recommendationservice                    Linkerd sidecar proxy injected
+2026-10-20T19:19:25Z   SuccessfulCreate               recommendationservice-7b5bb88d49         Created pod: recommendationservice-7b5bb88d49-89ws7
+2026-10-20T19:19:25Z   SuccessfulRescale              recommendationservice                    New size: 4; reason: cpu resource utilization (percentage of request) above target
+2026-10-20T19:19:25Z   ScalingReplicaSet              recommendationservice                    Scaled up replica set recommendationservice-7b5bb88d49 from 3 to 4
+2026-10-20T19:19:26Z   Created                        recommendationservice-7b5bb88d49-89ws7   Container created
+2026-10-20T19:19:26Z   Started                        recommendationservice-7b5bb88d49-89ws7   Container started
+2026-10-20T19:19:26Z   Pulled                         recommendationservice-7b5bb88d49-89ws7   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:19:27Z   Started                        recommendationservice-7b5bb88d49-89ws7   Container started
+2026-10-20T19:19:27Z   Pulled                         recommendationservice-7b5bb88d49-89ws7   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-20T19:19:27Z   Created                        recommendationservice-7b5bb88d49-89ws7   Container created
+2026-10-20T19:19:27Z   IssuedLeafCertificate          recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-21 19:19:47 +0000 UTC: 64a07df2b62c5cc584d09b94557fa5ab586ab08e6647c120cf50a7e6c11c51f4
+2026-10-20T19:19:28Z   Pulling                        recommendationservice-7b5bb88d49-89ws7   Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7"
+2026-10-20T19:19:31Z   Pulled                         recommendationservice-7b5bb88d49-89ws7   Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" in 2.582s (2.582s including waiting). Image size: 40089154 bytes.
+2026-10-20T19:19:31Z   Created                        recommendationservice-7b5bb88d49-89ws7   Container created
+2026-10-20T19:19:31Z   Started                        recommendationservice-7b5bb88d49-89ws7   Container started
+2026-10-20T19:19:32Z   Unhealthy                      recommendationservice-7b5bb88d49-89ws7   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-20T19:19:41Z   Unhealthy                      recommendationservice-7b5bb88d49-89ws7   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-20T19:19:42Z   Unhealthy                      recommendationservice-7b5bb88d49-89ws7   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 

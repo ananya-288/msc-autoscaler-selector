@@ -1,0 +1,3 @@
+Client Version: v1.36.0
+Kustomize Version: v5.8.1
+Server Version: v1.36.4-eks-cfb47f5

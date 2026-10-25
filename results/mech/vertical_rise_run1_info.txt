@@ -1,0 +1,7 @@
+run=vertical_rise_run1
+mode=vertical
+workload=rise
+start_utc=2026-10-20 21:09:27
+minutes=15
+target_cpu=50
+max_replicas=5

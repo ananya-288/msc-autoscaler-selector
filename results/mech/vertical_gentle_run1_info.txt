@@ -1,0 +1,7 @@
+run=vertical_gentle_run1
+mode=vertical
+workload=gentle
+start_utc=2026-10-21 12:42:42
+minutes=15
+target_cpu=50
+max_replicas=5

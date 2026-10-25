@@ -1,0 +1,84 @@
+NAMESPACE      NAME                                         READY   STATUS    RESTARTS   AGE
+default        pod/adservice-64956dfcbf-nnpgc               0/1     Pending   0          3d22h
+default        pod/cartservice-5f597b774-dtq25              0/1     Pending   0          3d22h
+default        pod/cartservice-5f597b774-xn96c              0/1     Pending   0          3d22h
+default        pod/checkoutservice-78b6bcbcc7-qxbcn         0/1     Pending   0          3d22h
+default        pod/checkoutservice-78b6bcbcc7-v9zzs         0/1     Pending   0          3d22h
+default        pod/currencyservice-5c8cbd54c5-jcct6         0/1     Pending   0          3d22h
+default        pod/currencyservice-5c8cbd54c5-rx9tg         0/1     Pending   0          3d22h
+default        pod/emailservice-6d9cfd9449-8b98q            0/1     Pending   0          3d22h
+default        pod/emailservice-6d9cfd9449-kcb84            0/1     Pending   0          3d22h
+default        pod/frontend-58b4dc4d4d-hwrvl                0/1     Pending   0          3d22h
+default        pod/frontend-58b4dc4d4d-vwrdl                0/1     Pending   0          3d22h
+default        pod/paymentservice-7ff65ff5c7-2kkkc          0/1     Pending   0          3d22h
+default        pod/productcatalogservice-67944c9df7-7dj49   0/1     Pending   0          3d22h
+default        pod/productcatalogservice-67944c9df7-l74sq   0/1     Pending   0          3d22h
+default        pod/recommendationservice-5887f9f797-rb2mb   0/1     Pending   0          3d22h
+default        pod/recommendationservice-5887f9f797-w97jl   0/1     Pending   0          3d22h
+default        pod/redis-cart-788fbddc7-4plvq               0/1     Pending   0          3d22h
+default        pod/redis-cart-788fbddc7-wgk2c               0/1     Pending   0          3d22h
+default        pod/shippingservice-7ff767d68f-btqd2         0/1     Pending   0          3d22h
+default        pod/shippingservice-7ff767d68f-px9rh         0/1     Pending   0          3d22h
+external-dns   pod/external-dns-6c5b549f85-4dnvx            0/1     Pending   0          3d22h
+kube-system    pod/coredns-74fb95dd57-d576z                 0/1     Pending   0          3d22h
+kube-system    pod/coredns-74fb95dd57-pch8v                 0/1     Pending   0          3d22h
+kube-system    pod/metrics-server-796f987456-hcbr4          0/1     Pending   0          3d22h
+kube-system    pod/metrics-server-796f987456-r2tfj          0/1     Pending   0          3d22h
+
+NAMESPACE      NAME                                TYPE           CLUSTER-IP       EXTERNAL-IP                                                               PORT(S)                  AGE
+default        service/adservice                   ClusterIP      10.100.134.66    <none>                                                                    9555/TCP                 4d5h
+default        service/cartservice                 ClusterIP      10.100.182.96    <none>                                                                    7070/TCP                 4d5h
+default        service/checkoutservice             ClusterIP      10.100.117.238   <none>                                                                    5050/TCP                 4d5h
+default        service/currencyservice             ClusterIP      10.100.31.166    <none>                                                                    7000/TCP                 4d5h
+default        service/emailservice                ClusterIP      10.100.146.144   <none>                                                                    5000/TCP                 4d5h
+default        service/frontend                    ClusterIP      10.100.171.91    <none>                                                                    80/TCP                   4d5h
+default        service/frontend-external           LoadBalancer   10.100.16.172    a39b9e5ca67d844b6b3172975c11258c-1907779540.us-east-1.elb.amazonaws.com   80:32469/TCP             4d5h
+default        service/kubernetes                  ClusterIP      10.100.0.1       <none>                                                                    443/TCP                  4d5h
+default        service/paymentservice              ClusterIP      10.100.239.8     <none>                                                                    50051/TCP                4d5h
+default        service/productcatalogservice       ClusterIP      10.100.110.124   <none>                                                                    3550/TCP                 4d5h
+default        service/recommendationservice       ClusterIP      10.100.87.90     <none>                                                                    8080/TCP                 4d5h
+default        service/redis-cart                  ClusterIP      10.100.178.170   <none>                                                                    6379/TCP                 4d5h
+default        service/shippingservice             ClusterIP      10.100.199.107   <none>                                                                    50051/TCP                4d5h
+external-dns   service/external-dns                ClusterIP      10.100.122.136   <none>                                                                    7979/TCP                 4d5h
+kube-system    service/eks-extension-metrics-api   ClusterIP      10.100.156.39    <none>                                                                    443/TCP                  4d5h
+kube-system    service/kube-dns                    ClusterIP      10.100.0.10      <none>                                                                    53/UDP,53/TCP,9153/TCP   4d5h
+kube-system    service/metrics-server              ClusterIP      10.100.148.254   <none>                                                                    443/TCP                  4d5h
+
+NAMESPACE     NAME                                       DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+kube-system   daemonset.apps/aws-node                    0         0         0       0            0           <none>                   4d5h
+kube-system   daemonset.apps/dcgm-server                 0         0         0       0            0           kubernetes.io/os=linux   4d5h
+kube-system   daemonset.apps/eks-node-monitoring-agent   0         0         0       0            0           kubernetes.io/os=linux   4d5h
+kube-system   daemonset.apps/eks-pod-identity-agent      0         0         0       0            0           <none>                   4d5h
+kube-system   daemonset.apps/kube-proxy                  0         0         0       0            0           <none>                   4d5h
+
+NAMESPACE      NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE
+default        deployment.apps/adservice               0/1     1            0           4d5h
+default        deployment.apps/cartservice             0/2     2            0           4d5h
+default        deployment.apps/checkoutservice         0/2     2            0           4d5h
+default        deployment.apps/currencyservice         0/2     2            0           4d5h
+default        deployment.apps/emailservice            0/2     2            0           4d5h
+default        deployment.apps/frontend                0/2     2            0           4d5h
+default        deployment.apps/paymentservice          0/1     1            0           4d5h
+default        deployment.apps/productcatalogservice   0/2     2            0           4d5h
+default        deployment.apps/recommendationservice   0/2     2            0           4d5h
+default        deployment.apps/redis-cart              0/2     2            0           4d5h
+default        deployment.apps/shippingservice         0/2     2            0           4d5h
+external-dns   deployment.apps/external-dns            0/1     1            0           4d5h
+kube-system    deployment.apps/coredns                 0/2     2            0           4d5h
+kube-system    deployment.apps/metrics-server          0/2     2            0           4d5h
+
+NAMESPACE      NAME                                               DESIRED   CURRENT   READY   AGE
+default        replicaset.apps/adservice-64956dfcbf               1         1         0       4d5h
+default        replicaset.apps/cartservice-5f597b774              2         2         0       4d5h
+default        replicaset.apps/checkoutservice-78b6bcbcc7         2         2         0       4d5h
+default        replicaset.apps/currencyservice-5c8cbd54c5         2         2         0       4d5h
+default        replicaset.apps/emailservice-6d9cfd9449            2         2         0       4d5h
+default        replicaset.apps/frontend-58b4dc4d4d                2         2         0       4d5h
+default        replicaset.apps/paymentservice-7ff65ff5c7          1         1         0       4d5h
+default        replicaset.apps/productcatalogservice-67944c9df7   2         2         0       4d5h
+default        replicaset.apps/recommendationservice-5887f9f797   2         2         0       4d5h
+default        replicaset.apps/redis-cart-788fbddc7               2         2         0       4d5h
+default        replicaset.apps/shippingservice-7ff767d68f         2         2         0       4d5h
+external-dns   replicaset.apps/external-dns-6c5b549f85            1         1         0       4d5h
+kube-system    replicaset.apps/coredns-74fb95dd57                 2         2         0       4d5h
+kube-system    replicaset.apps/metrics-server-796f987456          2         2         0       4d5h

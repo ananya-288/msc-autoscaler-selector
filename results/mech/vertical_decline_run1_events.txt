@@ -1,0 +1,1027 @@
+TIME                   REASON                  OBJECT                                   MSG
+<nil>                  KEDAScalersStopped      productcatalogservice-rps                Stopped scalers watch
+<nil>                  KEDAScalerInfo          checkoutservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectDeleted     shippingservice-rps                      ScaledObject was deleted
+<nil>                  KEDAScalersStopped      shippingservice-rps                      Stopped scalers watch
+<nil>                  ScaledObjectReady       shippingservice-rps                      ScaledObject is ready for scaling
+<nil>                  KEDAScalersStarted      shippingservice-rps                      Started scalers watch
+<nil>                  KEDAScalersStarted      shippingservice-rps                      Scaler prometheus is built
+<nil>                  KEDAScalerInfo          shippingservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          shippingservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          shippingservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          currencyservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          currencyservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStarted      currencyservice-rps                      Scaler prometheus is built
+<nil>                  KEDAScalersStarted      currencyservice-rps                      Started scalers watch
+<nil>                  ScaledObjectDeleted     cartservice-rps                          ScaledObject was deleted
+<nil>                  KEDAScalersStopped      cartservice-rps                          Stopped scalers watch
+<nil>                  ScaledObjectDeleted     frontend-rps                             ScaledObject was deleted
+<nil>                  ScaledObjectReady       frontend-rps                             ScaledObject is ready for scaling
+<nil>                  KEDAScalersStarted      frontend-rps                             Started scalers watch
+<nil>                  KEDAScalersStarted      frontend-rps                             Scaler prometheus is built
+<nil>                  KEDAScalersStopped      currencyservice-rps                      Stopped scalers watch
+<nil>                  KEDAScalersStopped      recommendationservice-rps                Stopped scalers watch
+<nil>                  ScaledObjectReady       recommendationservice-rps                ScaledObject is ready for scaling
+<nil>                  KEDAScalersStarted      recommendationservice-rps                Started scalers watch
+<nil>                  KEDAScalersStarted      recommendationservice-rps                Scaler prometheus is built
+<nil>                  KEDAScalerInfo          recommendationservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          recommendationservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          recommendationservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectReady       cartservice-rps                          ScaledObject is ready for scaling
+<nil>                  ScaledObjectDeleted     checkoutservice-rps                      ScaledObject was deleted
+<nil>                  KEDAScalerInfo          paymentservice-rps                       PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStarted      cartservice-rps                          Started scalers watch
+<nil>                  KEDAScalersStarted      cartservice-rps                          Scaler prometheus is built
+<nil>                  KEDAScalerInfo          paymentservice-rps                       PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          paymentservice-rps                       PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStarted      paymentservice-rps                       Scaler prometheus is built
+<nil>                  KEDAScalersStarted      paymentservice-rps                       Started scalers watch
+<nil>                  KEDAScalerInfo          checkoutservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          checkoutservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          cartservice-rps                          PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          cartservice-rps                          PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          cartservice-rps                          PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectReady       currencyservice-rps                      ScaledObject is ready for scaling
+<nil>                  ScaledObjectReady       paymentservice-rps                       ScaledObject is ready for scaling
+<nil>                  KEDAScalersStopped      paymentservice-rps                       Stopped scalers watch
+<nil>                  ScaledObjectDeleted     productcatalogservice-rps                ScaledObject was deleted
+<nil>                  KEDAScalerInfo          currencyservice-rps                      PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStopped      frontend-rps                             Stopped scalers watch
+<nil>                  ScaledObjectDeleted     recommendationservice-rps                ScaledObject was deleted
+<nil>                  KEDAScalersStarted      checkoutservice-rps                      Scaler prometheus is built
+<nil>                  KEDAScalersStarted      checkoutservice-rps                      Started scalers watch
+<nil>                  ScaledObjectReady       productcatalogservice-rps                ScaledObject is ready for scaling
+<nil>                  KEDAScalersStarted      productcatalogservice-rps                Started scalers watch
+<nil>                  KEDAScalersStarted      productcatalogservice-rps                Scaler prometheus is built
+<nil>                  KEDAScalerInfo          productcatalogservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          productcatalogservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          productcatalogservice-rps                PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectDeleted     currencyservice-rps                      ScaledObject was deleted
+<nil>                  KEDAScalerInfo          emailservice-rps                         PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          emailservice-rps                         PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          emailservice-rps                         PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectDeleted     paymentservice-rps                       ScaledObject was deleted
+<nil>                  KEDAScalerInfo          frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStopped      checkoutservice-rps                      Stopped scalers watch
+<nil>                  KEDAScalerInfo          adservice-rps                            PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          adservice-rps                            PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          adservice-rps                            PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalersStarted      adservice-rps                            Scaler prometheus is built
+<nil>                  KEDAScalersStarted      adservice-rps                            Started scalers watch
+<nil>                  ScaledObjectReady       adservice-rps                            ScaledObject is ready for scaling
+<nil>                  KEDAScalersStopped      adservice-rps                            Stopped scalers watch
+<nil>                  ScaledObjectDeleted     adservice-rps                            ScaledObject was deleted
+<nil>                  KEDAScalersStarted      emailservice-rps                         Scaler prometheus is built
+<nil>                  KEDAScalersStarted      emailservice-rps                         Started scalers watch
+<nil>                  ScaledObjectReady       emailservice-rps                         ScaledObject is ready for scaling
+<nil>                  KEDAScalersStopped      emailservice-rps                         Stopped scalers watch
+<nil>                  ScaledObjectDeleted     emailservice-rps                         ScaledObject was deleted
+<nil>                  KEDAScalerInfo          frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  KEDAScalerInfo          frontend-rps                             PollingInterval is configured but is not relevant for scaling. It only affects scaling when minReplicaCount = 0, idleReplicaCount is set, or useCachedMetrics is enabled, but it still controls how often KEDA refreshes the ScaledObject status conditions and events
+<nil>                  ScaledObjectReady       checkoutservice-rps                      ScaledObject is ready for scaling
+2026-10-21T13:26:01Z   Killing                 recommendationservice-77466667d-b2kq9    Stopping container server
+2026-10-21T13:26:01Z   ScalingReplicaSet       recommendationservice                    Scaled down replica set recommendationservice-77466667d from 4 to 3
+2026-10-21T13:26:01Z   SuccessfulRescale       recommendationservice                    New size: 3; reason: All metrics below target
+2026-10-21T13:26:01Z   Killing                 recommendationservice-77466667d-b2kq9    Stopping container linkerd-proxy
+2026-10-21T13:26:01Z   SuccessfulDelete        recommendationservice-77466667d          Deleted pod: recommendationservice-77466667d-b2kq9
+2026-10-21T13:26:45Z   SuccessfulRescale       productcatalogservice                    New size: 4; reason: All metrics below target
+2026-10-21T13:26:45Z   Killing                 productcatalogservice-d5cd96858-kb6zl    Stopping container linkerd-proxy
+2026-10-21T13:26:45Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-d5cd96858 from 5 to 4
+2026-10-21T13:26:45Z   SuccessfulDelete        productcatalogservice-d5cd96858          Deleted pod: productcatalogservice-d5cd96858-kb6zl
+2026-10-21T13:26:45Z   Killing                 productcatalogservice-d5cd96858-kb6zl    Stopping container server
+2026-10-21T13:29:01Z   SuccessfulRescale       recommendationservice                    New size: 2; reason: All metrics below target
+2026-10-21T13:29:02Z   Killing                 recommendationservice-77466667d-d7g76    Stopping container linkerd-proxy
+2026-10-21T13:29:02Z   Killing                 recommendationservice-77466667d-d7g76    Stopping container server
+2026-10-21T13:29:02Z   SuccessfulDelete        recommendationservice-77466667d          Deleted pod: recommendationservice-77466667d-d7g76
+2026-10-21T13:29:02Z   ScalingReplicaSet       recommendationservice                    Scaled down replica set recommendationservice-77466667d from 3 to 2
+2026-10-21T13:29:45Z   SuccessfulRescale       productcatalogservice                    New size: 3; reason: All metrics below target
+2026-10-21T13:29:45Z   Killing                 productcatalogservice-d5cd96858-4kdw2    Stopping container linkerd-proxy
+2026-10-21T13:29:45Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-d5cd96858 from 4 to 3
+2026-10-21T13:29:45Z   SuccessfulDelete        productcatalogservice-d5cd96858          Deleted pod: productcatalogservice-d5cd96858-4kdw2
+2026-10-21T13:29:45Z   Killing                 productcatalogservice-d5cd96858-4kdw2    Stopping container server
+2026-10-21T13:30:20Z   ScalingReplicaSet       cartservice                              Scaled down replica set cartservice-85b7f4964c from 2 to 1
+2026-10-21T13:30:20Z   SuccessfulRescale       cartservice                              New size: 1; reason: All metrics below target
+2026-10-21T13:30:20Z   SuccessfulDelete        cartservice-85b7f4964c                   Deleted pod: cartservice-85b7f4964c-2nk8h
+2026-10-21T13:30:20Z   Killing                 cartservice-85b7f4964c-2nk8h             Stopping container server
+2026-10-21T13:30:20Z   Killing                 cartservice-85b7f4964c-2nk8h             Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   SuccessfulDelete        currencyservice-564fd9876d               Deleted pod: currencyservice-564fd9876d-wktdl
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-wqwlh         Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-j9g2z         Stopping container server
+2026-10-21T13:38:32Z   Killing                 checkoutservice-b954f9f4b-25f5l          Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-wktdl         Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-wktdl         Stopping container server
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-wqwlh         Stopping container server
+2026-10-21T13:38:32Z   ScalingReplicaSet       checkoutservice                          Scaled down replica set checkoutservice-b954f9f4b from 2 to 1
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-8q6dd         Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-8q6dd         Stopping container server
+2026-10-21T13:38:32Z   Killing                 checkoutservice-b954f9f4b-25f5l          Stopping container server
+2026-10-21T13:38:32Z   ScalingReplicaSet       frontend                                 Scaled down replica set frontend-779768987b from 5 to 1
+2026-10-21T13:38:32Z   SuccessfulDelete        checkoutservice-b954f9f4b                Deleted pod: checkoutservice-b954f9f4b-25f5l
+2026-10-21T13:38:32Z   Killing                 currencyservice-564fd9876d-j9g2z         Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   Killing                 frontend-779768987b-tx2q7                Stopping container server
+2026-10-21T13:38:32Z   Killing                 frontend-779768987b-tx2q7                Stopping container linkerd-proxy
+2026-10-21T13:38:32Z   ScalingReplicaSet       currencyservice                          Scaled down replica set currencyservice-564fd9876d from 5 to 1
+2026-10-21T13:38:32Z   SuccessfulDelete        currencyservice-564fd9876d               Deleted pod: currencyservice-564fd9876d-wqwlh
+2026-10-21T13:38:32Z   SuccessfulDelete        currencyservice-564fd9876d               Deleted pod: currencyservice-564fd9876d-8q6dd
+2026-10-21T13:38:32Z   SuccessfulDelete        currencyservice-564fd9876d               Deleted pod: currencyservice-564fd9876d-j9g2z
+2026-10-21T13:38:33Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-d5cd96858 from 3 to 1
+2026-10-21T13:38:33Z   SuccessfulDelete        recommendationservice-77466667d          Deleted pod: recommendationservice-77466667d-g8n2z
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-mjkjq                Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   SuccessfulDelete        frontend-779768987b                      Deleted pod: frontend-779768987b-mjkjq
+2026-10-21T13:38:33Z   Killing                 productcatalogservice-d5cd96858-5b2xk    Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   Killing                 productcatalogservice-d5cd96858-5b2xk    Stopping container server
+2026-10-21T13:38:33Z   Killing                 productcatalogservice-d5cd96858-fgvxn    Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   SuccessfulDelete        frontend-779768987b                      Deleted pod: frontend-779768987b-tx2q7
+2026-10-21T13:38:33Z   Killing                 productcatalogservice-d5cd96858-fgvxn    Stopping container server
+2026-10-21T13:38:33Z   SuccessfulDelete        frontend-779768987b                      Deleted pod: frontend-779768987b-rzs2r
+2026-10-21T13:38:33Z   ScalingReplicaSet       recommendationservice                    Scaled down replica set recommendationservice-77466667d from 2 to 1
+2026-10-21T13:38:33Z   SuccessfulDelete        productcatalogservice-d5cd96858          Deleted pod: productcatalogservice-d5cd96858-5b2xk
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-mjkjq                Stopping container server
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-n8vxp                Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-n8vxp                Stopping container server
+2026-10-21T13:38:33Z   Unhealthy               frontend-779768987b-n8vxp                Readiness probe failed: Get "http://172.31.10.34:4191/ready": dial tcp 172.31.10.34:4191: connect: connection refused
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-rzs2r                Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   Killing                 recommendationservice-77466667d-g8n2z    Stopping container server
+2026-10-21T13:38:33Z   Killing                 recommendationservice-77466667d-g8n2z    Stopping container linkerd-proxy
+2026-10-21T13:38:33Z   Killing                 frontend-779768987b-rzs2r                Stopping container server
+2026-10-21T13:38:33Z   SuccessfulDelete        productcatalogservice-d5cd96858          Deleted pod: productcatalogservice-d5cd96858-fgvxn
+2026-10-21T13:38:33Z   SuccessfulDelete        frontend-779768987b                      Deleted pod: frontend-779768987b-n8vxp
+2026-10-21T13:38:34Z   SuccessfulCreate        adservice-c4fd8cdc6                      Created pod: adservice-c4fd8cdc6-vr8jq
+2026-10-21T13:38:34Z   ScalingReplicaSet       emailservice                             Scaled up replica set emailservice-57bdf7d996 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       paymentservice                           Scaled up replica set paymentservice-54d5cffd4 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       productcatalogservice                    Scaled up replica set productcatalogservice-c5c9748f8 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       currencyservice                          Scaled up replica set currencyservice-68db9f46d from 0 to 1
+2026-10-21T13:38:34Z   Scheduled               emailservice-57bdf7d996-zhjcd            Successfully assigned default/emailservice-57bdf7d996-zhjcd to ip-172-31-1-125.ec2.internal
+2026-10-21T13:38:34Z   SuccessfulCreate        emailservice-57bdf7d996                  Created pod: emailservice-57bdf7d996-zhjcd
+2026-10-21T13:38:34Z   Scheduled               cartservice-59fb4c8987-t5b7p             Successfully assigned default/cartservice-59fb4c8987-t5b7p to ip-172-31-1-125.ec2.internal
+2026-10-21T13:38:34Z   Scheduled               adservice-c4fd8cdc6-vr8jq                Successfully assigned default/adservice-c4fd8cdc6-vr8jq to ip-172-31-31-12.ec2.internal
+2026-10-21T13:38:34Z   ScalingReplicaSet       checkoutservice                          Scaled up replica set checkoutservice-6dd4fc9df8 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       adservice                                Scaled up replica set adservice-c4fd8cdc6 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       frontend                                 Scaled up replica set frontend-7bcd89ffdd from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       cartservice                              Scaled up replica set cartservice-59fb4c8987 from 0 to 1
+2026-10-21T13:38:34Z   ScalingReplicaSet       redis-cart                               Scaled up replica set redis-cart-7644fb9546 from 0 to 1
+2026-10-21T13:38:34Z   SuccessfulCreate        cartservice-59fb4c8987                   Created pod: cartservice-59fb4c8987-t5b7p
+2026-10-21T13:38:34Z   SuccessfulCreate        checkoutservice-6dd4fc9df8               Created pod: checkoutservice-6dd4fc9df8-4j6dn
+2026-10-21T13:38:34Z   ScalingReplicaSet       shippingservice                          Scaled up replica set shippingservice-765bfbb8f8 from 0 to 1
+2026-10-21T13:38:34Z   SuccessfulCreate        currencyservice-68db9f46d                Created pod: currencyservice-68db9f46d-bztdw
+2026-10-21T13:38:35Z   Created                 adservice-c4fd8cdc6-vr8jq                Container created
+2026-10-21T13:38:35Z   Created                 currencyservice-68db9f46d-bztdw          Container created
+2026-10-21T13:38:35Z   Pulled                  currencyservice-68db9f46d-bztdw          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Scheduled               currencyservice-68db9f46d-bztdw          Successfully assigned default/currencyservice-68db9f46d-bztdw to ip-172-31-31-12.ec2.internal
+2026-10-21T13:38:35Z   Started                 currencyservice-68db9f46d-bztdw          Container started
+2026-10-21T13:38:35Z   Pulled                  emailservice-57bdf7d996-zhjcd            Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Created                 emailservice-57bdf7d996-zhjcd            Container created
+2026-10-21T13:38:35Z   Started                 emailservice-57bdf7d996-zhjcd            Container started
+2026-10-21T13:38:35Z   Pulled                  emailservice-57bdf7d996-zhjcd            Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Scheduled               frontend-7bcd89ffdd-2g5rk                Successfully assigned default/frontend-7bcd89ffdd-2g5rk to ip-172-31-31-12.ec2.internal
+2026-10-21T13:38:35Z   Pulled                  frontend-7bcd89ffdd-2g5rk                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Created                 frontend-7bcd89ffdd-2g5rk                Container created
+2026-10-21T13:38:35Z   SuccessfulCreate        frontend-7bcd89ffdd                      Created pod: frontend-7bcd89ffdd-2g5rk
+2026-10-21T13:38:35Z   Pulled                  cartservice-59fb4c8987-t5b7p             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Started                 cartservice-59fb4c8987-t5b7p             Container started
+2026-10-21T13:38:35Z   Created                 cartservice-59fb4c8987-t5b7p             Container created
+2026-10-21T13:38:35Z   Pulled                  cartservice-59fb4c8987-t5b7p             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Scheduled               paymentservice-54d5cffd4-pxr2w           Successfully assigned default/paymentservice-54d5cffd4-pxr2w to ip-172-31-89-104.ec2.internal
+2026-10-21T13:38:35Z   SuccessfulCreate        paymentservice-54d5cffd4                 Created pod: paymentservice-54d5cffd4-pxr2w
+2026-10-21T13:38:35Z   Scheduled               productcatalogservice-c5c9748f8-h8mv4    Successfully assigned default/productcatalogservice-c5c9748f8-h8mv4 to ip-172-31-31-12.ec2.internal
+2026-10-21T13:38:35Z   SuccessfulCreate        productcatalogservice-c5c9748f8          Created pod: productcatalogservice-c5c9748f8-h8mv4
+2026-10-21T13:38:35Z   Started                 adservice-c4fd8cdc6-vr8jq                Container started
+2026-10-21T13:38:35Z   Pulled                  checkoutservice-6dd4fc9df8-4j6dn         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Pulled                  adservice-c4fd8cdc6-vr8jq                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:35Z   Scheduled               recommendationservice-57ccb89b78-8cqj7   Successfully assigned default/recommendationservice-57ccb89b78-8cqj7 to ip-172-31-89-104.ec2.internal
+2026-10-21T13:38:35Z   SuccessfulCreate        recommendationservice-57ccb89b78         Created pod: recommendationservice-57ccb89b78-8cqj7
+2026-10-21T13:38:35Z   Scheduled               redis-cart-7644fb9546-5gdr6              Successfully assigned default/redis-cart-7644fb9546-5gdr6 to ip-172-31-1-125.ec2.internal
+2026-10-21T13:38:35Z   SuccessfulCreate        redis-cart-7644fb9546                    Created pod: redis-cart-7644fb9546-5gdr6
+2026-10-21T13:38:35Z   Scheduled               shippingservice-765bfbb8f8-25j72         Successfully assigned default/shippingservice-765bfbb8f8-25j72 to ip-172-31-1-125.ec2.internal
+2026-10-21T13:38:35Z   SuccessfulCreate        shippingservice-765bfbb8f8               Created pod: shippingservice-765bfbb8f8-25j72
+2026-10-21T13:38:35Z   Started                 checkoutservice-6dd4fc9df8-4j6dn         Container started
+2026-10-21T13:38:35Z   Created                 checkoutservice-6dd4fc9df8-4j6dn         Container created
+2026-10-21T13:38:35Z   Scheduled               checkoutservice-6dd4fc9df8-4j6dn         Successfully assigned default/checkoutservice-6dd4fc9df8-4j6dn to ip-172-31-1-125.ec2.internal
+2026-10-21T13:38:36Z   Created                 frontend-7bcd89ffdd-2g5rk                Container created
+2026-10-21T13:38:36Z   Created                 emailservice-57bdf7d996-zhjcd            Container created
+2026-10-21T13:38:36Z   Pulled                  cartservice-59fb4c8987-t5b7p             Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Pulled                  checkoutservice-6dd4fc9df8-4j6dn         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Started                 cartservice-59fb4c8987-t5b7p             Container started
+2026-10-21T13:38:36Z   Created                 cartservice-59fb4c8987-t5b7p             Container created
+2026-10-21T13:38:36Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:56 +0000 UTC: cc51a97c72c00b3411b7ad7da8789257defb0803bf70b01370e183aece596ffc
+2026-10-21T13:38:36Z   IssuedLeafCertificate   cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:56 +0000 UTC: 9f08a6f3416fbb6f9172434c02d6206b27de56baf91c8858392d51203b492a7f
+2026-10-21T13:38:36Z   IssuedLeafCertificate   emailservice                             issued certificate for emailservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:56 +0000 UTC: df51401db078f4768e3c0456961f573134426c0c8b3678069234cefbea90151a
+2026-10-21T13:38:36Z   Pulled                  paymentservice-54d5cffd4-pxr2w           Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Created                 paymentservice-54d5cffd4-pxr2w           Container created
+2026-10-21T13:38:36Z   Started                 paymentservice-54d5cffd4-pxr2w           Container started
+2026-10-21T13:38:36Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:56 +0000 UTC: 0c8a3423c7c4263392b851d710be4ba1b526dc6b292a435f7a948bfb20fe15ff
+2026-10-21T13:38:36Z   Started                 emailservice-57bdf7d996-zhjcd            Container started
+2026-10-21T13:38:36Z   Pulled                  productcatalogservice-c5c9748f8-h8mv4    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Pulled                  shippingservice-765bfbb8f8-25j72         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Started                 shippingservice-765bfbb8f8-25j72         Container started
+2026-10-21T13:38:36Z   Created                 shippingservice-765bfbb8f8-25j72         Container created
+2026-10-21T13:38:36Z   Pulled                  shippingservice-765bfbb8f8-25j72         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Created                 productcatalogservice-c5c9748f8-h8mv4    Container created
+2026-10-21T13:38:36Z   Started                 productcatalogservice-c5c9748f8-h8mv4    Container started
+2026-10-21T13:38:36Z   IssuedLeafCertificate   adservice                                issued certificate for adservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:56 +0000 UTC: 237518b3689fd135cdede17e74872f580f09a3a3f2e7a5015061f00344f4e29d
+2026-10-21T13:38:36Z   Started                 currencyservice-68db9f46d-bztdw          Container started
+2026-10-21T13:38:36Z   Created                 currencyservice-68db9f46d-bztdw          Container created
+2026-10-21T13:38:36Z   Pulled                  currencyservice-68db9f46d-bztdw          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Started                 adservice-c4fd8cdc6-vr8jq                Container started
+2026-10-21T13:38:36Z   Created                 adservice-c4fd8cdc6-vr8jq                Container created
+2026-10-21T13:38:36Z   Pulled                  adservice-c4fd8cdc6-vr8jq                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Started                 frontend-7bcd89ffdd-2g5rk                Container started
+2026-10-21T13:38:36Z   Pulled                  redis-cart-7644fb9546-5gdr6              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Pulled                  recommendationservice-57ccb89b78-8cqj7   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Created                 recommendationservice-57ccb89b78-8cqj7   Container created
+2026-10-21T13:38:36Z   Started                 recommendationservice-57ccb89b78-8cqj7   Container started
+2026-10-21T13:38:36Z   Started                 redis-cart-7644fb9546-5gdr6              Container started
+2026-10-21T13:38:36Z   Pulled                  frontend-7bcd89ffdd-2g5rk                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Created                 redis-cart-7644fb9546-5gdr6              Container created
+2026-10-21T13:38:36Z   Pulled                  redis-cart-7644fb9546-5gdr6              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:36Z   Started                 frontend-7bcd89ffdd-2g5rk                Container started
+2026-10-21T13:38:37Z   Started                 recommendationservice-57ccb89b78-8cqj7   Container started
+2026-10-21T13:38:37Z   IssuedLeafCertificate   paymentservice                           issued certificate for paymentservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: daa083da6e6916e90e6632d1d0b8ef0fd3d702e74ae8d0bd213df720901a2f31
+2026-10-21T13:38:37Z   Unhealthy               paymentservice-54d5cffd4-pxr2w           Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-21T13:38:37Z   IssuedLeafCertificate   recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: 3afc16395c8cf83e83408ab59c5960aa1de1d49d558a9f4c449fa3b539c74615
+2026-10-21T13:38:37Z   Started                 paymentservice-54d5cffd4-pxr2w           Container started
+2026-10-21T13:38:37Z   Created                 paymentservice-54d5cffd4-pxr2w           Container created
+2026-10-21T13:38:37Z   Pulled                  paymentservice-54d5cffd4-pxr2w           Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:37Z   IssuedLeafCertificate   default                                  issued certificate for default.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: ffe3aecbf0d1292aab7a27cf6e01286a8e19be0c1a9f5c4ff9c5300b88eaf94b
+2026-10-21T13:38:37Z   IssuedLeafCertificate   checkoutservice                          issued certificate for checkoutservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: 0aa33d9aea9c60e53de689b58e3d9bcd6817d8f1ff972ee90d88a1c6a2951c95
+2026-10-21T13:38:37Z   Started                 shippingservice-765bfbb8f8-25j72         Container started
+2026-10-21T13:38:37Z   Created                 shippingservice-765bfbb8f8-25j72         Container created
+2026-10-21T13:38:37Z   Pulled                  productcatalogservice-c5c9748f8-h8mv4    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:37Z   Created                 productcatalogservice-c5c9748f8-h8mv4    Container created
+2026-10-21T13:38:37Z   Started                 productcatalogservice-c5c9748f8-h8mv4    Container started
+2026-10-21T13:38:37Z   IssuedLeafCertificate   shippingservice                          issued certificate for shippingservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: c203cbe0b1f3ad931038575f4f1b9b6c6caeab54b7a1342bb2f5b2176395a3aa
+2026-10-21T13:38:37Z   Started                 checkoutservice-6dd4fc9df8-4j6dn         Container started
+2026-10-21T13:38:37Z   Created                 checkoutservice-6dd4fc9df8-4j6dn         Container created
+2026-10-21T13:38:37Z   Created                 cartservice-59fb4c8987-t5b7p             Container created
+2026-10-21T13:38:37Z   Started                 cartservice-59fb4c8987-t5b7p             Container started
+2026-10-21T13:38:37Z   Started                 currencyservice-68db9f46d-bztdw          Container started
+2026-10-21T13:38:37Z   Created                 currencyservice-68db9f46d-bztdw          Container created
+2026-10-21T13:38:37Z   Pulled                  currencyservice-68db9f46d-bztdw          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:37Z   Started                 adservice-c4fd8cdc6-vr8jq                Container started
+2026-10-21T13:38:37Z   Created                 adservice-c4fd8cdc6-vr8jq                Container created
+2026-10-21T13:38:37Z   Pulled                  adservice-c4fd8cdc6-vr8jq                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:37Z   Started                 redis-cart-7644fb9546-5gdr6              Container started
+2026-10-21T13:38:37Z   IssuedLeafCertificate   productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:38:57 +0000 UTC: 27ff033b20c16713a5b876489d83bf6b803750ace5ee642e54a959c489417bd1
+2026-10-21T13:38:37Z   Created                 redis-cart-7644fb9546-5gdr6              Container created
+2026-10-21T13:38:37Z   Pulled                  recommendationservice-57ccb89b78-8cqj7   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:38:37Z   Created                 recommendationservice-57ccb89b78-8cqj7   Container created
+2026-10-21T13:38:37Z   Unhealthy               recommendationservice-57ccb89b78-8cqj7   Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-21T13:38:38Z   Started                 frontend-7bcd89ffdd-2g5rk                Container started
+2026-10-21T13:38:38Z   Pulled                  frontend-7bcd89ffdd-2g5rk                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:38Z   Unhealthy               currencyservice-68db9f46d-bztdw          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:38:38Z   Created                 frontend-7bcd89ffdd-2g5rk                Container created
+2026-10-21T13:38:38Z   Started                 productcatalogservice-c5c9748f8-h8mv4    Container started
+2026-10-21T13:38:38Z   Created                 productcatalogservice-c5c9748f8-h8mv4    Container created
+2026-10-21T13:38:38Z   Pulled                  productcatalogservice-c5c9748f8-h8mv4    Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:38Z   Pulling                 redis-cart-7644fb9546-5gdr6              Pulling image "redis:alpine"
+2026-10-21T13:38:39Z   Killing                 shippingservice-59b6bb46b6-wmkdr         Stopping container server
+2026-10-21T13:38:39Z   Killing                 checkoutservice-b954f9f4b-7dc47          Stopping container server
+2026-10-21T13:38:39Z   Created                 shippingservice-765bfbb8f8-25j72         Container created
+2026-10-21T13:38:39Z   ScalingReplicaSet       checkoutservice                          Scaled down replica set checkoutservice-b954f9f4b from 1 to 0
+2026-10-21T13:38:39Z   Pulled                  shippingservice-765bfbb8f8-25j72         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:39Z   Started                 paymentservice-54d5cffd4-pxr2w           Container started
+2026-10-21T13:38:39Z   SuccessfulDelete        shippingservice-59b6bb46b6               Deleted pod: shippingservice-59b6bb46b6-wmkdr
+2026-10-21T13:38:39Z   ScalingReplicaSet       shippingservice                          Scaled down replica set shippingservice-59b6bb46b6 from 1 to 0
+2026-10-21T13:38:39Z   SuccessfulDelete        checkoutservice-b954f9f4b                Deleted pod: checkoutservice-b954f9f4b-7dc47
+2026-10-21T13:38:39Z   SuccessfulDelete        productcatalogservice-d5cd96858          Deleted pod: productcatalogservice-d5cd96858-pkmpc
+2026-10-21T13:38:39Z   Killing                 checkoutservice-b954f9f4b-7dc47          Stopping container linkerd-proxy
+2026-10-21T13:38:39Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-d5cd96858 from 1 to 0
+2026-10-21T13:38:39Z   Unhealthy               checkoutservice-b954f9f4b-7dc47          Liveness probe failed: Get "http://172.31.14.74:4191/live": dial tcp 172.31.14.74:4191: connect: connection refused
+2026-10-21T13:38:39Z   Pulled                  paymentservice-54d5cffd4-pxr2w           Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:39Z   Killing                 shippingservice-59b6bb46b6-wmkdr         Stopping container linkerd-proxy
+2026-10-21T13:38:39Z   Started                 shippingservice-765bfbb8f8-25j72         Container started
+2026-10-21T13:38:39Z   Started                 checkoutservice-6dd4fc9df8-4j6dn         Container started
+2026-10-21T13:38:39Z   Created                 paymentservice-54d5cffd4-pxr2w           Container created
+2026-10-21T13:38:39Z   Created                 checkoutservice-6dd4fc9df8-4j6dn         Container created
+2026-10-21T13:38:39Z   Killing                 productcatalogservice-d5cd96858-pkmpc    Stopping container server
+2026-10-21T13:38:39Z   Killing                 productcatalogservice-d5cd96858-pkmpc    Stopping container linkerd-proxy
+2026-10-21T13:38:39Z   Pulled                  checkoutservice-6dd4fc9df8-4j6dn         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:40Z   ScalingReplicaSet       redis-cart                               Scaled down replica set redis-cart-5975fc9d8b from 1 to 0
+2026-10-21T13:38:40Z   Killing                 redis-cart-5975fc9d8b-qkmqq              Stopping container redis
+2026-10-21T13:38:40Z   Unhealthy               paymentservice-54d5cffd4-pxr2w           Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:38:40Z   Pulled                  redis-cart-7644fb9546-5gdr6              Successfully pulled image "redis:alpine" in 2.502s (2.502s including waiting). Image size: 39122324 bytes.
+2026-10-21T13:38:40Z   Created                 redis-cart-7644fb9546-5gdr6              Container created
+2026-10-21T13:38:40Z   Started                 redis-cart-7644fb9546-5gdr6              Container started
+2026-10-21T13:38:40Z   SuccessfulDelete        redis-cart-5975fc9d8b                    Deleted pod: redis-cart-5975fc9d8b-qkmqq
+2026-10-21T13:38:40Z   Unhealthy               currencyservice-68db9f46d-bztdw          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:38:40Z   Killing                 redis-cart-5975fc9d8b-qkmqq              Stopping container linkerd-proxy
+2026-10-21T13:38:49Z   ScalingReplicaSet       frontend                                 Scaled down replica set frontend-779768987b from 1 to 0
+2026-10-21T13:38:49Z   SuccessfulDelete        frontend-779768987b                      Deleted pod: frontend-779768987b-wpxg2
+2026-10-21T13:38:49Z   Killing                 frontend-779768987b-wpxg2                Stopping container linkerd-proxy
+2026-10-21T13:38:49Z   Killing                 frontend-779768987b-wpxg2                Stopping container server
+2026-10-21T13:38:50Z   ScalingReplicaSet       paymentservice                           Scaled down replica set paymentservice-7dbd46599b from 1 to 0
+2026-10-21T13:38:50Z   SuccessfulDelete        currencyservice-564fd9876d               Deleted pod: currencyservice-564fd9876d-j84vs
+2026-10-21T13:38:50Z   Killing                 currencyservice-564fd9876d-j84vs         Stopping container linkerd-proxy
+2026-10-21T13:38:50Z   Killing                 paymentservice-7dbd46599b-72jpl          Stopping container linkerd-proxy
+2026-10-21T13:38:50Z   SuccessfulDelete        paymentservice-7dbd46599b                Deleted pod: paymentservice-7dbd46599b-72jpl
+2026-10-21T13:38:50Z   Killing                 paymentservice-7dbd46599b-72jpl          Stopping container server
+2026-10-21T13:38:50Z   ScalingReplicaSet       currencyservice                          Scaled down replica set currencyservice-564fd9876d from 1 to 0
+2026-10-21T13:38:50Z   Killing                 recommendationservice-57ccb89b78-8cqj7   Container server failed liveness probe, will be restarted
+2026-10-21T13:38:50Z   Killing                 emailservice-57bdf7d996-zhjcd            Container server failed liveness probe, will be restarted
+2026-10-21T13:38:50Z   Killing                 currencyservice-564fd9876d-j84vs         Stopping container server
+2026-10-21T13:38:55Z   Killing                 emailservice-6946fd7b64-tq7mv            Stopping container linkerd-proxy
+2026-10-21T13:38:55Z   Killing                 recommendationservice-77466667d-ggxgm    Stopping container linkerd-proxy
+2026-10-21T13:38:55Z   Killing                 emailservice-6946fd7b64-tq7mv            Stopping container server
+2026-10-21T13:38:55Z   Unhealthy               currencyservice-564fd9876d-j84vs         Readiness probe failed: Get "http://172.31.44.234:4191/ready": dial tcp 172.31.44.234:4191: connect: connection refused
+2026-10-21T13:38:55Z   Pulled                  recommendationservice-57ccb89b78-8cqj7   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:55Z   ScalingReplicaSet       emailservice                             Scaled down replica set emailservice-6946fd7b64 from 1 to 0
+2026-10-21T13:38:55Z   SuccessfulDelete        recommendationservice-77466667d          Deleted pod: recommendationservice-77466667d-ggxgm
+2026-10-21T13:38:55Z   Killing                 recommendationservice-77466667d-ggxgm    Stopping container server
+2026-10-21T13:38:55Z   Started                 emailservice-57bdf7d996-zhjcd            Container started
+2026-10-21T13:38:55Z   Created                 emailservice-57bdf7d996-zhjcd            Container created
+2026-10-21T13:38:55Z   Pulled                  emailservice-57bdf7d996-zhjcd            Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:38:55Z   SuccessfulDelete        emailservice-6946fd7b64                  Deleted pod: emailservice-6946fd7b64-tq7mv
+2026-10-21T13:38:55Z   Unhealthy               cartservice-59fb4c8987-t5b7p             Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:38:56Z   Unhealthy               emailservice-57bdf7d996-zhjcd            Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:38:56Z   Started                 recommendationservice-57ccb89b78-8cqj7   Container started
+2026-10-21T13:38:56Z   Created                 recommendationservice-57ccb89b78-8cqj7   Container created
+2026-10-21T13:38:57Z   Unhealthy               recommendationservice-57ccb89b78-8cqj7   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:39:00Z   Killing                 cartservice-85b7f4964c-kmg2x             Stopping container linkerd-proxy
+2026-10-21T13:39:00Z   Killing                 cartservice-85b7f4964c-kmg2x             Stopping container server
+2026-10-21T13:39:00Z   ScalingReplicaSet       cartservice                              Scaled down replica set cartservice-85b7f4964c from 1 to 0
+2026-10-21T13:39:00Z   SuccessfulDelete        cartservice-85b7f4964c                   Deleted pod: cartservice-85b7f4964c-kmg2x
+2026-10-21T13:39:02Z   Unhealthy               recommendationservice-57ccb89b78-8cqj7   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:39:02Z   Unhealthy               emailservice-57bdf7d996-zhjcd            Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:39:05Z   Unhealthy               emailservice-57bdf7d996-zhjcd            Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:39:05Z   Unhealthy               adservice-c4fd8cdc6-vr8jq                Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:39:05Z   Unhealthy               recommendationservice-57ccb89b78-8cqj7   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:39:10Z   ScalingReplicaSet       adservice                                Scaled down replica set adservice-9b555cbc6 from 1 to 0
+2026-10-21T13:39:10Z   Killing                 adservice-9b555cbc6-t4665                Stopping container server
+2026-10-21T13:39:10Z   SuccessfulDelete        adservice-9b555cbc6                      Deleted pod: adservice-9b555cbc6-t4665
+2026-10-21T13:39:10Z   Killing                 adservice-9b555cbc6-t4665                Stopping container linkerd-proxy
+2026-10-21T13:41:20Z   SuccessfulCreate        currencyservice-68db9f46d                Created pod: currencyservice-68db9f46d-f2gll
+2026-10-21T13:41:20Z   Started                 currencyservice-68db9f46d-f2gll          Container started
+2026-10-21T13:41:20Z   Scheduled               currencyservice-68db9f46d-f2gll          Successfully assigned default/currencyservice-68db9f46d-f2gll to ip-172-31-89-104.ec2.internal
+2026-10-21T13:41:20Z   ScalingReplicaSet       currencyservice                          Scaled up replica set currencyservice-68db9f46d from 1 to 2
+2026-10-21T13:41:20Z   SuccessfulRescale       keda-hpa-currencyservice-rps             New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: currencyservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:20Z   Pulled                  currencyservice-68db9f46d-f2gll          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:20Z   Created                 currencyservice-68db9f46d-f2gll          Container created
+2026-10-21T13:41:22Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:41:42 +0000 UTC: 923388127fefd20fcf04b7f116375c955bbf6088e674c5b9c2fd3df535741bf5
+2026-10-21T13:41:22Z   Pulled                  currencyservice-68db9f46d-f2gll          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:22Z   Created                 currencyservice-68db9f46d-f2gll          Container created
+2026-10-21T13:41:22Z   Started                 currencyservice-68db9f46d-f2gll          Container started
+2026-10-21T13:41:23Z   Pulled                  currencyservice-68db9f46d-f2gll          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:23Z   Created                 currencyservice-68db9f46d-f2gll          Container created
+2026-10-21T13:41:23Z   Started                 currencyservice-68db9f46d-f2gll          Container started
+2026-10-21T13:41:24Z   Unhealthy               currencyservice-68db9f46d-f2gll          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:41:24Z   SuccessfulRescale       keda-hpa-frontend-rps                    New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:24Z   ScalingReplicaSet       frontend                                 Scaled up replica set frontend-7bcd89ffdd from 1 to 2
+2026-10-21T13:41:25Z   Scheduled               frontend-7bcd89ffdd-r4mbd                Successfully assigned default/frontend-7bcd89ffdd-r4mbd to ip-172-31-1-125.ec2.internal
+2026-10-21T13:41:25Z   SuccessfulCreate        frontend-7bcd89ffdd                      Created pod: frontend-7bcd89ffdd-r4mbd
+2026-10-21T13:41:25Z   Unhealthy               currencyservice-68db9f46d-f2gll          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:41:25Z   Pulled                  frontend-7bcd89ffdd-r4mbd                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:26Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:41:46 +0000 UTC: 995dcde45713e13cb00048a6ae91ed40c972090f1f131d38e97e9684a9782295
+2026-10-21T13:41:26Z   Unhealthy               frontend-7bcd89ffdd-r4mbd                Startup probe failed: Get "http://172.31.10.11:4191/ready": dial tcp 172.31.10.11:4191: connect: connection refused
+2026-10-21T13:41:26Z   Started                 frontend-7bcd89ffdd-r4mbd                Container started
+2026-10-21T13:41:26Z   Created                 frontend-7bcd89ffdd-r4mbd                Container created
+2026-10-21T13:41:26Z   Pulled                  frontend-7bcd89ffdd-r4mbd                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:26Z   Created                 frontend-7bcd89ffdd-r4mbd                Container created
+2026-10-21T13:41:26Z   Started                 frontend-7bcd89ffdd-r4mbd                Container started
+2026-10-21T13:41:28Z   Created                 frontend-7bcd89ffdd-r4mbd                Container created
+2026-10-21T13:41:28Z   Started                 frontend-7bcd89ffdd-r4mbd                Container started
+2026-10-21T13:41:28Z   Pulled                  frontend-7bcd89ffdd-r4mbd                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:35Z   SuccessfulRescale       keda-hpa-currencyservice-rps             New size: 3; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: currencyservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:35Z   Pulled                  currencyservice-68db9f46d-xskx4          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:35Z   Created                 currencyservice-68db9f46d-xskx4          Container created
+2026-10-21T13:41:35Z   SuccessfulCreate        currencyservice-68db9f46d                Created pod: currencyservice-68db9f46d-xskx4
+2026-10-21T13:41:35Z   Scheduled               currencyservice-68db9f46d-xskx4          Successfully assigned default/currencyservice-68db9f46d-xskx4 to ip-172-31-1-125.ec2.internal
+2026-10-21T13:41:35Z   ScalingReplicaSet       currencyservice                          Scaled up replica set currencyservice-68db9f46d from 2 to 3
+2026-10-21T13:41:36Z   Started                 currencyservice-68db9f46d-xskx4          Container started
+2026-10-21T13:41:36Z   Pulled                  currencyservice-68db9f46d-xskx4          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:36Z   Created                 currencyservice-68db9f46d-xskx4          Container created
+2026-10-21T13:41:36Z   Started                 currencyservice-68db9f46d-xskx4          Container started
+2026-10-21T13:41:36Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:41:56 +0000 UTC: 7ddb90ecb2c12caa8ad7153814e5e2b1d41bace34d7120751a74acdbba893017
+2026-10-21T13:41:38Z   Pulled                  currencyservice-68db9f46d-xskx4          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:38Z   Created                 currencyservice-68db9f46d-xskx4          Container created
+2026-10-21T13:41:38Z   Started                 currencyservice-68db9f46d-xskx4          Container started
+2026-10-21T13:41:39Z   Unhealthy               currencyservice-68db9f46d-xskx4          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:41:39Z   ScalingReplicaSet       frontend                                 Scaled up replica set frontend-7bcd89ffdd from 2 to 4
+2026-10-21T13:41:39Z   SuccessfulRescale       keda-hpa-frontend-rps                    New size: 4; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:40Z   Pulled                  frontend-7bcd89ffdd-666cf                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:40Z   Created                 frontend-7bcd89ffdd-fmrp6                Container created
+2026-10-21T13:41:40Z   Unhealthy               currencyservice-68db9f46d-xskx4          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:41:40Z   SuccessfulCreate        frontend-7bcd89ffdd                      Created pod: frontend-7bcd89ffdd-666cf
+2026-10-21T13:41:40Z   Started                 frontend-7bcd89ffdd-666cf                Container started
+2026-10-21T13:41:40Z   Created                 frontend-7bcd89ffdd-666cf                Container created
+2026-10-21T13:41:40Z   Scheduled               frontend-7bcd89ffdd-666cf                Successfully assigned default/frontend-7bcd89ffdd-666cf to ip-172-31-89-104.ec2.internal
+2026-10-21T13:41:40Z   SuccessfulCreate        frontend-7bcd89ffdd                      Created pod: frontend-7bcd89ffdd-fmrp6
+2026-10-21T13:41:40Z   Scheduled               frontend-7bcd89ffdd-fmrp6                Successfully assigned default/frontend-7bcd89ffdd-fmrp6 to ip-172-31-46-211.ec2.internal
+2026-10-21T13:41:40Z   Pulled                  frontend-7bcd89ffdd-fmrp6                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:40Z   Started                 frontend-7bcd89ffdd-fmrp6                Container started
+2026-10-21T13:41:41Z   Created                 frontend-7bcd89ffdd-fmrp6                Container created
+2026-10-21T13:41:41Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:01 +0000 UTC: 01378565a3323da9286dd1cc7aebc14b3597d12134511a15093522c73086a2c9
+2026-10-21T13:41:41Z   Started                 frontend-7bcd89ffdd-666cf                Container started
+2026-10-21T13:41:41Z   Created                 frontend-7bcd89ffdd-666cf                Container created
+2026-10-21T13:41:41Z   Pulled                  frontend-7bcd89ffdd-fmrp6                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:41Z   Started                 frontend-7bcd89ffdd-fmrp6                Container started
+2026-10-21T13:41:41Z   Pulled                  frontend-7bcd89ffdd-666cf                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:41Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:01 +0000 UTC: 04910a88b4fb4ea99317b12fc92ec374ab26b9f23c6b287f87974a506c3c0c7c
+2026-10-21T13:41:42Z   Created                 frontend-7bcd89ffdd-666cf                Container created
+2026-10-21T13:41:42Z   Created                 frontend-7bcd89ffdd-fmrp6                Container created
+2026-10-21T13:41:42Z   Pulled                  frontend-7bcd89ffdd-fmrp6                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:42Z   Started                 frontend-7bcd89ffdd-fmrp6                Container started
+2026-10-21T13:41:42Z   Started                 frontend-7bcd89ffdd-666cf                Container started
+2026-10-21T13:41:42Z   Pulled                  frontend-7bcd89ffdd-666cf                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:44Z   SuccessfulCreate        productcatalogservice-c5c9748f8          Created pod: productcatalogservice-c5c9748f8-6qgrc
+2026-10-21T13:41:44Z   SuccessfulRescale       keda-hpa-productcatalogservice-rps       New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: productcatalogservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:44Z   Scheduled               productcatalogservice-c5c9748f8-6qgrc    Successfully assigned default/productcatalogservice-c5c9748f8-6qgrc to ip-172-31-89-104.ec2.internal
+2026-10-21T13:41:44Z   ScalingReplicaSet       productcatalogservice                    Scaled up replica set productcatalogservice-c5c9748f8 from 1 to 2
+2026-10-21T13:41:45Z   Started                 productcatalogservice-c5c9748f8-6qgrc    Container started
+2026-10-21T13:41:45Z   Created                 productcatalogservice-c5c9748f8-6qgrc    Container created
+2026-10-21T13:41:45Z   Pulled                  productcatalogservice-c5c9748f8-6qgrc    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:46Z   Started                 productcatalogservice-c5c9748f8-6qgrc    Container started
+2026-10-21T13:41:46Z   IssuedLeafCertificate   productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:06 +0000 UTC: 6aba13d758c1cf1532b5656a04a598f296e9a611ee05fc0c87977e46d9480eb2
+2026-10-21T13:41:46Z   Pulled                  productcatalogservice-c5c9748f8-6qgrc    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:46Z   SuccessfulRescale       keda-hpa-recommendationservice-rps       New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: recommendationservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:46Z   Created                 productcatalogservice-c5c9748f8-6qgrc    Container created
+2026-10-21T13:41:47Z   Pulled                  recommendationservice-57ccb89b78-97gpc   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:47Z   Created                 productcatalogservice-c5c9748f8-6qgrc    Container created
+2026-10-21T13:41:47Z   Pulled                  productcatalogservice-c5c9748f8-6qgrc    Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:47Z   Scheduled               recommendationservice-57ccb89b78-97gpc   Successfully assigned default/recommendationservice-57ccb89b78-97gpc to ip-172-31-31-12.ec2.internal
+2026-10-21T13:41:47Z   Started                 productcatalogservice-c5c9748f8-6qgrc    Container started
+2026-10-21T13:41:47Z   Created                 recommendationservice-57ccb89b78-97gpc   Container created
+2026-10-21T13:41:47Z   Started                 recommendationservice-57ccb89b78-97gpc   Container started
+2026-10-21T13:41:47Z   SuccessfulCreate        recommendationservice-57ccb89b78         Created pod: recommendationservice-57ccb89b78-97gpc
+2026-10-21T13:41:48Z   Pulled                  recommendationservice-57ccb89b78-97gpc   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:48Z   Created                 recommendationservice-57ccb89b78-97gpc   Container created
+2026-10-21T13:41:49Z   Started                 recommendationservice-57ccb89b78-97gpc   Container started
+2026-10-21T13:41:49Z   IssuedLeafCertificate   recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:09 +0000 UTC: 889951d91941acd925714cc95383e9644c43ff96429d40cf23e244b8d2122899
+2026-10-21T13:41:50Z   SuccessfulRescale       keda-hpa-currencyservice-rps             New size: 5; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: currencyservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:50Z   ScalingReplicaSet       currencyservice                          Scaled up replica set currencyservice-68db9f46d from 3 to 5
+2026-10-21T13:41:50Z   Created                 currencyservice-68db9f46d-vtcp8          Container created
+2026-10-21T13:41:50Z   SuccessfulCreate        currencyservice-68db9f46d                Created pod: currencyservice-68db9f46d-vtcp8
+2026-10-21T13:41:50Z   Scheduled               currencyservice-68db9f46d-vtcp8          Successfully assigned default/currencyservice-68db9f46d-vtcp8 to ip-172-31-46-211.ec2.internal
+2026-10-21T13:41:50Z   Pulled                  currencyservice-68db9f46d-vtcp8          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:50Z   SuccessfulCreate        currencyservice-68db9f46d                Created pod: currencyservice-68db9f46d-5z8k9
+2026-10-21T13:41:50Z   Scheduled               currencyservice-68db9f46d-5z8k9          Successfully assigned default/currencyservice-68db9f46d-5z8k9 to ip-172-31-76-181.ec2.internal
+2026-10-21T13:41:50Z   Pulled                  currencyservice-68db9f46d-5z8k9          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:51Z   Created                 currencyservice-68db9f46d-5z8k9          Container created
+2026-10-21T13:41:51Z   Started                 currencyservice-68db9f46d-5z8k9          Container started
+2026-10-21T13:41:51Z   Pulled                  currencyservice-68db9f46d-5z8k9          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:51Z   Created                 currencyservice-68db9f46d-5z8k9          Container created
+2026-10-21T13:41:51Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:11 +0000 UTC: 7d548347fc2ab82491a1cb84f2ad5136d5a2dd2a58c14e00943032dd84d03a34
+2026-10-21T13:41:51Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:11 +0000 UTC: ac029659a15b3043288ff02aeb755059a0264614f73e33eff36417349dc47e40
+2026-10-21T13:41:51Z   Started                 currencyservice-68db9f46d-vtcp8          Container started
+2026-10-21T13:41:51Z   Created                 currencyservice-68db9f46d-vtcp8          Container created
+2026-10-21T13:41:51Z   Pulled                  currencyservice-68db9f46d-vtcp8          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:51Z   Started                 currencyservice-68db9f46d-vtcp8          Container started
+2026-10-21T13:41:51Z   Started                 currencyservice-68db9f46d-5z8k9          Container started
+2026-10-21T13:41:52Z   Started                 currencyservice-68db9f46d-5z8k9          Container started
+2026-10-21T13:41:52Z   Started                 currencyservice-68db9f46d-vtcp8          Container started
+2026-10-21T13:41:52Z   Pulled                  currencyservice-68db9f46d-vtcp8          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:52Z   Created                 currencyservice-68db9f46d-vtcp8          Container created
+2026-10-21T13:41:52Z   Created                 currencyservice-68db9f46d-5z8k9          Container created
+2026-10-21T13:41:52Z   Pulled                  currencyservice-68db9f46d-5z8k9          Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:53Z   Unhealthy               currencyservice-68db9f46d-vtcp8          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:41:53Z   Unhealthy               currencyservice-68db9f46d-5z8k9          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:41:54Z   Unhealthy               currencyservice-68db9f46d-vtcp8          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:41:54Z   Unhealthy               currencyservice-68db9f46d-5z8k9          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:41:55Z   ScalingReplicaSet       frontend                                 Scaled up replica set frontend-7bcd89ffdd from 4 to 5
+2026-10-21T13:41:55Z   SuccessfulCreate        frontend-7bcd89ffdd                      Created pod: frontend-7bcd89ffdd-wklbj
+2026-10-21T13:41:55Z   SuccessfulRescale       keda-hpa-frontend-rps                    New size: 5; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: frontend-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:55Z   Started                 frontend-7bcd89ffdd-wklbj                Container started
+2026-10-21T13:41:55Z   Created                 frontend-7bcd89ffdd-wklbj                Container created
+2026-10-21T13:41:55Z   Pulled                  frontend-7bcd89ffdd-wklbj                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:55Z   Scheduled               frontend-7bcd89ffdd-wklbj                Successfully assigned default/frontend-7bcd89ffdd-wklbj to ip-172-31-76-181.ec2.internal
+2026-10-21T13:41:56Z   Started                 frontend-7bcd89ffdd-wklbj                Container started
+2026-10-21T13:41:56Z   Created                 frontend-7bcd89ffdd-wklbj                Container created
+2026-10-21T13:41:56Z   Pulled                  frontend-7bcd89ffdd-wklbj                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:41:56Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:16 +0000 UTC: 2a3ed865c4f43b14570e40ddfc220665b9a7530d09e6d1c1459cb2a2645e1925
+2026-10-21T13:41:57Z   Created                 frontend-7bcd89ffdd-wklbj                Container created
+2026-10-21T13:41:57Z   Pulled                  frontend-7bcd89ffdd-wklbj                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:41:57Z   Started                 frontend-7bcd89ffdd-wklbj                Container started
+2026-10-21T13:41:59Z   Scheduled               productcatalogservice-c5c9748f8-rhzhr    Successfully assigned default/productcatalogservice-c5c9748f8-rhzhr to ip-172-31-1-125.ec2.internal
+2026-10-21T13:41:59Z   SuccessfulRescale       keda-hpa-productcatalogservice-rps       New size: 3; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: productcatalogservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:41:59Z   SuccessfulCreate        productcatalogservice-c5c9748f8          Created pod: productcatalogservice-c5c9748f8-rhzhr
+2026-10-21T13:41:59Z   ScalingReplicaSet       productcatalogservice                    Scaled up replica set productcatalogservice-c5c9748f8 from 2 to 3
+2026-10-21T13:42:00Z   SuccessfulCreate        cartservice-59fb4c8987                   Created pod: cartservice-59fb4c8987-7zgfw
+2026-10-21T13:42:00Z   Started                 productcatalogservice-c5c9748f8-rhzhr    Container started
+2026-10-21T13:42:00Z   IssuedLeafCertificate   productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:20 +0000 UTC: 076353b6f2c4b1f9149ef80561b18c14977ca1c56b19d3746bfcce82fbf25e02
+2026-10-21T13:42:00Z   Pulled                  productcatalogservice-c5c9748f8-rhzhr    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:00Z   ScalingReplicaSet       cartservice                              Scaled up replica set cartservice-59fb4c8987 from 1 to 2
+2026-10-21T13:42:00Z   Created                 productcatalogservice-c5c9748f8-rhzhr    Container created
+2026-10-21T13:42:00Z   Started                 productcatalogservice-c5c9748f8-rhzhr    Container started
+2026-10-21T13:42:00Z   Scheduled               cartservice-59fb4c8987-7zgfw             Successfully assigned default/cartservice-59fb4c8987-7zgfw to ip-172-31-31-12.ec2.internal
+2026-10-21T13:42:00Z   SuccessfulRescale       keda-hpa-cartservice-rps                 New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: cartservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:42:00Z   Pulled                  productcatalogservice-c5c9748f8-rhzhr    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:00Z   Created                 productcatalogservice-c5c9748f8-rhzhr    Container created
+2026-10-21T13:42:01Z   Pulled                  cartservice-59fb4c8987-7zgfw             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:01Z   Created                 cartservice-59fb4c8987-7zgfw             Container created
+2026-10-21T13:42:02Z   Killing                 recommendationservice-57ccb89b78-97gpc   Container server failed liveness probe, will be restarted
+2026-10-21T13:42:02Z   Started                 productcatalogservice-c5c9748f8-rhzhr    Container started
+2026-10-21T13:42:02Z   Pulled                  cartservice-59fb4c8987-7zgfw             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:02Z   SuccessfulRescale       keda-hpa-recommendationservice-rps       New size: 3; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: recommendationservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:42:02Z   SuccessfulCreate        recommendationservice-57ccb89b78         Created pod: recommendationservice-57ccb89b78-f9kp8
+2026-10-21T13:42:02Z   Started                 cartservice-59fb4c8987-7zgfw             Container started
+2026-10-21T13:42:02Z   Scheduled               recommendationservice-57ccb89b78-f9kp8   Successfully assigned default/recommendationservice-57ccb89b78-f9kp8 to ip-172-31-1-125.ec2.internal
+2026-10-21T13:42:02Z   Pulled                  productcatalogservice-c5c9748f8-rhzhr    Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:42:02Z   Created                 cartservice-59fb4c8987-7zgfw             Container created
+2026-10-21T13:42:02Z   Created                 productcatalogservice-c5c9748f8-rhzhr    Container created
+2026-10-21T13:42:03Z   Created                 recommendationservice-57ccb89b78-f9kp8   Container created
+2026-10-21T13:42:03Z   Started                 cartservice-59fb4c8987-7zgfw             Container started
+2026-10-21T13:42:03Z   Pulled                  recommendationservice-57ccb89b78-f9kp8   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:03Z   IssuedLeafCertificate   cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:23 +0000 UTC: 87f7b02e65741a36b43266b138faa5267a7a5ee97a163877b37be65dce759790
+2026-10-21T13:42:03Z   Pulled                  recommendationservice-57ccb89b78-f9kp8   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:42:03Z   Started                 recommendationservice-57ccb89b78-f9kp8   Container started
+2026-10-21T13:42:03Z   Created                 recommendationservice-57ccb89b78-f9kp8   Container created
+2026-10-21T13:42:03Z   Started                 recommendationservice-57ccb89b78-f9kp8   Container started
+2026-10-21T13:42:04Z   Created                 cartservice-59fb4c8987-7zgfw             Container created
+2026-10-21T13:42:04Z   Pulled                  cartservice-59fb4c8987-7zgfw             Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:42:04Z   IssuedLeafCertificate   recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:42:24 +0000 UTC: ff6f3a1612e0323d302afc00950ea7540dd19bc6f457cadf97621001b406a297
+2026-10-21T13:42:05Z   Started                 cartservice-59fb4c8987-7zgfw             Container started
+2026-10-21T13:42:07Z   Created                 recommendationservice-57ccb89b78-97gpc   Container created
+2026-10-21T13:42:07Z   Pulled                  recommendationservice-57ccb89b78-97gpc   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:42:07Z   Started                 recommendationservice-57ccb89b78-97gpc   Container started
+2026-10-21T13:42:08Z   Unhealthy               recommendationservice-57ccb89b78-97gpc   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:42:13Z   Unhealthy               recommendationservice-57ccb89b78-97gpc   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:42:17Z   Unhealthy               recommendationservice-57ccb89b78-97gpc   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:42:17Z   Killing                 recommendationservice-57ccb89b78-f9kp8   Container server failed liveness probe, will be restarted
+2026-10-21T13:42:22Z   Unhealthy               cartservice-59fb4c8987-7zgfw             Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:42:22Z   Created                 recommendationservice-57ccb89b78-f9kp8   Container created
+2026-10-21T13:42:22Z   Pulled                  recommendationservice-57ccb89b78-f9kp8   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:42:23Z   Started                 recommendationservice-57ccb89b78-f9kp8   Container started
+2026-10-21T13:42:24Z   Unhealthy               recommendationservice-57ccb89b78-f9kp8   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:42:29Z   Unhealthy               recommendationservice-57ccb89b78-f9kp8   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:42:32Z   Unhealthy               recommendationservice-57ccb89b78-f9kp8   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:42:59Z   SuccessfulRescale       keda-hpa-productcatalogservice-rps       New size: 4; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: productcatalogservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:42:59Z   SuccessfulCreate        productcatalogservice-c5c9748f8          Created pod: productcatalogservice-c5c9748f8-mj7cn
+2026-10-21T13:42:59Z   ScalingReplicaSet       productcatalogservice                    Scaled up replica set productcatalogservice-c5c9748f8 from 3 to 4
+2026-10-21T13:42:59Z   Scheduled               productcatalogservice-c5c9748f8-mj7cn    Successfully assigned default/productcatalogservice-c5c9748f8-mj7cn to ip-172-31-46-211.ec2.internal
+2026-10-21T13:43:00Z   Created                 productcatalogservice-c5c9748f8-mj7cn    Container created
+2026-10-21T13:43:00Z   Started                 productcatalogservice-c5c9748f8-mj7cn    Container started
+2026-10-21T13:43:00Z   Pulled                  productcatalogservice-c5c9748f8-mj7cn    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:00Z   Pulled                  productcatalogservice-c5c9748f8-mj7cn    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:00Z   Created                 productcatalogservice-c5c9748f8-mj7cn    Container created
+2026-10-21T13:43:01Z   Started                 productcatalogservice-c5c9748f8-mj7cn    Container started
+2026-10-21T13:43:01Z   IssuedLeafCertificate   productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:43:21 +0000 UTC: 68ab642781204bdd967ccc772fb96196d0263284b292d462996c567301f0c548
+2026-10-21T13:43:02Z   ScalingReplicaSet       checkoutservice                          Scaled up replica set checkoutservice-6dd4fc9df8 from 1 to 2
+2026-10-21T13:43:02Z   Pulled                  productcatalogservice-c5c9748f8-mj7cn    Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:43:02Z   SuccessfulRescale       keda-hpa-checkoutservice-rps             New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: checkoutservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:43:02Z   Created                 productcatalogservice-c5c9748f8-mj7cn    Container created
+2026-10-21T13:43:03Z   Started                 productcatalogservice-c5c9748f8-mj7cn    Container started
+2026-10-21T13:43:03Z   SuccessfulCreate        checkoutservice-6dd4fc9df8               Created pod: checkoutservice-6dd4fc9df8-htfjs
+2026-10-21T13:43:03Z   Started                 checkoutservice-6dd4fc9df8-htfjs         Container started
+2026-10-21T13:43:03Z   Created                 checkoutservice-6dd4fc9df8-htfjs         Container created
+2026-10-21T13:43:03Z   Pulled                  checkoutservice-6dd4fc9df8-htfjs         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:03Z   Scheduled               checkoutservice-6dd4fc9df8-htfjs         Successfully assigned default/checkoutservice-6dd4fc9df8-htfjs to ip-172-31-31-12.ec2.internal
+2026-10-21T13:43:04Z   Unhealthy               checkoutservice-6dd4fc9df8-htfjs         Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-21T13:43:04Z   Started                 checkoutservice-6dd4fc9df8-htfjs         Container started
+2026-10-21T13:43:04Z   Created                 checkoutservice-6dd4fc9df8-htfjs         Container created
+2026-10-21T13:43:04Z   Pulled                  checkoutservice-6dd4fc9df8-htfjs         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:04Z   IssuedLeafCertificate   checkoutservice                          issued certificate for checkoutservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:43:24 +0000 UTC: f8ca42a1d22506f6dd8ad6c85234812baee2abd9aa0da2d80f782422cfcce71e
+2026-10-21T13:43:06Z   Started                 checkoutservice-6dd4fc9df8-htfjs         Container started
+2026-10-21T13:43:06Z   Created                 checkoutservice-6dd4fc9df8-htfjs         Container created
+2026-10-21T13:43:06Z   Pulled                  checkoutservice-6dd4fc9df8-htfjs         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:43:32Z   SuccessfulCreate        recommendationservice-57ccb89b78         Created pod: recommendationservice-57ccb89b78-dlbkf
+2026-10-21T13:43:32Z   SuccessfulRescale       keda-hpa-recommendationservice-rps       New size: 4; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: recommendationservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:43:32Z   Scheduled               recommendationservice-57ccb89b78-dlbkf   Successfully assigned default/recommendationservice-57ccb89b78-dlbkf to ip-172-31-46-211.ec2.internal
+2026-10-21T13:43:33Z   Started                 recommendationservice-57ccb89b78-dlbkf   Container started
+2026-10-21T13:43:33Z   Pulled                  recommendationservice-57ccb89b78-dlbkf   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:33Z   Created                 recommendationservice-57ccb89b78-dlbkf   Container created
+2026-10-21T13:43:34Z   Pulled                  recommendationservice-57ccb89b78-dlbkf   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:43:34Z   Started                 recommendationservice-57ccb89b78-dlbkf   Container started
+2026-10-21T13:43:34Z   Created                 recommendationservice-57ccb89b78-dlbkf   Container created
+2026-10-21T13:43:34Z   IssuedLeafCertificate   recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:43:54 +0000 UTC: b644750ec01fd3848c71fa0e27c900afb3e8f4f8930f2b94c5560e3d247e5b59
+2026-10-21T13:43:47Z   Killing                 recommendationservice-57ccb89b78-dlbkf   Container server failed liveness probe, will be restarted
+2026-10-21T13:43:52Z   Pulled                  recommendationservice-57ccb89b78-dlbkf   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:43:52Z   Created                 recommendationservice-57ccb89b78-dlbkf   Container created
+2026-10-21T13:43:53Z   Started                 recommendationservice-57ccb89b78-dlbkf   Container started
+2026-10-21T13:43:54Z   Unhealthy               recommendationservice-57ccb89b78-dlbkf   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:43:59Z   Unhealthy               recommendationservice-57ccb89b78-dlbkf   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:44:02Z   Unhealthy               recommendationservice-57ccb89b78-dlbkf   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T13:45:58Z   ScalingReplicaSet       adservice                                Scaled up replica set adservice-c4fd8cdc6 from 1 to 2
+2026-10-21T13:45:58Z   Scheduled               adservice-c4fd8cdc6-lzktm                Successfully assigned default/adservice-c4fd8cdc6-lzktm to ip-172-31-89-104.ec2.internal
+2026-10-21T13:45:58Z   SuccessfulRescale       keda-hpa-adservice-rps                   New size: 2; reason: external metric s0-prometheus(&LabelSelector{MatchLabels:map[string]string{scaledobject.keda.sh/name: adservice-rps,},MatchExpressions:[]LabelSelectorRequirement{},}) above target
+2026-10-21T13:45:58Z   SuccessfulCreate        adservice-c4fd8cdc6                      Created pod: adservice-c4fd8cdc6-lzktm
+2026-10-21T13:45:59Z   Pulled                  adservice-c4fd8cdc6-lzktm                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:45:59Z   Created                 adservice-c4fd8cdc6-lzktm                Container created
+2026-10-21T13:45:59Z   Started                 adservice-c4fd8cdc6-lzktm                Container started
+2026-10-21T13:46:00Z   Created                 adservice-c4fd8cdc6-lzktm                Container created
+2026-10-21T13:46:00Z   Started                 adservice-c4fd8cdc6-lzktm                Container started
+2026-10-21T13:46:00Z   IssuedLeafCertificate   adservice                                issued certificate for adservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 13:46:20 +0000 UTC: 5bfacfd06969a073510ae0835bd7ba91bd78a73150ff141e6c6e7c3670964165
+2026-10-21T13:46:00Z   Pulled                  adservice-c4fd8cdc6-lzktm                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T13:46:02Z   Created                 adservice-c4fd8cdc6-lzktm                Container created
+2026-10-21T13:46:02Z   Pulled                  adservice-c4fd8cdc6-lzktm                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T13:46:02Z   Started                 adservice-c4fd8cdc6-lzktm                Container started
+2026-10-21T13:46:30Z   Unhealthy               adservice-c4fd8cdc6-lzktm                Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T13:51:29Z   Killing                 adservice-c4fd8cdc6-lzktm                Stopping container server
+2026-10-21T13:51:29Z   Killing                 adservice-c4fd8cdc6-lzktm                Stopping container linkerd-proxy
+2026-10-21T13:51:29Z   SuccessfulRescale       keda-hpa-adservice-rps                   New size: 1; reason: All metrics below target
+2026-10-21T13:51:29Z   ScalingReplicaSet       adservice                                Scaled down replica set adservice-c4fd8cdc6 from 2 to 1
+2026-10-21T13:51:29Z   SuccessfulDelete        adservice-c4fd8cdc6                      Deleted pod: adservice-c4fd8cdc6-lzktm
+2026-10-21T13:51:48Z   Killing                 recommendationservice-57ccb89b78-dlbkf   Stopping container server
+2026-10-21T13:51:48Z   SuccessfulRescale       keda-hpa-recommendationservice-rps       New size: 3; reason: All metrics below target
+2026-10-21T13:51:48Z   Killing                 recommendationservice-57ccb89b78-dlbkf   Stopping container linkerd-proxy
+2026-10-21T13:51:48Z   SuccessfulDelete        recommendationservice-57ccb89b78         Deleted pod: recommendationservice-57ccb89b78-dlbkf
+2026-10-21T13:52:00Z   SuccessfulDelete        productcatalogservice-c5c9748f8          Deleted pod: productcatalogservice-c5c9748f8-mj7cn
+2026-10-21T13:52:00Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-c5c9748f8 from 4 to 3
+2026-10-21T13:52:00Z   SuccessfulRescale       keda-hpa-productcatalogservice-rps       New size: 3; reason: All metrics below target
+2026-10-21T13:52:00Z   Killing                 productcatalogservice-c5c9748f8-mj7cn    Stopping container linkerd-proxy
+2026-10-21T13:52:00Z   Killing                 productcatalogservice-c5c9748f8-mj7cn    Stopping container server
+2026-10-21T13:52:03Z   ScalingReplicaSet       checkoutservice                          Scaled down replica set checkoutservice-6dd4fc9df8 from 2 to 1
+2026-10-21T13:52:03Z   Killing                 checkoutservice-6dd4fc9df8-htfjs         Stopping container linkerd-proxy
+2026-10-21T13:52:03Z   Killing                 checkoutservice-6dd4fc9df8-htfjs         Stopping container server
+2026-10-21T13:52:03Z   SuccessfulDelete        checkoutservice-6dd4fc9df8               Deleted pod: checkoutservice-6dd4fc9df8-htfjs
+2026-10-21T13:52:03Z   SuccessfulRescale       keda-hpa-checkoutservice-rps             New size: 1; reason: All metrics below target
+2026-10-21T13:54:03Z   SuccessfulDelete        recommendationservice-57ccb89b78         Deleted pod: recommendationservice-57ccb89b78-f9kp8
+2026-10-21T13:54:03Z   Killing                 recommendationservice-57ccb89b78-f9kp8   Stopping container linkerd-proxy
+2026-10-21T13:54:03Z   ScalingReplicaSet       recommendationservice                    (combined from similar events): Scaled down replica set recommendationservice-57ccb89b78 from 3 to 2
+2026-10-21T13:54:03Z   SuccessfulRescale       keda-hpa-recommendationservice-rps       New size: 2; reason: All metrics below target
+2026-10-21T13:54:03Z   Killing                 recommendationservice-57ccb89b78-f9kp8   Stopping container server
+2026-10-21T13:54:31Z   ScalingReplicaSet       productcatalogservice                    (combined from similar events): Scaled down replica set productcatalogservice-c5c9748f8 from 3 to 2
+2026-10-21T13:54:31Z   SuccessfulDelete        productcatalogservice-c5c9748f8          Deleted pod: productcatalogservice-c5c9748f8-6qgrc
+2026-10-21T13:54:31Z   SuccessfulRescale       keda-hpa-productcatalogservice-rps       New size: 2; reason: All metrics below target
+2026-10-21T13:54:31Z   Killing                 productcatalogservice-c5c9748f8-6qgrc    Stopping container linkerd-proxy
+2026-10-21T13:54:31Z   Killing                 productcatalogservice-c5c9748f8-6qgrc    Stopping container server
+2026-10-21T13:54:32Z   Killing                 cartservice-59fb4c8987-7zgfw             Stopping container linkerd-proxy
+2026-10-21T13:54:32Z   SuccessfulDelete        cartservice-59fb4c8987                   Deleted pod: cartservice-59fb4c8987-7zgfw
+2026-10-21T13:54:32Z   ScalingReplicaSet       cartservice                              Scaled down replica set cartservice-59fb4c8987 from 2 to 1
+2026-10-21T13:54:32Z   SuccessfulRescale       keda-hpa-cartservice-rps                 New size: 1; reason: All metrics below target
+2026-10-21T13:54:32Z   Killing                 cartservice-59fb4c8987-7zgfw             Stopping container server
+2026-10-21T13:56:06Z   SuccessfulDelete        currencyservice-68db9f46d                Deleted pod: currencyservice-68db9f46d-bztdw
+2026-10-21T13:56:06Z   SuccessfulRescale       keda-hpa-currencyservice-rps             New size: 4; reason: All metrics below target
+2026-10-21T13:56:06Z   Killing                 currencyservice-68db9f46d-bztdw          Stopping container server
+2026-10-21T13:56:06Z   Killing                 currencyservice-68db9f46d-bztdw          Stopping container linkerd-proxy
+2026-10-21T13:56:06Z   ScalingReplicaSet       currencyservice                          Scaled down replica set currencyservice-68db9f46d from 5 to 4
+2026-10-21T14:07:25Z   SuccessfulDelete        recommendationservice-57ccb89b78         Deleted pod: recommendationservice-57ccb89b78-8cqj7
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-vtcp8          Stopping container server
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-2g5rk                Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-2g5rk                Stopping container server
+2026-10-21T14:07:25Z   Killing                 recommendationservice-57ccb89b78-8cqj7   Stopping container server
+2026-10-21T14:07:25Z   Killing                 recommendationservice-57ccb89b78-8cqj7   Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-c5c9748f8 from 2 to 1
+2026-10-21T14:07:25Z   ScalingReplicaSet       currencyservice                          Scaled down replica set currencyservice-68db9f46d from 4 to 1
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-fmrp6                Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-fmrp6                Stopping container server
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-5z8k9          Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-5z8k9          Stopping container server
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-r4mbd                Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-f2gll          Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-f2gll          Stopping container server
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-r4mbd                Stopping container server
+2026-10-21T14:07:25Z   SuccessfulDelete        currencyservice-68db9f46d                Deleted pod: currencyservice-68db9f46d-f2gll
+2026-10-21T14:07:25Z   SuccessfulDelete        currencyservice-68db9f46d                Deleted pod: currencyservice-68db9f46d-5z8k9
+2026-10-21T14:07:25Z   Unhealthy               frontend-7bcd89ffdd-r4mbd                Liveness probe failed: Get "http://172.31.10.11:4191/live": dial tcp 172.31.10.11:4191: connect: connection refused
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-wklbj                Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   SuccessfulDelete        productcatalogservice-c5c9748f8          Deleted pod: productcatalogservice-c5c9748f8-rhzhr
+2026-10-21T14:07:25Z   Killing                 frontend-7bcd89ffdd-wklbj                Stopping container server
+2026-10-21T14:07:25Z   Killing                 productcatalogservice-c5c9748f8-rhzhr    Stopping container server
+2026-10-21T14:07:25Z   Killing                 productcatalogservice-c5c9748f8-rhzhr    Stopping container linkerd-proxy
+2026-10-21T14:07:25Z   SuccessfulDelete        frontend-7bcd89ffdd                      Deleted pod: frontend-7bcd89ffdd-2g5rk
+2026-10-21T14:07:25Z   SuccessfulDelete        frontend-7bcd89ffdd                      Deleted pod: frontend-7bcd89ffdd-wklbj
+2026-10-21T14:07:25Z   SuccessfulDelete        frontend-7bcd89ffdd                      Deleted pod: frontend-7bcd89ffdd-fmrp6
+2026-10-21T14:07:25Z   SuccessfulDelete        frontend-7bcd89ffdd                      Deleted pod: frontend-7bcd89ffdd-r4mbd
+2026-10-21T14:07:25Z   SuccessfulDelete        currencyservice-68db9f46d                Deleted pod: currencyservice-68db9f46d-vtcp8
+2026-10-21T14:07:25Z   ScalingReplicaSet       frontend                                 Scaled down replica set frontend-7bcd89ffdd from 5 to 1
+2026-10-21T14:07:25Z   ScalingReplicaSet       recommendationservice                    Scaled down replica set recommendationservice-57ccb89b78 from 2 to 1
+2026-10-21T14:07:25Z   Killing                 currencyservice-68db9f46d-vtcp8          Stopping container linkerd-proxy
+2026-10-21T14:07:27Z   Injected                adservice                                Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   ScalingReplicaSet       redis-cart                               Scaled up replica set redis-cart-8564f8f9df from 0 to 1
+2026-10-21T14:07:27Z   ScalingReplicaSet       currencyservice                          Scaled up replica set currencyservice-84df44bf6c from 0 to 1
+2026-10-21T14:07:27Z   SuccessfulCreate        frontend-5f8fc4565c                      Created pod: frontend-5f8fc4565c-4bq9q
+2026-10-21T14:07:27Z   Injected                productcatalogservice                    Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   Injected                paymentservice                           Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   Injected                frontend                                 Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   Injected                currencyservice                          Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   Scheduled               cartservice-87d68586b-6p54m              Successfully assigned default/cartservice-87d68586b-6p54m to ip-172-31-31-12.ec2.internal
+2026-10-21T14:07:27Z   Injected                recommendationservice                    Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   SuccessfulCreate        emailservice-bc5c5b89c                   Created pod: emailservice-bc5c5b89c-blzl6
+2026-10-21T14:07:27Z   Scheduled               currencyservice-84df44bf6c-wdgdl         Successfully assigned default/currencyservice-84df44bf6c-wdgdl to ip-172-31-1-125.ec2.internal
+2026-10-21T14:07:27Z   ScalingReplicaSet       frontend                                 Scaled up replica set frontend-5f8fc4565c from 0 to 1
+2026-10-21T14:07:27Z   Scheduled               adservice-7d4cbb554f-dpqw9               Successfully assigned default/adservice-7d4cbb554f-dpqw9 to ip-172-31-31-12.ec2.internal
+2026-10-21T14:07:27Z   Scheduled               checkoutservice-68f86b6c49-nhqjc         Successfully assigned default/checkoutservice-68f86b6c49-nhqjc to ip-172-31-1-125.ec2.internal
+2026-10-21T14:07:27Z   ScalingReplicaSet       adservice                                Scaled up replica set adservice-7d4cbb554f from 0 to 1
+2026-10-21T14:07:27Z   Injected                checkoutservice                          Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   Scheduled               emailservice-bc5c5b89c-blzl6             Successfully assigned default/emailservice-bc5c5b89c-blzl6 to ip-172-31-89-104.ec2.internal
+2026-10-21T14:07:27Z   ScalingReplicaSet       cartservice                              Scaled up replica set cartservice-87d68586b from 0 to 1
+2026-10-21T14:07:27Z   ScalingReplicaSet       shippingservice                          Scaled up replica set shippingservice-746c6897b5 from 0 to 1
+2026-10-21T14:07:27Z   SuccessfulCreate        currencyservice-84df44bf6c               Created pod: currencyservice-84df44bf6c-wdgdl
+2026-10-21T14:07:27Z   SuccessfulCreate        checkoutservice-68f86b6c49               Created pod: checkoutservice-68f86b6c49-nhqjc
+2026-10-21T14:07:27Z   ScalingReplicaSet       paymentservice                           Scaled up replica set paymentservice-78c788c58f from 0 to 1
+2026-10-21T14:07:27Z   ScalingReplicaSet       productcatalogservice                    Scaled up replica set productcatalogservice-6586df985 from 0 to 1
+2026-10-21T14:07:27Z   ScalingReplicaSet       recommendationservice                    Scaled up replica set recommendationservice-77574cfd85 from 0 to 1
+2026-10-21T14:07:27Z   SuccessfulCreate        paymentservice-78c788c58f                Created pod: paymentservice-78c788c58f-8q728
+2026-10-21T14:07:27Z   Injected                emailservice                             Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   SuccessfulCreate        cartservice-87d68586b                    Created pod: cartservice-87d68586b-6p54m
+2026-10-21T14:07:27Z   ScalingReplicaSet       checkoutservice                          Scaled up replica set checkoutservice-68f86b6c49 from 0 to 1
+2026-10-21T14:07:27Z   Injected                cartservice                              Linkerd sidecar proxy injected
+2026-10-21T14:07:27Z   SuccessfulCreate        adservice-7d4cbb554f                     Created pod: adservice-7d4cbb554f-dpqw9
+2026-10-21T14:07:27Z   ScalingReplicaSet       emailservice                             Scaled up replica set emailservice-bc5c5b89c from 0 to 1
+2026-10-21T14:07:28Z   Scheduled               recommendationservice-77574cfd85-k5km6   Successfully assigned default/recommendationservice-77574cfd85-k5km6 to ip-172-31-1-125.ec2.internal
+2026-10-21T14:07:28Z   Scheduled               shippingservice-746c6897b5-xstmr         Successfully assigned default/shippingservice-746c6897b5-xstmr to ip-172-31-46-211.ec2.internal
+2026-10-21T14:07:28Z   Pulled                  currencyservice-84df44bf6c-wdgdl         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Started                 currencyservice-84df44bf6c-wdgdl         Container started
+2026-10-21T14:07:28Z   SuccessfulCreate        productcatalogservice-6586df985          Created pod: productcatalogservice-6586df985-srz4n
+2026-10-21T14:07:28Z   Pulled                  frontend-5f8fc4565c-4bq9q                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Started                 currencyservice-84df44bf6c-wdgdl         Container started
+2026-10-21T14:07:28Z   Unhealthy               currencyservice-84df44bf6c-wdgdl         Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-21T14:07:28Z   IssuedLeafCertificate   currencyservice                          issued certificate for currencyservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:48 +0000 UTC: 8b8d74c7eb1cc23fc9cd49ccbe88ddbc091ab8ef9021c713e742c292f86372c8
+2026-10-21T14:07:28Z   Injected                redis-cart                               Linkerd sidecar proxy injected
+2026-10-21T14:07:28Z   SuccessfulCreate        recommendationservice-77574cfd85         Created pod: recommendationservice-77574cfd85-k5km6
+2026-10-21T14:07:28Z   Pulled                  paymentservice-78c788c58f-8q728          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Scheduled               paymentservice-78c788c58f-8q728          Successfully assigned default/paymentservice-78c788c58f-8q728 to ip-172-31-31-12.ec2.internal
+2026-10-21T14:07:28Z   Started                 adservice-7d4cbb554f-dpqw9               Container started
+2026-10-21T14:07:28Z   Created                 adservice-7d4cbb554f-dpqw9               Container created
+2026-10-21T14:07:28Z   Injected                shippingservice                          Linkerd sidecar proxy injected
+2026-10-21T14:07:28Z   Pulled                  adservice-7d4cbb554f-dpqw9               Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Created                 currencyservice-84df44bf6c-wdgdl         Container created
+2026-10-21T14:07:28Z   Started                 cartservice-87d68586b-6p54m              Container started
+2026-10-21T14:07:28Z   Created                 paymentservice-78c788c58f-8q728          Container created
+2026-10-21T14:07:28Z   Created                 cartservice-87d68586b-6p54m              Container created
+2026-10-21T14:07:28Z   Pulled                  emailservice-bc5c5b89c-blzl6             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Created                 emailservice-bc5c5b89c-blzl6             Container created
+2026-10-21T14:07:28Z   Pulled                  cartservice-87d68586b-6p54m              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Created                 currencyservice-84df44bf6c-wdgdl         Container created
+2026-10-21T14:07:28Z   Scheduled               redis-cart-8564f8f9df-5xnsr              Successfully assigned default/redis-cart-8564f8f9df-5xnsr to ip-172-31-89-104.ec2.internal
+2026-10-21T14:07:28Z   Scheduled               frontend-5f8fc4565c-4bq9q                Successfully assigned default/frontend-5f8fc4565c-4bq9q to ip-172-31-89-104.ec2.internal
+2026-10-21T14:07:28Z   SuccessfulCreate        redis-cart-8564f8f9df                    Created pod: redis-cart-8564f8f9df-5xnsr
+2026-10-21T14:07:28Z   Pulled                  currencyservice-84df44bf6c-wdgdl         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   Started                 checkoutservice-68f86b6c49-nhqjc         Container started
+2026-10-21T14:07:28Z   Created                 checkoutservice-68f86b6c49-nhqjc         Container created
+2026-10-21T14:07:28Z   Pulled                  checkoutservice-68f86b6c49-nhqjc         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:28Z   SuccessfulCreate        shippingservice-746c6897b5               Created pod: shippingservice-746c6897b5-xstmr
+2026-10-21T14:07:28Z   Scheduled               productcatalogservice-6586df985-srz4n    Successfully assigned default/productcatalogservice-6586df985-srz4n to ip-172-31-31-12.ec2.internal
+2026-10-21T14:07:28Z   Started                 emailservice-bc5c5b89c-blzl6             Container started
+2026-10-21T14:07:29Z   Unhealthy               adservice-7d4cbb554f-dpqw9               Startup probe failed: Get "http://172.31.26.205:4191/ready": dial tcp 172.31.26.205:4191: connect: connection refused
+2026-10-21T14:07:29Z   Created                 redis-cart-8564f8f9df-5xnsr              Container created
+2026-10-21T14:07:29Z   Created                 frontend-5f8fc4565c-4bq9q                Container created
+2026-10-21T14:07:29Z   Started                 redis-cart-8564f8f9df-5xnsr              Container started
+2026-10-21T14:07:29Z   IssuedLeafCertificate   emailservice                             issued certificate for emailservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:49 +0000 UTC: eb406bc4f36b7a1b4dfde5cbc03810efd3385f7148848744da42228a7f5a0154
+2026-10-21T14:07:29Z   Started                 recommendationservice-77574cfd85-k5km6   Container started
+2026-10-21T14:07:29Z   Started                 frontend-5f8fc4565c-4bq9q                Container started
+2026-10-21T14:07:29Z   Pulled                  emailservice-bc5c5b89c-blzl6             Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Pulled                  checkoutservice-68f86b6c49-nhqjc         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Pulled                  redis-cart-8564f8f9df-5xnsr              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Created                 checkoutservice-68f86b6c49-nhqjc         Container created
+2026-10-21T14:07:29Z   Started                 checkoutservice-68f86b6c49-nhqjc         Container started
+2026-10-21T14:07:29Z   IssuedLeafCertificate   frontend                                 issued certificate for frontend.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:49 +0000 UTC: e7861ceca81b0bc59cd0168c7940e901b72d7f61aa356de6053e95e51c79d0f0
+2026-10-21T14:07:29Z   Pulled                  frontend-5f8fc4565c-4bq9q                Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Pulled                  cartservice-87d68586b-6p54m              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Started                 frontend-5f8fc4565c-4bq9q                Container started
+2026-10-21T14:07:29Z   Started                 paymentservice-78c788c58f-8q728          Container started
+2026-10-21T14:07:29Z   Pulled                  recommendationservice-77574cfd85-k5km6   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Created                 recommendationservice-77574cfd85-k5km6   Container created
+2026-10-21T14:07:29Z   Created                 cartservice-87d68586b-6p54m              Container created
+2026-10-21T14:07:29Z   IssuedLeafCertificate   recommendationservice                    issued certificate for recommendationservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:49 +0000 UTC: cfe3bde95c4d656392a453621bde753384937f3f270b793a3da5066c2482855a
+2026-10-21T14:07:29Z   Created                 paymentservice-78c788c58f-8q728          Container created
+2026-10-21T14:07:29Z   Started                 recommendationservice-77574cfd85-k5km6   Container started
+2026-10-21T14:07:29Z   IssuedLeafCertificate   checkoutservice                          issued certificate for checkoutservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:49 +0000 UTC: 39fdd61e99cfe1727422ee1f987fe556c7bd3a39e3b81b8875982bb54cfe5c03
+2026-10-21T14:07:29Z   Pulled                  paymentservice-78c788c58f-8q728          Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Created                 recommendationservice-77574cfd85-k5km6   Container created
+2026-10-21T14:07:29Z   Started                 paymentservice-78c788c58f-8q728          Container started
+2026-10-21T14:07:29Z   Created                 frontend-5f8fc4565c-4bq9q                Container created
+2026-10-21T14:07:29Z   Created                 emailservice-bc5c5b89c-blzl6             Container created
+2026-10-21T14:07:29Z   Started                 adservice-7d4cbb554f-dpqw9               Container started
+2026-10-21T14:07:29Z   Created                 adservice-7d4cbb554f-dpqw9               Container created
+2026-10-21T14:07:29Z   Pulled                  adservice-7d4cbb554f-dpqw9               Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Started                 emailservice-bc5c5b89c-blzl6             Container started
+2026-10-21T14:07:29Z   IssuedLeafCertificate   shippingservice                          issued certificate for shippingservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:49 +0000 UTC: 813251fa47e335f7169d7199481e02e8c54681c8fce91da2465b8bc1503c71db
+2026-10-21T14:07:29Z   Started                 cartservice-87d68586b-6p54m              Container started
+2026-10-21T14:07:29Z   Pulled                  shippingservice-746c6897b5-xstmr         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Pulled                  recommendationservice-77574cfd85-k5km6   Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Created                 shippingservice-746c6897b5-xstmr         Container created
+2026-10-21T14:07:29Z   Started                 shippingservice-746c6897b5-xstmr         Container started
+2026-10-21T14:07:29Z   Pulled                  shippingservice-746c6897b5-xstmr         Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Started                 productcatalogservice-6586df985-srz4n    Container started
+2026-10-21T14:07:29Z   Created                 productcatalogservice-6586df985-srz4n    Container created
+2026-10-21T14:07:29Z   Created                 shippingservice-746c6897b5-xstmr         Container created
+2026-10-21T14:07:29Z   Pulled                  productcatalogservice-6586df985-srz4n    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:29Z   Started                 productcatalogservice-6586df985-srz4n    Container started
+2026-10-21T14:07:29Z   Started                 shippingservice-746c6897b5-xstmr         Container started
+2026-10-21T14:07:29Z   Created                 productcatalogservice-6586df985-srz4n    Container created
+2026-10-21T14:07:29Z   Pulled                  productcatalogservice-6586df985-srz4n    Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:30Z   Started                 currencyservice-84df44bf6c-wdgdl         Container started
+2026-10-21T14:07:30Z   Unhealthy               currencyservice-68db9f46d-f2gll          Liveness probe failed: Get "http://172.31.84.77:4191/live": dial tcp 172.31.84.77:4191: connect: connection refused
+2026-10-21T14:07:30Z   IssuedLeafCertificate   paymentservice                           issued certificate for paymentservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:50 +0000 UTC: 1b0838357137e9526dcbd826270cea9f9fe6221023b83fb53d54e94877833e2b
+2026-10-21T14:07:30Z   Created                 redis-cart-8564f8f9df-5xnsr              Container created
+2026-10-21T14:07:30Z   Started                 redis-cart-8564f8f9df-5xnsr              Container started
+2026-10-21T14:07:30Z   Pulled                  currencyservice-84df44bf6c-wdgdl         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:30Z   Started                 shippingservice-746c6897b5-xstmr         Container started
+2026-10-21T14:07:30Z   Created                 currencyservice-84df44bf6c-wdgdl         Container created
+2026-10-21T14:07:30Z   Started                 checkoutservice-68f86b6c49-nhqjc         Container started
+2026-10-21T14:07:30Z   Created                 shippingservice-746c6897b5-xstmr         Container created
+2026-10-21T14:07:30Z   IssuedLeafCertificate   cartservice                              issued certificate for cartservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:50 +0000 UTC: 9f0339b30cd8869aac58b90dc40ad3dff53313071f05d23f80edf914dc91614e
+2026-10-21T14:07:30Z   IssuedLeafCertificate   adservice                                issued certificate for adservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:50 +0000 UTC: f1e29a97a042b0df9753fc2cecc0828094bea2302733589b104ce02c1aad39e8
+2026-10-21T14:07:30Z   Pulling                 paymentservice-78c788c58f-8q728          Pulling image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7"
+2026-10-21T14:07:30Z   Created                 checkoutservice-68f86b6c49-nhqjc         Container created
+2026-10-21T14:07:30Z   IssuedLeafCertificate   productcatalogservice                    issued certificate for productcatalogservice.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:50 +0000 UTC: 853cc509a788dffbdf33c212443c388a52e7b85630f827ee17bfca62cfcb9fa1
+2026-10-21T14:07:30Z   Pulled                  checkoutservice-68f86b6c49-nhqjc         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:30Z   Pulled                  shippingservice-746c6897b5-xstmr         Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:30Z   Pulled                  redis-cart-8564f8f9df-5xnsr              Container image "cr.l5d.io/linkerd/proxy:edge-26.10.1" already present on machine and can be accessed by the pod
+2026-10-21T14:07:31Z   SuccessfulDelete        shippingservice-765bfbb8f8               Deleted pod: shippingservice-765bfbb8f8-25j72
+2026-10-21T14:07:31Z   Started                 productcatalogservice-6586df985-srz4n    Container started
+2026-10-21T14:07:31Z   Pulled                  frontend-5f8fc4565c-4bq9q                Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:31Z   Killing                 checkoutservice-6dd4fc9df8-4j6dn         Stopping container server
+2026-10-21T14:07:31Z   Killing                 shippingservice-765bfbb8f8-25j72         Stopping container linkerd-proxy
+2026-10-21T14:07:31Z   Killing                 shippingservice-765bfbb8f8-25j72         Stopping container server
+2026-10-21T14:07:31Z   Started                 adservice-7d4cbb554f-dpqw9               Container started
+2026-10-21T14:07:31Z   Pulled                  productcatalogservice-6586df985-srz4n    Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:31Z   Created                 adservice-7d4cbb554f-dpqw9               Container created
+2026-10-21T14:07:31Z   Created                 frontend-5f8fc4565c-4bq9q                Container created
+2026-10-21T14:07:31Z   Created                 productcatalogservice-6586df985-srz4n    Container created
+2026-10-21T14:07:31Z   Unhealthy               redis-cart-8564f8f9df-5xnsr              Startup probe failed: HTTP probe failed with statuscode: 503
+2026-10-21T14:07:31Z   Started                 frontend-5f8fc4565c-4bq9q                Container started
+2026-10-21T14:07:31Z   SuccessfulDelete        checkoutservice-6dd4fc9df8               Deleted pod: checkoutservice-6dd4fc9df8-4j6dn
+2026-10-21T14:07:31Z   ScalingReplicaSet       shippingservice                          Scaled down replica set shippingservice-765bfbb8f8 from 1 to 0
+2026-10-21T14:07:31Z   Pulled                  cartservice-87d68586b-6p54m              Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:31Z   Killing                 checkoutservice-6dd4fc9df8-4j6dn         Stopping container linkerd-proxy
+2026-10-21T14:07:31Z   Pulled                  adservice-7d4cbb554f-dpqw9               Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:31Z   IssuedLeafCertificate   default                                  issued certificate for default.default.serviceaccount.identity.linkerd.cluster.local until 2026-10-22 14:07:51 +0000 UTC: 54088350813f05ff8bf7c459634470859da4c190af1b45b640be99e1349c9dd8
+2026-10-21T14:07:31Z   ScalingReplicaSet       checkoutservice                          Scaled down replica set checkoutservice-6dd4fc9df8 from 1 to 0
+2026-10-21T14:07:31Z   Created                 cartservice-87d68586b-6p54m              Container created
+2026-10-21T14:07:32Z   Killing                 productcatalogservice-c5c9748f8-h8mv4    Stopping container linkerd-proxy
+2026-10-21T14:07:32Z   Created                 redis-cart-8564f8f9df-5xnsr              Container created
+2026-10-21T14:07:32Z   ScalingReplicaSet       redis-cart                               Scaled down replica set redis-cart-7644fb9546 from 1 to 0
+2026-10-21T14:07:32Z   Started                 redis-cart-8564f8f9df-5xnsr              Container started
+2026-10-21T14:07:32Z   Pulled                  redis-cart-8564f8f9df-5xnsr              Container image "redis:alpine" already present on machine and can be accessed by the pod
+2026-10-21T14:07:32Z   SuccessfulDelete        productcatalogservice-c5c9748f8          Deleted pod: productcatalogservice-c5c9748f8-h8mv4
+2026-10-21T14:07:32Z   SuccessfulDelete        redis-cart-7644fb9546                    Deleted pod: redis-cart-7644fb9546-5gdr6
+2026-10-21T14:07:32Z   Killing                 redis-cart-7644fb9546-5gdr6              Stopping container redis
+2026-10-21T14:07:32Z   Killing                 redis-cart-7644fb9546-5gdr6              Stopping container linkerd-proxy
+2026-10-21T14:07:32Z   ScalingReplicaSet       productcatalogservice                    Scaled down replica set productcatalogservice-c5c9748f8 from 1 to 0
+2026-10-21T14:07:32Z   Killing                 productcatalogservice-c5c9748f8-h8mv4    Stopping container server
+2026-10-21T14:07:32Z   Started                 cartservice-87d68586b-6p54m              Container started
+2026-10-21T14:07:38Z   Started                 paymentservice-78c788c58f-8q728          Container started
+2026-10-21T14:07:38Z   Created                 paymentservice-78c788c58f-8q728          Container created
+2026-10-21T14:07:38Z   Pulled                  paymentservice-78c788c58f-8q728          Successfully pulled image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7" in 8.12s (8.12s including waiting). Image size: 49012100 bytes.
+2026-10-21T14:07:39Z   Unhealthy               paymentservice-78c788c58f-8q728          Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:07:40Z   Unhealthy               paymentservice-78c788c58f-8q728          Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T14:07:41Z   ScalingReplicaSet       currencyservice                          Scaled down replica set currencyservice-68db9f46d from 1 to 0
+2026-10-21T14:07:41Z   SuccessfulDelete        currencyservice-68db9f46d                Deleted pod: currencyservice-68db9f46d-xskx4
+2026-10-21T14:07:41Z   Killing                 currencyservice-68db9f46d-xskx4          Stopping container linkerd-proxy
+2026-10-21T14:07:41Z   Killing                 currencyservice-68db9f46d-xskx4          Stopping container server
+2026-10-21T14:07:42Z   ScalingReplicaSet       frontend                                 Scaled down replica set frontend-7bcd89ffdd from 1 to 0
+2026-10-21T14:07:42Z   Killing                 frontend-7bcd89ffdd-666cf                Stopping container linkerd-proxy
+2026-10-21T14:07:42Z   SuccessfulDelete        frontend-7bcd89ffdd                      Deleted pod: frontend-7bcd89ffdd-666cf
+2026-10-21T14:07:42Z   Killing                 frontend-7bcd89ffdd-666cf                Stopping container server
+2026-10-21T14:07:43Z   Killing                 emailservice-bc5c5b89c-blzl6             Container server failed liveness probe, will be restarted
+2026-10-21T14:07:43Z   Killing                 recommendationservice-77574cfd85-k5km6   Container server failed liveness probe, will be restarted
+2026-10-21T14:07:48Z   Started                 emailservice-bc5c5b89c-blzl6             Container started
+2026-10-21T14:07:48Z   Pulled                  emailservice-bc5c5b89c-blzl6             Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:48Z   Killing                 recommendationservice-57ccb89b78-97gpc   Stopping container linkerd-proxy
+2026-10-21T14:07:48Z   Killing                 recommendationservice-57ccb89b78-97gpc   Stopping container server
+2026-10-21T14:07:48Z   Killing                 emailservice-57bdf7d996-zhjcd            Stopping container linkerd-proxy
+2026-10-21T14:07:48Z   Pulled                  recommendationservice-77574cfd85-k5km6   Container image "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7" already present on machine and can be accessed by the pod
+2026-10-21T14:07:48Z   Unhealthy               cartservice-87d68586b-6p54m              Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:07:48Z   Created                 emailservice-bc5c5b89c-blzl6             Container created
+2026-10-21T14:07:48Z   ScalingReplicaSet       emailservice                             Scaled down replica set emailservice-57bdf7d996 from 1 to 0
+2026-10-21T14:07:48Z   Created                 recommendationservice-77574cfd85-k5km6   Container created
+2026-10-21T14:07:48Z   SuccessfulDelete        emailservice-57bdf7d996                  Deleted pod: emailservice-57bdf7d996-zhjcd
+2026-10-21T14:07:48Z   Started                 recommendationservice-77574cfd85-k5km6   Container started
+2026-10-21T14:07:48Z   ScalingReplicaSet       recommendationservice                    Scaled down replica set recommendationservice-57ccb89b78 from 1 to 0
+2026-10-21T14:07:48Z   SuccessfulDelete        recommendationservice-57ccb89b78         Deleted pod: recommendationservice-57ccb89b78-97gpc
+2026-10-21T14:07:48Z   Killing                 emailservice-57bdf7d996-zhjcd            Stopping container server
+2026-10-21T14:07:49Z   Unhealthy               recommendationservice-77574cfd85-k5km6   Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:07:49Z   Unhealthy               emailservice-bc5c5b89c-blzl6             Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:07:50Z   Killing                 paymentservice-54d5cffd4-pxr2w           Stopping container server
+2026-10-21T14:07:50Z   SuccessfulDelete        paymentservice-54d5cffd4                 Deleted pod: paymentservice-54d5cffd4-pxr2w
+2026-10-21T14:07:50Z   Killing                 paymentservice-54d5cffd4-pxr2w           Stopping container linkerd-proxy
+2026-10-21T14:07:50Z   ScalingReplicaSet       paymentservice                           Scaled down replica set paymentservice-54d5cffd4 from 1 to 0
+2026-10-21T14:07:53Z   Killing                 cartservice-59fb4c8987-t5b7p             Stopping container server
+2026-10-21T14:07:53Z   SuccessfulDelete        cartservice-59fb4c8987                   Deleted pod: cartservice-59fb4c8987-t5b7p
+2026-10-21T14:07:53Z   ScalingReplicaSet       cartservice                              Scaled down replica set cartservice-59fb4c8987 from 1 to 0
+2026-10-21T14:07:53Z   Killing                 cartservice-59fb4c8987-t5b7p             Stopping container linkerd-proxy
+2026-10-21T14:07:54Z   Unhealthy               recommendationservice-57ccb89b78-97gpc   Readiness probe failed: timeout: failed to connect service "172.31.26.235:8080" within 1s: context deadline exceeded
+2026-10-21T14:07:54Z   Unhealthy               emailservice-bc5c5b89c-blzl6             Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T14:07:55Z   Unhealthy               paymentservice-54d5cffd4-pxr2w           Liveness probe failed: Get "http://172.31.88.149:4191/live": dial tcp 172.31.88.149:4191: connect: connection refused
+2026-10-21T14:07:55Z   Unhealthy               recommendationservice-77574cfd85-k5km6   Readiness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T14:07:58Z   Unhealthy               recommendationservice-77574cfd85-k5km6   Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T14:07:58Z   Unhealthy               adservice-7d4cbb554f-dpqw9               Liveness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:07:58Z   Unhealthy               emailservice-bc5c5b89c-blzl6             Liveness probe failed: error: health rpc probe failed: rpc error: code = Unavailable desc = 
+2026-10-21T14:08:03Z   SuccessfulDelete        adservice-c4fd8cdc6                      Deleted pod: adservice-c4fd8cdc6-vr8jq
+2026-10-21T14:08:03Z   ScalingReplicaSet       adservice                                Scaled down replica set adservice-c4fd8cdc6 from 1 to 0
+2026-10-21T14:08:03Z   Killing                 adservice-c4fd8cdc6-vr8jq                Stopping container server
+2026-10-21T14:08:03Z   Killing                 adservice-c4fd8cdc6-vr8jq                Stopping container linkerd-proxy
+2026-10-21T14:10:04Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"300Mi"},"requests":{"cpu":"50m","memory":"180Mi"}}}],"generation":2}
+2026-10-21T14:10:04Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"300Mi"},"requests":{"cpu":"50m","memory":"180Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"450Mi"},"requests":{"cpu":"50m","memory":"220Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           paymentservice-78c788c58f-8q728          Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         paymentservice-78c788c58f-8q728          Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         emailservice-bc5c5b89c-blzl6             Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"450Mi"},"requests":{"cpu":"50m","memory":"220Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           emailservice-bc5c5b89c-blzl6             Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:05Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:20Z   ResizeCompleted         shippingservice-746c6897b5-xstmr         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:20Z   ResizeStarted           shippingservice-746c6897b5-xstmr         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":2}
+2026-10-21T14:10:34Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"300Mi"},"requests":{"cpu":"93m","memory":"180Mi"}}}],"generation":3}
+2026-10-21T14:10:34Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"300Mi"},"requests":{"cpu":"93m","memory":"180Mi"}}}],"generation":3}
+2026-10-21T14:10:42Z   Unhealthy               currencyservice-84df44bf6c-wdgdl         Readiness probe failed: timeout: health rpc did not complete within 1s
+2026-10-21T14:10:49Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:10:49Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:10:49Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"300Mi"},"requests":{"cpu":"109m","memory":"180Mi"}}}],"generation":4}
+2026-10-21T14:10:49Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"300Mi"},"requests":{"cpu":"109m","memory":"180Mi"}}}],"generation":4}
+2026-10-21T14:11:05Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"450Mi"},"requests":{"cpu":"78m","memory":"220Mi"}}}],"generation":3}
+2026-10-21T14:11:05Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"450Mi"},"requests":{"cpu":"78m","memory":"220Mi"}}}],"generation":3}
+2026-10-21T14:11:05Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:11:05Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:11:05Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:11:05Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:11:19Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:11:19Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:11:20Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:11:20Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:11:20Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"450Mi"},"requests":{"cpu":"93m","memory":"220Mi"}}}],"generation":4}
+2026-10-21T14:11:20Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"450Mi"},"requests":{"cpu":"93m","memory":"220Mi"}}}],"generation":4}
+2026-10-21T14:11:49Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"300Mi"},"requests":{"cpu":"126m","memory":"180Mi"}}}],"generation":5}
+2026-10-21T14:11:49Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"300Mi"},"requests":{"cpu":"126m","memory":"180Mi"}}}],"generation":5}
+2026-10-21T14:11:49Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:11:49Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:11:50Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"450Mi"},"requests":{"cpu":"182m","memory":"220Mi"}}}],"generation":5}
+2026-10-21T14:11:50Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"450Mi"},"requests":{"cpu":"182m","memory":"220Mi"}}}],"generation":5}
+2026-10-21T14:11:50Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:11:50Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:12:04Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:12:04Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:12:04Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:12:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:12:05Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:12:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:12:05Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"450Mi"},"requests":{"cpu":"203m","memory":"220Mi"}}}],"generation":6}
+2026-10-21T14:12:05Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"450Mi"},"requests":{"cpu":"203m","memory":"220Mi"}}}],"generation":6}
+2026-10-21T14:12:19Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"126m","memory":"128Mi"},"requests":{"cpu":"63m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:12:20Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:12:20Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"128Mi"},"requests":{"cpu":"296m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:20Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"126m","memory":"128Mi"},"requests":{"cpu":"63m","memory":"64Mi"}}}],"generation":3}
+2026-10-21T14:12:20Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:12:20Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"128Mi"},"requests":{"cpu":"296m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:34Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"326m","memory":"300Mi"},"requests":{"cpu":"163m","memory":"180Mi"}}}],"generation":6}
+2026-10-21T14:12:34Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"326m","memory":"300Mi"},"requests":{"cpu":"163m","memory":"180Mi"}}}],"generation":6}
+2026-10-21T14:12:35Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:35Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:49Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"494m","memory":"128Mi"},"requests":{"cpu":"247m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:49Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"286m","memory":"128Mi"},"requests":{"cpu":"143m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:12:49Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"286m","memory":"128Mi"},"requests":{"cpu":"143m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:12:50Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"494m","memory":"128Mi"},"requests":{"cpu":"247m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:12:50Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"758m","memory":"128Mi"},"requests":{"cpu":"379m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:12:50Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"758m","memory":"128Mi"},"requests":{"cpu":"379m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:13:04Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:13:04Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:13:04Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:13:05Z   ResizeCompleted         recommendationservice-77574cfd85-k5km6   Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"494m","memory":"450Mi"},"requests":{"cpu":"247m","memory":"220Mi"}}}],"generation":7}
+2026-10-21T14:13:05Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"1096m","memory":"128Mi"},"requests":{"cpu":"548m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:13:05Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"1096m","memory":"128Mi"},"requests":{"cpu":"548m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:13:05Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:13:05Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:13:05Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":4}
+2026-10-21T14:13:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:13:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:13:05Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"494m","memory":"450Mi"},"requests":{"cpu":"247m","memory":"220Mi"}}}],"generation":7}
+2026-10-21T14:13:19Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:13:19Z   ResizeCompleted         cartservice-87d68586b-6p54m              Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"128Mi"},"requests":{"cpu":"203m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:13:19Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"128Mi"},"requests":{"cpu":"203m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:13:20Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":5}
+2026-10-21T14:13:34Z   ResizeStarted           cartservice-87d68586b-6p54m              Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:13:35Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"128Mi"},"requests":{"cpu":"203m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:13:35Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"128Mi"},"requests":{"cpu":"203m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:14:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:14:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"448m","memory":"128Mi"},"requests":{"cpu":"224m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:14:34Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"300Mi"},"requests":{"cpu":"126m","memory":"180Mi"}}}],"generation":7}
+2026-10-21T14:14:34Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"300Mi"},"requests":{"cpu":"126m","memory":"180Mi"}}}],"generation":7}
+2026-10-21T14:14:34Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"820m","memory":"128Mi"},"requests":{"cpu":"410m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:14:35Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"820m","memory":"128Mi"},"requests":{"cpu":"410m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:14:49Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:14:50Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"128Mi"},"requests":{"cpu":"109m","memory":"64Mi"}}}],"generation":6}
+2026-10-21T14:15:20Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"450Mi"},"requests":{"cpu":"296m","memory":"220Mi"}}}],"generation":8}
+2026-10-21T14:17:34Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:17:34Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"300Mi"},"requests":{"cpu":"109m","memory":"180Mi"}}}],"generation":8}
+2026-10-21T14:17:34Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"218m","memory":"300Mi"},"requests":{"cpu":"109m","memory":"180Mi"}}}],"generation":8}
+2026-10-21T14:17:35Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"128Mi"},"requests":{"cpu":"93m","memory":"64Mi"}}}],"generation":7}
+2026-10-21T14:18:49Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"300Mi"},"requests":{"cpu":"93m","memory":"180Mi"}}}],"generation":9}
+2026-10-21T14:18:49Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"186m","memory":"300Mi"},"requests":{"cpu":"93m","memory":"180Mi"}}}],"generation":9}
+2026-10-21T14:19:19Z   ResizeStarted           adservice-7d4cbb554f-dpqw9               Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"300Mi"},"requests":{"cpu":"78m","memory":"180Mi"}}}],"generation":10}
+2026-10-21T14:19:19Z   ResizeCompleted         adservice-7d4cbb554f-dpqw9               Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"300Mi"},"requests":{"cpu":"78m","memory":"180Mi"}}}],"generation":10}
+2026-10-21T14:19:20Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"494m","memory":"450Mi"},"requests":{"cpu":"247m","memory":"220Mi"}}}],"generation":9}
+2026-10-21T14:19:49Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:19:49Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:20:19Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:20:19Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"156m","memory":"128Mi"},"requests":{"cpu":"78m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:20:20Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:20:20Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"364m","memory":"128Mi"},"requests":{"cpu":"182m","memory":"64Mi"}}}],"generation":8}
+2026-10-21T14:21:04Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"820m","memory":"128Mi"},"requests":{"cpu":"410m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:04Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"820m","memory":"128Mi"},"requests":{"cpu":"410m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"326m","memory":"128Mi"},"requests":{"cpu":"163m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"326m","memory":"128Mi"},"requests":{"cpu":"163m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:20Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"128Mi"},"requests":{"cpu":"296m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:21:20Z   ResizeCompleted         currencyservice-84df44bf6c-wdgdl         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"128Mi"},"requests":{"cpu":"296m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:21:34Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"126m","memory":"128Mi"},"requests":{"cpu":"63m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:35Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"126m","memory":"128Mi"},"requests":{"cpu":"63m","memory":"64Mi"}}}],"generation":9}
+2026-10-21T14:21:49Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:21:49Z   ResizeCompleted         frontend-5f8fc4565c-4bq9q                Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"700m","memory":"128Mi"},"requests":{"cpu":"350m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:22:05Z   ResizeStarted           productcatalogservice-6586df985-srz4n    Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"286m","memory":"128Mi"},"requests":{"cpu":"143m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:22:05Z   ResizeCompleted         productcatalogservice-6586df985-srz4n    Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"286m","memory":"128Mi"},"requests":{"cpu":"143m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:22:49Z   ResizeStarted           productcatalogservice-6586df985-srz4n    (combined from similar events): Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":11}
+2026-10-21T14:22:50Z   ResizeStarted           recommendationservice-77574cfd85-k5km6   (combined from similar events): Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"286m","memory":"450Mi"},"requests":{"cpu":"143m","memory":"220Mi"}}}],"generation":12}
+2026-10-21T14:23:04Z   ResizeCompleted         checkoutservice-68f86b6c49-nhqjc         Pod resize completed: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:23:04Z   ResizeStarted           checkoutservice-68f86b6c49-nhqjc         Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"100m","memory":"128Mi"},"requests":{"cpu":"50m","memory":"64Mi"}}}],"generation":10}
+2026-10-21T14:23:34Z   ResizeStarted           cartservice-87d68586b-6p54m              (combined from similar events): Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"252m","memory":"128Mi"},"requests":{"cpu":"126m","memory":"64Mi"}}}],"generation":16}
+2026-10-21T14:23:50Z   ResizeStarted           currencyservice-84df44bf6c-wdgdl         (combined from similar events): Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"406m","memory":"128Mi"},"requests":{"cpu":"203m","memory":"64Mi"}}}],"generation":12}
+2026-10-21T14:24:04Z   ResizeStarted           frontend-5f8fc4565c-4bq9q                (combined from similar events): Pod resize started: {"initContainers":[{"name":"linkerd-init","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}},{"name":"linkerd-proxy","resources":{"requests":{"cpu":"25m","memory":"20Mi"}}}],"containers":[{"name":"server","resources":{"limits":{"cpu":"592m","memory":"128Mi"},"requests":{"cpu":"296m","memory":"64Mi"}}}],"generation":11}

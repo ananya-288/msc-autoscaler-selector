@@ -1,0 +1,56 @@
+nohup: ignoring input
+=== hpa_2R-20_run3: scenario 2 Replicas + 20%, 15 min, 300 users, host http://a39b9e5ca67d844b6b3172975c11258c-1907779540.us-east-1.elb.amazonaws.com
+=== 2026-10-15 18:30:41 UTC  reset: delete HPAs, scale everything to 1
+No resources found
+deployment.apps/adservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/frontend scaled
+deployment.apps/paymentservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/shippingservice scaled
+=== waiting 180s for the app to settle
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/adservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/cartservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/checkoutservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/currencyservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/emailservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/frontend autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/paymentservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/productcatalogservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/recommendationservice autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/redis-cart autoscaled
+Flag --cpu-percent has been deprecated, Use --cpu with percentage or resource quantity format (e.g., '70%' for utilization or '500m' for milliCPU).
+horizontalpodautoscaler.autoscaling/shippingservice autoscaled
+=== 2026-10-15 18:33:56 UTC  started controller (pid 37479) and Locust (pid 37481)
+=== 18:48:57 UTC  Locust finished (exit 0)
+=== 18:48:59 UTC  controller finished (exit 0)
+=== saving cluster state
+horizontalpodautoscaler.autoscaling "adservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "cartservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "checkoutservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "currencyservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "emailservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "frontend" deleted from default namespace
+horizontalpodautoscaler.autoscaling "paymentservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "productcatalogservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "recommendationservice" deleted from default namespace
+horizontalpodautoscaler.autoscaling "redis-cart" deleted from default namespace
+horizontalpodautoscaler.autoscaling "shippingservice" deleted from default namespace
+=== DONE hpa_2R-20_run3. Summary:
+         Aggregated                                                                    107495     0(0.00%) |    311      13    2481    270 |  119.51        0.00
+         Aggregated                                                                            270    360    430    480    610    790   1100   1300   1900   2200   2500 107495
