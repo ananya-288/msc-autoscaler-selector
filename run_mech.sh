@@ -7,6 +7,8 @@
 #   ./run_mech.sh keda     burst 1            # KEDA-only  (request rate, target from calibration, 1-5 replicas)
 #   ./run_mech.sh vertical burst 1            # vertical-only (VPA recommendation applied in place, 1 replica)
 #   RESET_WAIT=30 ./run_mech.sh hpa burst test 3     # short rehearsal (3 minutes of the shape)
+#   ./run_mech.sh selector eval_heldout 1     # live ML selector (kNN, gate 0.8, 2-min hold)
+#   ./run_mech.sh rules    eval_heldout 1     # live rule-based switcher (baseline)
 #
 # Run in the background:  nohup ./run_mech.sh hpa burst 1 > results/logs/mech_hpa_burst_1.out 2>&1 &
 # redis-cart is never scaled. Every run starts from 1 replica and the default CPU requests.
@@ -29,11 +31,11 @@ if [[ "$MODE" == "tune-vpa" ]]; then
   exit 0
 fi
 
-if [[ ! "$MODE" =~ ^(hpa|keda|vertical)$ ]] || [[ -z "$SHAPE" || -z "$RUN" ]]; then
+if [[ ! "$MODE" =~ ^(hpa|keda|vertical|selector|rules)$ ]] || [[ -z "$SHAPE" || -z "$RUN" ]]; then
   sed -n '2,12p' "$0"; exit 1
 fi
 [[ -f "workloads/${SHAPE}.csv" ]] || { echo "STOP: workloads/${SHAPE}.csv not found"; exit 1; }
-[[ "$MODE" == "keda" && ! -f keda_thresholds.json ]] && { echo "STOP: run calibrate_keda.py first"; exit 1; }
+[[ "$MODE" =~ ^(keda|selector|rules)$ && ! -f keda_thresholds.json ]] && { echo "STOP: run calibrate_keda.py first"; exit 1; }
 
 TAG="${MODE}_${SHAPE}_run${RUN}"
 OUT=results/mech; mkdir -p $OUT results/locust results/logs
@@ -45,7 +47,7 @@ reset() {
   kubectl delete scaledobject --all --ignore-not-found >/dev/null
   kubectl delete hpa --all --ignore-not-found >/dev/null
   kubectl delete vpa --all --ignore-not-found >/dev/null
-  pkill -f vertical_actuator.py 2>/dev/null
+  pkill -f vertical_actuator.py 2>/dev/null; pkill -f live_selector.py 2>/dev/null
   kubectl scale deploy --all --replicas=1 >/dev/null
   kubectl rollout restart deploy >/dev/null          # new pods = default CPU requests again
   kubectl rollout status deploy --timeout=10m >/dev/null
@@ -97,6 +99,15 @@ EOF
   done
   "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
   ;;
+selector|rules)
+  SEL=$([[ "$MODE" == "selector" ]] && echo knn || echo rules)
+  [[ "$SEL" == "knn" && ! -f "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" ]] && { echo "STOP: training dataset not found"; exit 1; }
+  "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
+  "$PY" live_selector.py --mode "$SEL" --minutes $((MIN + 1)) --log "$OUT/${TAG}_decisions.csv" \
+      --train "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" --gate "${GATE:-0.8}" \
+      > "results/logs/selector_${TAG}.log" 2>&1 &
+  sleep 20                                            # let it put every service on vertical first
+  ;;
 esac
 
 START=$(date -u '+%F %T')
@@ -112,7 +123,7 @@ echo "=== ${START} UTC  started Locust (${SHAPE}) + collector; ends in about $((
 
 wait "$LOC"; echo "=== $(date -u '+%T') UTC  Locust finished"
 wait "$COL"; echo "=== $(date -u '+%T') UTC  collector finished"
-pkill -f vertical_actuator.py 2>/dev/null
+pkill -f vertical_actuator.py 2>/dev/null; pkill -f live_selector.py 2>/dev/null
 
 kubectl get events --sort-by=.lastTimestamp -o custom-columns=TIME:.lastTimestamp,REASON:.reason,OBJECT:.involvedObject.name,MSG:.message > "$OUT/${TAG}_events.txt"
 kubectl get hpa,scaledobject,vpa -o wide > "$OUT/${TAG}_autoscalers.txt" 2>&1
@@ -122,5 +133,6 @@ kubectl delete vpa --all --ignore-not-found >/dev/null
 
 echo "=== DONE ${TAG}"
 echo "    metrics rows: $(($(wc -l < "$OUT/${TAG}_metrics.csv") - 1))   collector errors: $(grep -c error "results/logs/collector_${TAG}.log")"
-[[ "$MODE" == "vertical" ]] && echo "    resize actions: $(($(wc -l < "$OUT/${TAG}_vertical_actions.csv") - 1))"
+[[ "$MODE" =~ ^(vertical|selector|rules)$ ]] && echo "    resize actions: $(($(wc -l < "$OUT/${TAG}_vertical_actions.csv") - 1))"
+[[ "$MODE" =~ ^(selector|rules)$ ]] && echo "    $(tail -n 1 "results/logs/selector_${TAG}.log")"
 grep "Aggregated" "results/logs/locust_${TAG}.log" | tail -n 2
