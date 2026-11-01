@@ -1,0 +1,17 @@
+model,test_shape,params,threshold,inner_macro_F1
+MLP,burst,"{'h': (16,), 'alpha': 0.0001}",0.7,0.750625
+MLP,rise,"{'h': (16,), 'alpha': 0.0001}",0.4,0.7740720817643895
+MLP,gentle,"{'h': (32, 16), 'alpha': 0.001}",0.2,0.7402159244264508
+MLP,decline,"{'h': (64,), 'alpha': 0.001}",0.5,0.7762671437090042
+ExtraTrees,burst,"{'depth': 6, 'leaf': 5, 'feat': 'sqrt'}",0.5,0.7457014694106081
+ExtraTrees,rise,"{'depth': 10, 'leaf': 2, 'feat': 'sqrt'}",0.5,0.7601488056389505
+ExtraTrees,gentle,"{'depth': None, 'leaf': 5, 'feat': 0.5}",0.5,0.7489169689872329
+ExtraTrees,decline,"{'depth': 10, 'leaf': 5, 'feat': 'sqrt'}",0.6,0.7494218200100553
+kNN,burst,"{'k': 5, 'w': 'distance'}",0.6,0.7653558459294205
+kNN,rise,"{'k': 5, 'w': 'distance'}",0.45,0.8088058560034961
+kNN,gentle,"{'k': 5, 'w': 'distance'}",0.45,0.7162999115221051
+kNN,decline,"{'k': 7, 'w': 'distance'}",0.55,0.7595988735490075
+Ensemble,burst,soft vote of tuned MLP+ExtraTrees+kNN,0.65,0.7687449392712551
+Ensemble,rise,soft vote of tuned MLP+ExtraTrees+kNN,0.5,0.8001346801346801
+Ensemble,gentle,soft vote of tuned MLP+ExtraTrees+kNN,0.45,0.7529411764705882
+Ensemble,decline,soft vote of tuned MLP+ExtraTrees+kNN,0.6,0.7721106890938687
