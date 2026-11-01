@@ -7,7 +7,8 @@
 #   ./run_mech.sh keda     burst 1            # KEDA-only  (request rate, target from calibration, 1-5 replicas)
 #   ./run_mech.sh vertical burst 1            # vertical-only (VPA recommendation applied in place, 1 replica)
 #   RESET_WAIT=30 ./run_mech.sh hpa burst test 3     # short rehearsal (3 minutes of the shape)
-#   ./run_mech.sh selector eval_heldout 1     # live ML selector (kNN, gate 0.8, 2-min hold)
+#   ./run_mech.sh selector eval_heldout 1     # live ML selector (FINAL: tuned ensemble, scale up vs out, 2-min hold)
+#   SELECTOR=knn ./run_mech.sh selector ...   # earlier kNN selector (3 classes, gate 0.8)
 #   ./run_mech.sh rules    eval_heldout 1     # live rule-based switcher (baseline)
 #
 # Run in the background:  nohup ./run_mech.sh hpa burst 1 > results/logs/mech_hpa_burst_1.out 2>&1 &
@@ -100,11 +101,14 @@ EOF
   "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
   ;;
 selector|rules)
-  SEL=$([[ "$MODE" == "selector" ]] && echo knn || echo rules)
+  SEL=$([[ "$MODE" == "selector" ]] && echo "${SELECTOR:-ensemble}" || echo rules)
+  [[ "$SEL" == "ensemble" && ! -f "${FINAL:-results/selector/final_selector.json}" ]] && { echo "STOP: final_selector.json not found"; exit 1; }
+  [[ "$SEL" == "ensemble" && ! -f results/selector/training_dataset_floor50_avg12_binary_lags.csv ]] && { echo "STOP: binary+lags training dataset not found"; exit 1; }
   [[ "$SEL" == "knn" && ! -f "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" ]] && { echo "STOP: training dataset not found"; exit 1; }
   "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
   "$PY" live_selector.py --mode "$SEL" --minutes $((MIN + 1)) --log "$OUT/${TAG}_decisions.csv" \
       --train "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" --gate "${GATE:-0.8}" \
+      --final "${FINAL:-results/selector/final_selector.json}" \
       > "results/logs/selector_${TAG}.log" 2>&1 &
   sleep 20                                            # let it put every service on vertical first
   ;;

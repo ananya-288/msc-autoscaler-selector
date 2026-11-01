@@ -2,6 +2,7 @@
 """
 live_selector.py - choose HPA, KEDA or vertical scaling for each microservice, every minute, live.
 
+    python live_selector.py --mode ensemble --minutes 16 --log results/mech/<tag>_decisions.csv   (FINAL)
     python live_selector.py --mode knn   --minutes 16 --log results/mech/<tag>_decisions.csv
     python live_selector.py --mode rules --minutes 16 --log results/mech/<tag>_decisions.csv
     python live_selector.py --mode knn --dry-run          # offline test with synthetic traffic
@@ -11,7 +12,12 @@ MAPE-K loop:
             (same query as collector.py) and keep the last two minutes.
   Analyse : once a minute, build the SAME features used in training: rps, slope, burstiness,
             peak/mean, frontend rps + slope, forecast (rps + slope), service (one-hot).
-  Plan    : knn   - k-nearest-neighbours (k = 7) trained on training_dataset_floor50_avg12.csv;
+  Plan    : ensemble (FINAL) - binary decision, scale up (vertical) or scale out (KEDA):
+                    soft vote of MLP + ExtraTrees + kNN with the settings and threshold in
+                    results/selector/final_selector.json (chosen by build_final_model.py),
+                    trained at start-up on the binary + time-series training table; uses the
+                    extra time-series features (previous minutes, 3-minute mean, acceleration).
+            knn   - k-nearest-neighbours (k = 7) trained on training_dataset_floor50_avg12.csv;
                     switch away from vertical only if P(best) >= gate (0.8, chosen offline).
             rules - simple baseline: KEDA when the service's traffic is rising fast
                     (slope > 15 % of rps per minute), otherwise vertical.
@@ -35,12 +41,14 @@ import numpy as np, pandas as pd
 SERVICES = ["adservice", "cartservice", "checkoutservice", "currencyservice", "emailservice", "frontend",
             "paymentservice", "productcatalogservice", "recommendationservice", "shippingservice"]
 FEATS = ["rps", "slope", "burst", "peak_ratio", "fe_rps", "fe_slope", "forecast"]
+LOGF = FEATS + ["rps_lag1", "rps_lag2", "slope_lag1", "rps_roll3", "accel"]
 NS = "default"
 PROM_IN_CLUSTER = "http://prometheus.linkerd-viz.svc.cluster.local:9090"
 Q_RPS = 'sum by (deployment) (rate(request_total{namespace="default",direction="inbound"}[1m]))'
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--mode", choices=["knn", "rules"], required=True)
+ap.add_argument("--mode", choices=["ensemble", "knn", "rules"], required=True)
+ap.add_argument("--final", default="results/selector/final_selector.json")
 ap.add_argument("--minutes", type=float, default=16)
 ap.add_argument("--log", default="decisions.csv")
 ap.add_argument("--train", default="results/selector/training_dataset_floor50_avg12.csv")
@@ -53,7 +61,28 @@ a = ap.parse_args()
 
 # ---------------- model ----------------
 model = None
-if a.mode == "knn":
+ENS = None
+if a.mode == "ensemble":
+    from sklearn.ensemble import ExtraTreesClassifier
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.neural_network import MLPClassifier
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.pipeline import make_pipeline
+    cfg = json.load(open(a.final))
+    FEATS = cfg["features"]; COLS = cfg["columns"]
+    tr = pd.read_csv(cfg["training_data"])
+    Xtr = pd.concat([tr[FEATS].astype(float), pd.get_dummies(tr.service, prefix="svc").astype(float)], axis=1)[COLS]
+    ytr = (tr.label == "horizontal").astype(int)
+    g = cfg["models"]
+    ENS = [make_pipeline(StandardScaler(), MLPClassifier(hidden_layer_sizes=tuple(g["MLP"]["h"]), alpha=g["MLP"]["alpha"],
+                                                         max_iter=2000, random_state=0)),
+           ExtraTreesClassifier(n_estimators=300, max_depth=g["ExtraTrees"]["depth"], min_samples_leaf=g["ExtraTrees"]["leaf"],
+                                max_features=g["ExtraTrees"]["feat"], class_weight="balanced", random_state=0, n_jobs=-1),
+           make_pipeline(StandardScaler(), KNeighborsClassifier(n_neighbors=g["kNN"]["k"], weights=g["kNN"]["w"]))]
+    ENS = [m.fit(Xtr, ytr) for m in ENS]
+    THRESH = cfg["threshold"]
+    print(f"ensemble trained on {len(tr)} rows from {cfg['training_data']}; threshold {THRESH}; features {FEATS}")
+elif a.mode == "knn":
     from sklearn.neighbors import KNeighborsClassifier
     from sklearn.preprocessing import StandardScaler
     from sklearn.pipeline import make_pipeline
@@ -66,6 +95,12 @@ if a.mode == "knn":
 
 def plan(svc, f):
     """return (mechanism, probability-or-None)"""
+    if a.mode == "ensemble":
+        row = pd.DataFrame([{**{k: f[k] for k in FEATS}, **{c: 0.0 for c in COLS if c.startswith("svc_")}}])
+        if f"svc_{svc}" in row:
+            row[f"svc_{svc}"] = 1.0
+        ph = float(np.mean([m.predict_proba(row[COLS])[0][1] for m in ENS]))
+        return ("keda" if ph >= THRESH else "vertical"), ph
     if a.mode == "rules":
         rising = f["rps"] > 0 and f["slope"] / f["rps"] > a.rise
         return ("keda" if rising else "vertical"), None
@@ -179,13 +214,13 @@ def read_rps(t):
 
 # ---------------- loop ----------------
 start_pf()
-hist = {s: deque(maxlen=8) for s in SERVICES}          # 8 x 15 s = last two minutes
+hist = {s: deque(maxlen=16) for s in SERVICES}         # 16 x 15 s = last four minutes
 current = {s: "vertical" for s in SERVICES}
 last_switch = {s: -1e9 for s in SERVICES}
 for s in SERVICES:                                     # start state: vertical everywhere
     apply(s, "vertical")
 f_log = open(a.log, "w", newline=""); w = csv.writer(f_log)
-w.writerow(["t_sec", "service", *FEATS, "proposed", "prob", "current_before", "action"])
+w.writerow(["t_sec", "service", *LOGF, "proposed", "prob", "current_before", "action"])
 t0 = time.time(); tick = 0; switches = 0
 interval = 0.01 if a.dry_run else 15
 while time.time() - t0 < a.minutes * 60 if not a.dry_run else tick < a.minutes * 4:
@@ -197,17 +232,23 @@ while time.time() - t0 < a.minutes * 60 if not a.dry_run else tick < a.minutes *
     for s in SERVICES:
         hist[s].append(rps.get(s, 0.0))
     tick += 1
-    if tick % 4 or tick < 8:                           # decide once a minute, after 2 minutes of history
+    need = 12 if a.mode == "ensemble" else 8          # ensemble needs 3 minutes (lag features)
+    if tick % 4 or tick < need:                        # decide once a minute
         time.sleep(interval); continue
     def stats(s):
         h = list(hist[s]); now, prev = h[-4:], h[-8:-4]
-        m = float(np.mean(now)); return m, float(np.std(now, ddof=1)), float(np.max(now)), m - float(np.mean(prev))
-    fe_m, _, _, fe_sl = stats("frontend")
+        prev2 = h[-12:-8] if len(h) >= 12 else prev
+        m = float(np.mean(now)); m1 = float(np.mean(prev)); m2 = float(np.mean(prev2))
+        return m, float(np.std(now, ddof=1)), float(np.max(now)), m - m1, m1, m2
+    fe_m, _, _, fe_sl, _, _ = stats("frontend")
     for s in SERVICES:
         before = current[s]
-        m, sd, mx, sl = stats(s)
+        m, sd, mx, sl, m1, m2 = stats(s)
         f = {"rps": m, "slope": sl, "burst": sd / m if m else 0.0, "peak_ratio": mx / m if m else 1.0,
-             "fe_rps": fe_m, "fe_slope": fe_sl, "forecast": max(0.0, m + sl)}
+             "fe_rps": fe_m, "fe_slope": fe_sl, "forecast": max(0.0, m + sl),
+             # time-series features, defined exactly as in train_selector.py --lags
+             "rps_lag1": m1, "rps_lag2": m2, "slope_lag1": m1 - m2,
+             "rps_roll3": (m + m1 + m2) / 3, "accel": sl - (m1 - m2)}
         mech, p = plan(s, f)
         action = "keep"
         if mech != current[s]:
@@ -219,7 +260,7 @@ while time.time() - t0 < a.minutes * 60 if not a.dry_run else tick < a.minutes *
                     print(f"t={t:.0f}s {s}: consolidated ({info})", flush=True)
             else:
                 action = f"hold (wanted {mech})"
-        w.writerow([round(t, 1), s, *[round(f[k], 4) for k in FEATS], mech,
+        w.writerow([round(t, 1), s, *[round(f[k], 4) for k in LOGF], mech,
                     "" if p is None else round(p, 3), before, action])
         if a.dry_run and action != "keep":
             print(f"t={t:5.0f}s {s:22s} {action}  p={p}")

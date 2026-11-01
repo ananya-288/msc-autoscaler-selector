@@ -1,0 +1,61 @@
+{
+ "features": [
+  "rps",
+  "slope",
+  "burst",
+  "peak_ratio",
+  "fe_rps",
+  "fe_slope",
+  "forecast",
+  "rps_lag1",
+  "rps_lag2",
+  "slope_lag1",
+  "rps_roll3",
+  "accel"
+ ],
+ "columns": [
+  "rps",
+  "slope",
+  "burst",
+  "peak_ratio",
+  "fe_rps",
+  "fe_slope",
+  "forecast",
+  "rps_lag1",
+  "rps_lag2",
+  "slope_lag1",
+  "rps_roll3",
+  "accel",
+  "svc_adservice",
+  "svc_cartservice",
+  "svc_checkoutservice",
+  "svc_currencyservice",
+  "svc_emailservice",
+  "svc_frontend",
+  "svc_paymentservice",
+  "svc_productcatalogservice",
+  "svc_recommendationservice",
+  "svc_shippingservice"
+ ],
+ "positive_class": "horizontal",
+ "horizontal_acts_as": "keda",
+ "training_data": "results/selector/training_dataset_floor50_avg12_binary_lags.csv",
+ "models": {
+  "MLP": {
+   "h": [
+    64
+   ],
+   "alpha": 0.01
+  },
+  "ExtraTrees": {
+   "depth": 10,
+   "leaf": 1,
+   "feat": "sqrt"
+  },
+  "kNN": {
+   "k": 5,
+   "w": "distance"
+  }
+ },
+ "threshold": 0.6
+}
