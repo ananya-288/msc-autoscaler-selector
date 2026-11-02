@@ -1,0 +1,7 @@
+run=selector_eval_heldout_runtest
+mode=selector
+workload=eval_heldout
+start_utc=2026-10-27 13:13:22
+minutes=4
+target_cpu=50
+max_replicas=5

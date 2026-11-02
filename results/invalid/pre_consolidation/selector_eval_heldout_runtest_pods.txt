@@ -1,0 +1,12 @@
+NAME                                     READY   STATUS    RESTARTS        AGE     IP              NODE                            NOMINATED NODE   READINESS GATES
+adservice-5c8f86db5c-k2l4w               2/2     Running   0               6m41s   172.31.31.183   ip-172-31-29-153.ec2.internal   <none>           <none>
+cartservice-59fd5f8fc4-8jlhf             2/2     Running   0               6m41s   172.31.38.121   ip-172-31-35-130.ec2.internal   <none>           <none>
+checkoutservice-6d5f576b49-9dhfr         2/2     Running   0               6m41s   172.31.24.8     ip-172-31-29-153.ec2.internal   <none>           <none>
+currencyservice-7479ff844c-5nfxk         2/2     Running   0               6m41s   172.31.18.39    ip-172-31-29-153.ec2.internal   <none>           <none>
+emailservice-86cc744bf7-cw5ws            2/2     Running   1 (6m20s ago)   6m41s   172.31.40.118   ip-172-31-35-130.ec2.internal   <none>           <none>
+frontend-5846cdbf7-fsfqb                 2/2     Running   0               6m41s   172.31.42.94    ip-172-31-35-130.ec2.internal   <none>           <none>
+paymentservice-6d6dc689fc-js6dr          2/2     Running   0               6m41s   172.31.34.11    ip-172-31-35-130.ec2.internal   <none>           <none>
+productcatalogservice-5bd78bc8cc-8gzcg   2/2     Running   0               6m41s   172.31.38.218   ip-172-31-35-130.ec2.internal   <none>           <none>
+recommendationservice-5cdd48d9cd-dmxkx   2/2     Running   1 (6m20s ago)   6m41s   172.31.24.244   ip-172-31-29-153.ec2.internal   <none>           <none>
+redis-cart-6578f49f8b-tchqb              2/2     Running   0               6m41s   172.31.21.214   ip-172-31-29-153.ec2.internal   <none>           <none>
+shippingservice-675ffb478b-rlrhq         2/2     Running   0               6m41s   172.31.35.72    ip-172-31-35-130.ec2.internal   <none>           <none>

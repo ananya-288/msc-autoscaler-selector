@@ -1,0 +1,11 @@
+nohup: ignoring input
+=== vertical_eval_heldout_run2: workload eval_heldout, 2026-10-27 15:37:01 UTC  reset
+=== waiting 90s
+=== 2026-10-27 15:39:33 UTC  started Locust (eval_heldout) + collector; ends in about 16 min
+=== 15:54:35 UTC  Locust finished
+=== 15:55:40 UTC  collector finished
+=== DONE vertical_eval_heldout_run2
+    metrics rows: 704   collector errors: 0
+    resize actions: 72
+         Aggregated                                                                     76660     0(0.00%) |    142      28    5175     75 |   85.14        0.00
+         Aggregated                                                                             75     93    110    130    260    580    930   1100   2400   4900   5200  76660

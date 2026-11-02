@@ -1,0 +1,7 @@
+run=vertical_eval_heldout_run2
+mode=vertical
+workload=eval_heldout
+start_utc=2026-10-27 15:39:33
+minutes=15
+target_cpu=50
+max_replicas=5

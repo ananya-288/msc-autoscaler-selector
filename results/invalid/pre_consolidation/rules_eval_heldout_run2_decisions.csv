@@ -1,0 +1,121 @@
+t_sec,service,rps,slope,burst,peak_ratio,fe_rps,fe_slope,forecast,proposed,prob,current_before,action
+105.1,adservice,35.14,15.4734,0.1371,1.1235,90.78,38.7522,50.6134,keda,,vertical,switch vertical->keda
+105.1,cartservice,90.46,38.5787,0.1353,1.13,90.78,38.7522,129.0387,keda,,vertical,switch vertical->keda
+105.1,checkoutservice,11.48,4.5578,0.1548,1.1603,90.78,38.7522,16.0378,keda,,vertical,switch vertical->keda
+105.1,currencyservice,354.575,154.3704,0.1552,1.159,90.78,38.7522,508.9454,keda,,vertical,switch vertical->keda
+105.1,emailservice,11.74,4.8534,0.1215,1.1244,90.78,38.7522,16.5934,keda,,vertical,switch vertical->keda
+105.1,frontend,90.78,38.7522,0.1372,1.1351,90.78,38.7522,129.5322,keda,,vertical,switch vertical->keda
+105.1,paymentservice,11.325,4.4856,0.141,1.1426,90.78,38.7522,15.8106,keda,,vertical,switch vertical->keda
+105.1,productcatalogservice,339.675,142.6291,0.1381,1.1378,90.78,38.7522,482.3041,keda,,vertical,switch vertical->keda
+105.1,recommendationservice,45.6399,18.8465,0.1356,1.1334,90.78,38.7522,64.4863,keda,,vertical,switch vertical->keda
+105.1,shippingservice,44.865,18.6885,0.148,1.147,90.78,38.7522,63.5535,keda,,vertical,switch vertical->keda
+227.7,adservice,48.34,13.2,0.0422,1.0463,130.8665,40.0865,61.54,keda,,keda,keep
+227.7,cartservice,128.816,38.356,0.0651,1.0864,130.8665,40.0865,167.1719,keda,,keda,keep
+227.7,checkoutservice,17.368,5.888,0.0809,1.0924,130.8665,40.0865,23.256,keda,,keda,keep
+227.7,currencyservice,468.9802,114.4052,0.053,1.0525,130.8665,40.0865,583.3854,keda,,keda,keep
+227.7,emailservice,17.485,5.745,0.0669,1.0626,130.8665,40.0865,23.23,keda,,keda,keep
+227.7,frontend,130.8665,40.0865,0.0478,1.0484,130.8665,40.0865,170.9531,keda,,keda,keep
+227.7,paymentservice,17.385,6.06,0.061,1.0561,130.8665,40.0865,23.445,keda,,keda,keep
+227.7,productcatalogservice,477.0164,137.3414,0.0477,1.0638,130.8665,40.0865,614.3578,keda,,keda,keep
+227.7,recommendationservice,67.8969,22.2571,0.0798,1.0875,130.8665,40.0865,90.154,keda,,keda,keep
+227.7,shippingservice,67.04,22.175,0.0501,1.0528,130.8665,40.0865,89.215,keda,,keda,keep
+287.7,adservice,51.955,3.615,0.0279,1.0374,139.8076,8.9411,55.57,vertical,,keda,switch keda->vertical
+287.7,cartservice,133.335,4.519,0.0685,1.0918,139.8076,8.9411,137.854,vertical,,keda,switch keda->vertical
+287.7,checkoutservice,17.9904,0.6224,0.0273,1.0305,139.8076,8.9411,18.6128,vertical,,keda,switch keda->vertical
+287.7,currencyservice,512.84,43.8598,0.0323,1.0458,139.8076,8.9411,556.6998,vertical,,keda,switch keda->vertical
+287.7,emailservice,17.905,0.42,0.0138,1.0165,139.8076,8.9411,18.325,vertical,,keda,switch keda->vertical
+287.7,frontend,139.8076,8.9411,0.0222,1.0273,139.8076,8.9411,148.7487,vertical,,keda,switch keda->vertical
+287.7,paymentservice,17.9202,0.5352,0.0193,1.0223,139.8076,8.9411,18.4554,vertical,,keda,switch keda->vertical
+287.7,productcatalogservice,518.5416,41.5252,0.0232,1.032,139.8076,8.9411,560.0668,vertical,,keda,switch keda->vertical
+287.7,recommendationservice,71.5095,3.6126,0.0364,1.0351,139.8076,8.9411,75.1221,vertical,,keda,switch keda->vertical
+287.7,shippingservice,69.105,2.065,0.016,1.0211,139.8076,8.9411,71.17,vertical,,keda,switch keda->vertical
+419.3,adservice,56.57,4.615,0.0231,1.0267,151.47,11.6623,61.185,vertical,,vertical,keep
+419.3,cartservice,149.545,16.21,0.055,1.0688,151.47,11.6623,165.755,vertical,,vertical,keep
+419.3,checkoutservice,20.435,2.4446,0.0356,1.0511,151.47,11.6623,22.8796,vertical,,vertical,keep
+419.3,currencyservice,558.9,46.06,0.0289,1.0296,151.47,11.6623,604.96,vertical,,vertical,keep
+419.3,emailservice,19.975,2.07,0.0496,1.0673,151.47,11.6623,22.045,vertical,,vertical,keep
+419.3,frontend,151.47,11.6623,0.0271,1.0365,151.47,11.6623,163.1323,vertical,,vertical,keep
+419.3,paymentservice,19.705,1.7848,0.0446,1.0647,151.47,11.6623,21.4898,vertical,,vertical,keep
+419.3,productcatalogservice,563.44,44.8984,0.025,1.0267,151.47,11.6623,608.3384,vertical,,vertical,keep
+419.3,recommendationservice,77.445,5.9355,0.0377,1.0327,151.47,11.6623,83.3805,vertical,,vertical,keep
+419.3,shippingservice,75.45,6.345,0.0335,1.0463,151.47,11.6623,81.795,vertical,,vertical,keep
+479.3,adservice,58.665,2.095,0.0127,1.0118,156.1101,4.6401,60.76,vertical,,vertical,keep
+479.3,cartservice,159.07,9.525,0.0542,1.0714,156.1101,4.6401,168.595,vertical,,vertical,keep
+479.3,checkoutservice,19.895,-0.54,0.055,1.0656,156.1101,4.6401,19.355,vertical,,vertical,keep
+479.3,currencyservice,586.12,27.22,0.0104,1.014,156.1101,4.6401,613.34,vertical,,vertical,keep
+479.3,emailservice,20.0,0.025,0.0527,1.067,156.1101,4.6401,20.025,vertical,,vertical,keep
+479.3,frontend,156.1101,4.6401,0.0156,1.0131,156.1101,4.6401,160.7501,vertical,,vertical,keep
+479.3,paymentservice,19.83,0.125,0.0485,1.054,156.1101,4.6401,19.955,vertical,,vertical,keep
+479.3,productcatalogservice,580.5,17.06,0.0493,1.0406,156.1101,4.6401,597.56,vertical,,vertical,keep
+479.3,recommendationservice,78.405,0.96,0.0375,1.0471,156.1101,4.6401,79.365,vertical,,vertical,keep
+479.3,shippingservice,76.795,1.345,0.032,1.0357,156.1101,4.6401,78.14,vertical,,vertical,keep
+539.4,adservice,58.9,0.235,0.0205,1.0289,158.49,2.3799,59.135,vertical,,vertical,keep
+539.4,cartservice,162.025,2.955,0.049,1.0618,158.49,2.3799,164.98,vertical,,vertical,keep
+539.4,checkoutservice,20.245,0.35,0.0496,1.0412,158.49,2.3799,20.595,vertical,,vertical,keep
+539.4,currencyservice,589.565,3.445,0.0142,1.0171,158.49,2.3799,593.01,vertical,,vertical,keep
+539.4,emailservice,20.1,0.1,0.0322,1.0338,158.49,2.3799,20.2,vertical,,vertical,keep
+539.4,frontend,158.49,2.3799,0.0219,1.023,158.49,2.3799,160.8699,vertical,,vertical,keep
+539.4,paymentservice,19.885,0.055,0.0463,1.048,158.49,2.3799,19.94,vertical,,vertical,keep
+539.4,productcatalogservice,587.69,7.19,0.0247,1.0274,158.49,2.3799,594.88,vertical,,vertical,keep
+539.4,recommendationservice,81.995,3.59,0.031,1.0271,158.49,2.3799,85.585,vertical,,vertical,keep
+539.4,shippingservice,79.16,2.365,0.0264,1.028,158.49,2.3799,81.525,vertical,,vertical,keep
+599.4,adservice,64.535,5.635,0.0408,1.0459,170.435,11.945,70.17,vertical,,vertical,keep
+599.4,cartservice,165.345,3.32,0.0416,1.0611,170.435,11.945,168.665,vertical,,vertical,keep
+599.4,checkoutservice,21.5849,1.3399,0.0127,1.0081,170.435,11.945,22.9247,vertical,,vertical,keep
+599.4,currencyservice,643.85,54.285,0.05,1.0491,170.435,11.945,698.135,vertical,,vertical,keep
+599.4,emailservice,21.18,1.08,0.0152,1.0227,170.435,11.945,22.26,vertical,,vertical,keep
+599.4,frontend,170.435,11.945,0.0314,1.0364,170.435,11.945,182.38,vertical,,vertical,keep
+599.4,paymentservice,21.015,1.13,0.0094,1.0107,170.435,11.945,22.145,vertical,,vertical,keep
+599.4,productcatalogservice,623.4597,35.7697,0.0169,1.0141,170.435,11.945,659.2294,vertical,,vertical,keep
+599.4,recommendationservice,85.505,3.51,0.0286,1.0376,170.435,11.945,89.015,vertical,,vertical,keep
+599.4,shippingservice,82.28,3.12,0.0309,1.0367,170.435,11.945,85.4,vertical,,vertical,keep
+659.5,adservice,58.235,-6.3,0.1218,1.1457,153.23,-17.205,51.935,vertical,,vertical,keep
+659.5,cartservice,149.48,-15.865,0.1572,1.2134,153.23,-17.205,133.615,vertical,,vertical,keep
+659.5,checkoutservice,19.2252,-2.3597,0.0932,1.0923,153.23,-17.205,16.8655,vertical,,vertical,keep
+659.5,currencyservice,581.9017,-61.9483,0.111,1.1216,153.23,-17.205,519.9534,vertical,,vertical,keep
+659.5,emailservice,18.765,-2.415,0.1018,1.1319,153.23,-17.205,16.35,vertical,,vertical,keep
+659.5,frontend,153.23,-17.205,0.1117,1.1329,153.23,-17.205,136.025,vertical,,vertical,keep
+659.5,paymentservice,18.8147,-2.2003,0.0882,1.1108,153.23,-17.205,16.6145,vertical,,vertical,keep
+659.5,productcatalogservice,547.6901,-75.7696,0.1176,1.1459,153.23,-17.205,471.9206,vertical,,vertical,keep
+659.5,recommendationservice,76.415,-9.09,0.0994,1.1061,153.23,-17.205,67.325,vertical,,vertical,keep
+659.5,shippingservice,74.825,-7.455,0.1094,1.1173,153.23,-17.205,67.37,vertical,,vertical,keep
+719.5,adservice,37.805,-20.43,0.1993,1.2427,102.3,-50.93,17.375,vertical,,vertical,keep
+719.5,cartservice,97.825,-51.655,0.1559,1.1453,102.3,-50.93,46.17,vertical,,vertical,keep
+719.5,checkoutservice,13.755,-5.4702,0.166,1.1865,102.3,-50.93,8.2848,vertical,,vertical,keep
+719.5,currencyservice,376.075,-205.8267,0.1829,1.2017,102.3,-50.93,170.2483,vertical,,vertical,keep
+719.5,emailservice,13.285,-5.48,0.1924,1.2224,102.3,-50.93,7.805,vertical,,vertical,keep
+719.5,frontend,102.3,-50.93,0.1897,1.2229,102.3,-50.93,51.37,vertical,,vertical,keep
+719.5,paymentservice,13.4402,-5.3745,0.1897,1.2098,102.3,-50.93,8.0657,vertical,,vertical,keep
+719.5,productcatalogservice,374.57,-173.1201,0.1879,1.2039,102.3,-50.93,201.4499,vertical,,vertical,keep
+719.5,recommendationservice,52.895,-23.52,0.1726,1.1869,102.3,-50.93,29.375,vertical,,vertical,keep
+719.5,shippingservice,51.375,-23.45,0.1797,1.1862,102.3,-50.93,27.925,vertical,,vertical,keep
+779.6,adservice,25.075,-12.73,0.0779,1.0959,68.16,-34.14,12.345,vertical,,vertical,keep
+779.6,cartservice,64.15,-33.675,0.0736,1.0753,68.16,-34.14,30.475,vertical,,vertical,keep
+779.6,checkoutservice,9.0998,-4.6552,0.0506,1.0528,68.16,-34.14,4.4445,vertical,,vertical,keep
+779.6,currencyservice,252.36,-123.715,0.0682,1.0821,68.16,-34.14,128.645,vertical,,vertical,keep
+779.6,emailservice,8.585,-4.7,0.071,1.0949,68.16,-34.14,3.885,vertical,,vertical,keep
+779.6,frontend,68.16,-34.14,0.0733,1.0813,68.16,-34.14,34.02,vertical,,vertical,keep
+779.6,paymentservice,8.54,-4.9002,0.0732,1.0984,68.16,-34.14,3.6398,vertical,,vertical,keep
+779.6,productcatalogservice,243.065,-131.505,0.0802,1.0999,68.16,-34.14,111.56,vertical,,vertical,keep
+779.6,recommendationservice,34.51,-18.385,0.0502,1.0675,68.16,-34.14,16.125,vertical,,vertical,keep
+779.6,shippingservice,32.78,-18.595,0.0587,1.0732,68.16,-34.14,14.185,vertical,,vertical,keep
+839.6,adservice,20.965,-4.11,0.02,1.0293,56.615,-11.545,16.855,vertical,,vertical,keep
+839.6,cartservice,57.46,-6.69,0.0229,1.0275,56.615,-11.545,50.77,vertical,,vertical,keep
+839.6,checkoutservice,7.6502,-1.4496,0.042,1.0405,56.615,-11.545,6.2005,vertical,,vertical,keep
+839.6,currencyservice,204.94,-47.42,0.0214,1.0278,56.615,-11.545,157.52,vertical,,vertical,keep
+839.6,emailservice,7.465,-1.12,0.0221,1.0315,56.615,-11.545,6.345,vertical,,vertical,keep
+839.6,frontend,56.615,-11.545,0.0215,1.0319,56.615,-11.545,45.07,vertical,,vertical,keep
+839.6,paymentservice,7.315,-1.225,0.0219,1.028,56.615,-11.545,6.09,vertical,,vertical,keep
+839.6,productcatalogservice,205.82,-37.245,0.0225,1.0238,56.615,-11.545,168.575,vertical,,vertical,keep
+839.6,recommendationservice,29.79,-4.72,0.026,1.0225,56.615,-11.545,25.07,vertical,,vertical,keep
+839.6,shippingservice,27.545,-5.235,0.0236,1.0296,56.615,-11.545,22.31,vertical,,vertical,keep
+899.6,adservice,10.465,-10.5,0.8048,1.9742,29.06,-27.555,0.0,vertical,,vertical,keep
+899.6,cartservice,27.365,-30.095,0.7851,1.9536,29.06,-27.555,0.0,vertical,,vertical,keep
+899.6,checkoutservice,4.375,-3.2752,0.6283,1.76,29.06,-27.555,1.0998,vertical,,vertical,keep
+899.6,currencyservice,101.155,-103.785,0.7354,1.8364,29.06,-27.555,0.0,vertical,,vertical,keep
+899.6,emailservice,3.95,-3.515,0.7197,1.8987,29.06,-27.555,0.435,vertical,,vertical,keep
+899.6,frontend,29.06,-27.555,0.7559,1.9188,29.06,-27.555,1.505,vertical,,vertical,keep
+899.6,paymentservice,4.025,-3.29,0.7102,1.8584,29.06,-27.555,0.735,vertical,,vertical,keep
+899.6,productcatalogservice,92.6604,-113.1596,0.837,2.0268,29.06,-27.555,0.0,vertical,,vertical,keep
+899.6,recommendationservice,15.845,-13.945,0.6325,1.7166,29.06,-27.555,1.9,vertical,,vertical,keep
+899.6,shippingservice,14.165,-13.38,0.6962,1.7776,29.06,-27.555,0.785,vertical,,vertical,keep

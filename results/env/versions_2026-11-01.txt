@@ -1,0 +1,18 @@
+Sun Nov  1 21:13:59 UTC 2026
+Client Version: v1.36.0
+Kustomize Version: v5.8.1
+Server Version: v1.36.5-eks-577a51e
+Client version: edge-26.10.1
+Server version: edge-26.10.1
+NAME	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART      	APP VERSION
+keda	keda     	1       	2026-11-01 21:11:25.392885517 +0000 UTC	deployed	keda-2.21.0	2.21.0     
+metrics-server             602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/metrics-server:v0.9.0-eksbuild.14
+vpa-admission-controller   registry.k8s.io/autoscaling/vpa-admission-controller:1.8.0
+vpa-recommender            registry.k8s.io/autoscaling/vpa-recommender:1.8.0
+vpa-updater                registry.k8s.io/autoscaling/vpa-updater:1.8.0
+NAME                            STATUS   ROLES    AGE   VERSION               INTERNAL-IP     EXTERNAL-IP      OS-IMAGE                        KERNEL-VERSION                            CONTAINER-RUNTIME
+ip-172-31-11-39.ec2.internal    Ready    <none>   48m   v1.36.5-eks-6e7947a   172.31.11.39    18.213.116.36    Amazon Linux 2023.12.20261102   6.18.56-125.164.amzn2023.x86_64 (amd64)   containerd://2.3.7+unknown
+ip-172-31-25-6.ec2.internal     Ready    <none>   48m   v1.36.5-eks-6e7947a   172.31.25.6     98.90.200.101    Amazon Linux 2023.12.20261102   6.18.56-125.164.amzn2023.x86_64 (amd64)   containerd://2.3.7+unknown
+ip-172-31-40-83.ec2.internal    Ready    <none>   48m   v1.36.5-eks-6e7947a   172.31.40.83    18.234.158.51    Amazon Linux 2023.12.20261102   6.18.56-125.164.amzn2023.x86_64 (amd64)   containerd://2.3.7+unknown
+ip-172-31-73-181.ec2.internal   Ready    <none>   48m   v1.36.5-eks-6e7947a   172.31.73.181   34.239.177.174   Amazon Linux 2023.12.20261102   6.18.56-125.164.amzn2023.x86_64 (amd64)   containerd://2.3.7+unknown
+ip-172-31-80-175.ec2.internal   Ready    <none>   48m   v1.36.5-eks-6e7947a   172.31.80.175   34.238.252.210   Amazon Linux 2023.12.20261102   6.18.56-125.164.amzn2023.x86_64 (amd64)   containerd://2.3.7+unknown

@@ -1,0 +1,7 @@
+run=hpa_eval_heldout_run2
+mode=hpa
+workload=eval_heldout
+start_utc=2026-10-27 16:04:05
+minutes=15
+target_cpu=50
+max_replicas=5

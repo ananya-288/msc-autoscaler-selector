@@ -1,0 +1,18 @@
+NAME                                                                     REFERENCE                          TARGETS               MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/keda-hpa-cartservice-rps             Deployment/cartservice             29980m/70.070 (avg)   1         5         2          3m32s
+horizontalpodautoscaler.autoscaling/keda-hpa-checkoutservice-rps         Deployment/checkoutservice         5460m/14.610 (avg)    1         5         2          3m26s
+horizontalpodautoscaler.autoscaling/keda-hpa-recommendationservice-rps   Deployment/recommendationservice   10505m/20.010 (avg)   1         5         4          3m13s
+
+NAME                                             SCALETARGETKIND      SCALETARGETNAME         MIN   MAX   READY   ACTIVE   FALLBACK   PAUSED   TRIGGERS     AUTHENTICATIONS   AGE
+scaledobject.keda.sh/cartservice-rps             apps/v1.Deployment   cartservice             1     5     True    True     False      False    prometheus                     3m32s
+scaledobject.keda.sh/checkoutservice-rps         apps/v1.Deployment   checkoutservice         1     5     True    True     False      False    prometheus                     3m26s
+scaledobject.keda.sh/recommendationservice-rps   apps/v1.Deployment   recommendationservice   1     5     True    True     False      False    prometheus                     3m13s
+
+NAME                                                                 MODE   CPU    MEM   PROVIDED   AGE     MINREPLICAS   OOMSECONDS
+verticalpodautoscaler.autoscaling.k8s.io/adservice-vpa               Off    93m          True       7m16s                 
+verticalpodautoscaler.autoscaling.k8s.io/currencyservice-vpa         Off    350m         True       6m57s                 
+verticalpodautoscaler.autoscaling.k8s.io/emailservice-vpa            Off    50m          True       6m51s                 
+verticalpodautoscaler.autoscaling.k8s.io/frontend-vpa                Off    442m         True       66s                   
+verticalpodautoscaler.autoscaling.k8s.io/paymentservice-vpa          Off    50m          True       6m40s                 
+verticalpodautoscaler.autoscaling.k8s.io/productcatalogservice-vpa   Off    182m         True       6m34s                 
+verticalpodautoscaler.autoscaling.k8s.io/shippingservice-vpa         Off    50m          True       6m24s                 

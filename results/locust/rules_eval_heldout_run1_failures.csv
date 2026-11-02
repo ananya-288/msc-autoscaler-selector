@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),1,2026-11-01T21:38:29Z,2026-11-01T21:38:29Z
+GET,/cart,HTTPError('502 Server Error: Bad Gateway for url: /cart'),1,2026-11-01T21:38:04Z,2026-11-01T21:38:04Z
+GET,/,HTTPError('500 Server Error: Internal Server Error for url: /'),1,2026-11-01T21:38:04Z,2026-11-01T21:38:04Z

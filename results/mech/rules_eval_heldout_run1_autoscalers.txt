@@ -1,0 +1,11 @@
+NAME                                                                 MODE   CPU    MEM   PROVIDED   AGE     MINREPLICAS   OOMSECONDS
+verticalpodautoscaler.autoscaling.k8s.io/adservice-vpa               Off    50m          True       4m39s                 
+verticalpodautoscaler.autoscaling.k8s.io/cartservice-vpa             Off    163m         True       4m24s                 
+verticalpodautoscaler.autoscaling.k8s.io/checkoutservice-vpa         Off    78m          True       4m8s                  
+verticalpodautoscaler.autoscaling.k8s.io/currencyservice-vpa         Off    379m         True       9m59s                 
+verticalpodautoscaler.autoscaling.k8s.io/emailservice-vpa            Off    50m          True       3m53s                 
+verticalpodautoscaler.autoscaling.k8s.io/frontend-vpa                Off    511m         True       9m34s                 
+verticalpodautoscaler.autoscaling.k8s.io/paymentservice-vpa          Off    50m          True       3m47s                 
+verticalpodautoscaler.autoscaling.k8s.io/productcatalogservice-vpa   Off    163m         True       9m7s                  
+verticalpodautoscaler.autoscaling.k8s.io/recommendationservice-vpa   Off    126m         True       3m41s                 
+verticalpodautoscaler.autoscaling.k8s.io/shippingservice-vpa         Off    50m          True       3m24s                 

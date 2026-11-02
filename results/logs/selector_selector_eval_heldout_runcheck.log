@@ -1,0 +1,5 @@
+ensemble trained on 560 rows from results/selector/training_dataset_floor50_avg12_binary_lags.csv; threshold 0.6; features ['rps', 'slope', 'burst', 'peak_ratio', 'fe_rps', 'fe_slope', 'forecast', 'rps_lag1', 'rps_lag2', 'slope_lag1', 'rps_roll3', 'accel']
+[t=165s] switches so far: 4
+[t=250s] switches so far: 4
+t=311s frontend: consolidated (5 pods -> 1 pod at 500m (total use 435m); resized 5/5, scaled=ok)
+[t=311s] switches so far: 5

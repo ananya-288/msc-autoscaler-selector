@@ -1,0 +1,2 @@
+method,n,slo_viol_%,fe_p95_ms,locust_p50_ms,locust_p95_ms,locust_p99_ms,locust_avg_ms,cpu_alloc_m,replicas,replica_changes,resizes,switches,failures_%,throughput_rps
+vertical,1,28.6 ± nan,427.6 ± nan,130.0 ± nan,670.0 ± nan,1300.0 ± nan,199.4 ± nan,1620.8 ± nan,10.0 ± nan,0.0 ± nan,61.0 ± nan,0.0 ± nan,0.0 ± nan,83.0 ± nan

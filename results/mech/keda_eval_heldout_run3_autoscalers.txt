@@ -1,0 +1,23 @@
+NAME                                                                     REFERENCE                          TARGETS               MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/keda-hpa-adservice-rps               Deployment/adservice               1260m/49.720 (avg)    1         5         2          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-cartservice-rps             Deployment/cartservice             1220m/70.070 (avg)    1         5         3          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-checkoutservice-rps         Deployment/checkoutservice         500m/14.610 (avg)     1         5         2          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-currencyservice-rps         Deployment/currencyservice         500m/59.080 (avg)     1         5         5          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-emailservice-rps            Deployment/emailservice            700m/36.380 (avg)     1         5         1          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-frontend-rps                Deployment/frontend                500m/14.080 (avg)     1         5         5          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-paymentservice-rps          Deployment/paymentservice          840m/44.240 (avg)     1         5         1          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-productcatalogservice-rps   Deployment/productcatalogservice   2176m/131.030 (avg)   1         5         5          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-recommendationservice-rps   Deployment/recommendationservice   920m/20.010 (avg)     1         5         4          16m
+horizontalpodautoscaler.autoscaling/keda-hpa-shippingservice-rps         Deployment/shippingservice         600m/103.210 (avg)    1         5         1          16m
+
+NAME                                             SCALETARGETKIND      SCALETARGETNAME         MIN   MAX   READY   ACTIVE   FALLBACK   PAUSED   TRIGGERS     AUTHENTICATIONS   AGE
+scaledobject.keda.sh/adservice-rps               apps/v1.Deployment   adservice               1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/cartservice-rps             apps/v1.Deployment   cartservice             1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/checkoutservice-rps         apps/v1.Deployment   checkoutservice         1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/currencyservice-rps         apps/v1.Deployment   currencyservice         1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/emailservice-rps            apps/v1.Deployment   emailservice            1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/frontend-rps                apps/v1.Deployment   frontend                1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/paymentservice-rps          apps/v1.Deployment   paymentservice          1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/productcatalogservice-rps   apps/v1.Deployment   productcatalogservice   1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/recommendationservice-rps   apps/v1.Deployment   recommendationservice   1     5     True    True     False      False    prometheus                     16m
+scaledobject.keda.sh/shippingservice-rps         apps/v1.Deployment   shippingservice         1     5     True    True     False      False    prometheus                     16m

@@ -1,0 +1,7 @@
+run=keda_eval_heldout_run1
+mode=keda
+workload=eval_heldout
+start_utc=2026-10-27 14:06:02
+minutes=15
+target_cpu=50
+max_replicas=5
