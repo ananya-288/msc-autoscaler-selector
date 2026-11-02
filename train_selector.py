@@ -1,21 +1,34 @@
 #!/usr/bin/env python3
 """
-train_selector.py - RQ2: can a classifier predict, one minute ahead, which mechanism
-(HPA, KEDA, vertical) will be best for a service?
+train_selector.py - RQ2: can a classifier predict, one minute ahead, which autoscaling mechanism
+will be best for a service? (offline, leave-one-shape-out)
 
-    python train_selector.py --root C:\\shpa\\check\\shpa --floor 50
+Examples
+    python train_selector.py --root . --floor 50 --runs 1                       # run 1 only, 3 classes
+    python train_selector.py --root . --floor 50 --runs 1 2 --avg               # labels from the average of runs 1+2
+    python train_selector.py --root . --floor 50 --runs 1 2 --avg --task binary --lags   # FINAL formulation
 
-Inputs (from the backup):
-  results/mech/<mech>_<shape>_run1_metrics.csv   (collector, 15-s samples)
-  results/labels/<shape>_run1_w60_floor<F>_labels.csv   (make_labels.py output)
+Inputs
+    results/mech/<mech>_<shape>_run<r>_metrics.csv                 collector data (15-s samples)
+    results/labels/<shape>_run<r>_w60[_floor50]_labels.csv          winner per service-minute (make_labels.py)
+    results/labels/<shape>_run<r>_w60[_floor50]_window_details.csv  score per mechanism (used by --avg)
 
-Features for window w use ONLY windows w-1 and w-2 (what a controller knows when it decides),
-and ONLY traffic signals that are the same whatever mechanism ran (averaged over the 3 runs):
-  rps, rps slope, burstiness (std/mean inside the minute), peak/mean, frontend rps + slope,
-  a naive next-minute forecast (rps + slope), and the service (one-hot).
-Label: the best mechanism in window w.
-Evaluation: leave-one-shape-out (train on 3 shapes, test on the 4th), macro-F1, and REGRET =
-score(chosen) - score(best), compared with always choosing one mechanism.
+Options
+    --avg     one label per service-minute = mechanism with the lowest AVERAGE score over --runs
+    --task    3class (HPA / KEDA / vertical) or binary (vertical = scale up, horizontal = scale out);
+              in binary mode "horizontal" is executed (and scored) as KEDA
+    --lags    time-series features: rps of the 2 previous minutes, previous slope, 3-minute mean, acceleration
+    --clean   train only on reliable windows (all repeats agree on the winner); always test on ALL windows
+
+Features for the decision in minute w come ONLY from minutes <= w-1 (what a live controller knows),
+and only from traffic signals that do not depend on the mechanism that ran: rps, slope, burstiness,
+peak/mean, frontend rps + slope, forecast (rps + slope), service (one-hot) [+ lags].
+Evaluation: leave-one-shape-out; accuracy, macro-F1 (also on reliable windows), REGRET = score of the
+chosen mechanism - score of the best one; chance baselines (DummyClassifier), noise ceiling
+(repeat-vs-repeat label agreement), paired comparison with always-vertical (bootstrap CI, Wilcoxon),
+confidence-gated variants. Outputs go to results/selector/.
+Note: burst and peak_ratio are computed over the samples of all runs of a shape combined, whereas the
+live selector computes them from one run (4 samples per minute); see check_feature_skew.py.
 """
 import argparse, glob, os, warnings
 import numpy as np, pandas as pd

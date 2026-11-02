@@ -67,7 +67,8 @@ keda)
   ;;
 vpa)
   [[ -d ~/autoscaler ]] || git clone --depth 1 https://github.com/kubernetes/autoscaler.git ~/autoscaler
-  ( cd ~/autoscaler && git fetch --depth 1 origin tag vertical-pod-autoscaler-1.8.0 )
+  # pin VPA 1.8.0: check out the release tag so vpa-up.sh installs exactly that version
+  ( cd ~/autoscaler && git fetch --depth 1 origin tag vertical-pod-autoscaler-1.8.0 && git checkout -q vertical-pod-autoscaler-1.8.0 )
   ( cd ~/autoscaler/vertical-pod-autoscaler && ./hack/vpa-up.sh )
   kubectl get pods -n kube-system | grep vpa
   ;;

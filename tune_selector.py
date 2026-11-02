@@ -22,7 +22,7 @@ import numpy as np, pandas as pd
 from scipy.stats import wilcoxon
 from sklearn.base import clone
 from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import make_pipeline
@@ -136,4 +136,16 @@ print("\nNested leave-one-shape-out (tuning and thresholds chosen on training sh
 print(T.round(4).to_string(index=False))
 print("\nChosen settings per held-out shape:")
 print(pd.DataFrame(chosen)[["model", "test_shape", "params", "threshold"]].to_string(index=False))
-print(f"\nsaved {a.out}")
+# per-class view for the final model and the runner-up (nested predictions)
+rep_rows = []
+for k in ["Ensemble_tuned", "kNN_tuned", "always_vertical"]:
+    P = preds[k]
+    cm = confusion_matrix(y, P, labels=[0, 1])
+    print(f"\n{k}: confusion matrix (rows = true, columns = predicted; 0 = vertical, 1 = horizontal)")
+    print(pd.DataFrame(cm, index=["true vertical", "true horizontal"], columns=["pred vertical", "pred horizontal"]).to_string())
+    print(classification_report(y, P, labels=[0, 1], target_names=["vertical", "horizontal"], digits=3, zero_division=0))
+    r = classification_report(y, P, labels=[0, 1], target_names=["vertical", "horizontal"], output_dict=True, zero_division=0)
+    for cls in ["vertical", "horizontal"]:
+        rep_rows.append({"model": k, "class": cls, **{m: r[cls][m] for m in ["precision", "recall", "f1-score", "support"]}})
+pd.DataFrame(rep_rows).to_csv(a.out.replace(".csv", "_per_class.csv"), index=False)
+print(f"\nsaved {a.out}, {a.out.replace('.csv', '_choices.csv')}, {a.out.replace('.csv', '_per_class.csv')}")
