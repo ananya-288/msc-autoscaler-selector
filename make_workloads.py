@@ -24,10 +24,16 @@ Segments (start time, GMT as in the trace)
   rise          1998-07-07 17:30   strong steady increase
   decline       1998-06-15 20:00   high, then strong decrease
   eval_heldout  1998-07-03 18:45   mixed (rise, peak, fall); from days not used for training
+  eval_final    1998-07-12 18:15   two separate peaks (day of the final); second held-out shape
 Training shapes were picked from automatically ranked 3-hour windows (burst ratio, slope,
 monotonicity, variation) during the tournament (10 June - 12 July 1998). The held-out shape
 was chosen from 30 June - 3 July as the window whose smoothed peak is in the middle
 (40-70 % of the window) with the largest peak / first-30-minutes ratio.
+The second held-out shape (eval_final) was fixed BEFORE the final evaluation with a different
+rule, to test generalisation to an unseen pattern: among all 3-hour windows on tournament days
+not used so far (10 June - 12 July, excluding 12, 15, 25 June, 30 June - 3 July and 7 July), the
+window with at least two prominent peaks (prominence >= 15 % of the maximum) and the highest
+peak / median ratio.
 """
 import argparse, os, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -35,7 +41,8 @@ import numpy as np, pandas as pd
 
 BASE = "https://raw.githubusercontent.com/AndrewLawrence80/WorldCup98/HEAD/GroupedLog/"
 SEGMENTS = {"gentle": "1998-06-12 06:30", "burst": "1998-06-25 15:00", "rise": "1998-07-07 17:30",
-            "decline": "1998-06-15 20:00", "eval_heldout": "1998-07-03 18:45"}
+            "decline": "1998-06-15 20:00", "eval_heldout": "1998-07-03 18:45",
+            "eval_final": "1998-07-12 18:15"}
 PEAK, FLOOR, SPEED, LENGTH = 300, 20, 12, 180
 
 ap = argparse.ArgumentParser()
@@ -71,7 +78,7 @@ for name, start in SEGMENTS.items():
 
 try:
     import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(1, 5, figsize=(18, 3))
+    fig, ax = plt.subplots(1, len(SEGMENTS), figsize=(18, 3))
     for k, name in enumerate(SEGMENTS):
         d = pd.read_csv(os.path.join(a.out, f"{name}.csv"))
         ax[k].plot(d.t_sec / 60, d.users); ax[k].set_ylim(0, 320); ax[k].set_xlabel("test minute")
