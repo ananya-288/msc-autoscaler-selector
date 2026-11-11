@@ -29,6 +29,7 @@ cd "$(dirname "$0")"
 [[ -f "workloads/${SHAPE}.csv" ]] || { echo "STOP: workloads/${SHAPE}.csv not found"; exit 1; }
 [[ -z "$END_BY" ]] && { echo "STOP: set END_BY=HH:MM (UTC), about 15 min before the lab session ends"; exit 1; }
 END_TS=$(date -u -d "today $END_BY" +%s) || exit 1
+(( END_TS <= $(date -u +%s) )) && END_TS=$((END_TS + 86400))   # END_BY after midnight UTC means tomorrow
 mkdir -p ~/backups results/logs
 SUM=results/logs/batch_summary.txt
 log() { echo "[$(date -u +%H:%M:%S)] $*" | tee -a "$SUM"; }
