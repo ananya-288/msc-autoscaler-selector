@@ -54,7 +54,7 @@ for r in $(seq "$FIRST" "$LAST"); do
     if (( now + RUN_MIN*60 > END_TS )); then log "STOP: not enough time left for $tag"; notify "batch stopped" "not enough session time left for $tag"; break 2; fi
     if ! pods_ok; then
       log "pods not all 2/2 - restarting deployments"
-      kubectl rollout restart deploy -n default >/dev/null && kubectl rollout status deploy -n default --timeout=10m >/dev/null
+      kubectl rollout restart deploy -n default >/dev/null; for i in $(seq 40); do sleep 15; pods_ok && break; done
       pods_ok || { log "STOP: pods still not healthy"; notify "PROBLEM pods" "pods not healthy - batch stopped"; break 2; }
     fi
     log "start $tag"
