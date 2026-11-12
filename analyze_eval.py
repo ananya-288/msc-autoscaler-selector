@@ -20,7 +20,9 @@ Per run (steady part only: 60 s <= t < 900 s, redis-cart excluded) it computes:
 Note: Locust percentiles are cumulative over the WHOLE run (incl. the first 60 s); they cannot be
 cut to the 60-900 s window used for the Linkerd metrics.
 Then: mean and 95% CI per method (t-distribution), and Welch t-tests of the selector against
-every other method with Holm correction. Results are saved to results/eval/.
+every other method with Holm correction. Comparisons where neither group varies across runs
+(e.g. 0.0 in every run vs 1.8 in every run) are not tested, because the t-test is undefined there;
+they are listed separately and left out of the Holm correction. Results are saved to results/eval/.
 """
 import argparse, os, warnings
 warnings.filterwarnings("ignore")
@@ -102,16 +104,28 @@ if "selector" in a.methods:
         for m in [x for x in a.methods if x != "selector"]:
             s, o = R[R.method == "selector"][k], R[R.method == m][k]
             if len(s) >= 2 and len(o) >= 2:
-                p = stats.ttest_ind(s, o, equal_var=False).pvalue
-                tests.append({"metric": k, "vs": m, "selector_mean": s.mean(), "other_mean": o.mean(), "p": p})
+                if s.std(ddof=1) == 0 and o.std(ddof=1) == 0:
+                    # no variation in either group: the t-test is undefined (0/0 or x/0), so it is
+                    # not run; the comparison is reported descriptively instead
+                    tests.append({"metric": k, "vs": m, "selector_mean": s.mean(), "other_mean": o.mean(),
+                                  "p": np.nan, "note": f"not testable: no variation (selector {s.iloc[0]:.1f} "
+                                                       f"in all {len(s)} runs, {m} {o.iloc[0]:.1f} in all {len(o)} runs)"})
+                else:
+                    p = stats.ttest_ind(s, o, equal_var=False).pvalue
+                    tests.append({"metric": k, "vs": m, "selector_mean": s.mean(), "other_mean": o.mean(),
+                                  "p": p, "note": ""})
     T = pd.DataFrame(tests)
     if len(T):
-        T = T.sort_values("p").reset_index(drop=True)
-        k = len(T); adj, run = [], 0.0
-        for j, pv in enumerate(T.p):                  # Holm step-down adjustment
+        T = T.sort_values("p", na_position="last").reset_index(drop=True)
+        ok = T.p.notna(); k = int(ok.sum()); adj, run = [], 0.0
+        for j, pv in enumerate(T.p[ok]):              # Holm step-down adjustment over testable comparisons only
             run = max(run, min(1.0, (k - j) * pv)); adj.append(run)
-        T["p_holm"] = adj
+        T["p_holm"] = np.nan; T.loc[ok, "p_holm"] = adj
         T.to_csv(P("eval", f"tests{a.tag}.csv"), index=False)
-        print("\nSelector vs each method (Welch t-test, Holm-corrected over all", k, "tests):")
-        print(T.round({"selector_mean": 1, "other_mean": 1, "p": 4, "p_holm": 4}).to_string(index=False))
+        print("\nSelector vs each method (Welch t-test, Holm-corrected over all", k, "testable comparisons):")
+        print(T[ok].drop(columns="note").round({"selector_mean": 1, "other_mean": 1, "p": 4, "p_holm": 4}).to_string(index=False))
+        if (~ok).any():
+            print("\nNot tested (no variation in either group; report descriptively):")
+            for r in T[~ok].itertuples():
+                print(f"  {r.metric:14s} vs {r.vs:9s} {r.note}")
 print(f"\nsaved results/eval/per_run{a.tag}.csv, summary{a.tag}.csv, tests{a.tag}.csv")
