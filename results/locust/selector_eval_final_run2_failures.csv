@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),1,2026-11-12T20:08:15Z,2026-11-12T20:08:15Z
+POST,/cart/checkout,HTTPError('502 Server Error: Bad Gateway for url: /cart/checkout'),1,2026-11-12T20:08:15Z,2026-11-12T20:08:15Z
+POST,/setCurrency,HTTPError('500 Server Error: Internal Server Error for url: /setCurrency'),3,2026-11-12T20:08:15Z,2026-11-12T20:08:15Z
+GET,/,HTTPError('500 Server Error: Internal Server Error for url: /'),1,2026-11-12T20:08:15Z,2026-11-12T20:08:15Z
+GET,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),1,2026-11-12T20:08:15Z,2026-11-12T20:08:15Z

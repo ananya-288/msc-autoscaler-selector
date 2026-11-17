@@ -1,0 +1,12 @@
+{
+ "adservice": 49.72,
+ "cartservice": 70.07,
+ "checkoutservice": 14.61,
+ "currencyservice": 59.08,
+ "emailservice": 36.38,
+ "frontend": 14.08,
+ "paymentservice": 44.24,
+ "productcatalogservice": 131.03,
+ "recommendationservice": 20.01,
+ "shippingservice": 103.21
+}

@@ -1,0 +1,11 @@
+=== rules_eval_final_run2: workload eval_final, 2026-11-12 19:34:42 UTC  reset
+=== waiting 90s
+=== 2026-11-12 19:37:14 UTC  started Locust (eval_final) + collector; ends in about 16 min
+=== 19:52:16 UTC  Locust finished
+=== 19:53:21 UTC  collector finished
+=== DONE rules_eval_final_run2
+    metrics rows: 704   collector errors: 0
+    resize actions: 69
+    [t=814s] switches so far: 46
+         Aggregated                                                                     63143     8(0.01%) |    134       2    8438     52 |   70.13        0.01
+         Aggregated                                                                             52     69     90    110    240    670   1200   1500   1800   2900   8400  63143

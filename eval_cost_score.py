@@ -1,26 +1,16 @@
 #!/usr/bin/env python3
 """
-eval_cost_score.py - one combined cost score per method for the live evaluation runs,
-using the SAME formula as the training labels (make_labels.py), applied after the fact.
+eval_cost_score.py - post-hoc combined score per method, using the label formula on the live runs.
 
     python eval_cost_score.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
-    python eval_cost_score.py --root . --shape eval_final   --runs 1 2 3          --tag _evalfinal
+    python eval_cost_score.py --root . --shape eval_final --runs 1 2 3 --w 0.8 0.2 0.0 --tag _evalfinal_w820
 
-Score per service and 1-minute window (lower is better), as in make_labels.py:
-    score = 0.6 * SLO-violation share + 0.3 * relative CPU allocation + 0.1 * min(actions, 3) / 3
-  - SLO violation (per 15-s sample): p95 > the service's SLO, or success < 99 %.
-    SLO: frontend 500 ms; other services 2 x their median p95, at least 50 ms (the floor used
-    for the final labels). Here the median is taken over ALL methods and runs of the shape, so
-    every method is judged against the same thresholds.
-  - relative CPU allocation: (replicas x CPU request) / the largest of the compared methods in the
-    same round (run number), service and window. With five methods this is usually HPA.
-  - actions: replica changes plus in-place resizes (from <tag>_vertical_actions.csv).
-    Resizes done during consolidation (selector log) are not in that file and are not counted.
-The first minute and anything after 900 s are skipped; redis-cart is excluded.
-Per run: mean score over all service-windows. Per method: mean +/- 95% CI over runs, and the
-share of service-windows in which each method had the lowest score.
-Differences from the labels: five methods instead of three, and pooled SLO thresholds.
+score = 0.6 x SLO-violation share + 0.3 x relative CPU + 0.1 x min(actions, 3) / 3, per service and
+minute (lower is better). Differences from the labels: five methods; SLO thresholds pooled over all
+methods (frontend 500 ms, others 2 x median p95, at least 50 ms); consolidation resizes not counted.
+Output: results/eval/cost_score_per_run<tag>.csv and cost_score_summary<tag>.csv
 """
+
 import argparse, os
 import numpy as np, pandas as pd
 from scipy import stats

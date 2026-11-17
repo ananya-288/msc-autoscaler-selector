@@ -1,0 +1,10 @@
+=== vertical_eval_final_run2: workload eval_final, 2026-11-12 20:12:55 UTC  reset
+=== waiting 90s
+=== 2026-11-12 20:15:34 UTC  started Locust (eval_final) + collector; ends in about 16 min
+=== 20:30:36 UTC  Locust finished
+=== 20:31:41 UTC  collector finished
+=== DONE vertical_eval_final_run2
+    metrics rows: 704   collector errors: 0
+    resize actions: 82
+         Aggregated                                                                     63998     0(0.00%) |    103      22    2645     53 |   71.05        0.00
+         Aggregated                                                                             53     67     82     96    170    370    740    950   2000   2500   2600  63998

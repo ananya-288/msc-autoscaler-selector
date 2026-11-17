@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/cart,HTTPError('502 Server Error: Bad Gateway for url: /cart'),2,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z
+POST,/cart/checkout,HTTPError('502 Server Error: Bad Gateway for url: /cart/checkout'),2,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z
+GET,/product/66VCHSJNUP,HTTPError('502 Server Error: Bad Gateway for url: /product/66VCHSJNUP'),1,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z
+POST,/setCurrency,HTTPError('500 Server Error: Internal Server Error for url: /setCurrency'),1,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z
+GET,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),1,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z
+POST,/cart/checkout,HTTPError('500 Server Error: Internal Server Error for url: /cart/checkout'),2,2026-11-12T11:38:38Z,2026-11-12T11:45:19Z
+GET,/product/1YMWWN1N4O,HTTPError('502 Server Error: Bad Gateway for url: /product/1YMWWN1N4O'),1,2026-11-12T11:38:38Z,2026-11-12T11:38:38Z

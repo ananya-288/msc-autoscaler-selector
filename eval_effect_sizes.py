@@ -1,26 +1,15 @@
 #!/usr/bin/env python3
 """
-eval_effect_sizes.py - effect sizes and minimum detectable differences for the selector
-comparisons, computed from the per-run results of analyze_eval.py.
+eval_effect_sizes.py - effect sizes and minimum detectable differences (MDD) for the selector comparisons.
 
-    python eval_effect_sizes.py --root . --tag _final5        # eval_heldout, runs 11-15
-    python eval_effect_sizes.py --root . --tag _evalfinal     # eval_final, runs 1-3
+    python eval_effect_sizes.py --root . --tag _final5
 
-For each metric and each other method (selector vs other, same four metrics as analyze_eval.py):
-  diff         selector mean - other mean (negative = selector lower)
-  hedges_g     standardised difference: diff / pooled SD, with the small-sample correction
-               J = 1 - 3 / (4 (n1 + n2) - 9). Rough guide: 0.2 small, 0.5 medium, 0.8 large.
-               Not defined when both groups have no variation (pooled SD = 0).
-  mdd          minimum detectable difference: the smallest true difference that a two-sided
-               two-sample t-test with these run counts would detect with 80 % power at
-               alpha = 0.05, given the observed pooled SD (noncentral t; equal-variance
-               approximation of the Welch test used in analyze_eval.py; no Holm adjustment,
-               so the real threshold after correction is somewhat larger).
-  mdd_%_other  mdd as a percentage of the other method's mean.
-Reading: if |diff| < mdd, the experiment could not have reliably detected a difference of
-the observed size; "not significant" then means "too small to detect with n runs",
-not "no difference".
+Hedges' g (small-sample corrected) and the MDD: the smallest difference these run counts could detect
+with 80 % power at alpha 0.05 (equal-variance approximation, no Holm adjustment).
+If |diff| < MDD, "not significant" means "too small to detect with n runs", not "no difference".
+Output: results/eval/effect_sizes<tag>.csv
 """
+
 import argparse, os
 import numpy as np, pandas as pd
 from scipy import stats, optimize

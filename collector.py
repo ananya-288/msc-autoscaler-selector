@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """
-collector.py - record per-service metrics every 15 s during a run (features and labels).
+collector.py - record per-service metrics every 15 s during a run.
 
     python collector.py --out results/mech/<tag>_metrics.csv --minutes 16 --mechanism hpa
 
-Columns (one row per service per sample):
-  t_sec, service, mechanism, rps, p95_ms, success, cpu_m (server containers, sum),
-  req_m_pod (mean CPU request of server container per ready pod), replicas (ready pods),
-  cpu_util (cpu_m / total server CPU request)
-Sources: Linkerd viz Prometheus (rps, latency, success), metrics-server (CPU), pod specs
-(requests, which reflect in-place resizes).
+One row per service per sample: t_sec, service, mechanism, rps, p95_ms, success, cpu_m,
+req_m_pod, replicas, cpu_util. Sources: Linkerd Prometheus (rps, latency, success),
+metrics-server (CPU) and pod specs (CPU requests, which reflect in-place resizes).
+Only ready pods are counted, and only the app container (server/redis), not the Linkerd proxy.
 """
+
 import argparse, csv, subprocess, time, urllib.parse, urllib.request, json, sys
 from kubernetes import client, config
 

@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,/product/L9ECAV7KIM,RemoteDisconnected('Remote end closed connection without response'),1,2026-11-12T21:05:47Z,2026-11-12T21:05:47Z
+POST,/cart/checkout,HTTPError('500 Server Error: Internal Server Error for url: /cart/checkout'),1,2026-11-12T21:06:15Z,2026-11-12T21:06:15Z

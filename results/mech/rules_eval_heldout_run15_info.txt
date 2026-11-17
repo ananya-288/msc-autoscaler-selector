@@ -1,0 +1,7 @@
+run=rules_eval_heldout_run15
+mode=rules
+workload=eval_heldout
+start_utc=2026-11-12 12:48:45
+minutes=15
+target_cpu=50
+max_replicas=5

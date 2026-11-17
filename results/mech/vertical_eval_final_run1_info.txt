@@ -1,0 +1,7 @@
+run=vertical_eval_final_run1
+mode=vertical
+workload=eval_final
+start_utc=2026-11-12 13:07:51
+minutes=15
+target_cpu=50
+max_replicas=5

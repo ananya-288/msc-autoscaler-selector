@@ -1,0 +1,13 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),1,2026-11-11T18:37:32Z,2026-11-11T18:37:32Z
+POST,/cart,HTTPError('502 Server Error: Bad Gateway for url: /cart'),3,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+POST,/cart/checkout,HTTPError('502 Server Error: Bad Gateway for url: /cart/checkout'),3,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+GET,/cart,HTTPError('502 Server Error: Bad Gateway for url: /cart'),1,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+GET,/product/LS4PSXUNUM,HTTPError('500 Server Error: Internal Server Error for url: /product/LS4PSXUNUM'),1,2026-11-11T18:37:32Z,2026-11-11T18:37:32Z
+GET,/product/OLJCESPC7Z,HTTPError('500 Server Error: Internal Server Error for url: /product/OLJCESPC7Z'),1,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+POST,/setCurrency,HTTPError('500 Server Error: Internal Server Error for url: /setCurrency'),8,2026-11-11T18:37:03Z,2026-11-11T18:37:32Z
+GET,/product/2ZYFJ3GM2N,HTTPError('502 Server Error: Bad Gateway for url: /product/2ZYFJ3GM2N'),1,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+GET,/,HTTPError('500 Server Error: Internal Server Error for url: /'),5,2026-11-11T18:37:03Z,2026-11-11T18:37:32Z
+GET,/cart,HTTPError('500 Server Error: Internal Server Error for url: /cart'),7,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+GET,/product/L9ECAV7KIM,HTTPError('500 Server Error: Internal Server Error for url: /product/L9ECAV7KIM'),2,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z
+POST,/cart/checkout,HTTPError('500 Server Error: Internal Server Error for url: /cart/checkout'),3,2026-11-11T18:37:03Z,2026-11-11T18:37:03Z

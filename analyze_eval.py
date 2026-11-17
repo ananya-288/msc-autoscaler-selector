@@ -1,29 +1,20 @@
 #!/usr/bin/env python3
-"""
-analyze_eval.py - RQ3: compare the five methods on the held-out workload (eval_heldout).
 
-    python analyze_eval.py --root . --runs 1 2 3
-    python analyze_eval.py --root . --runs 1 2 3 --tag v2      # e.g. re-runs saved as run numbers 4-6
-
-Per run (steady part only: 60 s <= t < 900 s, redis-cart excluded) it computes:
-  USER EXPERIENCE (Locust = what users saw; Linkerd = frontend inside the cluster)
-    locust_p50/p95/p99_ms, locust_avg_ms, failures_%, throughput_rps
-    fe_p95_ms        mean of frontend p95 over 15-s samples (Linkerd)
-    slo_viol_%       share of 15-s samples where frontend p95 > 500 ms   <- RQ3 main metric
-  COST
-    cpu_alloc_m      mean total reserved CPU (replicas x CPU request, all services)
-    replicas         mean total replicas
-  STABILITY
-    replica_changes  number of replica-count changes (all services)
-    resizes          in-place resize actions
-    switches         mechanism switches (rules / selector only)
-Note: Locust percentiles are cumulative over the WHOLE run (incl. the first 60 s); they cannot be
-cut to the 60-900 s window used for the Linkerd metrics.
-Then: mean and 95% CI per method (t-distribution), and Welch t-tests of the selector against
-every other method with Holm correction. Comparisons where neither group varies across runs
-(e.g. 0.0 in every run vs 1.8 in every run) are not tested, because the t-test is undefined there;
-they are listed separately and left out of the Holm correction. Results are saved to results/eval/.
 """
+analyze_eval.py - compare the five methods on one evaluation workload.
+
+    python analyze_eval.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
+    python analyze_eval.py --root . --shape eval_final --runs 1 2 3 --tag _evalfinal
+
+Per run (60 s <= t < 900 s, redis-cart excluded): Locust latency, failures and throughput; frontend
+p95 and SLO violations (share of 15-s samples with frontend p95 > 500 ms, the main RQ3 metric);
+reserved CPU (replicas x CPU request), replicas, replica changes, resizes and switches.
+Locust percentiles cover the whole run, including the first 60 s.
+Then mean and 95% CI per method, and Welch t-tests of the selector against each method with Holm
+correction. Comparisons where neither group varies are not tested and are listed separately.
+Output: results/eval/per_run<tag>.csv, summary<tag>.csv, tests<tag>.csv
+"""
+
 import argparse, os, warnings
 warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd

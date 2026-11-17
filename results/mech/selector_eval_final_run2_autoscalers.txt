@@ -1,0 +1,16 @@
+NAME                                                           REFERENCE                TARGETS             MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/keda-hpa-cartservice-rps   Deployment/cartservice   492m/70.070 (avg)   1         5         3          103s
+
+NAME                                   SCALETARGETKIND      SCALETARGETNAME   MIN   MAX   READY   ACTIVE   FALLBACK   PAUSED   TRIGGERS     AUTHENTICATIONS   AGE
+scaledobject.keda.sh/cartservice-rps   apps/v1.Deployment   cartservice       1     5     True    True     False      False    prometheus                     103s
+
+NAME                                                                 MODE   CPU    MEM   PROVIDED   AGE     MINREPLICAS   OOMSECONDS
+verticalpodautoscaler.autoscaling.k8s.io/adservice-vpa               Off    63m          True       16m                   
+verticalpodautoscaler.autoscaling.k8s.io/checkoutservice-vpa         Off    78m          True       36s                   
+verticalpodautoscaler.autoscaling.k8s.io/currencyservice-vpa         Off    442m         True       15m                   
+verticalpodautoscaler.autoscaling.k8s.io/emailservice-vpa            Off    50m          True       15m                   
+verticalpodautoscaler.autoscaling.k8s.io/frontend-vpa                Off    476m         True       4m30s                 
+verticalpodautoscaler.autoscaling.k8s.io/paymentservice-vpa          Off    50m          True       15m                   
+verticalpodautoscaler.autoscaling.k8s.io/productcatalogservice-vpa   Off    203m         True       15m                   
+verticalpodautoscaler.autoscaling.k8s.io/recommendationservice-vpa   Off    271m         True       4m10s                 
+verticalpodautoscaler.autoscaling.k8s.io/shippingservice-vpa         Off    50m          True       15m                   

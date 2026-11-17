@@ -1,0 +1,7 @@
+run=selector_eval_final_run2
+mode=selector
+workload=eval_final
+start_utc=2026-11-12 19:56:20
+minutes=15
+target_cpu=50
+max_replicas=5

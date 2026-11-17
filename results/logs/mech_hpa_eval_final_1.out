@@ -1,0 +1,9 @@
+=== hpa_eval_final_run1: workload eval_final, 2026-11-12 13:24:18 UTC  reset
+=== waiting 90s
+=== 2026-11-12 13:26:39 UTC  started Locust (eval_final) + collector; ends in about 16 min
+=== 13:41:41 UTC  Locust finished
+=== 13:42:44 UTC  collector finished
+=== DONE hpa_eval_final_run1
+    metrics rows: 704   collector errors: 0
+         Aggregated                                                                     64324     0(0.00%) |     91      19    2990     55 |   71.40        0.00
+         Aggregated                                                                             55     74     93    100    150    200    410    780   2200   3000   3000  64324

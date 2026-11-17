@@ -1,0 +1,7 @@
+run=keda_eval_final_run1
+mode=keda
+workload=eval_final
+start_utc=2026-11-12 18:02:06
+minutes=15
+target_cpu=50
+max_replicas=5

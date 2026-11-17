@@ -1,39 +1,23 @@
 #!/usr/bin/env python3
 """
-live_selector.py - choose HPA, KEDA or vertical scaling for each microservice, every minute, live.
+live_selector.py - every minute, choose scale up (vertical) or scale out (KEDA) for each microservice.
 
-    python live_selector.py --mode ensemble --minutes 16 --log results/mech/<tag>_decisions.csv   (FINAL)
-    python live_selector.py --mode knn   --minutes 16 --log results/mech/<tag>_decisions.csv
-    python live_selector.py --mode rules --minutes 16 --log results/mech/<tag>_decisions.csv
-    python live_selector.py --mode knn --dry-run          # offline test with synthetic traffic
+    python live_selector.py --mode ensemble --minutes 16 --log results/mech/<tag>_decisions.csv   (final)
+    python live_selector.py --mode rules    --minutes 16 --log results/mech/<tag>_decisions.csv   (baseline)
 
 MAPE-K loop:
-  Monitor : every 15 s, read each service's request rate from Linkerd's Prometheus
-            (same query as collector.py) and keep the last two minutes.
-  Analyse : once a minute, build the SAME features used in training: rps, slope, burstiness,
-            peak/mean, frontend rps + slope, forecast (rps + slope), service (one-hot).
-  Plan    : ensemble (FINAL) - binary decision, scale up (vertical) or scale out (KEDA):
-                    soft vote of MLP + ExtraTrees + kNN with the settings and threshold in
-                    results/selector/final_selector.json (chosen by build_final_model.py),
-                    trained at start-up on the binary + time-series training table; uses the
-                    extra time-series features (previous minutes, 3-minute mean, acceleration).
-            knn   - k-nearest-neighbours (k = 7) trained on training_dataset_floor50_avg12.csv;
-                    switch away from vertical only if P(best) >= gate (0.8, chosen offline).
-            rules - simple baseline: KEDA when the service's traffic is rising fast
-                    (slope > 15 % of rps per minute), otherwise vertical.
-            Both: vertical is the default; a service keeps its mechanism for >= 120 s after a switch.
-  Execute : only ONE mechanism per service: delete the old object, create the new one
-            (HPA: CPU 50 %, 1-5 replicas; KEDA: request-rate target from keda_thresholds.json;
-             vertical: VPA in Off mode, applied by vertical_actuator.py through in-place resize).
-            Switching to vertical CONSOLIDATES the service (fix after the first evaluation round):
-            every running pod is resized in place to cover the service's current total CPU use
-            (x1.15 margin, 50-1000m, limit = 2 x request) and the deployment is scaled to 1 replica,
-            so 'vertical' always means one resized pod. Switching to HPA/KEDA leaves the current
-            pod size as it is; new replicas start from the deployment's default request.
-            After consolidation the vertical actuator keeps applying the native VPA target, which
-            may shrink the pod again if VPA history was built while load was split over replicas
-            (reported as a switching cost, not corrected).
+  Monitor : every 15 s, read each service's request rate from Linkerd's Prometheus.
+  Analyse : once a minute (after 3 minutes of history), build the same features as in training.
+  Plan    : ensemble - soft vote of MLP + ExtraTrees + kNN, trained at start-up from
+            results/selector/final_selector.json; KEDA if P(horizontal) >= threshold, else vertical.
+            rules - KEDA if traffic rose more than 15 % in the last minute, else vertical.
+            All services start on vertical; a service keeps its mechanism for >= 120 s after a switch.
+  Execute : one mechanism per service (delete the old object, create the new one). Switching to
+            vertical consolidates the service: pods resized in place to total CPU use x 1.15
+            (50-1000m), then scaled to 1 replica.
+Older modes (knn, hpa) are kept for the earlier experiments.
 """
+
 import argparse, csv, json, subprocess, sys, time, urllib.parse, urllib.request
 from collections import deque
 import numpy as np, pandas as pd

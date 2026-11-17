@@ -1,0 +1,27 @@
+NAME                                    READY   STATUS    RESTARTS      AGE   IP              NODE                            NOMINATED NODE   READINESS GATES
+adservice-5f55d94b8-z5nkz               2/2     Running   0             18m   172.31.72.7     ip-172-31-67-210.ec2.internal   <none>           <none>
+cartservice-5bbf9f8c5f-h8k4f            2/2     Running   0             92s   172.31.80.59    ip-172-31-90-75.ec2.internal    <none>           <none>
+cartservice-5bbf9f8c5f-hkgsn            2/2     Running   0             18m   172.31.76.72    ip-172-31-67-210.ec2.internal   <none>           <none>
+cartservice-5bbf9f8c5f-j6jsd            2/2     Running   0             91s   172.31.29.12    ip-172-31-17-89.ec2.internal    <none>           <none>
+checkoutservice-5c5465858-g4px2         2/2     Running   0             85s   172.31.24.11    ip-172-31-17-89.ec2.internal    <none>           <none>
+checkoutservice-5c5465858-np4tx         2/2     Running   0             18m   172.31.90.66    ip-172-31-90-75.ec2.internal    <none>           <none>
+currencyservice-856c45bdb4-47wj6        2/2     Running   0             18m   172.31.93.8     ip-172-31-90-75.ec2.internal    <none>           <none>
+currencyservice-856c45bdb4-6gjpn        2/2     Running   0             79s   172.31.69.110   ip-172-31-67-210.ec2.internal   <none>           <none>
+currencyservice-856c45bdb4-7qht4        2/2     Running   0             79s   172.31.26.154   ip-172-31-17-89.ec2.internal    <none>           <none>
+currencyservice-856c45bdb4-kzvqn        2/2     Running   0             79s   172.31.42.106   ip-172-31-42-9.ec2.internal     <none>           <none>
+currencyservice-856c45bdb4-vvtzk        2/2     Running   0             64s   172.31.4.138    ip-172-31-5-137.ec2.internal    <none>           <none>
+emailservice-f9bbd8bfb-9zt5v            2/2     Running   1 (18m ago)   18m   172.31.34.105   ip-172-31-42-9.ec2.internal     <none>           <none>
+frontend-79bdbb6648-79fsd               2/2     Running   0             51s   172.31.8.136    ip-172-31-5-137.ec2.internal    <none>           <none>
+frontend-79bdbb6648-bcgnf               2/2     Running   0             66s   172.31.80.136   ip-172-31-90-75.ec2.internal    <none>           <none>
+frontend-79bdbb6648-lcrp9               2/2     Running   0             18m   172.31.68.231   ip-172-31-67-210.ec2.internal   <none>           <none>
+frontend-79bdbb6648-m4lx9               2/2     Running   0             66s   172.31.22.117   ip-172-31-17-89.ec2.internal    <none>           <none>
+frontend-79bdbb6648-nbbzg               2/2     Running   0             66s   172.31.43.216   ip-172-31-42-9.ec2.internal     <none>           <none>
+paymentservice-674b86d5dd-c2z5l         2/2     Running   0             18m   172.31.94.107   ip-172-31-90-75.ec2.internal    <none>           <none>
+productcatalogservice-758c9954-96lk4    2/2     Running   0             54s   172.31.67.69    ip-172-31-67-210.ec2.internal   <none>           <none>
+productcatalogservice-758c9954-9bnpl    2/2     Running   0             18m   172.31.27.56    ip-172-31-17-89.ec2.internal    <none>           <none>
+productcatalogservice-758c9954-c8qj6    2/2     Running   0             54s   172.31.82.37    ip-172-31-90-75.ec2.internal    <none>           <none>
+recommendationservice-f778888d6-lbgnh   2/2     Running   1 (18m ago)   18m   172.31.38.165   ip-172-31-42-9.ec2.internal     <none>           <none>
+recommendationservice-f778888d6-mrpbd   2/2     Running   0             48s   172.31.93.100   ip-172-31-90-75.ec2.internal    <none>           <none>
+recommendationservice-f778888d6-whpwp   2/2     Running   0             48s   172.31.67.67    ip-172-31-67-210.ec2.internal   <none>           <none>
+redis-cart-6d798c66cd-jrwx2             2/2     Running   0             18m   172.31.83.195   ip-172-31-90-75.ec2.internal    <none>           <none>
+shippingservice-666b9f8698-4v48t        2/2     Running   0             18m   172.31.27.39    ip-172-31-17-89.ec2.internal    <none>           <none>

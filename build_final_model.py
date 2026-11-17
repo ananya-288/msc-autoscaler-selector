@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
 """
-build_final_model.py - fix the FINAL selector (tuned soft-voting ensemble) before the live test.
+build_final_model.py - fix the final selector settings before the live test.
 
     python build_final_model.py --data results/selector/training_dataset_floor50_avg12_binary_lags.csv
 
-Same procedure as one outer fold of tune_selector.py, but now using ALL four training shapes:
-  1. for MLP, ExtraTrees and kNN: pick the hyper-parameters with the best leave-one-shape-out
-     macro-F1 (same grids as tune_selector.py);
-  2. pick the decision threshold for "horizontal" on the leave-one-shape-out probabilities of the
-     soft-voting ensemble (average of the three tuned models).
-The settings are written to results/selector/final_selector.json. live_selector.py (mode
-"ensemble") trains the three models on the same CSV with these settings at start-up, so no
-binary model file has to be copied between machines.
-NOTE: the macro-F1 printed here is the score used to CHOOSE the settings (optimistic);
-the unbiased estimate is the nested result from tune_selector.py.
+Picks the best hyper-parameters for MLP, ExtraTrees and kNN (leave-one-shape-out macro-F1) and the
+decision threshold of their soft-voting ensemble, using all four training shapes.
+Output: results/selector/final_selector.json (live_selector.py trains the models from it at start-up).
+The macro-F1 printed here was used to choose the settings, so it is optimistic; the unbiased
+estimate is the nested result from tune_selector.py (0.779).
 """
+
 import argparse, itertools, json, warnings
 import numpy as np, pandas as pd
 from sklearn.base import clone

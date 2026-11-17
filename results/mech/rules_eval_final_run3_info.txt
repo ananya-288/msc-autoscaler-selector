@@ -1,0 +1,7 @@
+run=rules_eval_final_run3
+mode=rules
+workload=eval_final
+start_utc=2026-11-12 20:53:49
+minutes=15
+target_cpu=50
+max_replicas=5

@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """
-check_feature_skew.py - are the features the live selector computed similar to the training features?
+check_feature_skew.py - compare training features with the features the live selector computes.
 
     python check_feature_skew.py --root .
 
-Training (train_selector.py) computes burst and peak_ratio over the 15-s samples of ALL runs of a shape
-pooled together (3 mechanisms x 2 repeats = 24 samples per minute). The live selector computes them from
-ONE run (4 samples per minute). This script quantifies that difference in three ways:
-  A. training features as used           (pooled over runs)
-  B. training data, computed per run      (exactly how the live selector computes them), then averaged
-  C. live values from the selector runs   (results/mech/selector_eval_heldout_run*_decisions.csv)
-A vs B shows the size of the train/live skew on the SAME data; C shows what the live selector saw.
+Training computes burst and peak_ratio over all runs of a shape pooled together; the live selector
+uses one run. Compares (A) training features as used, (B) the same data computed per run, live-style,
+and (C) live values from the selector decision logs.
+Output: results/selector/feature_skew_check.csv
 """
+
 import argparse, glob, os
 import numpy as np, pandas as pd
 

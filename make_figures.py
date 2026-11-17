@@ -3,13 +3,23 @@
 make_figures.py - report figures, made only from the saved result files (no hand-typed numbers).
 
     python make_figures.py --root .
+    python make_figures.py --root . --rq3 _final5:eval_heldout _evalfinal:eval_final _:first      # also round 1
 
-Writes PNG (300 dpi) and PDF (for LaTeX) to results/figures/:
-  fig_tradeoff     RQ3: reserved CPU vs frontend SLO violations per method (mean +/- 95% CI, n = 3 runs)
-  fig_latency      RQ3: user-facing p95 latency per method (Locust, mean +/- 95% CI, dots = runs)
-  fig_f1_steps     RQ2: macro-F1 of the best model per step (3-class -> binary -> +time-series -> +clean
-                   -> nested-tuned ensemble), with the chance level and always-vertical for each step
-Inputs: results/eval/per_run.csv (analyze_eval.py) and results/selector/rq2_*.csv (train/tune_selector.py)
+Writes PNG (300 dpi) and PDF (for LaTeX) to results/figures/. Figures have no titles: the caption
+goes below the figure in LaTeX (state the workload and number of runs there).
+  fig_tradeoff_both   RQ3: reserved CPU vs frontend SLO violations per method, one panel per
+                      workload (mean +/- 95% CI over runs; SLO whiskers cut at 0, since a share
+                      cannot be negative - say so in the caption)
+  fig_tradeoff<tag>   the same, one workload per figure
+  fig_latency_both    RQ3: user-facing p95 latency per method (Locust), one panel per workload
+                      (bars = mean, whiskers = 95% CI, dots = individual runs)
+  fig_latency<tag>    the same, one workload per figure
+  fig_rq1_forecast    RQ1: MAE relative to persistence per forecasting method, for one trace minute
+                      and one selector minute (12 trace minutes); dashed line = persistence
+  fig_f1_steps        RQ2: macro-F1 of the best model per step (3-class -> binary -> +time-series
+                      -> +clean -> nested-tuned ensemble), with chance level and always-vertical
+Inputs: results/eval/per_run<tag>.csv (analyze_eval.py), results/rq1/rq1_results.csv
+(forecasting.py) and results/selector/rq2_*.csv (train_selector.py, tune_selector.py).
 """
 import argparse, os
 import numpy as np, pandas as pd
@@ -19,6 +29,8 @@ from scipy import stats
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--root", default=".")
+ap.add_argument("--rq3", nargs="+", default=["_final5:eval_heldout", "_evalfinal:eval_final"],
+                help="per_run tag:label pairs; use _ for the untagged first-round file")
 a = ap.parse_args()
 P = lambda *x: os.path.join(a.root, "results", *x)
 OUT = P("figures"); os.makedirs(OUT, exist_ok=True)
@@ -38,32 +50,77 @@ def save(fig, name):
     plt.close(fig); print("wrote", os.path.join(OUT, name + ".png/.pdf"))
 
 # ---------- RQ3 ----------
-R = pd.read_csv(P("eval", "per_run.csv"))
-fig, ax = plt.subplots(figsize=(6.2, 4.4))
-for m in ORDER:
-    g = R[R.method == m]
-    if g.empty: continue
-    (cx, ce), (sy, se) = mci(g.cpu_alloc_m), mci(g["slo_viol_%"])
-    ax.errorbar(cx, sy, xerr=ce, yerr=se, fmt="o", ms=9, capsize=4, color=COL[m], label=NAMES[m])
-    ax.annotate(NAMES[m], (cx, sy), textcoords="offset points", xytext=(8, 6), fontsize=10, color=COL[m])
-ax.set_xlabel("Reserved CPU, all services (millicores)")
-ax.set_ylabel("Frontend SLO violations (%)\n(15-s samples with p95 > 500 ms)")
-ax.set_title("Cost vs SLO violations on the held-out workload (mean ± 95% CI, 3 runs)", fontsize=11)
-ax.set_ylim(bottom=min(0, ax.get_ylim()[0]))
-save(fig, "fig_tradeoff")
+WL = []
+for spec in a.rq3:
+    tag, label = spec.split(":")
+    tag = "" if tag == "_" else tag
+    f = P("eval", f"per_run{tag}.csv")
+    if os.path.exists(f):
+        WL.append((tag, label, pd.read_csv(f)))
+    else:
+        print("missing", f)
 
-fig, ax = plt.subplots(figsize=(6.2, 4.0))
-for i, m in enumerate(ORDER):
-    g = R[R.method == m]
-    if g.empty: continue
-    mu, h = mci(g.locust_p95_ms)
-    ax.bar(i, mu, yerr=h, capsize=5, color=COL[m], width=0.6)
-    ax.scatter([i] * len(g), g.locust_p95_ms, color="black", s=12, zorder=3)
-    ax.text(i, mu + h + 20, f"{mu:.0f}", ha="center", fontsize=10)
-ax.set_xticks(range(len(ORDER))); ax.set_xticklabels([NAMES[m] for m in ORDER])
-ax.set_ylabel("User-facing p95 latency (ms, Locust)")
-ax.set_title("p95 latency per method (mean ± 95% CI, dots = runs)", fontsize=11)
-save(fig, "fig_latency")
+def tradeoff(ax, R, label):
+    n = R.groupby("method").size()
+    for m in ORDER:
+        g = R[R.method == m]
+        if g.empty: continue
+        (cx, ce), (sy, se) = mci(g.cpu_alloc_m), mci(g["slo_viol_%"])
+        lo = min(se, sy)                                   # SLO share cannot be negative: whisker cut at 0
+        ax.errorbar(cx, sy, xerr=ce, yerr=[[lo], [se]], fmt="o", ms=9, capsize=4, color=COL[m], label=NAMES[m])
+        ax.annotate(NAMES[m], (cx, sy), textcoords="offset points", xytext=(8, 6), fontsize=10, color=COL[m])
+    ax.set_xlabel("Reserved CPU, all services (millicores)")
+    ax.set_ylabel("Frontend SLO violations (%)\n(15-s samples with p95 > 500 ms)")
+    ax.text(0.98, 0.97, f"{label}, n = {int(n.min())}{'' if n.min() == n.max() else '-' + str(int(n.max()))} runs",
+            transform=ax.transAxes, ha="right", va="top", fontsize=9)
+    ax.set_ylim(bottom=-1)
+
+def latency(ax, R, label):
+    for i, m in enumerate(ORDER):
+        g = R[R.method == m]
+        if g.empty: continue
+        mu, h = mci(g.locust_p95_ms)
+        ax.bar(i, mu, yerr=h, capsize=5, color=COL[m], width=0.6)
+        ax.scatter([i] * len(g), g.locust_p95_ms, color="black", s=12, zorder=3)
+        ax.text(i + 0.32, mu, f"{mu:.0f}", ha="left", va="center", fontsize=9)
+    ax.set_xticks(range(len(ORDER))); ax.set_xticklabels([NAMES[m] for m in ORDER], fontsize=9)
+    ax.set_ylabel("User-facing p95 latency (ms, Locust)")
+    ax.text(0.02, 0.97, label, transform=ax.transAxes, ha="left", va="top", fontsize=9)
+
+for tag, label, R in WL:
+    fig, ax = plt.subplots(figsize=(6.2, 4.4)); tradeoff(ax, R, label); save(fig, f"fig_tradeoff{tag}")
+    fig, ax = plt.subplots(figsize=(6.2, 4.0)); latency(ax, R, label); save(fig, f"fig_latency{tag}")
+if len(WL) >= 2:
+    fig, axs = plt.subplots(1, len(WL), figsize=(5.6 * len(WL), 4.4))
+    for ax, (tag, label, R) in zip(axs, WL): tradeoff(ax, R, label)
+    save(fig, "fig_tradeoff_both")
+    fig, axs = plt.subplots(1, len(WL), figsize=(5.6 * len(WL), 4.0), sharey=True)
+    for ax, (tag, label, R) in zip(axs, WL): latency(ax, R, label)
+    save(fig, "fig_latency_both")
+
+# ---------- RQ1 ----------
+rf = P("rq1", "rq1_results.csv")
+if os.path.exists(rf):
+    Q = pd.read_csv(rf)
+    meth = ["naive_trend", "holt", "arima", "gbr"]
+    mname = {"naive_trend": "naive trend\n(selector)", "holt": "Holt", "arima": "ARIMA", "gbr": "gradient\nboosting"}
+    sets = [("A_trace_minute", "1 trace minute", "#8A8A8A"), ("B_selector_minute", "1 selector minute\n(12 trace minutes)", "#C0392B")]
+    fig, ax = plt.subplots(figsize=(6.4, 4.0)); x = np.arange(len(meth)); w = 0.38
+    for j, (sname, slab, col) in enumerate(sets):
+        q = Q[Q.setting == sname].set_index("method")
+        if q.empty: continue
+        vals = [q.loc[m, "rel_MAE_vs_persistence"] for m in meth]
+        ax.bar(x + (j - 0.5) * w, vals, w, color=col, label=slab)
+        for xi, v in zip(x + (j - 0.5) * w, vals):
+            ax.text(xi, v + 0.02, f"{v:.2f}", ha="center", fontsize=8)
+    ax.axhline(1.0, color="black", ls="--", lw=1)
+    ax.text(len(meth) - 0.5, 1.01, "persistence", ha="right", va="bottom", fontsize=8)
+    ax.set_xticks(x); ax.set_xticklabels([mname[m] for m in meth], fontsize=9)
+    ax.set_ylabel("MAE relative to persistence\n(test week, lower is better)")
+    ax.legend(fontsize=8, loc="upper right", framealpha=0.95)
+    save(fig, "fig_rq1_forecast")
+else:
+    print("missing", rf)
 
 # ---------- RQ2 ----------
 steps = [("3 classes", "rq2_leave_one_shape_out_floor50_avg12.csv"),
@@ -87,7 +144,10 @@ for label, f in steps:
     av = T[T.model == "always_vertical"].macro_F1
     rows.append({"step": label, "best_model": best.model, "macro_F1": best.macro_F1,
                  "chance": chance, "always_vertical": av.iloc[0] if len(av) else np.nan})
-S = pd.DataFrame(rows); S.to_csv(os.path.join(OUT, "fig_f1_steps_data.csv"), index=False)
+S = pd.DataFrame(rows)
+if S.empty:
+    raise SystemExit("no RQ2 result files found; RQ2 figure skipped")
+S.to_csv(os.path.join(OUT, "fig_f1_steps_data.csv"), index=False)
 fig, ax = plt.subplots(figsize=(7.2, 4.2))
 x = np.arange(len(S))
 ax.bar(x, S.macro_F1, color="#028090", width=0.6, label="best model")
@@ -97,7 +157,6 @@ ax.plot(x, S.chance, "k--", marker="_", ms=20, label="chance level (best dummy)"
 ax.plot(x, S.always_vertical, ":", color="#5B5F97", marker="_", ms=20, label="always vertical")
 ax.set_xticks(x); ax.set_xticklabels(S.step, fontsize=9)
 ax.set_ylim(0, 1.1); ax.set_ylabel("Macro-F1 (leave-one-shape-out)")
-ax.set_title("Selector macro-F1 per improvement step", fontsize=11)
 ax.legend(fontsize=9, loc="lower right", framealpha=0.95)
 save(fig, "fig_f1_steps")
 print(S.round(3).to_string(index=False))
