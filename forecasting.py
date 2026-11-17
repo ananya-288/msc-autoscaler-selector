@@ -83,7 +83,7 @@ def run(y, name):
     for t in range(n):
         hp[t] = lvl + trd                                     # forecast for step t
         nl = al * v[t] + (1 - al) * (lvl + trd); trd = be * (nl - lvl) + (1 - be) * trd; lvl = nl
-    preds["holt"] = np.maximum(0, hp[tgt]); info["holt"] = f"alpha={al:.3f}, beta={be:.3f} ({time.time()-t0:.0f}s)"
+    preds["holt"] = np.maximum(0, hp[tgt]); info["holt"] = f"alpha={al:.3f}, beta={be:.3f}"
     # ARIMA: small grid, AIC on train+val; then apply the fixed parameters to the whole series
     t0 = time.time(); best = None
     for order in [(0, 1, 1), (1, 1, 0), (1, 1, 1), (2, 1, 1), (2, 1, 2)]:
@@ -95,7 +95,7 @@ def run(y, name):
             print(f"  ARIMA{order} failed: {e}")
     full = best[1].apply(v)
     ap_ = full.get_prediction(start=te0, end=n - 1, dynamic=False).predicted_mean
-    preds["arima"] = np.maximum(0, np.asarray(ap_)); info["arima"] = f"order={best[0]} ({time.time()-t0:.0f}s)"
+    preds["arima"] = np.maximum(0, np.asarray(ap_)); info["arima"] = f"order={best[0]}"
     # gradient boosting on lag features, predicting the change y[t+1] - y[t]
     t0 = time.time()
     F = features(y, idx, 1)
@@ -117,7 +117,7 @@ def run(y, name):
     m = HistGradientBoostingRegressor(learning_rate=lr, max_leaf_nodes=leaves, max_iter=300,
                                       random_state=a.seed).fit(X.iloc[trva], d.iloc[trva])
     preds["gbr"] = np.maximum(0, v[tgt - 1] + m.predict(X.iloc[tgt]))
-    info["gbr"] = f"learning_rate={lr}, max_leaf_nodes={leaves} ({time.time()-t0:.0f}s)"
+    info["gbr"] = f"learning_rate={lr}, max_leaf_nodes={leaves}"
 
     # scores
     rows_out = []

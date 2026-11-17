@@ -1,0 +1,4 @@
+# Experiments on the AWS runner (Ubuntu 24.04, Python venv): everything above plus load and cluster access
+-r requirements.txt
+locust==2.46.7
+kubernetes          # Kubernetes Python client (version not recorded; runner was terminated after the final evaluation)

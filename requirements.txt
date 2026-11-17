@@ -1,0 +1,9 @@
+# Analysis on any computer (laptop): reproduces every table and figure from results/
+# python -m pip install -r requirements.txt
+numpy==2.0.0
+pandas==2.2.2
+scikit-learn==1.9.0
+scipy==1.14.0
+statsmodels==0.15.0
+matplotlib==3.9.0
+openpyxl==3.1.5

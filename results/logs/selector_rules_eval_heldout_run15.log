@@ -1,0 +1,26 @@
+[t=105s] switches so far: 10
+[t=219s] switches so far: 10
+t=279s adservice: consolidated (already 1 replica)
+t=279s cartservice: consolidated (2 pods -> 1 pod at 245m (total use 213m); resized 2/2, scaled=ok)
+t=279s checkoutservice: consolidated (2 pods -> 1 pod at 88m (total use 76m); resized 2/2, scaled=ok)
+t=279s currencyservice: consolidated (5 pods -> 1 pod at 589m (total use 511m); resized 5/5, scaled=ok)
+t=279s emailservice: consolidated (already 1 replica)
+t=279s frontend: consolidated (5 pods -> 1 pod at 554m (total use 481m); resized 5/5, scaled=ok)
+t=279s paymentservice: consolidated (already 1 replica)
+t=279s productcatalogservice: consolidated (4 pods -> 1 pod at 241m (total use 209m); resized 4/4, scaled=ok)
+t=279s recommendationservice: consolidated (4 pods -> 1 pod at 232m (total use 201m); resized 4/4, scaled=ok)
+t=279s shippingservice: consolidated (already 1 replica)
+[t=279s] switches so far: 20
+[t=466s] switches so far: 26
+[t=559s] switches so far: 26
+t=619s checkoutservice: consolidated (2 pods -> 1 pod at 107m (total use 93m); resized 2/2, scaled=ok)
+t=619s emailservice: consolidated (already 1 replica)
+t=619s paymentservice: consolidated (already 1 replica)
+t=619s productcatalogservice: consolidated (5 pods -> 1 pod at 259m (total use 225m); resized 5/5, scaled=ok)
+t=619s recommendationservice: consolidated (5 pods -> 1 pod at 256m (total use 222m); resized 5/5, scaled=ok)
+t=619s shippingservice: consolidated (already 1 replica)
+[t=619s] switches so far: 32
+[t=749s] switches so far: 32
+[t=809s] switches so far: 32
+[t=870s] switches so far: 32
+[t=930s] switches so far: 32

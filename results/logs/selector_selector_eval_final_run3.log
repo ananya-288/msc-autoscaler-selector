@@ -1,0 +1,17 @@
+ensemble trained on 560 rows from results/selector/training_dataset_floor50_avg12_binary_lags.csv; threshold 0.6; features ['rps', 'slope', 'burst', 'peak_ratio', 'fe_rps', 'fe_slope', 'forecast', 'rps_lag1', 'rps_lag2', 'slope_lag1', 'rps_roll3', 'accel']
+[t=165s] switches so far: 0
+[t=226s] switches so far: 0
+[t=287s] switches so far: 0
+[t=348s] switches so far: 0
+[t=409s] switches so far: 0
+[t=470s] switches so far: 4
+[t=557s] switches so far: 4
+t=618s cartservice: consolidated (2 pods -> 1 pod at 171m (total use 148m); resized 2/2, scaled=ok)
+t=618s checkoutservice: consolidated (2 pods -> 1 pod at 60m (total use 52m); resized 2/2, scaled=ok)
+t=618s frontend: consolidated (5 pods -> 1 pod at 399m (total use 347m); resized 5/5, scaled=ok)
+t=618s recommendationservice: consolidated (4 pods -> 1 pod at 158m (total use 137m); resized 4/4, scaled=ok)
+[t=618s] switches so far: 8
+[t=753s] switches so far: 9
+[t=821s] switches so far: 10
+t=888s checkoutservice: consolidated (2 pods -> 1 pod at 50m (total use 0m); resized 2/2, scaled=ok)
+[t=888s] switches so far: 11
