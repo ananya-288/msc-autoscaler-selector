@@ -2,8 +2,8 @@
 """
 make_figures.py - report figures, made only from the saved result files (no hand-typed numbers).
 
-    python make_figures.py --root .
-    python make_figures.py --root . --rq3 _final5:eval_heldout _evalfinal:eval_final _:first      # also round 1
+    python analysis/make_figures.py --root .
+    python analysis/make_figures.py --root . --rq3 _final5:eval_heldout _evalfinal:eval_final _:first      # also round 1
 
 Writes PNG (300 dpi) and PDF (for LaTeX) to results/figures/. Figures have no titles: the caption
 goes below the figure in LaTeX (state the workload and number of runs there).
@@ -19,7 +19,7 @@ goes below the figure in LaTeX (state the workload and number of runs there).
   fig_f1_steps        RQ2: macro-F1 of the best model per step (3-class -> binary -> +time-series
                       -> +clean -> nested-tuned ensemble), with chance level and always-vertical
 Inputs: results/eval/per_run<tag>.csv (analyze_eval.py), results/rq1/rq1_results.csv
-(forecasting.py) and results/selector/rq2_*.csv (train_selector.py, tune_selector.py).
+(analysis/forecasting.py) and results/selector/rq2_*.csv (training/train_selector.py, training/tune_selector.py).
 """
 import argparse, os
 import numpy as np, pandas as pd
@@ -46,7 +46,7 @@ def mci(x):
 def save(fig, name):
     fig.tight_layout()
     for ext in ("png", "pdf"):
-        fig.savefig(os.path.join(OUT, f"{name}.{ext}"), dpi=300)
+        fig.savefig(os.path.join(OUT, f"{name}.{ext}"), dpi=300, metadata={"CreationDate": None} if ext == "pdf" else None)
     plt.close(fig); print("wrote", os.path.join(OUT, name + ".png/.pdf"))
 
 # ---------- RQ3 ----------

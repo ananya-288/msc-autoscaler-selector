@@ -2,7 +2,7 @@
 """
 collector.py - record per-service metrics every 15 s during a run.
 
-    python collector.py --out results/mech/<tag>_metrics.csv --minutes 16 --mechanism hpa
+    python experiments/collector.py --out results/mech/<tag>_metrics.csv --minutes 16 --mechanism hpa
 
 One row per service per sample: t_sec, service, mechanism, rps, p95_ms, success, cpu_m,
 req_m_pod, replicas, cpu_util. Sources: Linkerd Prometheus (rps, latency, success),

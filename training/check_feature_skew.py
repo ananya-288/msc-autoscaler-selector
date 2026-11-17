@@ -2,7 +2,7 @@
 """
 check_feature_skew.py - compare training features with the features the live selector computes.
 
-    python check_feature_skew.py --root .
+    python training/check_feature_skew.py --root .
 
 Training computes burst and peak_ratio over all runs of a shape pooled together; the live selector
 uses one run. Compares (A) training features as used, (B) the same data computed per run, live-style,

@@ -3,8 +3,8 @@
 """
 analyze_eval.py - compare the five methods on one evaluation workload.
 
-    python analyze_eval.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
-    python analyze_eval.py --root . --shape eval_final --runs 1 2 3 --tag _evalfinal
+    python analysis/analyze_eval.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
+    python analysis/analyze_eval.py --root . --shape eval_final --runs 1 2 3 --tag _evalfinal
 
 Per run (60 s <= t < 900 s, redis-cart excluded): Locust latency, failures and throughput; frontend
 p95 and SLO violations (share of 15-s samples with frontend p95 > 500 ms, the main RQ3 metric);

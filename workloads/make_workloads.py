@@ -2,8 +2,8 @@
 """
 make_workloads.py - build the five Locust traffic shapes from the WorldCup98 trace.
 
-    python make_workloads.py                 # downloads the data, writes workloads/*.csv + figure
-    python make_workloads.py --no-download   # reuse workloads/wc98_per_minute.csv
+    python workloads/make_workloads.py                 # downloads the data, writes workloads/*.csv + figure
+    python workloads/make_workloads.py --no-download   # reuse workloads/wc98_per_minute.csv
 
 Data source
   Original trace: Internet Traffic Archive, WorldCup98 access logs (Arlitt and Jin, 2000).

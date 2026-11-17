@@ -2,8 +2,8 @@
 """
 live_selector.py - every minute, choose scale up (vertical) or scale out (KEDA) for each microservice.
 
-    python live_selector.py --mode ensemble --minutes 16 --log results/mech/<tag>_decisions.csv   (final)
-    python live_selector.py --mode rules    --minutes 16 --log results/mech/<tag>_decisions.csv   (baseline)
+    python experiments/live_selector.py --mode ensemble --minutes 16 --log results/mech/<tag>_decisions.csv   (final)
+    python experiments/live_selector.py --mode rules    --minutes 16 --log results/mech/<tag>_decisions.csv   (baseline)
 
 MAPE-K loop:
   Monitor : every 15 s, read each service's request rate from Linkerd's Prometheus.

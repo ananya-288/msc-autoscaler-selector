@@ -16,7 +16,7 @@ Column D is the UNCAPPED demand (can exceed max), as in Smart HPA. HPA's own
 desiredReplicas is capped at max, so it is stored separately in column G.
 
 Usage (PowerShell, from C:\\shpa):
-  python hpa_logger.py --minutes 15 --out "results\\hpa\\Test\\5 Replicas + 50%\\Run 1"
+  python baseline/hpa_logger.py --minutes 15 --out "results\\hpa\\Test\\5 Replicas + 50%\\Run 1"
 """
 import argparse
 import json

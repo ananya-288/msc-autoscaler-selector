@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-
 forecasting.py - RQ1: how well can simple and learned methods forecast the next interval's
 request rate, and is the selector's naive trend forecast good enough?
 
-    python rq1_forecasting.py --root .            # needs: pip install statsmodels
+    python analysis/forecasting.py --root .            # needs: pip install statsmodels
 
 Data: workloads/wc98_per_minute.csv (WorldCup98 requests per minute), tournament period
 10 June - 12 July 1998 (the period the workload shapes were taken from).

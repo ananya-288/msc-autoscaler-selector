@@ -26,7 +26,7 @@ Use --no-patches to build the authors' code exactly as released.
 Usage
 -----
     git clone https://github.com/HussainAhmad05/Smart_HPA.git
-    python prepare_smart_hpa.py ./Smart_HPA --minutes 5
+    python baseline/prepare_smart_hpa.py ./Smart_HPA --minutes 5
     cd smart_hpa_run
     python run_smart_hpa.py        # needs kubectl pointing at your cluster
 """

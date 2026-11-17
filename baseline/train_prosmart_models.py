@@ -6,7 +6,7 @@ microservice, trained on time series recorded while the service ran under Smart 
 with ds = elapsed test time and y = replicas.
 
     cd ~/shpa
-    python train_prosmart_models.py --runs 2 3 4 --maxr 2 --target 20 --out models_2R20
+    python baseline/train_prosmart_models.py --runs 2 3 4 --maxr 2 --target 20 --out baseline/models_2R20
 
 Inputs (written by run_experiment.sh):
   results/smarthpa/Test/<MAXR> Replicas + <T>%/Run <n>/<svc>.xlsx   (Smart HPA Knowledge Base)

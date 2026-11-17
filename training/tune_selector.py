@@ -2,10 +2,10 @@
 """
 tune_selector.py - one honest round of tuning for the binary selector (scale up vs scale out).
 
-    python tune_selector.py --data results/selector/training_dataset_floor50_avg12_binary_lags.csv
+    python training/tune_selector.py --data results/selector/training_dataset_floor50_avg12_binary_lags.csv
 
 Input: the exact training table written by
-    python train_selector.py --root . --floor 50 --runs 1 2 --avg --task binary --lags
+    python training/train_selector.py --root . --floor 50 --runs 1 2 --avg --task binary --lags
 
 NESTED leave-one-shape-out (nothing is tuned on the shape being tested):
   outer loop : hold out 1 traffic shape for testing, keep 3 for training

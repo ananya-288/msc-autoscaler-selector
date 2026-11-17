@@ -2,7 +2,7 @@
 trace_shape.py - make Locust follow a WorldCup98-derived user profile.
 
 Use together with the normal user script (same shop behaviour, real traffic shape):
-    WORKLOAD=workloads/burst.csv locust -f locust_authors.py,trace_shape.py \
+    WORKLOAD=workloads/burst.csv locust -f load/locust_authors.py,load/trace_shape.py \
         --host $FE --headless --csv results/locust/x
 
 The CSV has columns t_sec,users (one row every 5 s). Locust changes the number of

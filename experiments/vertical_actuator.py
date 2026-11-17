@@ -7,7 +7,7 @@ Every 15 s, for each service with a VPA object, read the recommended CPU target 
 'server' container and resize every running pod in place if it differs by > 10 %.
 Limit = 2 x request (same ratio as Online Boutique's defaults).
 
-    python vertical_actuator.py --minutes 16 --log results/mech/<tag>_vertical_actions.csv
+    python experiments/vertical_actuator.py --minutes 16 --log results/mech/<tag>_vertical_actions.csv
 """
 import argparse, csv, time, sys, json, subprocess
 from kubernetes import client, config

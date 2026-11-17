@@ -2,7 +2,7 @@
 """
 eval_warmup_check.py - EXPLORATORY (idea came from the results): were runs on freshly started nodes worse?
 
-    python eval_warmup_check.py --root . --tags _final5:eval_heldout _evalfinal:eval_final
+    python analysis/eval_warmup_check.py --root . --tags _final5:eval_heldout _evalfinal:eval_final
 
 Run position after each node start comes from results/logs/batch_summary.txt; positions 1-2 = early.
 Each run is compared with its own method's median; early vs later with a Mann-Whitney U test.

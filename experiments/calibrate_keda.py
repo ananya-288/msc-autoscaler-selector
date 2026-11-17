@@ -3,7 +3,7 @@
 calibrate_keda.py - derive each service's KEDA target (requests/s per pod) from an HPA run,
 so that KEDA aims at the SAME load per pod as HPA (50 % CPU) but reacts to request rate.
 
-    python calibrate_keda.py results/mech/hpa_burst_run1_metrics.csv --target 0.5 --out keda_thresholds.json
+    python experiments/calibrate_keda.py results/mech/hpa_burst_run1_metrics.csv --target 0.5 --out keda_thresholds.json
 
 For every sample with meaningful load: capacity = (rps / replicas) * (target / cpu_util),
 i.e. the request rate one pod can take at 50 % CPU. The median over the run is used.

@@ -1,16 +1,18 @@
 #!/bin/bash
 # phase_b.sh - install and verify the Phase B stack, one section at a time.
-#   ./phase_b.sh linkerd      # 1. Linkerd control plane (service mesh)
-#   ./phase_b.sh viz          # 2. Linkerd viz = Prometheus with per-service request metrics
-#   ./phase_b.sh mesh         # 3. add the Linkerd proxy to all Online Boutique pods
-#   ./phase_b.sh keda         # 4. KEDA
-#   ./phase_b.sh vpa          # 5. VPA (we only use its recommender, updateMode Off)
-#   ./phase_b.sh versions     # 6. record every version for the report
-#   ./phase_b.sh test-rps     # check: per-service request rate is visible
-#   ./phase_b.sh test-resize  # check: in-place CPU resize works without restart
-#   ./phase_b.sh test-keda    # check: KEDA scales frontend on request rate
+#   experiments/phase_b.sh linkerd      # 1. Linkerd control plane (service mesh)
+#   experiments/phase_b.sh viz          # 2. Linkerd viz = Prometheus with per-service request metrics
+#   experiments/phase_b.sh mesh         # 3. add the Linkerd proxy to all Online Boutique pods
+#   experiments/phase_b.sh keda         # 4. KEDA
+#   experiments/phase_b.sh vpa          # 5. VPA (we only use its recommender, updateMode Off)
+#   experiments/phase_b.sh versions     # 6. record every version for the report
+#   experiments/phase_b.sh test-rps     # check: per-service request rate is visible
+#   experiments/phase_b.sh test-resize  # check: in-place CPU resize works without restart
+#   experiments/phase_b.sh test-keda    # check: KEDA scales frontend on request rate
 # Run each section, check its output, then run the next one.
 set -euo pipefail
+SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"      # this script, for the help text
+cd "$(dirname "$0")/.."                         # always run from the repository root
 NS=default
 PROM=http://prometheus.linkerd-viz.svc.cluster.local:9090
 mkdir -p results/env
@@ -118,5 +120,5 @@ EOF
   echo "Now send load (short Locust run); frontend replicas should rise. Remove afterwards with:"
   echo "  kubectl delete scaledobject frontend-rps -n $NS"
   ;;
-*) sed -n '2,12p' "$0" ;;
+*) sed -n '2,12p' "$SELF" ;;
 esac

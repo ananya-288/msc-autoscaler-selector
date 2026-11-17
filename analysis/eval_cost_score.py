@@ -2,8 +2,8 @@
 """
 eval_cost_score.py - post-hoc combined score per method, using the label formula on the live runs.
 
-    python eval_cost_score.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
-    python eval_cost_score.py --root . --shape eval_final --runs 1 2 3 --w 0.8 0.2 0.0 --tag _evalfinal_w820
+    python analysis/eval_cost_score.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
+    python analysis/eval_cost_score.py --root . --shape eval_final --runs 1 2 3 --w 0.8 0.2 0.0 --tag _evalfinal_w820
 
 score = 0.6 x SLO-violation share + 0.3 x relative CPU + 0.1 x min(actions, 3) / 3, per service and
 minute (lower is better). Differences from the labels: five methods; SLO thresholds pooled over all

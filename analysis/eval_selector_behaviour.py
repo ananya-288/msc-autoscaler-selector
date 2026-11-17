@@ -2,7 +2,7 @@
 """
 eval_selector_behaviour.py - how the selector and the rule-based switcher behaved live.
 
-    python eval_selector_behaviour.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
+    python analysis/eval_selector_behaviour.py --root . --shape eval_heldout --runs 11 12 13 14 15 --tag _final5
 
 Reports: time each service spent on KEDA; switches per service and direction; traffic trend at each
 switch; selector confidence; per-service SLO violations and reserved CPU for all methods; and a
@@ -149,7 +149,7 @@ try:
         fig.tight_layout()
         os.makedirs(P("figures"), exist_ok=True)
         for ext in ("png", "pdf"):
-            fig.savefig(P("figures", f"fig_selector_timeline{a.tag}_run{fr_run}.{ext}"), dpi=300)
+            fig.savefig(P("figures", f"fig_selector_timeline{a.tag}_run{fr_run}.{ext}"), dpi=300, metadata={"CreationDate": None} if ext == "pdf" else None)
         print(f"\nwrote results/figures/fig_selector_timeline{a.tag}_run{fr_run}.png/.pdf")
 except ImportError:
     pass

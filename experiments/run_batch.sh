@@ -1,7 +1,7 @@
 #!/bin/bash
 # run_batch.sh - run many evaluation runs back to back, unattended.
 #
-#   END_BY=17:40 nohup ./run_batch.sh eval_heldout 1 5 > results/logs/batch_$(date +%H%M).out 2>&1 &
+#   END_BY=17:40 nohup experiments/run_batch.sh eval_heldout 1 5 > results/logs/batch_$(date +%H%M).out 2>&1 &
 #       -> runs 1..5 of all five methods on eval_heldout, interleaved, until 17:40 UTC
 #
 # For every round r (run number) the five methods run once, in a rotated order
@@ -24,8 +24,9 @@ METHODS=(vertical hpa keda rules selector)
 RUN_MIN=${RUN_MIN:-21}                 # minutes one run needs, including reset and saving
 END_BY=${END_BY:-}
 SCALE_DOWN=${SCALE_DOWN:-1}
-cd "$(dirname "$0")"
-[[ -z "$SHAPE" || -z "$FIRST" || -z "$LAST" ]] && { sed -n '2,16p' "$0"; exit 1; }
+SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"      # this script, for the help text
+cd "$(dirname "$0")/.."                       # always run from the repository root
+[[ -z "$SHAPE" || -z "$FIRST" || -z "$LAST" ]] && { sed -n '2,16p' "$SELF"; exit 1; }
 [[ -f "workloads/${SHAPE}.csv" ]] || { echo "STOP: workloads/${SHAPE}.csv not found"; exit 1; }
 [[ -z "$END_BY" ]] && { echo "STOP: set END_BY=HH:MM (UTC), about 15 min before the lab session ends"; exit 1; }
 END_TS=$(date -u -d "today $END_BY" +%s) || exit 1
@@ -59,7 +60,7 @@ for r in $(seq "$FIRST" "$LAST"); do
       pods_ok || { log "STOP: pods still not healthy"; notify "PROBLEM pods" "pods not healthy - batch stopped"; break 2; }
     fi
     log "start $tag"
-    ./run_mech.sh "$m" "$SHAPE" "$r" > "results/logs/mech_${m}_${SHAPE}_${r}.out" 2>&1
+    experiments/run_mech.sh "$m" "$SHAPE" "$r" > "results/logs/mech_${m}_${SHAPE}_${r}.out" 2>&1
     out="results/logs/mech_${m}_${SHAPE}_${r}.out"
     if grep -q "=== DONE" "$out"; then
       rows=$(grep -o "metrics rows: [0-9]*" "$out" | awk '{print $3}')

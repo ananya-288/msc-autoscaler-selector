@@ -1,24 +1,25 @@
 #!/bin/bash
 # run_mech.sh - one experiment run in the FINAL environment (Linkerd + KEDA + VPA).
 #
-#   ./run_mech.sh tune-vpa                    # once per cluster: make the VPA recommender react in minutes
-#   ./run_mech.sh hpa      burst 1            # HPA-only   (CPU 50 %, 1-5 replicas)
-#   python calibrate_keda.py results/mech/hpa_burst_run1_metrics.csv   # after the first HPA run
-#   ./run_mech.sh keda     burst 1            # KEDA-only  (request rate, target from calibration, 1-5 replicas)
-#   ./run_mech.sh vertical burst 1            # vertical-only (VPA recommendation applied in place, 1 replica)
-#   RESET_WAIT=30 ./run_mech.sh hpa burst test 3     # short rehearsal (3 minutes of the shape)
-#   ./run_mech.sh selector eval_heldout 1     # live ML selector (FINAL: tuned ensemble, scale up vs out, 2-min hold)
-#   SELECTOR=knn ./run_mech.sh selector ...   # earlier kNN selector (3 classes, gate 0.8)
-#   ./run_mech.sh rules    eval_heldout 1     # live rule-based switcher (baseline)
+#   experiments/run_mech.sh tune-vpa                    # once per cluster: make the VPA recommender react in minutes
+#   experiments/run_mech.sh hpa      burst 1            # HPA-only   (CPU 50 %, 1-5 replicas)
+#   python experiments/calibrate_keda.py results/mech/hpa_burst_run1_metrics.csv   # after the first HPA run
+#   experiments/run_mech.sh keda     burst 1            # KEDA-only  (request rate, target from calibration, 1-5 replicas)
+#   experiments/run_mech.sh vertical burst 1            # vertical-only (VPA recommendation applied in place, 1 replica)
+#   RESET_WAIT=30 experiments/run_mech.sh hpa burst test 3     # short rehearsal (3 minutes of the shape)
+#   experiments/run_mech.sh selector eval_heldout 1     # live ML selector (FINAL: tuned ensemble, scale up vs out, 2-min hold)
+#   SELECTOR=knn experiments/run_mech.sh selector ...   # earlier kNN selector (3 classes, gate 0.8)
+#   experiments/run_mech.sh rules    eval_heldout 1     # live rule-based switcher (baseline)
 #
-# Run in the background:  nohup ./run_mech.sh hpa burst 1 > results/logs/mech_hpa_burst_1.out 2>&1 &
+# Run in the background:  nohup experiments/run_mech.sh hpa burst 1 > results/logs/mech_hpa_burst_1.out 2>&1 &
 # redis-cart is never scaled. Every run starts from 1 replica and the default CPU requests.
 set -u
 MODE=${1:-}; SHAPE=${2:-}; RUN=${3:-}; MIN=${4:-15}
 PY=${PY:-$HOME/venv/bin/python}
 RESET_WAIT=${RESET_WAIT:-90}
 TARGET=50; MAXR=5
-cd "$(dirname "$0")"
+SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"      # this script, for the help text
+cd "$(dirname "$0")/.."                       # always run from the repository root
 SERVICES="adservice cartservice checkoutservice currencyservice emailservice frontend paymentservice productcatalogservice recommendationservice shippingservice"
 PROM=http://prometheus.linkerd-viz.svc.cluster.local:9090
 
@@ -33,10 +34,10 @@ if [[ "$MODE" == "tune-vpa" ]]; then
 fi
 
 if [[ ! "$MODE" =~ ^(hpa|keda|vertical|selector|rules)$ ]] || [[ -z "$SHAPE" || -z "$RUN" ]]; then
-  sed -n '2,12p' "$0"; exit 1
+  sed -n '2,12p' "$SELF"; exit 1
 fi
 [[ -f "workloads/${SHAPE}.csv" ]] || { echo "STOP: workloads/${SHAPE}.csv not found"; exit 1; }
-[[ "$MODE" =~ ^(keda|selector|rules)$ && ! -f keda_thresholds.json ]] && { echo "STOP: run calibrate_keda.py first"; exit 1; }
+[[ "$MODE" =~ ^(keda|selector|rules)$ && ! -f keda_thresholds.json ]] && { echo "STOP: run experiments/calibrate_keda.py first"; exit 1; }
 
 TAG="${MODE}_${SHAPE}_run${RUN}"
 OUT=results/mech; mkdir -p $OUT results/locust results/logs
@@ -98,15 +99,15 @@ spec:
     - {containerName: linkerd-proxy, mode: "Off"}
 EOF
   done
-  "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
+  "$PY" experiments/vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
   ;;
 selector|rules)
   SEL=$([[ "$MODE" == "selector" ]] && echo "${SELECTOR:-ensemble}" || echo rules)
   [[ "$SEL" == "ensemble" && ! -f "${FINAL:-results/selector/final_selector.json}" ]] && { echo "STOP: final_selector.json not found"; exit 1; }
   [[ "$SEL" == "ensemble" && ! -f results/selector/training_dataset_floor50_avg12_binary_lags.csv ]] && { echo "STOP: binary+lags training dataset not found"; exit 1; }
   [[ "$SEL" == "knn" && ! -f "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" ]] && { echo "STOP: training dataset not found"; exit 1; }
-  "$PY" vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
-  "$PY" live_selector.py --mode "$SEL" --minutes $((MIN + 1)) --log "$OUT/${TAG}_decisions.csv" \
+  "$PY" experiments/vertical_actuator.py --minutes $((MIN + 1)) --log "$OUT/${TAG}_vertical_actions.csv" > "results/logs/actuator_${TAG}.log" 2>&1 &
+  "$PY" experiments/live_selector.py --mode "$SEL" --minutes $((MIN + 1)) --log "$OUT/${TAG}_decisions.csv" \
       --train "${TRAIN:-results/selector/training_dataset_floor50_avg12.csv}" --gate "${GATE:-0.8}" \
       --final "${FINAL:-results/selector/final_selector.json}" \
       > "results/logs/selector_${TAG}.log" 2>&1 &
@@ -115,9 +116,9 @@ selector|rules)
 esac
 
 START=$(date -u '+%F %T')
-"$PY" collector.py --out "$OUT/${TAG}_metrics.csv" --minutes $((MIN + 1)) --mechanism "$MODE" > "results/logs/collector_${TAG}.log" 2>&1 &
+"$PY" experiments/collector.py --out "$OUT/${TAG}_metrics.csv" --minutes $((MIN + 1)) --mechanism "$MODE" > "results/logs/collector_${TAG}.log" 2>&1 &
 COL=$!
-WORKLOAD=workloads/${SHAPE}.csv timeout $((MIN * 60 + 30)) "$PY" -m locust -f locust_authors.py,trace_shape.py \
+WORKLOAD=workloads/${SHAPE}.csv timeout $((MIN * 60 + 30)) "$PY" -m locust -f load/locust_authors.py,load/trace_shape.py \
   --host "http://${FE}" --headless --csv="results/locust/${TAG}" --csv-full-history > "results/logs/locust_${TAG}.log" 2>&1 &
 LOC=$!
 printf 'run=%s\nmode=%s\nworkload=%s\nstart_utc=%s\nminutes=%s\ntarget_cpu=%s\nmax_replicas=%s\n' \

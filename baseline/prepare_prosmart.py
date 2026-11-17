@@ -2,7 +2,7 @@
 """
 prepare_prosmart.py - build a runnable copy of the authors' ProSmart HPA code.
 
-    python prepare_prosmart.py ~/ProSmart_HPA --models models_2R20 --minutes 15 \
+    python baseline/prepare_prosmart.py ~/ProSmart_HPA --models baseline/models_2R20 --minutes 15 \
         --maxr 2 --target 20 --window 25 --force
 
 The authors' algorithm is NOT changed. The released code does not run as published,

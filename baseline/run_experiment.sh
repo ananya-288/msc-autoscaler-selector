@@ -1,17 +1,17 @@
 #!/bin/bash
 # run_experiment.sh (v2) - one complete experiment run on the EC2 runner.
 #
-#   ./run_experiment.sh MODE RUN [MINUTES] [USERS]
+#   baseline/run_experiment.sh MODE RUN [MINUTES] [USERS]
 #   MODE = hpa | smarthpa | prosmart
 #
 # Scenario is set with environment variables (defaults = paper's 5R-50%):
-#   MAXR=2 TARGET=20 ./run_experiment.sh smarthpa 2 15 300     # scenario 2R-20%
-#   MAXR=2 TARGET=20 ./run_experiment.sh hpa      2 15 300
-#   ./run_experiment.sh hpa test 2 20                          # 2-min rehearsal
-#   MAXR=2 TARGET=20 PS_MODELS=models_2R20 ./run_experiment.sh prosmart 2 15 300
+#   MAXR=2 TARGET=20 baseline/run_experiment.sh smarthpa 2 15 300     # scenario 2R-20%
+#   MAXR=2 TARGET=20 baseline/run_experiment.sh hpa      2 15 300
+#   baseline/run_experiment.sh hpa test 2 20                          # 2-min rehearsal
+#   MAXR=2 TARGET=20 PS_MODELS=baseline/models_2R20 baseline/run_experiment.sh prosmart 2 15 300
 #
 # Run in the background so a dropped SSH session does not stop it:
-#   nohup ./run_experiment.sh smarthpa 2 15 300 > results/logs/run.out 2>&1 &
+#   nohup baseline/run_experiment.sh smarthpa 2 15 300 > results/logs/run.out 2>&1 &
 #   tail -f results/logs/run.out
 
 set -u
@@ -20,14 +20,14 @@ MAXR=${MAXR:-5}; TARGET=${TARGET:-50}
 PY=${PY:-$HOME/venv/bin/python}             # the venv Python
 SMART_REPO=${SMART_REPO:-$HOME/Smart_HPA}   # cloned Smart_HPA repo
 PROSMART_REPO=${PROSMART_REPO:-$HOME/ProSmart_HPA}
-PS_MODELS=${PS_MODELS:-models_2R20}         # retrained PROPHET models (train_prosmart_models.py)
+PS_MODELS=${PS_MODELS:-baseline/models_2R20}         # retrained PROPHET models (train_prosmart_models.py)
 WINDOW=${WINDOW:-25}                        # ProSmart prediction window (s)
 RESET_WAIT=${RESET_WAIT:-180}
 SCEN="${MAXR} Replicas + ${TARGET}%"
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."                       # always run from the repository root
 
 if [[ "$MODE" != "hpa" && "$MODE" != "smarthpa" && "$MODE" != "prosmart" ]] || [[ -z "$RUN" ]]; then
-  echo "Usage: [MAXR=n TARGET=n] ./run_experiment.sh hpa|smarthpa|prosmart RUN [MINUTES] [USERS]"; exit 1
+  echo "Usage: [MAXR=n TARGET=n] baseline/run_experiment.sh hpa|smarthpa|prosmart RUN [MINUTES] [USERS]"; exit 1
 fi
 
 TAG="${MODE}_${MAXR}R-${TARGET}_run${RUN}"
@@ -52,9 +52,9 @@ if [[ "$MODE" == "hpa" ]]; then
   for d in $(kubectl get deploy -o name); do
     kubectl autoscale "$d" --cpu="${TARGET}%" --min=1 --max="$MAXR"
   done
-  "$PY" hpa_logger.py --minutes "$MIN" --out "$KB_OUT" > "results/logs/controller_${TAG}.log" 2>&1 &
+  "$PY" baseline/hpa_logger.py --minutes "$MIN" --out "$KB_OUT" > "results/logs/controller_${TAG}.log" 2>&1 &
 elif [[ "$MODE" == "smarthpa" ]]; then
-  "$PY" prepare_smart_hpa.py "$SMART_REPO" --minutes "$MIN" --force > "results/logs/prepare_${TAG}.log" 2>&1 \
+  "$PY" baseline/prepare_smart_hpa.py "$SMART_REPO" --minutes "$MIN" --force > "results/logs/prepare_${TAG}.log" 2>&1 \
     || { echo "STOP: prepare failed, see results/logs/prepare_${TAG}.log"; exit 1; }
   # apply the scenario to all 11 Microservice Managers
   N=$(grep -lE "target_cpu = 50|max_replica = 5" smart_hpa_run/*.py | wc -l)
@@ -64,7 +64,7 @@ elif [[ "$MODE" == "smarthpa" ]]; then
   [[ "$N" -ne 11 ]] && echo "WARNING: expected 11 manager files, found ${N}"
   ( cd smart_hpa_run && "$PY" run_smart_hpa.py ) > "results/logs/controller_${TAG}.log" 2>&1 &
 else
-  "$PY" prepare_prosmart.py "$PROSMART_REPO" --models "$PS_MODELS" --minutes "$MIN" \
+  "$PY" baseline/prepare_prosmart.py "$PROSMART_REPO" --models "$PS_MODELS" --minutes "$MIN" \
       --maxr "$MAXR" --target "$TARGET" --window "$WINDOW" --force > "results/logs/prepare_${TAG}.log" 2>&1 \
     || { echo "STOP: prepare_prosmart.py failed, see results/logs/prepare_${TAG}.log"; exit 1; }
   cat "results/logs/prepare_${TAG}.log"
@@ -73,7 +73,7 @@ fi
 CTRL=$!
 
 START=$(date -u '+%F %T')
-"$PY" -m locust -f locust_authors.py --host "$HOST" --headless -u "$USERS" -r 2 -t "${MIN}m" \
+"$PY" -m locust -f load/locust_authors.py --host "$HOST" --headless -u "$USERS" -r 2 -t "${MIN}m" \
   --csv="results/locust/${TAG}" --csv-full-history > "results/logs/locust_${TAG}.log" 2>&1 &
 LOC=$!
 echo "=== ${START} UTC  started controller (pid ${CTRL}) and Locust (pid ${LOC})"

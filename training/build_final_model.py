@@ -2,7 +2,7 @@
 """
 build_final_model.py - fix the final selector settings before the live test.
 
-    python build_final_model.py --data results/selector/training_dataset_floor50_avg12_binary_lags.csv
+    python training/build_final_model.py --data results/selector/training_dataset_floor50_avg12_binary_lags.csv
 
 Picks the best hyper-parameters for MLP, ExtraTrees and kNN (leave-one-shape-out macro-F1) and the
 decision threshold of their soft-voting ensemble, using all four training shapes.

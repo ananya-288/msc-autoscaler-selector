@@ -4,9 +4,9 @@ train_selector.py - RQ2: can a classifier predict, one minute ahead, which autos
 will be best for a service? (offline, leave-one-shape-out)
 
 Examples
-    python train_selector.py --root . --floor 50 --runs 1                       # run 1 only, 3 classes
-    python train_selector.py --root . --floor 50 --runs 1 2 --avg               # labels from the average of runs 1+2
-    python train_selector.py --root . --floor 50 --runs 1 2 --avg --task binary --lags   # FINAL formulation
+    python training/train_selector.py --root . --floor 50 --runs 1                       # run 1 only, 3 classes
+    python training/train_selector.py --root . --floor 50 --runs 1 2 --avg               # labels from the average of runs 1+2
+    python training/train_selector.py --root . --floor 50 --runs 1 2 --avg --task binary --lags   # FINAL formulation
 
 Inputs
     results/mech/<mech>_<shape>_run<r>_metrics.csv                 collector data (15-s samples)

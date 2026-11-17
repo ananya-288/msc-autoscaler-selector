@@ -3,37 +3,39 @@
 reproduce_analysis.py - rerun the whole evaluation analysis from the raw run files, in order.
 
     python -m pip install -r requirements.txt
-    python reproduce_analysis.py
+    python reproduce_analysis.py          # run from the repository root
 
 Needs the raw files in results/ (metrics, decisions, vertical actions, Locust stats, batch and
 selector logs) and workloads/wc98_per_minute.csv. Writes results/eval/, results/rq1/ and
 results/figures/. Stops at the first step that fails.
 It does NOT retrain or change the frozen selector (results/selector/final_selector.json).
 """
-import subprocess, sys, time
+import os, subprocess, sys, time
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))   # always run from the repository root
 
 PY = sys.executable
 STEPS = [
     ("RQ3 main: eval_heldout runs 11-15",
-     ["analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "11", "12", "13", "14", "15", "--tag", "_final5"]),
+     ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "11", "12", "13", "14", "15", "--tag", "_final5"]),
     ("RQ3 generalisation: eval_final runs 1-3",
-     ["analyze_eval.py", "--root", ".", "--shape", "eval_final", "--runs", "1", "2", "3", "--tag", "_evalfinal"]),
+     ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_final", "--runs", "1", "2", "3", "--tag", "_evalfinal"]),
     ("RQ3 preliminary round: eval_heldout runs 1-3",
-     ["analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "1", "2", "3"]),
+     ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "1", "2", "3"]),
 ]
 for shape, runs, tag in [("eval_heldout", ["11", "12", "13", "14", "15"], "_final5"),
                          ("eval_final", ["1", "2", "3"], "_evalfinal")]:
     for w, wtag in [(["0.6", "0.3", "0.1"], ""), (["0.8", "0.2", "0.0"], "_w820"), (["0.4", "0.5", "0.1"], "_w451")]:
         STEPS.append((f"Cost score {shape} weights {'/'.join(w)}",
-                      ["eval_cost_score.py", "--root", ".", "--shape", shape, "--runs", *runs, "--w", *w, "--tag", tag + wtag]))
-    STEPS.append((f"Effect sizes {shape}", ["eval_effect_sizes.py", "--root", ".", "--tag", tag]))
+                      ["analysis/eval_cost_score.py", "--root", ".", "--shape", shape, "--runs", *runs, "--w", *w, "--tag", tag + wtag]))
+    STEPS.append((f"Effect sizes {shape}", ["analysis/eval_effect_sizes.py", "--root", ".", "--tag", tag]))
     STEPS.append((f"Selector behaviour {shape}",
-                  ["eval_selector_behaviour.py", "--root", ".", "--shape", shape, "--runs", *runs, "--tag", tag]))
+                  ["analysis/eval_selector_behaviour.py", "--root", ".", "--shape", shape, "--runs", *runs, "--tag", tag]))
 STEPS += [
     ("Warm-up check (exploratory)",
-     ["eval_warmup_check.py", "--root", ".", "--tags", "_final5:eval_heldout", "_evalfinal:eval_final"]),
-    ("RQ1 forecasting comparison", ["forecasting.py", "--root", "."]),
-    ("Figures", ["make_figures.py", "--root", "."]),
+     ["analysis/eval_warmup_check.py", "--root", ".", "--tags", "_final5:eval_heldout", "_evalfinal:eval_final"]),
+    ("RQ1 forecasting comparison", ["analysis/forecasting.py", "--root", "."]),
+    ("Figures", ["analysis/make_figures.py", "--root", "."]),
 ]
 
 t0 = time.time()

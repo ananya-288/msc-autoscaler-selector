@@ -2,7 +2,7 @@
 """
 eval_effect_sizes.py - effect sizes and minimum detectable differences (MDD) for the selector comparisons.
 
-    python eval_effect_sizes.py --root . --tag _final5
+    python analysis/eval_effect_sizes.py --root . --tag _final5
 
 Hedges' g (small-sample corrected) and the MDD: the smallest difference these run counts could detect
 with 80 % power at alpha 0.05 (equal-variance approximation, no Holm adjustment).

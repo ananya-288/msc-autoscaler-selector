@@ -3,8 +3,8 @@
 make_labels.py - decide, for every service and every 1-minute window, which mechanism
 (HPA, KEDA or vertical) performed best on the SAME traffic.
 
-    python make_labels.py --shape burst --run 1
-    python make_labels.py --shape burst --run 1 --window 30      # 30-second windows
+    python training/make_labels.py --shape burst --run 1
+    python training/make_labels.py --shape burst --run 1 --window 30      # 30-second windows
 
 Score per mechanism (lower is better), following the weighted-cost idea of Rossi et al. (2019):
     score = 0.6 * SLO-violation share + 0.3 * relative CPU allocation + 0.1 * scaling actions
