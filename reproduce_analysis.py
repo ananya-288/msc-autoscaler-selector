@@ -6,7 +6,7 @@ reproduce_analysis.py - rerun the whole evaluation analysis from the raw run fil
     python reproduce_analysis.py          # run from the repository root
 
 Needs the raw files in results/ (metrics, decisions, vertical actions, Locust stats, batch and
-selector logs) and workloads/wc98_per_minute.csv. Writes results/eval/, results/rq1/ and
+selector logs) and workloads/wc98_per_minute.csv. Writes results/eval/ (incl. the base-paper summary), results/rq1/ and
 results/figures/. Stops at the first step that fails.
 It does NOT retrain or change the frozen selector (results/selector/final_selector.json).
 """
@@ -16,6 +16,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))   # always run from the rep
 
 PY = sys.executable
 STEPS = [
+    ("Base-paper reproduction (RO1): HPA vs Smart HPA vs ProSmart HPA",
+     ["analysis/baseline_summary.py", "--root", "."]),
     ("RQ3 main: eval_heldout runs 11-15",
      ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "11", "12", "13", "14", "15", "--tag", "_final5"]),
     ("RQ3 generalisation: eval_final runs 1-3",

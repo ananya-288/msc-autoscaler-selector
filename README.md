@@ -18,7 +18,7 @@ experiment scripts, the base-paper reproduction, the raw data of every run and t
 | `load/` | Locust user behaviour (`locust_authors.py`, from Online Boutique) and the WorldCup98 traffic-shape follower (`trace_shape.py`) | AWS runner |
 | `workloads/` | `make_workloads.py` and the six traffic shapes built from the WorldCup98 trace | laptop |
 | `training/` | RQ2 offline: labels, training table and model comparison, nested tuning, final selector settings, feature-skew check, post-hoc frontend experiment | laptop |
-| `analysis/` | RQ1 forecasting comparison and RQ3 evaluation: statistics, cost score, effect sizes, warm-up check, selector behaviour, figures | laptop |
+| `analysis/` | Base-paper reproduction summary, RQ1 forecasting comparison and RQ3 evaluation: statistics, cost score, effect sizes, warm-up check, selector behaviour, figures | laptop |
 | `notebooks/analysis.ipynb` | Step-by-step walkthrough of data and results | laptop |
 | `results/` | Raw data of every run and all derived results (see "Data") | - |
 | `reproduce_analysis.py` | Reruns the whole RQ1 + RQ3 analysis from the raw data with one command | laptop |
@@ -48,7 +48,7 @@ repositories and apply the documented repairs (R1-R4, P1-P12; see each script's 
 python -m pip install -r requirements.txt
 python reproduce_analysis.py
 ```
-This reruns, in order, the RQ3 statistics for both evaluation workloads and the preliminary round,
+This reruns, in order, the base-paper reproduction summary, the RQ3 statistics for both evaluation workloads and the preliminary round,
 the post-hoc cost score (three weightings), effect sizes, selector behaviour, the exploratory warm-up
 check, the RQ1 forecasting comparison and all figures (about 1.5 minutes). Outputs go to
 `results/eval/`, `results/rq1/` and `results/figures/`. Reruns produce identical files.
