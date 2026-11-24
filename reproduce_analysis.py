@@ -29,11 +29,14 @@ for shape, runs, tag in [("eval_heldout", ["11", "12", "13", "14", "15"], "_fina
         STEPS.append((f"Cost score {shape} weights {'/'.join(w)}",
                       ["analysis/eval_cost_score.py", "--root", ".", "--shape", shape, "--runs", *runs, "--w", *w, "--tag", tag + wtag]))
     STEPS.append((f"Effect sizes {shape}", ["analysis/eval_effect_sizes.py", "--root", ".", "--tag", tag]))
+    STEPS.append((f"Reserved vs used CPU {shape}",
+                  ["analysis/eval_cpu_utilisation.py", "--root", ".", "--shape", shape, "--runs", *runs, "--tag", tag]))
     STEPS.append((f"Selector behaviour {shape}",
                   ["analysis/eval_selector_behaviour.py", "--root", ".", "--shape", shape, "--runs", *runs, "--tag", tag]))
 STEPS += [
     ("Warm-up check (exploratory)",
      ["analysis/eval_warmup_check.py", "--root", ".", "--tags", "_final5:eval_heldout", "_evalfinal:eval_final"]),
+    ("Feature skew: training vs live selector features", ["training/check_feature_skew.py", "--root", "."]),
     ("RQ1 forecasting comparison", ["analysis/forecasting.py", "--root", "."]),
     ("Figures", ["analysis/make_figures.py", "--root", "."]),
 ]

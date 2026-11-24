@@ -1,18 +1,19 @@
+@"
 # Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-venv/
 .venv/
+venv/
 
-# Runnable copies of the baseline code, built by baseline/prepare_smart_hpa.py and baseline/prepare_prosmart.py
-smart_hpa_run/
-prosmart_run/
-
-# Large run logs (the selector logs used by the analysis are committed explicitly)
-*.log
-
-# Editors / operating system
-.DS_Store
+# Editors / OS
+.vscode/
 .idea/
-*.swp
+.DS_Store
+Thumbs.db
+
+# Personal documents - never commit
+*.docx
+*.doc
+~$*
+"@ | Set-Content -Encoding utf8 .gitignore

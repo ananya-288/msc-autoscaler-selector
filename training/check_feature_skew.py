@@ -6,7 +6,7 @@ check_feature_skew.py - compare training features with the features the live sel
 
 Training computes burst and peak_ratio over all runs of a shape pooled together; the live selector
 uses one run. Compares (A) training features as used, (B) the same data computed per run, live-style,
-and (C) live values from the selector decision logs.
+and (C) live values from all selector evaluation runs.
 Output: results/selector/feature_skew_check.csv
 """
 
@@ -38,13 +38,13 @@ for s in a.shapes:
     per_run.append(pr.groupby(["service", "win"])[["rps", "burst", "peak_ratio"]].mean().reset_index())
 A, B = pd.concat(pooled), pd.concat(per_run)
 
-live = [pd.read_csv(f) for f in sorted(glob.glob(P("mech", "selector_eval_heldout_run[0-9]_decisions.csv")))]
+live = [pd.read_csv(f) for f in sorted(glob.glob(P("mech", "selector_eval_*_decisions.csv")))]
 C = pd.concat(live) if live else pd.DataFrame(columns=["rps", "burst", "peak_ratio"])
 
 rows = []
 for col in ["rps", "burst", "peak_ratio"]:
     for name, df in [("A training (pooled, as used)", A), ("B training (per run, live-style)", B),
-                     ("C live selector runs", C)]:
+                     ("C live selector runs (all evaluation runs)", C)]:
         if col in df and len(df):
             x = df[col].astype(float)
             rows.append({"feature": col, "source": name, "mean": x.mean(), "median": x.median(),

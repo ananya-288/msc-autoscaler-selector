@@ -1,0 +1,223 @@
+deployment.apps/recommendationservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/shippingservice scaled
+deployment.apps/frontend scaled
+deployment.apps/emailservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/adservice scaled
+deployment.apps/currencyservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/redis-cart scaled
+deployment.apps/adservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/shippingservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/frontend scaled
+deployment.apps/cartservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/redis-cart scaled
+deployment.apps/paymentservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/adservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/frontend scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/shippingservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/recommendationservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/shippingservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/adservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/frontend scaled
+deployment.apps/cartservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/productcatalogservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/checkoutservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/adservice scaled
+deployment.apps/shippingservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/frontend scaled
+deployment.apps/currencyservice scaled
+deployment.apps/productcatalogservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/adservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/shippingservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/cartservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/frontend scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/currencyservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/checkoutservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/adservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/shippingservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/currencyservice scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/frontend scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/checkoutservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/paymentservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/shippingservice scaled
+deployment.apps/adservice scaled
+deployment.apps/productcatalogservice scaled
+deployment.apps/frontend scaled
+deployment.apps/recommendationservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/cartservice scaled
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+Importing plotly failed. Interactive plots will not work.
+deployment.apps/paymentservice scaled
+deployment.apps/checkoutservice scaled
+deployment.apps/adservice scaled
+deployment.apps/emailservice scaled
+deployment.apps/redis-cart scaled
+deployment.apps/shippingservice scaled
+deployment.apps/currencyservice scaled
+deployment.apps/cartservice scaled
+deployment.apps/frontend scaled
+deployment.apps/productcatalogservice scaled
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/shpa/prosmart_run/run_prosmart_hpa.py", line 24, in run_function
+    return func()
+           ^^^^^^
+  File "/home/ubuntu/shpa/prosmart_run/recommendationservice.py", line 190, in recommendationservice
+    Plan (microservice_name, Predicted_Time, Predicted_Demand, scaling_action, current_replicas, max_replica, cpu_request)
+  File "/home/ubuntu/shpa/prosmart_run/recommendationservice.py", line 162, in Plan
+    Application_Resource_Manager (Predicted_Time)
+  File "/home/ubuntu/shpa/prosmart_run/Application_Resource_Manager.py", line 161, in Application_Resource_Manager
+    Predicted_Demand_array[i], scaling_action_array[i], current_replicas_array[i], max_replica_array[i], cpu_request_array[i]  = Monitor(microservice_name[i])
+                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/shpa/prosmart_run/Application_Resource_Manager.py", line 25, in Monitor
+    Predicted_Demand = int(lines[0].strip())
+                           ~~~~~^^^
+IndexError: list index out of range
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/shpa/prosmart_run/run_prosmart_hpa.py", line 43, in <module>
+    pool.map(run_function, functions)              # Running the microservice managers functions in parallel
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+IndexError: list index out of range

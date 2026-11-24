@@ -1,4 +1,6 @@
-# Experiments on the AWS runner (Ubuntu 24.04, Python venv): everything above plus load and cluster access
+# Experiments on the AWS runner (Ubuntu 24.04, Python venv): the analysis packages plus load and cluster access.
+# numpy, pandas and scikit-learn are pinned to the versions used for the final evaluation (same as the laptop),
+# so the live selector trains exactly the same model.
 -r requirements.txt
 locust==2.46.7
-kubernetes          # Kubernetes Python client (version not recorded; runner was terminated after the final evaluation)
+kubernetes==37.0.1   # recorded on the runner in an earlier session (results/env/requirements_runner.txt)
