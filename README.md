@@ -1,10 +1,14 @@
-# <Project title>
+# Machine Learning-Based Selection Between Horizontal and Vertical Autoscaling for Kubernetes Microservices
 
 MSc Research Project (Cloud Computing), National College of Ireland
 Author: Ananya Mohan (25161989) - Supervisor: Dr Giovani Estrada
 
 ## What this repository contains
-<!-- 2-3 sentences in your own words: what the project does and what is in this repo. -->
+This project trains a classifier that decides, every minute and for each microservice, whether
+the service should scale horizontally (KEDA, more pods) or vertically (VPA recommendations applied
+by in-place resize). The selector runs live in a MAPE-K loop on Amazon EKS with Online Boutique and
+is compared with HPA, KEDA only, vertical only and a rule-based switcher. The repository holds the
+experiment scripts, the base-paper reproduction, the raw data of every run and the full analysis.
 
 ## Repository structure
 | Folder / file | Contents | Runs on |
@@ -46,7 +50,7 @@ python reproduce_analysis.py
 ```
 This reruns, in order, the RQ3 statistics for both evaluation workloads and the preliminary round,
 the post-hoc cost score (three weightings), effect sizes, selector behaviour, the exploratory warm-up
-check, the RQ1 forecasting comparison and all figures (about one minute). Outputs go to
+check, the RQ1 forecasting comparison and all figures (about 1.5 minutes). Outputs go to
 `results/eval/`, `results/rq1/` and `results/figures/`. Reruns produce identical files.
 The post-hoc frontend experiment takes about 10 minutes and is run separately:
 `python training/posthoc_frontend.py`.
@@ -77,11 +81,12 @@ only file locations and the paths between them were updated.
   `eval_final` was chosen by a rule fixed before any run (see the header of `workloads/make_workloads.py`).
 - `results/mech/` - collector metrics (15-s samples), selector decisions, vertical resize actions per run
 - `results/locust/` - Locust statistics per run
-- `results/logs/` - batch summary and selector logs
+- `results/logs/` - batch summary, selector, actuator, collector and Locust logs
 - `results/labels/`, `results/selector/` - labels, training tables, RQ2 results, final selector settings
 - `results/eval/`, `results/rq1/`, `results/figures/` - analysis outputs
 - `results/hpa/`, `results/smarthpa/`, `results/prosmart/`, `results/cluster/` - base-paper reproduction
 - `results/invalid/` - runs excluded from the analysis, kept for transparency (pre-fix versions)
 
 ## Licence
-<!-- e.g. MIT for your own code; note the licences of the baseline repositories -->
+MIT for the code in this repository. The baseline code (Smart HPA, ProSmart HPA, Online Boutique)
+keeps its own licence; see the links under "Baseline code used".
