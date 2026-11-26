@@ -24,6 +24,9 @@ STEPS = [
      ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_final", "--runs", "1", "2", "3", "--tag", "_evalfinal"]),
     ("RQ3 preliminary round: eval_heldout runs 1-3",
      ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "1", "2", "3"]),
+    ("Consistency check: extra vertical-only run (run 4) in the final session",
+     ["analysis/analyze_eval.py", "--root", ".", "--shape", "eval_heldout", "--runs", "4",
+      "--methods", "vertical", "--tag", "_vertical4"]),
 ]
 for shape, runs, tag in [("eval_heldout", ["11", "12", "13", "14", "15"], "_final5"),
                          ("eval_final", ["1", "2", "3"], "_evalfinal")]:

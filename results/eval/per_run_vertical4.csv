@@ -1,0 +1,2 @@
+method,run,locust_p50_ms,locust_p95_ms,locust_p99_ms,locust_avg_ms,failures_%,throughput_rps,fe_p95_ms,slo_viol_%,cpu_alloc_m,replicas,replica_changes,resizes,switches
+vertical,4,130,670,1300,199.41141885507943,0.0,83.0440884878424,427.55,28.57142857142857,1620.8392857142858,10.0,0,61,0
